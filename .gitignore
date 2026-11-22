@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Lokale Arbeitsdaten (gross; oeffentliche Kopie liegt komprimiert in docs/)
+data/
+output/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# temporaer
+*.tmp
+.write_probe
