@@ -1,0 +1,164 @@
+{
+ "way/555963876": {
+  "name": "Havelberge",
+  "lat": 53.30658298134931,
+  "lon": 13.000123452904587,
+  "score": 93.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_555963876.jpg",
+   "1953": "luftbilder_hist/way_555963876_1953.jpg",
+   "1991": "luftbilder_hist/way_555963876_1991.jpg",
+   "2014": "luftbilder_hist/way_555963876_esri2014.jpg",
+   "2016": "luftbilder_hist/way_555963876_esri2016.jpg",
+   "2018": "luftbilder_hist/way_555963876_esri2018.jpg",
+   "2020": "luftbilder_hist/way_555963876_esri2020.jpg",
+   "2022": "luftbilder_hist/way_555963876_esri2022.jpg",
+   "2024": "luftbilder_hist/way_555963876_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Grosser Waldplatz am Woblitzsee: ca. 40-60 Miet-/Dauer-Einheiten (Bungalow-Reihen mit roten Daechern im SW-Teil, Mobilheime/Caravans in den Lichtungen), mehrere Sanitaer-/Servicegebaeude, Rezeption/Restaurant am Hang, 2 Steganlagen mit Booten am Ostufer",
+   "anzahl_geschaetzt": "50-70 Einheiten (davon ~25 feste Bungalows)",
+   "zustand": "gepflegt bis mittel",
+   "notiz": "Bungalow-Reihen wirken einheitlich, aber aeltere Generation (lt. Website-Archiv seit >=2007, Bauphasen schon 1991 im Bild erkennbar: die suedwestliche Reihen-Siedlung existierte 1991 bereits!). 1991->2024: deutliche Nachverdichtung der Mobilheim-Flaechen. Erneuerungs-Potenzial bei den aeltesten Bungalow-Reihen; B-Plan SO Ferienhaus (max 75 qm) passt fuer Austausch-Tinyhaeuser.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + Esri2024 + DOP1991"
+  }
+ },
+ "way/60319633": {
+  "name": "Campingpark Sommersdorf",
+  "lat": 53.799470713458575,
+  "lon": 12.876706088162566,
+  "score": 87.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_60319633.jpg",
+   "1953": "luftbilder_hist/way_60319633_1953.jpg",
+   "1991": "luftbilder_hist/way_60319633_1991.jpg",
+   "2014": "luftbilder_hist/way_60319633_esri2014.jpg",
+   "2016": "luftbilder_hist/way_60319633_esri2016.jpg",
+   "2018": "luftbilder_hist/way_60319633_esri2018.jpg",
+   "2020": "luftbilder_hist/way_60319633_esri2020.jpg",
+   "2022": "luftbilder_hist/way_60319633_esri2022.jpg",
+   "2024": "luftbilder_hist/way_60319633_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Rechteckiger Wiesencampingplatz direkt am Kummerower See: fast ausschliesslich Dauercamping-Parzellen mit Caravans (~90-110 Einheiten in Reihen), 1 Sanitaergebaeude, kleines Rezeptions-/Vereinsgebaeude, Spielplatz, Pool erkennbar, Badestrand + kleiner Bootssteg am Westufer",
+   "anzahl_geschaetzt": "90-110 Caravans (ueberwiegend Dauerstandplaetze)",
+   "zustand": "mittel",
+   "notiz": "KEINE festen Mietunterkuenfte erkennbar (bestaetigt Website-Befund: Top-Lage ohne Mietangebot = Luecke!). Caravan-Bestand heterogen, teils aeltere Modelle mit Vorzelten. Nordoestlich angrenzendes Ackerland = Erweiterungsflaeche. Idealer Kandidat fuer 5-10 Tinyhaeuser am Westrand mit Seeblick.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ },
+ "way/35981763": {
+  "name": "C25 Naturcampingplatz am Mössensee",
+  "lat": 53.22347527521075,
+  "lon": 12.836194812738036,
+  "score": 85.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_35981763.jpg",
+   "1953": "luftbilder_hist/way_35981763_1953.jpg",
+   "1991": "luftbilder_hist/way_35981763_1991.jpg",
+   "2014": "luftbilder_hist/way_35981763_esri2014.jpg",
+   "2016": "luftbilder_hist/way_35981763_esri2016.jpg",
+   "2018": "luftbilder_hist/way_35981763_esri2018.jpg",
+   "2020": "luftbilder_hist/way_35981763_esri2020.jpg",
+   "2022": "luftbilder_hist/way_35981763_esri2022.jpg",
+   "2024": "luftbilder_hist/way_35981763_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Naturcamping im Kiefernwald am Moessensee: verstreute Zelt-/ Caravan-Plaetze unter Baeumen, kleine Huette/Servicegebaeude am Zugang, ca. 8-12 feste leichte Bauten (Huetten/Fass-Camping?) in der Lichtung Mitte, 2-3 kleine Stege, offene Wiesenflaeche im Sueden (Zeltwiese)",
+   "anzahl_geschaetzt": "40-60 Stellplaetze + ~10 feste Einheiten",
+   "zustand": "gepflegt (naturbelassen)",
+   "notiz": "Bewusst naturnah, wenig Infrastruktur. Viel ungenutzte Waldflaeche nordoestlich. Huetten-Generation wirkt einfach/aelter. Tinyhaeuser im Wald (auf Stelzen/Punktfundamenten) wuerden zum Natur-Konzept passen; B-Plan-Pruefung noetig (kein Plan im Portal).",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ },
+ "way/110589039": {
+  "name": "Campingplatz Schwaan",
+  "lat": 53.921373984228154,
+  "lon": 12.106841792809158,
+  "score": 85.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_110589039.jpg",
+   "1953": "luftbilder_hist/way_110589039_1953.jpg",
+   "1991": "luftbilder_hist/way_110589039_1991.jpg",
+   "2014": "luftbilder_hist/way_110589039_esri2014.jpg",
+   "2016": "luftbilder_hist/way_110589039_esri2016.jpg",
+   "2018": "luftbilder_hist/way_110589039_esri2018.jpg",
+   "2020": "luftbilder_hist/way_110589039_esri2020.jpg",
+   "2022": "luftbilder_hist/way_110589039_esri2022.jpg",
+   "2024": "luftbilder_hist/way_110589039_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Schlauchfoermiger Platz entlang Kanal/Seeufer: dichte Dauercaravan-Reihen im Norden und Sueden, im Mittelteil Baumcamping mit vereinzelten festen Einheiten (Bungalows/Mobilheile laut Website), mehrere Servicegebaeude, Bootshaus/Steg am Suedende",
+   "anzahl_geschaetzt": "80-120 Einheiten, davon ~15-25 feste",
+   "zustand": "mittel bis erneuerungsbeduerftig (aeltere Caravan-Generation)",
+   "notiz": "Website-Archiv: Mobilheime/Ferienwohnungen schon 2007 (>=19 Jahre). Nordoestlich Dorf mit Wohnbebauung direkt angrenzend = B-Plan-Wahrscheinlichkeit hoch. Sehr schmale Wasserfront, dicht besetzt - Austausch alter Mobilheime gegen moderne Tinyhaeuser/Mini-Hausboote am Steg sinnvoll.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ },
+ "way/370041857": {
+  "name": "Campingplatz am Garder See",
+  "lat": 53.692931860286826,
+  "lon": 12.062564133281677,
+  "score": 83.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_370041857.jpg",
+   "1953": "luftbilder_hist/way_370041857_1953.jpg",
+   "1991": "luftbilder_hist/way_370041857_1991.jpg",
+   "2014": "luftbilder_hist/way_370041857_esri2014.jpg",
+   "2016": "luftbilder_hist/way_370041857_esri2016.jpg",
+   "2018": "luftbilder_hist/way_370041857_esri2018.jpg",
+   "2020": "luftbilder_hist/way_370041857_esri2020.jpg",
+   "2022": "luftbilder_hist/way_370041857_esri2022.jpg",
+   "2024": "luftbilder_hist/way_370041857_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Waldplatz am Garder See: 2-3 dichte Reihen mit Caravans/Mobilheimen (~80-100), grosses modernes Sanitaer-/Servicegebaeude am Suedzugang (blaues Dach), Ferienhaeuser/Bungalows verstreut, Marina/Stege im Sueden, Kiefernwald mit Kahlstellen (Borkenkaefer?)",
+   "anzahl_geschaetzt": "80-100 Einheiten, davon ~20 feste",
+   "zustand": "gepflegt",
+   "notiz": "Sanitaergebaeude wirkt neu/renoviert. Bungalows laut Website-Archiv seit >=2017. Waldrand im Osten mit Lichtungen = Reserveflaeche. Glamping vorhanden - Betreiber investiert bereits; Tinyhaus-Erweiterung als naechster Schritt plausibel.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ },
+ "way/288238408": {
+  "name": "Camping am Bauernhof",
+  "lat": 53.34598676540346,
+  "lon": 13.457383938374551,
+  "score": 81.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_288238408.jpg",
+   "1953": "luftbilder_hist/way_288238408_1953.jpg",
+   "1991": "luftbilder_hist/way_288238408_1991.jpg",
+   "2014": "luftbilder_hist/way_288238408_esri2014.jpg",
+   "2016": "luftbilder_hist/way_288238408_esri2016.jpg",
+   "2018": "luftbilder_hist/way_288238408_esri2018.jpg",
+   "2020": "luftbilder_hist/way_288238408_esri2020.jpg",
+   "2022": "luftbilder_hist/way_288238408_esri2022.jpg",
+   "2024": "luftbilder_hist/way_288238408_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Halbinsel am Breiten Luzin: Camping-Wiese mit Caravan-Reihen im Sueden (~40-60), mehrere grosse Wirtschafts-/Ferienhaus-Gebaeude (roten Ziegeldaecher, Hof-Charakter), Ferienhaus-Siedlung am Suedzipfel, 2 kleine Stege an der Ostseite, grosse Waldflaeche im Norden ungenutzt",
+   "anzahl_geschaetzt": "40-60 Stellplaetze + ~10-15 feste Gebaeude",
+   "zustand": "gepflegt (Hof), mittel (Camping-Infrastruktur)",
+   "notiz": "Bauernhof-Konzept mit Ferienhaeusern (Website: 140 EUR/Nacht = hohes Preisniveau!). Nord-Halbinsel komplett Wald ohne Nutzung - bei Baurecht ideal fuer exklusive Tinyhaus-Reihe mit Seeblick auf beiden Seiten. Steg vorhanden -> auch Hausboot-Option.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ }
+}

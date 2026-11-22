@@ -1,0 +1,416 @@
+{
+ "region": "sachsen_anhalt",
+ "stand": "2026-11-22T22:30:31.683905+00:00",
+ "benchmarks": {
+  "portal_luxus_median": null,
+  "portal_luxus_spanne": null,
+  "website_median": 58.5,
+  "website_spanne": [
+   42.0,
+   150.0
+  ],
+  "n_portal": 0,
+  "n_website": 15,
+  "booking_hausboot_median": 242,
+  "booking_hausboot_spanne": [
+   76,
+   267
+  ],
+  "n_booking_boote": 6,
+  "airbnb_tiny_median": 138,
+  "airbnb_tiny_spanne": [
+   77,
+   152
+  ],
+  "n_airbnb_tiny": 4,
+  "airbnb_hausboot_median": null,
+  "n_airbnb_boote": 0,
+  "hinweis": "Booking + Airbnb im echten Browser gescrapt (Hauptsaison 2027-07-09, 3 Nächte, 2 Erw.). Preise sind Gesamtpreis/Nächte; Servicegebühren Airbnb inklusive, Booking zzgl. teils Endreinigung. Deep-Links je Platz in Excel für Detailprüfung.",
+  "tiny_vorschlag": 138,
+  "hausboot_vorschlag": 242
+ },
+ "portal_angebote": [],
+ "website_preise": [
+  {
+   "name": "Campingplatz Seeblick (Seeperle Kamern)",
+   "preis_nacht": 42.5,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingpark & Wohnmobilhafen \"Am Großen Lausiger Teich\"",
+   "preis_nacht": 42.0,
+   "typ": "Bungalow, Ferienhaus, Hütte, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz und Erholungscenter Jersleber See",
+   "preis_nacht": 150.0,
+   "typ": "Mobilheim, Glamping",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camping und Ferienpark Goitzsche",
+   "preis_nacht": 100.0,
+   "typ": "Bungalow, Ferienhaus, Hütte, Schlaffass, Glamping",
+   "quelle": "Website"
+  },
+  {
+   "name": "Zeltwiese Löbejün",
+   "preis_nacht": 55.0,
+   "typ": "Mobilheim, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Zeltplatz Friedensau",
+   "preis_nacht": 70.0,
+   "typ": "Hütte, Zelt mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Boot und Campingcenter Aken",
+   "preis_nacht": 50.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Naturcampingplatz Möhlauer See",
+   "preis_nacht": 60.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Freizeit- und Erholungszentrum Plattensee",
+   "preis_nacht": 45.0,
+   "typ": "Bungalow, Schlaffass",
+   "quelle": "Website"
+  },
+  {
+   "name": "Waldbad-Campingplatz-Wischer",
+   "preis_nacht": 44.0,
+   "typ": "Mobilheim, Bungalow, Hütte, Glamping, Zelt mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Harz Mountain Camp",
+   "preis_nacht": 58.5,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camping an der Rudelsburg",
+   "preis_nacht": 42.5,
+   "typ": "Ferienhaus, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Bad Bibra",
+   "preis_nacht": 59.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Harz-Camp Bremer Teich - Dauercampingbereich",
+   "preis_nacht": 80.0,
+   "typ": "Mobilheim, Bungalow, Ferienhaus, Schlaffass, Glamping, Zelt mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Harz-Camp Bremer Teich",
+   "preis_nacht": 80.0,
+   "typ": "Mobilheim, Bungalow, Ferienhaus, Schlaffass, Glamping, Zelt mietbar",
+   "quelle": "Website"
+  }
+ ],
+ "booking_links": [
+  {
+   "name": "Campingplatz und Erholungscenter Jersleber See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20und%20Erholungscenter%20Jersleber%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Harz-Camp Bremer Teich - Dauercampingbereich",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Harz-Camp%20Bremer%20Teich%20-%20Dauercampingbereich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Harz-Camp Bremer Teich",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Harz-Camp%20Bremer%20Teich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Freizeit- und Erholungszentrum Plattensee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Freizeit-%20und%20Erholungszentrum%20Plattensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Touristenzentrum Zabakuck",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Touristenzentrum%20Zabakuck&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Boot und Campingcenter Aken",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Boot%20und%20Campingcenter%20Aken&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Steinhafen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Steinhafen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Blütengrund",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Bl%C3%BCtengrund&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Prettin",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Prettin&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping Niegripper See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Niegripper%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Family-Camp-Kellerwiehl",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Family-Camp-Kellerwiehl&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Adria",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Adria&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Schifferklause",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Schifferklause&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Marina-Camp Elbe",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Marina-Camp%20Elbe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Aktivcamp & Tipidorf",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Aktivcamp%20%26%20Tipidorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Radfahrer-Zeltplatz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Radfahrer-Zeltplatz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping-Oase Steinbruchsee Süplingen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping-Oase%20Steinbruchsee%20S%C3%BCplingen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Junkers Paddelgemeinschaft",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Junkers%20Paddelgemeinschaft&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Stellplatz am Sportboothafen Calvörde",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20am%20Sportboothafen%20Calv%C3%B6rde&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ferienpark Plötzky - Kleiner Waldsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienpark%20Pl%C3%B6tzky%20-%20Kleiner%20Waldsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ferienpark Birnbaumteich",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienpark%20Birnbaumteich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wassersportgemeinschaft Wittenberg 1962 e. V. (Campingmöglichkeit)",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wassersportgemeinschaft%20Wittenberg%201962%20e.%20V.%20%28Campingm%C3%B6glichkeit%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ruderclub Wittenberg (Campinggelegenheit)",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ruderclub%20Wittenberg%20%28Campinggelegenheit%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Am See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Am%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Seesportverein Dessau e.V.",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Seesportverein%20Dessau%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Hasse Campingplatz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Hasse%20Campingplatz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz „Prödler See“",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20%E2%80%9EPr%C3%B6dler%20See%E2%80%9C&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Seeburg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Seeburg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz \"Kolumbussee\"",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20%22Kolumbussee%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Kanuverein \"Harmonie\" Elster/Elbe",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Kanuverein%20%22Harmonie%22%20Elster/Elbe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Petriförder",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Petrif%C3%B6rder&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "See Terrassen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=See%20Terrassen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Barleber See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Barleber%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Feriendorf am Flämingbad",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Feriendorf%20am%20Fl%C3%A4mingbad&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Zeltwiese Bootshaus Bad Dürrenberg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Zeltwiese%20Bootshaus%20Bad%20D%C3%BCrrenberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Reisemobilstellplatz \"Am Forellenteich\"",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Reisemobilstellplatz%20%22Am%20Forellenteich%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Freizeit- und Tourismusverein Balgstädt",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Freizeit-%20und%20Tourismusverein%20Balgst%C3%A4dt&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Stellplatz am Drahtzug",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20am%20Drahtzug&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Magdeburg Wohnmobilstellplatz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Magdeburg%20Wohnmobilstellplatz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Strandbad 1",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Strandbad%201&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  }
+ ],
+ "booking_hausboote": [
+  {
+   "name": "Mobiles Hausboot El'milia mit eigener Ankerboje auf dem See",
+   "ort": "Braunsbedra (Geiseltalsee)",
+   "preis_gesamt": 794,
+   "bewertung": "9,4",
+   "typ": "Hausboot (mobil, Ankerboje)",
+   "url": "https://www.booking.com/hotel/de/hausboot-el-milia.de.html",
+   "preis_nacht": 265
+  },
+  {
+   "name": "Hausboote Marina Braunsbedra",
+   "ort": "Braunsbedra (Geiseltalsee)",
+   "preis_gesamt": 800,
+   "bewertung": "9,2",
+   "typ": "Hausboot 2 Schlafzimmer",
+   "url": "https://www.booking.com/hotel/de/hausboote-marina-braunsbedra.de.html",
+   "preis_nacht": 267
+  },
+  {
+   "name": "Goitzsche Resort - Hausboot La Belle Vie",
+   "ort": "Goitzsche (Bitterfeld)",
+   "preis_gesamt": 726,
+   "bewertung": "8,7",
+   "typ": "Hausboot (Resort)",
+   "url": "https://www.booking.com/hotel/de/hausboot-diego.de.html",
+   "preis_nacht": 242
+  },
+  {
+   "name": "Hausboot Arneburg mit Sonnendeck",
+   "ort": "Arneburg (Elbe)",
+   "preis_gesamt": 650,
+   "bewertung": "10",
+   "typ": "Hausboot 1 Schlafzimmer",
+   "url": "https://www.booking.com/hotel/de/hausboot-arneburg-mit-sonnendeck.de.html",
+   "preis_nacht": 217
+  },
+  {
+   "name": "WaldFloß am Silbersee - Nature Pure Life!",
+   "ort": "Wörpen (Coswig, Silbersee)",
+   "preis_gesamt": 279,
+   "bewertung": "9,0",
+   "typ": "Floß/Mobilheim",
+   "url": "https://www.booking.com/hotel/de/waldfloss-am-silbersee-nature-pure-life.de.html",
+   "preis_nacht": 93
+  },
+  {
+   "name": "Waldfloß am Silbersee - Biberspur",
+   "ort": "Zieko (Coswig, Silbersee)",
+   "preis_gesamt": 227,
+   "bewertung": "",
+   "typ": "Floß (Doppelzimmer Seeblick)",
+   "url": "https://www.booking.com/hotel/de/waldfloss.de.html",
+   "preis_nacht": 76
+  }
+ ],
+ "booking_glamping": [],
+ "airbnb_angebote": [
+  {
+   "title": "Tiny House in Dessau-Roßlau",
+   "desc": "Romantische Zweisamkeit - direkt am See",
+   "total": 457,
+   "url": "https://www.airbnb.de/rooms/1180450101642068397",
+   "hinweis": "Preis von Booking identisch uebernommen (Airbnb-Karte ohne Preis)",
+   "preis_nacht": 152
+  },
+  {
+   "title": "Tiny House in Schönebeck",
+   "desc": "Gemütliches Tiny House am Ferienpark",
+   "total": 413,
+   "url": "https://www.airbnb.de/rooms/1395367311146055017",
+   "preis_nacht": 138
+  },
+  {
+   "title": "Tiny House in Thale",
+   "desc": "Kamin I Sauna I Flusszugang I Wanderregion I Wald",
+   "total": 378,
+   "url": "https://www.airbnb.de/rooms/53045840",
+   "preis_nacht": 126
+  },
+  {
+   "title": "Tiny House in Quedlinburg",
+   "desc": "Kutscherhäuschen / Tiny House",
+   "total": 232,
+   "url": "https://www.airbnb.de/rooms/13947382",
+   "preis_nacht": 77
+  },
+  {
+   "title": "Chalet in Braunsbedra",
+   "desc": "Chalet Josef (Geiseltalsee)",
+   "total": 496,
+   "url": "https://www.airbnb.de/rooms/1496883125393864247",
+   "preis_nacht": 165
+  },
+  {
+   "title": "Bungalow in Hohenwarthe",
+   "desc": "Chillma Hütte – Outdoorwhirlpool-Sauna-Wald (bei Magdeburg)",
+   "total": 629,
+   "url": "https://www.airbnb.de/rooms/26392942",
+   "preis_nacht": 210
+  },
+  {
+   "title": "Blockhütte in Wettin-Löbejün",
+   "desc": "idyllische Finnhütte am Saaleradweg in Wettin",
+   "total": 260,
+   "url": "https://www.airbnb.de/rooms/1755174089272213294",
+   "preis_nacht": 87
+  },
+  {
+   "title": "Privatunterkunft in Mücheln",
+   "desc": "Ferienhaus Alma am Geiseltalsee",
+   "total": 525,
+   "url": "https://www.airbnb.de/rooms/1658034209108018612",
+   "preis_nacht": 175
+  },
+  {
+   "title": "Privatunterkunft in Mücheln",
+   "desc": "Haus Seensucht am Geiseltalsee",
+   "total": 527,
+   "url": "https://www.airbnb.de/rooms/940607196922732632",
+   "preis_nacht": 176
+  }
+ ],
+ "scrape_info": {
+  "checkin": "2027-07-09",
+  "checkout": "2027-07-12",
+  "naechte": 3,
+  "methode": "Echter Browser (Chrome via browse), Booking-Regionssuche Sachsen-Anhalt mit Unterkunftstyp-Filtern (ht_id=215 Hausboote, 216 Camping, 220 Ferienhaeuser, 224 Luxuszelte). Airbnb ohne Login, Regionssuche Sachsen-Anhalt + Geiseltalsee. Preise = Gesamtpreis 3 Naechte / 2 Erwachsene. Fremdland-Treffer lokal aussortiert (Beelitz+Amt Ziesar/BB, Braunlage+Oetzen/Niedersachsen, Leipzig/Sachsen). Befund: ECHTER HAUSBOOT-MARKT IN ST! Geiseltalsee (Braunsbedra: El'milia 794, Marina Braunsbedra 800), Goitzsche Resort La Belle Vie 726, Hausboot Arneburg (Elbe) 650, Waldfloß am Silbersee (Coswig/Anhalt) 227+279. 5 echte Boote >= 3 = eigener Hausboot-Benchmark (kein BB-Fallback noetig). Tiny-House-Angebot: Dessau-Rosslau, Schoenebeck, Thale, Arendsee, Quedlinburg. 'Camping'-Filter liefert nur Pensionen = keine echten Campingplatz-Mietunterkuenfte auf Booking gelistet."
+ }
+}

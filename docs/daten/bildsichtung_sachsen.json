@@ -1,0 +1,4188 @@
+{
+ "way/311045638": {
+  "name": "Campingplatz Kulkwitzer See",
+  "lat": 51.31128018692737,
+  "lon": 12.253736751226782,
+  "score": 81.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_311045638.jpg",
+   "2014": "luftbilder_hist/way_311045638_esri2014.jpg",
+   "2016": "luftbilder_hist/way_311045638_esri2016.jpg",
+   "2018": "luftbilder_hist/way_311045638_esri2018.jpg",
+   "2020": "luftbilder_hist/way_311045638_esri2020.jpg",
+   "2022": "luftbilder_hist/way_311045638_esri2022.jpg",
+   "2024": "luftbilder_hist/way_311045638_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 67,
+   "flaeche_m2": 3112,
+   "typen": {
+    "Gebäude für Beherbergung": 59,
+    "Gebäude für Bewirtung": 3,
+    "Gebäude für Wirtschaft oder Gewerbe": 2,
+    "Gebäude zur Entsorgung": 1,
+    "Freizeit- und Vergnügungsstätte": 1,
+    "Gebäude zur Versorgung": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Bewirtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 327.7,
+     "lon": 12.25389536013571,
+     "lat": 51.31251980853607
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 281.6,
+     "lon": 12.254318359375874,
+     "lat": 51.31270565418975
+    },
+    {
+     "funktion": "Gebäude zur Entsorgung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 221.8,
+     "lon": 12.253490601981976,
+     "lat": 51.31346092470963
+    },
+    {
+     "funktion": "Freizeit- und Vergnügungsstätte",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 214.5,
+     "lon": 12.25253379731549,
+     "lat": 51.31093416339135
+    },
+    {
+     "funktion": "Gebäude für Bewirtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 164.9,
+     "lon": 12.252878688725744,
+     "lat": 51.31142855060639
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 147.2,
+     "lon": 12.255818067444242,
+     "lat": 51.31286306993293
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 60.9,
+     "lon": 12.256073346558047,
+     "lat": 51.31245213112838
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 60.7,
+     "lon": 12.256088504682278,
+     "lat": 51.312587363932145
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 55.9,
+     "lon": 12.255411532223805,
+     "lat": 51.31152026943145
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 55.4,
+     "lon": 12.254195802781421,
+     "lat": 51.31036016934528
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 55.3,
+     "lon": 12.253964171016738,
+     "lat": 51.310157593523535
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 55.1,
+     "lon": 12.254463177807315,
+     "lat": 51.31059024674641
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 54.9,
+     "lon": 12.25408772947043,
+     "lat": 51.310267520025924
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 54.9,
+     "lon": 12.25468279685741,
+     "lat": 51.31078942771892
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 54.2,
+     "lon": 12.254572105851523,
+     "lat": 51.31069347952542
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 53.5,
+     "lon": 12.254326944661392,
+     "lat": 51.310470129598485
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 53.5,
+     "lon": 12.255713410202192,
+     "lat": 51.31240618103344
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 47.6,
+     "lon": 12.254545540552687,
+     "lat": 51.31099022184603
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 40.0,
+     "lon": 12.254986255607125,
+     "lat": 51.31109748068385
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 38.9,
+     "lon": 12.25479676230763,
+     "lat": 51.31087488883985
+    },
+    {
+     "funktion": "Gebäude zur Versorgung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 38.2,
+     "lon": 12.25370513464776,
+     "lat": 51.31188127568105
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 37.8,
+     "lon": 12.255081378777266,
+     "lat": 51.31120891123332
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 37.7,
+     "lon": 12.254890848118764,
+     "lat": 51.31098649309597
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 37.6,
+     "lon": 12.255196892619573,
+     "lat": 51.31130271896682
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 37.4,
+     "lon": 12.255317847828042,
+     "lat": 51.311392890092904
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 37.0,
+     "lon": 12.255710436835733,
+     "lat": 51.31186930841619
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 36.4,
+     "lon": 12.255778389411047,
+     "lat": 51.31198482322257
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 36.3,
+     "lon": 12.255642441548869,
+     "lat": 51.31175475495086
+    },
+    {
+     "funktion": "Gebäude für Bewirtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 35.3,
+     "lon": 12.252991940605037,
+     "lat": 51.311488230650944
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 33.9,
+     "lon": 12.255530587192393,
+     "lat": 51.31163531438528
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 33.8,
+     "lon": 12.254702475016613,
+     "lat": 51.311156923052344
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 33.5,
+     "lon": 12.25384025023478,
+     "lat": 51.31278157989374
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-03-14Z",
+     "flaeche_m2": 32.4,
+     "lon": 12.25306024914283,
+     "lat": 51.31284086679025
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 31.9,
+     "lon": 12.255400201131742,
+     "lat": 51.3126361154871
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 29.1,
+     "lon": 12.254662473449532,
+     "lat": 51.311199067254826
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 28.0,
+     "lon": 12.255853430387829,
+     "lat": 51.31210276625077
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 23.6,
+     "lon": 12.255250950887111,
+     "lat": 51.31254433120802
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 17.3,
+     "lon": 12.252100080334124,
+     "lat": 51.31077009393528
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.5,
+     "lon": 12.255351928601034,
+     "lat": 51.31203770603149
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.5,
+     "lon": 12.25494026950775,
+     "lat": 51.31261846635446
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.5,
+     "lon": 12.254330245519414,
+     "lat": 51.31211611603265
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.4,
+     "lon": 12.2548712808368,
+     "lat": 51.31257402725927
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.4,
+     "lon": 12.254880230947096,
+     "lat": 51.311806167169095
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.4,
+     "lon": 12.2545479732692,
+     "lat": 51.31239937154731
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.4,
+     "lon": 12.25428264952738,
+     "lat": 51.31217645201662
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.4,
+     "lon": 12.254635089731321,
+     "lat": 51.31244163962619
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.4,
+     "lon": 12.254295202184668,
+     "lat": 51.312268844277654
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.4,
+     "lon": 12.254765672860142,
+     "lat": 51.311821877590965
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.4,
+     "lon": 12.254794198641035,
+     "lat": 51.312529952787706
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.4,
+     "lon": 12.254462683409246,
+     "lat": 51.31235571315
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.4,
+     "lon": 12.254492286478898,
+     "lat": 51.31194026249494
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.4,
+     "lon": 12.255206048949642,
+     "lat": 51.31185086251549
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.3,
+     "lon": 12.255380663189296,
+     "lat": 51.31244181325473
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.3,
+     "lon": 12.255419260999682,
+     "lat": 51.31230889729401
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.3,
+     "lon": 12.254430710398385,
+     "lat": 51.31199592917654
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.3,
+     "lon": 12.255395690507646,
+     "lat": 51.312099515599904
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.3,
+     "lon": 12.255312021023208,
+     "lat": 51.311974454936326
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.3,
+     "lon": 12.254380877227822,
+     "lat": 51.31231348733045
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.3,
+     "lon": 12.255432644930623,
+     "lat": 51.31223748637185
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-27Z",
+     "flaeche_m2": 14.3,
+     "lon": 12.254715314774595,
+     "lat": 51.312485600606884
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Lange Halbinsel/Seeuferstreifen am Kulkwitzer See (klarblaues Restloch, Sandstrand im Norden): Suedteil DICHT mit ~150-200 weissen Caravans/Mobilheimen in engen Reihen, Nordteil grosse leere Touristik-Wiese mit fewegigem Erschliessungsnetz, Bungalow-Reihe (~25 dunkle Daecher) entlang des Kanals im Osten, Service-/Gastrogebaeude in der Platzmitte, Steg am Westufer, Bootsanleger am Kanal-Suedende",
+   "anzahl_geschaetzt": "150-200 Dauer-Einheiten + ~25 Miet-Bungalows, grosse freie Touristikflaeche",
+   "zustand": "gepflegt (aktive Bewirtschaftung, klare Zonierung)",
+   "notiz": "ALKIS: 59x Beherbergung = bereits professioneller Mietbetrieb (Website: Bungalow, Hausboot, Ferienhaus!). Hausboot schon vorhanden = Kooperation statt Neugruendung fuer Boote. Die leere Nordwiese mit vorhandenem Wegenetz ist ideale Tinyhaus-Erweiterungsflaeche mit Seeblick. Top-Lead SN.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/121172062": {
+  "name": "Waldbad Niesendorf",
+  "lat": 51.29677873291408,
+  "lon": 14.309538215200728,
+  "score": 77.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_121172062.jpg",
+   "2014": "luftbilder_hist/way_121172062_esri2014.jpg",
+   "2016": "luftbilder_hist/way_121172062_esri2016.jpg",
+   "2018": "luftbilder_hist/way_121172062_esri2018.jpg",
+   "2020": "luftbilder_hist/way_121172062_esri2020.jpg",
+   "2022": "luftbilder_hist/way_121172062_esri2022.jpg",
+   "2024": "luftbilder_hist/way_121172062_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 2,
+   "flaeche_m2": 100,
+   "typen": {
+    "Wohngebäude": 1,
+    "Gebäude für Handel und Dienstleistungen": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-02-09Z",
+     "flaeche_m2": 52.6,
+     "lon": 14.312660030503856,
+     "lat": 51.296015299823644
+    },
+    {
+     "funktion": "Gebäude für Handel und Dienstleistungen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2024-10-02Z",
+     "flaeche_m2": 46.9,
+     "lon": 14.307308749888678,
+     "lat": 51.295863012971566
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Naturbelassener Badesee mitten in Kiefernwald/Ackerland: ~50-80 kleine Caravans/Huetten locker unter Baeumen rings um den See, keine grossen Servicebauten erkennbar (ALKIS: nur 2 Gebaeude), Badestelle am Ostufer, Zufahrt von Osten, Nachbaranlagen (Dauercamping) NO und SW",
+   "anzahl_geschaetzt": "50-80 Einheiten, ueberwiegend Dauercamper unter Baeumen",
+   "zustand": "einfach bis mittel (naturnah, wenig Infrastruktur)",
+   "notiz": "Sehr naturnaher, duenn bebauter Platz - fast keine festen Gebaeude = grosse Gestaltungsfreiheit, aber auch wenig Betreiber-Infrastruktur (Sanitaer/Rezeption unklar). Freie Uferabschnitte im Sueden/Westen fuer Tinyhaeuser. Website nennt Bungalows + Dauercamper. Pruefen: Eigentumsverhaeltnis und B-Plan (2 Plaene vorhanden).",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/319709246": {
+  "name": "Campingpark Greifensteine",
+  "lat": 50.64203678953634,
+  "lon": 12.911225851579864,
+  "score": 76.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_319709246.jpg",
+   "2014": "luftbilder_hist/way_319709246_esri2014.jpg",
+   "2016": "luftbilder_hist/way_319709246_esri2016.jpg",
+   "2018": "luftbilder_hist/way_319709246_esri2018.jpg",
+   "2020": "luftbilder_hist/way_319709246_esri2020.jpg",
+   "2022": "luftbilder_hist/way_319709246_esri2022.jpg",
+   "2024": "luftbilder_hist/way_319709246_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 151,
+   "flaeche_m2": 11804,
+   "typen": {
+    "Wohngebäude": 141,
+    "Gebäude für Handel und Dienstleistungen": 4,
+    "Gebäude für Wirtschaft oder Gewerbe": 3,
+    "Gebäude zur Entsorgung": 1,
+    "Gebäude für Bewirtung": 1,
+    "Gebäude für Gewerbe und Industrie": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Handel und Dienstleistungen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 305.0,
+     "lon": 12.914455792369417,
+     "lat": 50.64283534641322
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 207.9,
+     "lon": 12.909359265558441,
+     "lat": 50.64071483662043
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 205.2,
+     "lon": 12.910249182391727,
+     "lat": 50.640018304212056
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-07-05Z",
+     "flaeche_m2": 200.7,
+     "lon": 12.914662813027258,
+     "lat": 50.64336561934494
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 188.9,
+     "lon": 12.90909652972275,
+     "lat": 50.64097384283952
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 187.6,
+     "lon": 12.9100452073204,
+     "lat": 50.64050933585948
+    },
+    {
+     "funktion": "Gebäude für Handel und Dienstleistungen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 179.6,
+     "lon": 12.913706212565842,
+     "lat": 50.64274148764577
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 178.0,
+     "lon": 12.908862032692463,
+     "lat": 50.64185152630934
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 170.9,
+     "lon": 12.90963633920741,
+     "lat": 50.640472219220754
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 168.1,
+     "lon": 12.909034968602198,
+     "lat": 50.642096395499046
+    },
+    {
+     "funktion": "Gebäude für Bewirtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 160.7,
+     "lon": 12.913381390669024,
+     "lat": 50.642718301117995
+    },
+    {
+     "funktion": "Gebäude zur Entsorgung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 149.7,
+     "lon": 12.91044284708034,
+     "lat": 50.64333231754029
+    },
+    {
+     "funktion": "Gebäude für Handel und Dienstleistungen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 143.6,
+     "lon": 12.914650563745495,
+     "lat": 50.642964058992135
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 137.7,
+     "lon": 12.914584040372803,
+     "lat": 50.64171642537516
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 128.9,
+     "lon": 12.911286491229983,
+     "lat": 50.64390864612008
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 118.6,
+     "lon": 12.909800089187577,
+     "lat": 50.64114027595686
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 118.1,
+     "lon": 12.910116068485973,
+     "lat": 50.640288126167256
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-12-10Z",
+     "flaeche_m2": 116.5,
+     "lon": 12.908265790000389,
+     "lat": 50.64285796273771
+    },
+    {
+     "funktion": "Gebäude für Handel und Dienstleistungen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 115.0,
+     "lon": 12.913618883967946,
+     "lat": 50.64304371057617
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 114.8,
+     "lon": 12.909170754673399,
+     "lat": 50.64180328274354
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 113.7,
+     "lon": 12.909881373473823,
+     "lat": 50.64017741183759
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-12-10Z",
+     "flaeche_m2": 113.4,
+     "lon": 12.90854325276922,
+     "lat": 50.64319802328426
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 108.0,
+     "lon": 12.909642780028525,
+     "lat": 50.64204011781645
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 107.1,
+     "lon": 12.909515786670779,
+     "lat": 50.641671003849744
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 105.8,
+     "lon": 12.908590922459602,
+     "lat": 50.64137000303836
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 105.6,
+     "lon": 12.910572029234032,
+     "lat": 50.64093573010479
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-12-10Z",
+     "flaeche_m2": 105.5,
+     "lon": 12.908508191981161,
+     "lat": 50.64309756751039
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 104.7,
+     "lon": 12.911254239672994,
+     "lat": 50.64406745081486
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-12-10Z",
+     "flaeche_m2": 104.1,
+     "lon": 12.908318672853571,
+     "lat": 50.64299243640572
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-12-10Z",
+     "flaeche_m2": 101.7,
+     "lon": 12.908902538440723,
+     "lat": 50.64318587217826
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 101.7,
+     "lon": 12.909761574542085,
+     "lat": 50.64096544854551
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 101.3,
+     "lon": 12.9085458705798,
+     "lat": 50.641188087916895
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 100.9,
+     "lon": 12.909574299366279,
+     "lat": 50.64185885563236
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 100.9,
+     "lon": 12.909556936200769,
+     "lat": 50.64145829748234
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 100.7,
+     "lon": 12.910522896265462,
+     "lat": 50.6406181747319
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 100.5,
+     "lon": 12.90945044901326,
+     "lat": 50.64118146322211
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 99.5,
+     "lon": 12.908878407891615,
+     "lat": 50.64129998478283
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 98.7,
+     "lon": 12.910250260548661,
+     "lat": 50.64091055051398
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 98.0,
+     "lon": 12.910547449108861,
+     "lat": 50.640777879481874
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 97.9,
+     "lon": 12.909173037411081,
+     "lat": 50.64123727228346
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 95.1,
+     "lon": 12.910219515318632,
+     "lat": 50.640728660945584
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 94.3,
+     "lon": 12.90897707032289,
+     "lat": 50.64159703962162
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 93.8,
+     "lon": 12.909744665899783,
+     "lat": 50.64079622986386
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 93.7,
+     "lon": 12.910601878902295,
+     "lat": 50.641098707358005
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 93.7,
+     "lon": 12.90998323174603,
+     "lat": 50.640841263609595
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 93.1,
+     "lon": 12.912560925928375,
+     "lat": 50.641850629693714
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 91.8,
+     "lon": 12.9103291521076,
+     "lat": 50.64042678641916
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 91.7,
+     "lon": 12.91027502936473,
+     "lat": 50.64112217922494
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 91.4,
+     "lon": 12.909435127708116,
+     "lat": 50.64100885401728
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 90.6,
+     "lon": 12.909345152205919,
+     "lat": 50.642128465075096
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 89.8,
+     "lon": 12.908771364725768,
+     "lat": 50.64110465088234
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 89.7,
+     "lon": 12.909270411547405,
+     "lat": 50.64154849056186
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 89.4,
+     "lon": 12.908687745645622,
+     "lat": 50.6416452206737
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 89.2,
+     "lon": 12.910954160480841,
+     "lat": 50.64412315491656
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 86.5,
+     "lon": 12.9108959277761,
+     "lat": 50.640120516860854
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 82.8,
+     "lon": 12.910998459338694,
+     "lat": 50.64099423867024
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 82.8,
+     "lon": 12.911744062679238,
+     "lat": 50.64094241924789
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 82.4,
+     "lon": 12.907794793882752,
+     "lat": 50.64120707043853
+    },
+    {
+     "funktion": "Gebäude für Gewerbe und Industrie",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 79.8,
+     "lon": 12.913843572544511,
+     "lat": 50.64313792593385
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-12-10Z",
+     "flaeche_m2": 79.2,
+     "lon": 12.90858620024686,
+     "lat": 50.64291376103158
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Grosser Campingpark am Suedufer des Greifenbachstauweihers (Erzgebirge): ~250-350 Caravans/Bungalows in dichten Reihen und unter Wald, mehrere Servicegebaeude, Badestrand im Norden, Stege mit Booten am Westufer, grosser Parkplatz im Osten, Waldhang im Sueden",
+   "anzahl_geschaetzt": "250-350 Einheiten (Mix Dauer/Touristik/Bungalows)",
+   "zustand": "mittel (dichter, gewachsener Bestand)",
+   "notiz": "ALKIS: 141x Wohngebaeude = etablierte Bungalow-/Dauer-Struktur, Austausch-Potenzial gegen moderne Tinyhaeuser. Kaum freie Flaeche im Kern; Reserve eher am Waldrand (Baurecht?). Achtung: zweites OSM-Polygon (way/319709251)  desselben Platzes separat gelistet - nicht doppelt zaehlen.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/28014723": {
+  "name": "Campingplatz Dammühlenteich",
+  "lat": 51.40599516147791,
+  "lon": 12.940862659411986,
+  "score": 74.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_28014723.jpg",
+   "2014": "luftbilder_hist/way_28014723_esri2014.jpg",
+   "2016": "luftbilder_hist/way_28014723_esri2016.jpg",
+   "2018": "luftbilder_hist/way_28014723_esri2018.jpg",
+   "2020": "luftbilder_hist/way_28014723_esri2020.jpg",
+   "2022": "luftbilder_hist/way_28014723_esri2022.jpg",
+   "2024": "luftbilder_hist/way_28014723_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 98,
+   "flaeche_m2": 2815,
+   "typen": {
+    "Wohngebäude": 94,
+    "Garage": 3,
+    "Gebäude für Wirtschaft oder Gewerbe": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 122.8,
+     "lon": 12.94055698663035,
+     "lat": 51.406351916509955
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 58.3,
+     "lon": 12.938160598444236,
+     "lat": 51.40514581087197
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 55.8,
+     "lon": 12.938624772712473,
+     "lat": 51.40578634216549
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 54.4,
+     "lon": 12.940526057931057,
+     "lat": 51.40537463622265
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 52.0,
+     "lon": 12.942637607997108,
+     "lat": 51.40435481325292
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 48.4,
+     "lon": 12.940449584252727,
+     "lat": 51.405230005743206
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 47.8,
+     "lon": 12.93789739688604,
+     "lat": 51.40524177293676
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 47.5,
+     "lon": 12.941577738644625,
+     "lat": 51.404535071765416
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 42.7,
+     "lon": 12.94086358037699,
+     "lat": 51.40522037148646
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 42.7,
+     "lon": 12.941023104374466,
+     "lat": 51.4045998964028
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 42.7,
+     "lon": 12.938304156278212,
+     "lat": 51.40511529484907
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 41.3,
+     "lon": 12.940321597114993,
+     "lat": 51.40661208741044
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 40.8,
+     "lon": 12.938681816580587,
+     "lat": 51.40605608256202
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 40.8,
+     "lon": 12.942386636424141,
+     "lat": 51.404397198993735
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 40.0,
+     "lon": 12.937948353055166,
+     "lat": 51.405658648917154
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 38.6,
+     "lon": 12.938570661502203,
+     "lat": 51.40543633759888
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 38.3,
+     "lon": 12.938609522487473,
+     "lat": 51.40533370095661
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 38.1,
+     "lon": 12.94201990297606,
+     "lat": 51.40447621074361
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 37.9,
+     "lon": 12.937804990893268,
+     "lat": 51.405282954177075
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 37.3,
+     "lon": 12.94045600025424,
+     "lat": 51.40474387891218
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 36.6,
+     "lon": 12.942450867008652,
+     "lat": 51.404839078089374
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 36.4,
+     "lon": 12.938580718728629,
+     "lat": 51.40553388102536
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 36.1,
+     "lon": 12.940771606151996,
+     "lat": 51.404642076672296
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 36.0,
+     "lon": 12.937470203807408,
+     "lat": 51.40569651821378
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 35.7,
+     "lon": 12.942495566782442,
+     "lat": 51.40433740043938
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 34.3,
+     "lon": 12.94232975196183,
+     "lat": 51.40548911522385
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 34.3,
+     "lon": 12.94291015126105,
+     "lat": 51.40427071067543
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 33.6,
+     "lon": 12.939150508140132,
+     "lat": 51.40553110336637
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 33.5,
+     "lon": 12.940572991787539,
+     "lat": 51.40471675625388
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 33.3,
+     "lon": 12.938727867559004,
+     "lat": 51.4057409392904
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 32.8,
+     "lon": 12.942870797201135,
+     "lat": 51.40478885459411
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 32.8,
+     "lon": 12.94209951986542,
+     "lat": 51.406919132975055
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 31.0,
+     "lon": 12.938120398082452,
+     "lat": 51.40574220483076
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 31.0,
+     "lon": 12.942056456348011,
+     "lat": 51.4050323958731
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 30.6,
+     "lon": 12.938442870929665,
+     "lat": 51.40508581754033
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 30.3,
+     "lon": 12.938759543520948,
+     "lat": 51.406423577477916
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 30.2,
+     "lon": 12.941234459446632,
+     "lat": 51.40458715770709
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 29.9,
+     "lon": 12.938821963002761,
+     "lat": 51.40502533998637
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 29.7,
+     "lon": 12.937376715865776,
+     "lat": 51.40577758837553
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 29.7,
+     "lon": 12.93943620348103,
+     "lat": 51.40492335699707
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 29.7,
+     "lon": 12.939559131510874,
+     "lat": 51.40488431890178
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 29.5,
+     "lon": 12.938569739882691,
+     "lat": 51.405063320151456
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 29.3,
+     "lon": 12.940264113461934,
+     "lat": 51.40481379619949
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 29.2,
+     "lon": 12.938706944841506,
+     "lat": 51.405037960688546
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 29.0,
+     "lon": 12.943071447231105,
+     "lat": 51.40525157704715
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 28.8,
+     "lon": 12.93806218391839,
+     "lat": 51.40518568875224
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 27.9,
+     "lon": 12.940407601652364,
+     "lat": 51.405791199588656
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 27.6,
+     "lon": 12.94004186710928,
+     "lat": 51.40482182997153
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 27.4,
+     "lon": 12.93828569699491,
+     "lat": 51.40542605077925
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 27.3,
+     "lon": 12.940359378452046,
+     "lat": 51.40475636619427
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 26.8,
+     "lon": 12.941226990933627,
+     "lat": 51.40680070281693
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 26.3,
+     "lon": 12.9409143936767,
+     "lat": 51.404643618999486
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 25.8,
+     "lon": 12.941434122785584,
+     "lat": 51.40635131671512
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 25.8,
+     "lon": 12.94138221214702,
+     "lat": 51.404599239119705
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 25.6,
+     "lon": 12.94188922629999,
+     "lat": 51.404498274289864
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 25.5,
+     "lon": 12.937920199503022,
+     "lat": 51.40575920907627
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 25.2,
+     "lon": 12.938946325244984,
+     "lat": 51.4050125452313
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 24.9,
+     "lon": 12.943396883926447,
+     "lat": 51.40528290132718
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 24.8,
+     "lon": 12.939315469493996,
+     "lat": 51.404957210061475
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-11-03Z",
+     "flaeche_m2": 24.1,
+     "lon": 12.941805155000793,
+     "lat": 51.404508741291906
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Waldteich (Dammuehlenteich) mit ~80-100 kleinen Wochenendhaeusern/Bungalows verstreut unter Kiefern am Ost- und Nordufer (ALKIS: 94x Wohngebaeude, kleine Fussabdruecke), Reihe groesserer Haeuser am SW-Ufer, kleine Stege, Dorf mit Gaerten direkt suedlich, Acker im Osten, dichter Wald im Norden",
+   "anzahl_geschaetzt": "80-100 feste kleine Haeuser, kaum Touristik-Stellplaetze",
+   "zustand": "mittel (heterogene Altbestand-Huetten)",
+   "notiz": "Faktisch Wochenendhaus-Kolonie, kein klassischer Camping (Score-Hinweis 'Top-Lage OHNE Mietunterkuenfte' = Luecke!). Viele kleine Altbauten = Austausch gegen Tinyhaeuser; Uferlichtungen im NW vorhanden. Betreiber-/Eigentuemer-Struktur unklar (Verein? einzelne Parzellen?) - vor Ort klaeren. B-Plan vorhanden.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "node/290873519": {
+  "name": "Riesaer Wassersportverein",
+  "lat": 51.305935,
+  "lon": 13.3099392,
+  "score": 68.5,
+  "bilder": {
+   "aktuell": "luftbilder/node_290873519.jpg",
+   "2014": "luftbilder_hist/node_290873519_esri2014.jpg",
+   "2016": "luftbilder_hist/node_290873519_esri2016.jpg",
+   "2018": "luftbilder_hist/node_290873519_esri2018.jpg",
+   "2020": "luftbilder_hist/node_290873519_esri2020.jpg",
+   "2022": "luftbilder_hist/node_290873519_esri2022.jpg",
+   "2024": "luftbilder_hist/node_290873519_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 41,
+   "flaeche_m2": 2462,
+   "typen": {
+    "Wohngebäude": 18,
+    "Gebäude für Wirtschaft oder Gewerbe": 9,
+    "Gebäude für Beherbergung": 5,
+    "Gebäude für Handel und Dienstleistungen": 4,
+    "Garage": 3,
+    "Gebäude für öffentliche Zwecke": 2
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für öffentliche Zwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-07-03Z",
+     "flaeche_m2": 266.4,
+     "lon": 13.308717879904187,
+     "lat": 51.305710356705944
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 246.6,
+     "lon": 13.309663453326495,
+     "lat": 51.30569063683442
+    },
+    {
+     "funktion": "Gebäude für öffentliche Zwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-07-03Z",
+     "flaeche_m2": 196.4,
+     "lon": 13.310148625124544,
+     "lat": 51.30564577549186
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-07-03Z",
+     "flaeche_m2": 162.1,
+     "lon": 13.309470185215087,
+     "lat": 51.30497975645003
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-07-03Z",
+     "flaeche_m2": 157.8,
+     "lon": 13.308476687367875,
+     "lat": 51.30537348762696
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-03-08Z",
+     "flaeche_m2": 139.0,
+     "lon": 13.30940903073909,
+     "lat": 51.305274834917
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 114.7,
+     "lon": 13.309134264614066,
+     "lat": 51.305187338521556
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 109.8,
+     "lon": 13.309657925585707,
+     "lat": 51.304886438690495
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 94.2,
+     "lon": 13.309359716984087,
+     "lat": 51.30510873703672
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 91.1,
+     "lon": 13.309759607568397,
+     "lat": 51.30574943720301
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 76.8,
+     "lon": 13.309860659974488,
+     "lat": 51.3056574517549
+    },
+    {
+     "funktion": "Gebäude für Handel und Dienstleistungen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 67.5,
+     "lon": 13.30889426344307,
+     "lat": 51.30516431586567
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 67.3,
+     "lon": 13.309924098348326,
+     "lat": 51.305201174736744
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 56.7,
+     "lon": 13.30964915418748,
+     "lat": 51.30526224441034
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 53.8,
+     "lon": 13.308808574353465,
+     "lat": 51.30529410143896
+    },
+    {
+     "funktion": "Gebäude für Handel und Dienstleistungen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 46.0,
+     "lon": 13.308978558335543,
+     "lat": 51.30523683544869
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 44.0,
+     "lon": 13.309256377420297,
+     "lat": 51.30507334190766
+    },
+    {
+     "funktion": "Gebäude für Handel und Dienstleistungen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 43.5,
+     "lon": 13.308951155308801,
+     "lat": 51.3051652122491
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 38.8,
+     "lon": 13.30987539266522,
+     "lat": 51.305252685219656
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 29.9,
+     "lon": 13.309597060403634,
+     "lat": 51.30532823343494
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 27.1,
+     "lon": 13.309380303725714,
+     "lat": 51.30494479836765
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 26.5,
+     "lon": 13.309664139759992,
+     "lat": 51.30562723189371
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 24.0,
+     "lon": 13.309771361674075,
+     "lat": 51.305616847952486
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-27Z",
+     "flaeche_m2": 23.4,
+     "lon": 13.310107016247397,
+     "lat": 51.30493164642486
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-27Z",
+     "flaeche_m2": 22.7,
+     "lon": 13.310012051287666,
+     "lat": 51.30508404945525
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 22.5,
+     "lon": 13.308891726633721,
+     "lat": 51.30524778024314
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 20.3,
+     "lon": 13.309252113944261,
+     "lat": 51.30540414171964
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 19.0,
+     "lon": 13.309203877401318,
+     "lat": 51.30503117216201
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-27Z",
+     "flaeche_m2": 18.0,
+     "lon": 13.31001853275528,
+     "lat": 51.3049433474328
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 17.9,
+     "lon": 13.308839537840576,
+     "lat": 51.30520038444631
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 17.8,
+     "lon": 13.310174526586074,
+     "lat": 51.30488280342648
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 16.7,
+     "lon": 13.30955434161455,
+     "lat": 51.30529750282965
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 16.6,
+     "lon": 13.308709422028013,
+     "lat": 51.30527823174095
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 16.5,
+     "lon": 13.308763776104128,
+     "lat": 51.30526111007627
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 14.1,
+     "lon": 13.308728519649499,
+     "lat": 51.305319120667356
+    },
+    {
+     "funktion": "Gebäude für Handel und Dienstleistungen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 12.6,
+     "lon": 13.30884639538217,
+     "lat": 51.30512797574413
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 11.8,
+     "lon": 13.309336005742727,
+     "lat": 51.3049354262846
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 11.7,
+     "lon": 13.309319272701199,
+     "lat": 51.30505988264056
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-03-08Z",
+     "flaeche_m2": 8.0,
+     "lon": 13.30855117975704,
+     "lat": 51.30558585615417
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 7.0,
+     "lon": 13.309647410384486,
+     "lat": 51.30512412315923
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-05Z",
+     "flaeche_m2": 5.2,
+     "lon": 13.309981641400965,
+     "lat": 51.30500358752282
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Vereinsgelaende direkt am Elbe-Ufer (breiter Strom im Norden): langer Bootssteg/Anleger mit Ponton, zweite kleine Slipanlage, Clubhaus + rote Bootshalle, GROSSE offene Rasenflaechen links und rechts des Zugangs, Sportplatz im Westen, Wohngebiet suedlich angrenzend, Baumbestand entlang des Ufers",
+   "anzahl_geschaetzt": "2-4 Vereinsgebaeude, keine sichtbaren Mietunterkuenfte",
+   "zustand": "gepflegt (aktiver Verein)",
+   "notiz": "Klassischer Vereins-Standort mit Steg + freier Uferwiese = idealer Hausboot-Anleger und Tinyhaus-Reihe auf der Wiese. ALKIS-41-Gebaeude-Zaehlung erfasst teils das angrenzende Wohngebiet (Radius) - Platz selbst fast leer. Elbe = fliessendes Gewaesser (Hochwasser/Ankerrecht pruefen). Kooperation mit Verein als Einstieg. B-Plan vorhanden.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/118157188": {
+  "name": "Camping Pirna",
+  "lat": 50.98215418694042,
+  "lon": 13.922796111800155,
+  "score": 68.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_118157188.jpg",
+   "2014": "luftbilder_hist/way_118157188_esri2014.jpg",
+   "2016": "luftbilder_hist/way_118157188_esri2016.jpg",
+   "2018": "luftbilder_hist/way_118157188_esri2018.jpg",
+   "2020": "luftbilder_hist/way_118157188_esri2020.jpg",
+   "2022": "luftbilder_hist/way_118157188_esri2022.jpg",
+   "2024": "luftbilder_hist/way_118157188_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 12,
+   "flaeche_m2": 1045,
+   "typen": {
+    "Gebäude für Beherbergung": 8,
+    "Wohngebäude": 1,
+    "Gebäude zur Entsorgung": 1,
+    "Gebäude für öffentliche Zwecke": 1,
+    "Gebäude für soziale Zwecke": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-11-16Z",
+     "flaeche_m2": 253.8,
+     "lon": 13.923986914035085,
+     "lat": 50.98235687946719
+    },
+    {
+     "funktion": "Gebäude zur Entsorgung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-06-15Z",
+     "flaeche_m2": 215.1,
+     "lon": 13.921025392942768,
+     "lat": 50.98247309201466
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-11-16Z",
+     "flaeche_m2": 99.8,
+     "lon": 13.92502180576151,
+     "lat": 50.981656207872746
+    },
+    {
+     "funktion": "Gebäude für soziale Zwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-11-16Z",
+     "flaeche_m2": 87.8,
+     "lon": 13.92519179595397,
+     "lat": 50.981372552106876
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-11-16Z",
+     "flaeche_m2": 75.0,
+     "lon": 13.924569201924038,
+     "lat": 50.982680286264944
+    },
+    {
+     "funktion": "Gebäude für öffentliche Zwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-11-16Z",
+     "flaeche_m2": 61.8,
+     "lon": 13.925164279134307,
+     "lat": 50.981488876975774
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-06-15Z",
+     "flaeche_m2": 52.2,
+     "lon": 13.920633944967182,
+     "lat": 50.98263705900787
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-06-15Z",
+     "flaeche_m2": 41.4,
+     "lon": 13.923469007679895,
+     "lat": 50.98262307443101
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-06-15Z",
+     "flaeche_m2": 41.3,
+     "lon": 13.923333859407158,
+     "lat": 50.982697533974054
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-06-15Z",
+     "flaeche_m2": 40.7,
+     "lon": 13.923605707408614,
+     "lat": 50.98254775614703
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-06-15Z",
+     "flaeche_m2": 40.0,
+     "lon": 13.923106289597076,
+     "lat": 50.983106653654
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-06-15Z",
+     "flaeche_m2": 36.1,
+     "lon": 13.923198064099102,
+     "lat": 50.98277234950192
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Rechteckiger Campingplatz an einem Natursee: ~60-90 Caravans in Raster-Reihen, mehrere freie Parzellen, Servicegebaeude (ALKIS: 8x Beherbergung = Miet-Bungalows/Schlaffaesser), See im Norden, Autobahn/Bahntrasse und Gewerbe in unmittelbarer Naehe",
+   "anzahl_geschaetzt": "60-90 Stellplaetze + ~8 feste Miet-Einheiten",
+   "zustand": "mittel (funktional, laermbelastet)",
+   "notiz": "Freie Parzellen im Raster = einfache Tinyhaus-Integration, Betreiber vermietet bereits feste Unterkuenfte. ABER: Lage zwischen Verkehrswegen = Laerm, fuer Premium-Tinyhaus-Vermietung nur bedingt attraktiv. Eher Durchreise-/Stellplatz-Klientel. Nachrangig gegenueber den Seen-Top-Leads.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/191445540": {
+  "name": "Zum Müncherteich",
+  "lat": 51.240904146516876,
+  "lon": 12.68469673589311,
+  "score": 68.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_191445540.jpg",
+   "2014": "luftbilder_hist/way_191445540_esri2014.jpg",
+   "2016": "luftbilder_hist/way_191445540_esri2016.jpg",
+   "2018": "luftbilder_hist/way_191445540_esri2018.jpg",
+   "2020": "luftbilder_hist/way_191445540_esri2020.jpg",
+   "2022": "luftbilder_hist/way_191445540_esri2022.jpg",
+   "2024": "luftbilder_hist/way_191445540_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 5,
+   "flaeche_m2": 335,
+   "typen": {
+    "Gebäude für Wirtschaft oder Gewerbe": 4,
+    "Wohngebäude": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-10-07Z",
+     "flaeche_m2": 166.2,
+     "lon": 12.683338582746186,
+     "lat": 51.240102831115834
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-09-03Z",
+     "flaeche_m2": 78.2,
+     "lon": 12.683992936914514,
+     "lat": 51.240232499531096
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-10-07Z",
+     "flaeche_m2": 66.0,
+     "lon": 12.68429829686586,
+     "lat": 51.24026480858552
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-10-07Z",
+     "flaeche_m2": 14.2,
+     "lon": 12.684205291278131,
+     "lat": 51.24045563260311
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-09-03Z",
+     "flaeche_m2": 10.7,
+     "lon": 12.683833012957,
+     "lat": 51.24018025482581
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Fast unbebaute Ufer-Halbinsel am Muenchteich: nur wenige kleine Gebaeude (ALKIS: 5, davon 4x Wirtschaft/Gewerbe), ZWEI kleine Stege am Ufer, grosse freie Wiesen-/Waldflaechen, Teich rundum, Zufahrt von einer Seite, keine dichten Stellplatzreihen erkennbar",
+   "anzahl_geschaetzt": "<10 sichtbare Einheiten, praktisch Gruenflaeche",
+   "zustand": "naturbelassen / gering erschlossen",
+   "notiz": "TOP-KANDIDAT: Top-Wasserlage OHNE Mietunterkuenfte und fast ohne Bestand = maximale Gestaltungsfreiheit fuer Tinyhaus-Dorf + Hausboot-Steg (Steg vorhanden!). Gruenes Wasser = Algen/Nahrstoffeintrag pruefen. B-Plan vorhanden, Flaechenzuschnitt laut Score deutlich groesser als genutzt. Sehr hoher Entwicklungs-Hebel.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/30845422": {
+  "name": "Ferienpark Bad Sonnenland",
+  "lat": 51.14368207191721,
+  "lon": 13.674879218257145,
+  "score": 66.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_30845422.jpg",
+   "2014": "luftbilder_hist/way_30845422_esri2014.jpg",
+   "2016": "luftbilder_hist/way_30845422_esri2016.jpg",
+   "2018": "luftbilder_hist/way_30845422_esri2018.jpg",
+   "2020": "luftbilder_hist/way_30845422_esri2020.jpg",
+   "2022": "luftbilder_hist/way_30845422_esri2022.jpg",
+   "2024": "luftbilder_hist/way_30845422_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 68,
+   "flaeche_m2": 5249,
+   "typen": {
+    "Gebäude für Beherbergung": 59,
+    "Gebäude für Wirtschaft oder Gewerbe": 5,
+    "Gebäude für Bewirtung": 3,
+    "Garage": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 334.1,
+     "lon": 13.674546154396714,
+     "lat": 51.14544461652131
+    },
+    {
+     "funktion": "Gebäude für Bewirtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 296.7,
+     "lon": 13.673942990375453,
+     "lat": 51.14402025764813
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 271.7,
+     "lon": 13.67416646850975,
+     "lat": 51.14144882731083
+    },
+    {
+     "funktion": "Gebäude für Bewirtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 261.3,
+     "lon": 13.674124712402891,
+     "lat": 51.14394527845228
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 232.8,
+     "lon": 13.676502307870718,
+     "lat": 51.145205531171996
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 168.7,
+     "lon": 13.674678651082033,
+     "lat": 51.14511108439074
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 154.9,
+     "lon": 13.674606118547251,
+     "lat": 51.14399643527717
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 149.0,
+     "lon": 13.673723006184384,
+     "lat": 51.14431970838372
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 137.9,
+     "lon": 13.675006057103163,
+     "lat": 51.14532715145589
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 129.8,
+     "lon": 13.676147798914451,
+     "lat": 51.14530876648685
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 127.6,
+     "lon": 13.676310764900574,
+     "lat": 51.14529606524262
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 109.9,
+     "lon": 13.673571991520378,
+     "lat": 51.14442924364343
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 98.8,
+     "lon": 13.676611840494623,
+     "lat": 51.144273386056064
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 96.3,
+     "lon": 13.677282013371972,
+     "lat": 51.14398224553269
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 86.9,
+     "lon": 13.677000929012358,
+     "lat": 51.144039597978136
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 86.2,
+     "lon": 13.677298904271163,
+     "lat": 51.143466102291626
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 81.2,
+     "lon": 13.677564900398162,
+     "lat": 51.14367227604741
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 79.7,
+     "lon": 13.67596754182766,
+     "lat": 51.145189103829885
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 79.5,
+     "lon": 13.675582549037282,
+     "lat": 51.145252221854015
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 78.9,
+     "lon": 13.675785404177438,
+     "lat": 51.14505865612017
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 78.5,
+     "lon": 13.674548799502842,
+     "lat": 51.14430142506875
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 77.6,
+     "lon": 13.677554946673538,
+     "lat": 51.14348165077252
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 75.1,
+     "lon": 13.675725606035746,
+     "lat": 51.145476359320085
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 67.9,
+     "lon": 13.67607858803542,
+     "lat": 51.14499009167413
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 67.6,
+     "lon": 13.674835991883656,
+     "lat": 51.14425956587036
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 67.4,
+     "lon": 13.676908411287279,
+     "lat": 51.144377146147214
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 66.6,
+     "lon": 13.675026833851497,
+     "lat": 51.1446113685506
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 65.1,
+     "lon": 13.676310883985172,
+     "lat": 51.14505464098803
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 62.8,
+     "lon": 13.674225630169234,
+     "lat": 51.14450025249478
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 62.4,
+     "lon": 13.674180170549475,
+     "lat": 51.144356113014425
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 62.3,
+     "lon": 13.675957273360092,
+     "lat": 51.143650857003536
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 62.2,
+     "lon": 13.676524905809547,
+     "lat": 51.143479818562966
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 61.8,
+     "lon": 13.675510742646562,
+     "lat": 51.14507920579845
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 61.3,
+     "lon": 13.677308289414983,
+     "lat": 51.14459068879393
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 61.3,
+     "lon": 13.676881085061815,
+     "lat": 51.14353187484116
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 60.9,
+     "lon": 13.674384435693986,
+     "lat": 51.1441114389526
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 59.8,
+     "lon": 13.677509702305944,
+     "lat": 51.14451175728168
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 58.3,
+     "lon": 13.67666498675991,
+     "lat": 51.144984933048484
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 58.0,
+     "lon": 13.676127934320872,
+     "lat": 51.143467955813065
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 57.8,
+     "lon": 13.674758911316305,
+     "lat": 51.14415973279125
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 54.6,
+     "lon": 13.674324041424052,
+     "lat": 51.14448647153899
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 53.8,
+     "lon": 13.676366384434969,
+     "lat": 51.14414674606161
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 51.7,
+     "lon": 13.67466581558029,
+     "lat": 51.14453327233456
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 51.3,
+     "lon": 13.674219213074243,
+     "lat": 51.14564751401476
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 50.9,
+     "lon": 13.676357883394893,
+     "lat": 51.14488698988754
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 37.3,
+     "lon": 13.675099671581021,
+     "lat": 51.14473646621128
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 37.2,
+     "lon": 13.674511478444453,
+     "lat": 51.145002294252535
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 36.2,
+     "lon": 13.675330162746052,
+     "lat": 51.14521868679107
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 36.0,
+     "lon": 13.675277142222207,
+     "lat": 51.14509880157767
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 36.0,
+     "lon": 13.674750591312426,
+     "lat": 51.14489128212869
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 36.0,
+     "lon": 13.67486993027543,
+     "lat": 51.144852433088204
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 35.5,
+     "lon": 13.674353772013754,
+     "lat": 51.14463189817237
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 35.5,
+     "lon": 13.676973237021963,
+     "lat": 51.14493345826836
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 34.7,
+     "lon": 13.674437400354277,
+     "lat": 51.14469224795243
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 32.3,
+     "lon": 13.674502296015648,
+     "lat": 51.14444743844994
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 31.2,
+     "lon": 13.6748435695071,
+     "lat": 51.1444379369141
+    },
+    {
+     "funktion": "Gebäude für Bewirtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 31.0,
+     "lon": 13.674296533131558,
+     "lat": 51.14389723203541
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 30.9,
+     "lon": 13.674908538100768,
+     "lat": 51.14553288660338
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 30.9,
+     "lon": 13.676654457819721,
+     "lat": 51.144936501668255
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-07-17Z",
+     "flaeche_m2": 30.2,
+     "lon": 13.674740106341384,
+     "lat": 51.14354043821415
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Etablierter Ferienpark im Wald am Jaemmchen-Teich: ~60-70 Miet-Haeuser/Bungalows in organischen Reihen (ALKIS: 59x Beherbergung), zentrale Service-/Gastro-Gebaeude, Steg am Teich, grosse WALDRESERVE im Norden und Osten, Dauer-Campingbereich, klare Wegeführung",
+   "anzahl_geschaetzt": "60-70 feste Miet-Einheiten + Dauercamping",
+   "zustand": "gepflegt (professioneller Ferienpark)",
+   "notiz": "Professioneller Betreiber mit 59 Mietgebaeuden = investitionsbereit, aber eigener Vertrieb (Wettbewerb um Marge). Waldreserve = Erweiterungsflaeche fuer Premium-Tinyhaeuser; Steg = Hausboot-Option am Teich (Groesse/Tiefe pruefen). Kooperation auf Augenhoehe noetig. B-Plan vorhanden.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/118163713": {
+  "name": "Ostrauer Mühle",
+  "lat": 50.92957474399079,
+  "lon": 14.192062804484058,
+  "score": 66.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_118163713.jpg",
+   "2014": "luftbilder_hist/way_118163713_esri2014.jpg",
+   "2016": "luftbilder_hist/way_118163713_esri2016.jpg",
+   "2018": "luftbilder_hist/way_118163713_esri2018.jpg",
+   "2020": "luftbilder_hist/way_118163713_esri2020.jpg",
+   "2022": "luftbilder_hist/way_118163713_esri2022.jpg",
+   "2024": "luftbilder_hist/way_118163713_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 14,
+   "flaeche_m2": 2396,
+   "typen": {
+    "Nach Quellenlage nicht zu spezifizieren": 12,
+    "Wohngebäude": 2
+   },
+   "gebaeude": [
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 507.8,
+     "lon": 14.19345521402361,
+     "lat": 50.929132582791134
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 328.6,
+     "lon": 14.19186792653683,
+     "lat": 50.92915498538631
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 247.9,
+     "lon": 14.192785929237195,
+     "lat": 50.92957142931713
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-04Z",
+     "flaeche_m2": 231.3,
+     "lon": 14.193829589537707,
+     "lat": 50.92953481563805
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 186.5,
+     "lon": 14.193065801841342,
+     "lat": 50.929336463967786
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-02-04Z",
+     "flaeche_m2": 179.8,
+     "lon": 14.19421386154103,
+     "lat": 50.92935349578207
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 173.4,
+     "lon": 14.192333199435588,
+     "lat": 50.92941907658
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 158.8,
+     "lon": 14.193924642818203,
+     "lat": 50.928735371011264
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 100.0,
+     "lon": 14.19223257701158,
+     "lat": 50.929276687525615
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 98.6,
+     "lon": 14.19376301004001,
+     "lat": 50.928939530077386
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 56.6,
+     "lon": 14.192916305290073,
+     "lat": 50.929592393811376
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 55.2,
+     "lon": 14.191821630975491,
+     "lat": 50.929716950488405
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 49.8,
+     "lon": 14.192944828668923,
+     "lat": 50.929381832059654
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-06Z",
+     "flaeche_m2": 21.5,
+     "lon": 14.192752736555498,
+     "lat": 50.9294507779387
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Terrassierter Campingplatz im Elbsandsteingebirge (Sachsische Schweiz) am Fuss von Felswaenden: ~60-100 Caravans/Zelte auf Wiesen-Terrassen, Muehlen-/Servicegebaeude (ALKIS: 14), Bach/Kirnitzsch-Zulauf, deutliche Fichten-Duerrflaechen im Hangwald, Wanderwege, enge Zufahrt",
+   "anzahl_geschaetzt": "60-100 Einheiten, ueberwiegend Touristik",
+   "zustand": "mittel (Naturplatz, touristisch stark frequentiert)",
+   "notiz": "Spektakulaere Lage (Nationalpark-Naehe) = hohe Zahlungsbereitschaft der Gaeste, ABER: enge Terrassen, Zufahrt fuer LKW/Tinyhaus-Transport schwierig, Nationalpark-/Landschaftsschutz-Restriktionen wahrscheinlich (4 B-Plaene!). Tinyhaeuser nur klein/versetzt machbar; Hausboot nein (Bach). Eher Premium-Nischen-Lead.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "node/258326088": {
+  "name": "Dresdner Segelclub 1910 e.V.",
+  "lat": 51.0402933,
+  "lon": 13.8187753,
+  "score": 64.8,
+  "bilder": {
+   "aktuell": "luftbilder/node_258326088.jpg",
+   "2014": "luftbilder_hist/node_258326088_esri2014.jpg",
+   "2016": "luftbilder_hist/node_258326088_esri2016.jpg",
+   "2018": "luftbilder_hist/node_258326088_esri2018.jpg",
+   "2020": "luftbilder_hist/node_258326088_esri2020.jpg",
+   "2022": "luftbilder_hist/node_258326088_esri2022.jpg",
+   "2024": "luftbilder_hist/node_258326088_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 21,
+   "flaeche_m2": 2141,
+   "typen": {
+    "Gebäude für Sportzwecke": 13,
+    "Gebäude für Gewerbe und Industrie": 4,
+    "Wohngebäude": 4
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 375.3,
+     "lon": 13.818277970547426,
+     "lat": 51.04009535905398
+    },
+    {
+     "funktion": "Gebäude für Gewerbe und Industrie",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 199.9,
+     "lon": 13.818664502205989,
+     "lat": 51.03995458217431
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 191.9,
+     "lon": 13.818218924131092,
+     "lat": 51.04061658453927
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 182.1,
+     "lon": 13.818243190205433,
+     "lat": 51.040395415081015
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 133.8,
+     "lon": 13.81787555317424,
+     "lat": 51.040380779200575
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 129.4,
+     "lon": 13.817894529190319,
+     "lat": 51.04102173705547
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 122.2,
+     "lon": 13.818157366422149,
+     "lat": 51.04019758630057
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 118.6,
+     "lon": 13.818801585328362,
+     "lat": 51.03957805941367
+    },
+    {
+     "funktion": "Gebäude für Gewerbe und Industrie",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 114.9,
+     "lon": 13.81863043161584,
+     "lat": 51.039752674085726
+    },
+    {
+     "funktion": "Gebäude für Gewerbe und Industrie",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 102.2,
+     "lon": 13.818415461926467,
+     "lat": 51.039867559505474
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 85.8,
+     "lon": 13.817737569757236,
+     "lat": 51.040848109478155
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 84.0,
+     "lon": 13.817288548920388,
+     "lat": 51.03982427671115
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 82.0,
+     "lon": 13.818464708464385,
+     "lat": 51.040472225008244
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 76.4,
+     "lon": 13.818172654498092,
+     "lat": 51.040974679057015
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 38.6,
+     "lon": 13.817442070569275,
+     "lat": 51.04093293268267
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 33.4,
+     "lon": 13.817181709196914,
+     "lat": 51.039991964484656
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 27.9,
+     "lon": 13.817514538523275,
+     "lat": 51.04094961109364
+    },
+    {
+     "funktion": "Gebäude für Gewerbe und Industrie",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 15.1,
+     "lon": 13.818504220476752,
+     "lat": 51.03970699835353
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 13.1,
+     "lon": 13.8180936903353,
+     "lat": 51.040433191097044
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 9.1,
+     "lon": 13.81891101963489,
+     "lat": 51.039904109097755
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-01Z",
+     "flaeche_m2": 5.1,
+     "lon": 13.818777838770503,
+     "lat": 51.04010784064442
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Segelclub-Gelaende am Elbe-Ufer in Dresden: Bootshallen/Lager (ALKIS: 13x Sportzwecke), Steganlagen, GROSSE freie Uferwiese, Baumbestand, staedtische Umgebung",
+   "anzahl_geschaetzt": "~13 Sport-/Vereinsgebaeude, keine Mietunterkuenfte",
+   "zustand": "gepflegt (aktiver Club)",
+   "notiz": "Vereinsgelände mit freier Wiese direkt an der Elbe = Hausboot-Steg + wenige Premium-Tinyhaeuser als Club-Ergaenzung denkbar. Stadt Dresden = ganzjaehrige Nachfrage (Events, Business). Hochwasserzone der Elbe kritisch pruefen (feste Bauten!). B-Plan vorhanden. Kooperationsmodell mit Verein.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "node/431049667": {
+  "name": "Marinekameradschaft Riesa",
+  "lat": 51.3064072,
+  "lon": 13.3216465,
+  "score": 64.8,
+  "bilder": {
+   "aktuell": "luftbilder/node_431049667.jpg",
+   "2014": "luftbilder_hist/node_431049667_esri2014.jpg",
+   "2016": "luftbilder_hist/node_431049667_esri2016.jpg",
+   "2018": "luftbilder_hist/node_431049667_esri2018.jpg",
+   "2020": "luftbilder_hist/node_431049667_esri2020.jpg",
+   "2022": "luftbilder_hist/node_431049667_esri2022.jpg",
+   "2024": "luftbilder_hist/node_431049667_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 2,
+   "flaeche_m2": 510,
+   "typen": {
+    "Gebäude für soziale Zwecke": 2
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für soziale Zwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-11-14Z",
+     "flaeche_m2": 382.0,
+     "lon": 13.322482298004411,
+     "lat": 51.30578539720559
+    },
+    {
+     "funktion": "Gebäude für soziale Zwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-11-14Z",
+     "flaeche_m2": 128.3,
+     "lon": 13.322205723689473,
+     "lat": 51.30589433763551
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kleines Vereinsgelaende mit eigenem Hafenbecken/Bootshafen an der Elbe, umgeben von Kleingaerten: 2 Vereinsgebaeude (ALKIS: 2x soziale Zwecke, 510 qm), Steg im Becken, wenig Freiflaeche",
+   "anzahl_geschaetzt": "2 Gebaeude + kleines Hafenbecken",
+   "zustand": "gepflegt (Verein)",
+   "notiz": "Geschuetztes Hafenbecken = guter Hausboot-Liegeplatz (geschuetzt vor Elbe-Stroemung!), aber kaum Flaeche fuer Tinyhaeuser (Kleingarten-Kontext). Eher Liegeplatz-/Logistik-Kooperation als Vermietungs-Standort. Nachrangig.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "node/485108394": {
+  "name": "Camping am Tonschacht",
+  "lat": 51.30149,
+  "lon": 14.8015897,
+  "score": 63.0,
+  "bilder": {
+   "aktuell": "luftbilder/node_485108394.jpg",
+   "2014": "luftbilder_hist/node_485108394_esri2014.jpg",
+   "2016": "luftbilder_hist/node_485108394_esri2016.jpg",
+   "2018": "luftbilder_hist/node_485108394_esri2018.jpg",
+   "2020": "luftbilder_hist/node_485108394_esri2020.jpg",
+   "2022": "luftbilder_hist/node_485108394_esri2022.jpg",
+   "2024": "luftbilder_hist/node_485108394_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 5,
+   "flaeche_m2": 401,
+   "typen": {
+    "Gebäude für Beherbergung": 5
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-18Z",
+     "flaeche_m2": 173.7,
+     "lon": 14.803034975349618,
+     "lat": 51.30155091928467
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-18Z",
+     "flaeche_m2": 135.6,
+     "lon": 14.802586279315884,
+     "lat": 51.301604061345444
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-18Z",
+     "flaeche_m2": 47.8,
+     "lon": 14.800282204680059,
+     "lat": 51.30202442619435
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-18Z",
+     "flaeche_m2": 23.3,
+     "lon": 14.80245443573594,
+     "lat": 51.30151637632631
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-18Z",
+     "flaeche_m2": 20.2,
+     "lon": 14.801726265182678,
+     "lat": 51.301211896646336
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Junger Campingplatz an einem Restloch-Teich (Tagebau-Sanierungsgebiet, Lausitz): ~20-40 Caravans/kleine Huetten (ALKIS: 5x Beherbergung), VIEL freie Wiesen-/Boeschungsflaeche, junge Ufervegetation, weite offene Landschaft",
+   "anzahl_geschaetzt": "20-40 Einheiten + 5 Miet-Huetten, viel Reserve",
+   "zustand": "jung, in Entwicklung",
+   "notiz": "Wachstumsplatz mit grosser Flaeche und bereits 5 Mietgebaeuden = investitionsbereit. Restsee: Wasserqualitaet/Badefreigabe pruefen. Lausitzer Seenland = Tourismus-Boom (Geierswalder See nearby). Guter Entwicklungs-Kandidat fuer Tinyhaus-Reihe.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/118146842": {
+  "name": "Campingplatz Halbendorfer See",
+  "lat": 51.544528225693504,
+  "lon": 14.569170631818581,
+  "score": 62.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_118146842.jpg",
+   "2014": "luftbilder_hist/way_118146842_esri2014.jpg",
+   "2016": "luftbilder_hist/way_118146842_esri2016.jpg",
+   "2018": "luftbilder_hist/way_118146842_esri2018.jpg",
+   "2020": "luftbilder_hist/way_118146842_esri2020.jpg",
+   "2022": "luftbilder_hist/way_118146842_esri2022.jpg",
+   "2024": "luftbilder_hist/way_118146842_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 18,
+   "flaeche_m2": 1512,
+   "typen": {
+    "Gebäude für Beherbergung": 7,
+    "Wohngebäude": 4,
+    "Gebäude für Erholungszwecke": 4,
+    "Gebäude für Bewirtung": 2,
+    "Garage": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Bewirtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 383.1,
+     "lon": 14.569227854107437,
+     "lat": 51.544490243824136
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 178.6,
+     "lon": 14.569024265416067,
+     "lat": 51.54514758080877
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-26Z",
+     "flaeche_m2": 159.2,
+     "lon": 14.567354542197203,
+     "lat": 51.54637323329426
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-26Z",
+     "flaeche_m2": 142.2,
+     "lon": 14.567622958336807,
+     "lat": 51.546409613799234
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 129.0,
+     "lon": 14.569005249243922,
+     "lat": 51.54466888923039
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 74.4,
+     "lon": 14.567742076292726,
+     "lat": 51.544889958998674
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-12-14Z",
+     "flaeche_m2": 63.8,
+     "lon": 14.57035248694996,
+     "lat": 51.54574316843622
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 61.4,
+     "lon": 14.569273370369029,
+     "lat": 51.54594250761577
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-09-22Z",
+     "flaeche_m2": 46.2,
+     "lon": 14.570289695581797,
+     "lat": 51.54569505497578
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 40.2,
+     "lon": 14.56888160588548,
+     "lat": 51.54608304931864
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 37.3,
+     "lon": 14.56893970741588,
+     "lat": 51.545937466620444
+    },
+    {
+     "funktion": "Gebäude für Bewirtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 34.7,
+     "lon": 14.569366046491425,
+     "lat": 51.54450769030707
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 32.4,
+     "lon": 14.567755625540205,
+     "lat": 51.544768704386264
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 28.2,
+     "lon": 14.568522949721894,
+     "lat": 51.54641776489245
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-26Z",
+     "flaeche_m2": 27.1,
+     "lon": 14.570075229370419,
+     "lat": 51.54543830296535
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 26.4,
+     "lon": 14.568835435808834,
+     "lat": 51.54636003577522
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 24.3,
+     "lon": 14.568878178918489,
+     "lat": 51.546264075898826
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-22Z",
+     "flaeche_m2": 23.0,
+     "lon": 14.56873097465115,
+     "lat": 51.54616101593989
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Uferstreifen am Halbendorfer See (Lausitz, tuerkisgruenes Wasser): dichte Caravan-Reihen (~80-120) entlang des Ufers, grosse Servicegebaeude mit roten Daechern, Sandstrand mit Spielgeraeten, GROSSE freie Wiese im Suedosten mit Sport-/Beachfeld, Parkplatz im Norden, Ackerland oestlich",
+   "anzahl_geschaetzt": "80-120 Einheiten + Miet-Mobilheime/Bungalows/Tinyhaeuser",
+   "zustand": "gepflegt (aktiver Strandbetrieb)",
+   "notiz": "Website: Tinyhaeuser BEREITS vorhanden = Wettbewerb, aber auch Beweis fuer Nachfrage! Freie Suedost-Wiese = Erweiterungsflaeche (Eigentum pruefen). Hausboot-Option am grossen See (Marina Geierswalder See in der Naehe). Lausitzer Seenland boomt. Solider Lead mit Kooperations-Potenzial.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/319709251": {
+  "name": "Campingpark Greifensteine",
+  "lat": 50.64876134015797,
+  "lon": 12.908526892918648,
+  "score": 62.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_319709251.jpg",
+   "2014": "luftbilder_hist/way_319709251_esri2014.jpg",
+   "2016": "luftbilder_hist/way_319709251_esri2016.jpg",
+   "2018": "luftbilder_hist/way_319709251_esri2018.jpg",
+   "2020": "luftbilder_hist/way_319709251_esri2020.jpg",
+   "2022": "luftbilder_hist/way_319709251_esri2022.jpg",
+   "2024": "luftbilder_hist/way_319709251_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 6,
+   "flaeche_m2": 290,
+   "typen": {
+    "Wohngebäude": 5,
+    "Gebäude zur Entsorgung": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude zur Entsorgung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 71.5,
+     "lon": 12.908580892866246,
+     "lat": 50.6490452949219
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 58.3,
+     "lon": 12.908810984156652,
+     "lat": 50.64898650440092
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 47.8,
+     "lon": 12.909669681997842,
+     "lat": 50.64831655431884
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 42.9,
+     "lon": 12.91100991360296,
+     "lat": 50.647935711786786
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-07-05Z",
+     "flaeche_m2": 39.2,
+     "lon": 12.909015413059123,
+     "lat": 50.64884501200359
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-07-05Z",
+     "flaeche_m2": 30.1,
+     "lon": 12.909606101195806,
+     "lat": 50.64857877276943
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Nordoestlicher Uferabschnitt desselben Greifenbach-stauweihers: ~100-150 Caravans/Bungalows in dichten Reihen entlang Ufer und Strasse, kleine Stege, Versumpfungszonen im Westen, Wald im Norden/Osten",
+   "anzahl_geschaetzt": "100-150 Einheiten (Teil des Gesamtparks)",
+   "zustand": "mittel (dicht, gewachsen)",
+   "notiz": "Zweites OSM-Polygon von Campingpark Greifensteine (way/319709246) - KEIN eigener Platz, nicht doppelt anschreiben! Befund: durchgehend dichte Dauer-Struktur, keine freie Erweiterungsflaeche in diesem Abschnitt.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ },
+ "way/1213778570": {
+  "name": "BWT-Bierwiesenteich Pfaffroda I Camping-Freizeit-Gastro-Bowling",
+  "lat": 50.70177245303324,
+  "lon": 13.355676197101435,
+  "score": 62.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_1213778570.jpg",
+   "2014": "luftbilder_hist/way_1213778570_esri2014.jpg",
+   "2016": "luftbilder_hist/way_1213778570_esri2016.jpg",
+   "2018": "luftbilder_hist/way_1213778570_esri2018.jpg",
+   "2020": "luftbilder_hist/way_1213778570_esri2020.jpg",
+   "2022": "luftbilder_hist/way_1213778570_esri2022.jpg",
+   "2024": "luftbilder_hist/way_1213778570_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 2,
+   "flaeche_m2": 457,
+   "typen": {
+    "Gebäude für Bewirtung": 1,
+    "Gebäude zur Entsorgung": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Bewirtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-12Z",
+     "flaeche_m2": 425.3,
+     "lon": 13.355854295059913,
+     "lat": 50.70112396168766
+    },
+    {
+     "funktion": "Gebäude zur Entsorgung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-05-12Z",
+     "flaeche_m2": 31.4,
+     "lon": 13.355918708587817,
+     "lat": 50.70126229334547
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Laenglicher Teich (Bierwiesenteich) in offener Agrarlandschaft: Gastro-/Bowling-Komplex mit grossem Parkplatz und Sportflaechen am Suedufer, KEINE Camping-Strukturen sichtbar (ALKIS: nur 2 Gebaeude), Wiesen/Acker rundum, kleiner Waldblock NO",
+   "anzahl_geschaetzt": "0 sichtbare Stellplaetze/Einheiten",
+   "zustand": "Gastro gepflegt, Ufer ungenutzt",
+   "notiz": "Camping offenbar nur angekuendigt/Nebengeschaeft des Gastro-Betriebs - faktisch GRUENE WIESE am Teich mit vorhandener Gastro-Infrastruktur = idealer Tinyhaus-Startstandort (Betreiber sucht evtl. Partner). Teich klein fuer Hausboote (Tiefe/Zulauf pruefen). B-Plan vorhanden. Interessanter Entwicklungs-Lead.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/1463042579": {
+  "name": "Sportgelände Ehrenfriedersdorfer Kanuverein am Greifenbachstauweiher e.V.",
+  "lat": 50.6477825438182,
+  "lon": 12.91117319139306,
+  "score": 62.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_1463042579.jpg",
+   "2014": "luftbilder_hist/way_1463042579_esri2014.jpg",
+   "2016": "luftbilder_hist/way_1463042579_esri2016.jpg",
+   "2018": "luftbilder_hist/way_1463042579_esri2018.jpg",
+   "2020": "luftbilder_hist/way_1463042579_esri2020.jpg",
+   "2022": "luftbilder_hist/way_1463042579_esri2022.jpg",
+   "2024": "luftbilder_hist/way_1463042579_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 1,
+   "flaeche_m2": 43,
+   "typen": {
+    "Wohngebäude": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-05-06Z",
+     "flaeche_m2": 42.9,
+     "lon": 12.91100991360296,
+     "lat": 50.647935711786786
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Schmaler Uferstreifen am Greifenbachstauweiher zwischen Dauercamping-Reihen (NW) und Wald: Vereinswiese mit Kajak-/Bootlagern (bunte Boote), wenige kleine Huetten/Container, 1 Wohngebaeude (ALKIS: 43 qm), kleiner Sandstrand im SO",
+   "anzahl_geschaetzt": "1-5 kleine Gebaeude, Vereinsflaeche",
+   "zustand": "einfach (Vereinsgelaende)",
+   "notiz": "Kanuverein mit Uferwiese = Kooperations-Chance (Wassersport-Verleih + Tinyhaus-UEbernachtung), aber sehr schmale Flaeche zwischen fremden Dauercampern. Nur 1 B-Plan-Treffer, Aussenbereich wahrscheinlich. Nachrangig; eher ergaenzender Partner im Greifensteine-Cluster.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/1463042580": {
+  "name": "Campingplatz MC Ehrenfriedersdorf",
+  "lat": 50.64755096795753,
+  "lon": 12.911935689506253,
+  "score": 62.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_1463042580.jpg",
+   "2014": "luftbilder_hist/way_1463042580_esri2014.jpg",
+   "2016": "luftbilder_hist/way_1463042580_esri2016.jpg",
+   "2018": "luftbilder_hist/way_1463042580_esri2018.jpg",
+   "2020": "luftbilder_hist/way_1463042580_esri2020.jpg",
+   "2022": "luftbilder_hist/way_1463042580_esri2022.jpg",
+   "2024": "luftbilder_hist/way_1463042580_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kleiner Campingplatz am Suedufer des Greifenbach-stauweihers: ~15-25 Caravans/Huetten locker am Ufer, Sandbadestrand im Osten, Bootslager/Servicegebaeude (gruenes Dach) im Norden, Waldhang, schmale Zufahrt",
+   "anzahl_geschaetzt": "15-25 Einheiten",
+   "zustand": "einfach bis mittel (kleiner Verein/Privatplatz)",
+   "notiz": "Kleiner Platz mit eigenem Badestrand und freiem Uferabschnitt = Ueberschaubares Tinyhaus-Pilotprojekt (3-5 Einheiten) machbar. Kein B-Plan-Treffer im Top-30-Lauf -> Aussenbereich, Baurecht kritisch. MC = evtl. Motorradclub-Traeger. Nur mit Bauvoranfrage sinnvoll.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ },
+ "node/506195846": {
+  "name": "Campinggelegenheit an der Ochelbaude",
+  "lat": 50.9425999,
+  "lon": 14.1407804,
+  "score": 61.0,
+  "bilder": {
+   "aktuell": "luftbilder/node_506195846.jpg",
+   "2014": "luftbilder_hist/node_506195846_esri2014.jpg",
+   "2016": "luftbilder_hist/node_506195846_esri2016.jpg",
+   "2018": "luftbilder_hist/node_506195846_esri2018.jpg",
+   "2020": "luftbilder_hist/node_506195846_esri2020.jpg",
+   "2022": "luftbilder_hist/node_506195846_esri2022.jpg",
+   "2024": "luftbilder_hist/node_506195846_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 7,
+   "flaeche_m2": 1100,
+   "typen": {
+    "Wohngebäude": 3,
+    "Gebäude für Wirtschaft oder Gewerbe": 3,
+    "Nach Quellenlage nicht zu spezifizieren": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-06-06Z",
+     "flaeche_m2": 471.5,
+     "lon": 14.140499388725923,
+     "lat": 50.94303916055196
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-06-06Z",
+     "flaeche_m2": 328.3,
+     "lon": 14.140959803350107,
+     "lat": 50.94311042281143
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-06-06Z",
+     "flaeche_m2": 106.6,
+     "lon": 14.141044328814488,
+     "lat": 50.94297943969732
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-06-06Z",
+     "flaeche_m2": 95.2,
+     "lon": 14.139720162811834,
+     "lat": 50.942353550568406
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-06-06Z",
+     "flaeche_m2": 48.2,
+     "lon": 14.139632222057816,
+     "lat": 50.94234638996608
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-06-02Z",
+     "flaeche_m2": 35.1,
+     "lon": 14.141404357766334,
+     "lat": 50.94333065801283
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-06-06Z",
+     "flaeche_m2": 15.2,
+     "lon": 14.139205593524153,
+     "lat": 50.94226613970477
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Einzelne Baude/Gasthaus (gruenes Dach) mit Nebengebaeuden auf Waldlichtung an einer Bahntrasse (Erzgebirge): Wiese mit kleinem Zelt-/Caravanbereich, Trampolin, KEIN Gewaesser im Bildausschnitt sichtbar, dichter Wald rundum (teils Duerrflaechen)",
+   "anzahl_geschaetzt": "<10 Einheiten, Berggasthaus-Betrieb",
+   "zustand": "einfach (Wander-Baude)",
+   "notiz": "Wasserzugang laut Analyse vorhanden, aber im DOP nicht im Ausschnitt (Bach/Teich evtl. ausserhalb) - vor Ort verifizieren. Kein B-Plan (Aussenbereich!) + Bahnlaerm + Wanderklientel = fuer feste Tinyhaeuser rechtlich und wirtschaftlich schwierig. Nachrangig.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "node/2254141232": {
+  "name": "Barth-Mühle",
+  "lat": 51.1295092,
+  "lon": 13.435644,
+  "score": 61.0,
+  "bilder": {
+   "aktuell": "luftbilder/node_2254141232.jpg",
+   "2014": "luftbilder_hist/node_2254141232_esri2014.jpg",
+   "2016": "luftbilder_hist/node_2254141232_esri2016.jpg",
+   "2018": "luftbilder_hist/node_2254141232_esri2018.jpg",
+   "2020": "luftbilder_hist/node_2254141232_esri2020.jpg",
+   "2022": "luftbilder_hist/node_2254141232_esri2022.jpg",
+   "2024": "luftbilder_hist/node_2254141232_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 49,
+   "flaeche_m2": 3871,
+   "typen": {
+    "Wohngebäude": 24,
+    "Gebäude für Wirtschaft oder Gewerbe": 14,
+    "Garage": 10,
+    "Gebäude für Beherbergung": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 467.6,
+     "lon": 13.436654424121398,
+     "lat": 51.12873076323341
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 329.8,
+     "lon": 13.434895971828318,
+     "lat": 51.129450123896774
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 311.3,
+     "lon": 13.435223286489093,
+     "lat": 51.129983006224705
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 205.8,
+     "lon": 13.435675351429888,
+     "lat": 51.13002329636246
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-08-06Z",
+     "flaeche_m2": 174.3,
+     "lon": 13.436792062490241,
+     "lat": 51.12900819505558
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 164.1,
+     "lon": 13.43510862670395,
+     "lat": 51.12964855991153
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 155.6,
+     "lon": 13.436766920431413,
+     "lat": 51.12944605119423
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 153.3,
+     "lon": 13.436790084000629,
+     "lat": 51.1298100911533
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 124.2,
+     "lon": 13.43411853588357,
+     "lat": 51.12923033571754
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 117.8,
+     "lon": 13.437185515669421,
+     "lat": 51.129637083003566
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 108.3,
+     "lon": 13.435904924860859,
+     "lat": 51.130024885683284
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 100.3,
+     "lon": 13.434635120643911,
+     "lat": 51.12952820557666
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 98.0,
+     "lon": 13.43432895873136,
+     "lat": 51.129414411889734
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 97.2,
+     "lon": 13.436138178281684,
+     "lat": 51.1300086909355
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 92.8,
+     "lon": 13.43477982061754,
+     "lat": 51.12964324648479
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-08-06Z",
+     "flaeche_m2": 85.9,
+     "lon": 13.43480528473404,
+     "lat": 51.13000131595137
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-10-13Z",
+     "flaeche_m2": 80.7,
+     "lon": 13.436571011970518,
+     "lat": 51.12940722289137
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 79.8,
+     "lon": 13.434591147535652,
+     "lat": 51.12939237837282
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-05-07Z",
+     "flaeche_m2": 78.0,
+     "lon": 13.436520985592002,
+     "lat": 51.12961504001374
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 76.1,
+     "lon": 13.436453808142598,
+     "lat": 51.12996568581154
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-10-13Z",
+     "flaeche_m2": 71.4,
+     "lon": 13.436501119945385,
+     "lat": 51.12931773868934
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 53.6,
+     "lon": 13.43422747922579,
+     "lat": 51.12952396303365
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 50.4,
+     "lon": 13.436571331490507,
+     "lat": 51.129861838853635
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-01-15Z",
+     "flaeche_m2": 47.9,
+     "lon": 13.43658833811223,
+     "lat": 51.12929542862295
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 44.1,
+     "lon": 13.436299929585127,
+     "lat": 51.1300225583145
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 38.5,
+     "lon": 13.43686439238068,
+     "lat": 51.129483868472974
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-08-06Z",
+     "flaeche_m2": 34.1,
+     "lon": 13.43404211895424,
+     "lat": 51.12955285427802
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 31.6,
+     "lon": 13.435853547800013,
+     "lat": 51.1301323910702
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 31.3,
+     "lon": 13.434799196295085,
+     "lat": 51.12935208988456
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 24.8,
+     "lon": 13.435261682771191,
+     "lat": 51.130062361874195
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 24.4,
+     "lon": 13.437352914071553,
+     "lat": 51.129623441580165
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 24.1,
+     "lon": 13.435477800123646,
+     "lat": 51.12972859154899
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 23.5,
+     "lon": 13.436922451575052,
+     "lat": 51.129420735812786
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 23.0,
+     "lon": 13.434346082291722,
+     "lat": 51.12964059981045
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 22.8,
+     "lon": 13.437295764889841,
+     "lat": 51.129659069089925
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 22.6,
+     "lon": 13.434154652934069,
+     "lat": 51.1294334317316
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 21.9,
+     "lon": 13.435370624713737,
+     "lat": 51.12969090213121
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 21.0,
+     "lon": 13.437128190906398,
+     "lat": 51.12970652167827
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 20.4,
+     "lon": 13.436080415487819,
+     "lat": 51.13006421935694
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 18.0,
+     "lon": 13.43416458208635,
+     "lat": 51.12951682709386
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 16.8,
+     "lon": 13.43668135937519,
+     "lat": 51.12929369093867
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 16.7,
+     "lon": 13.436219565325286,
+     "lat": 51.130031743988795
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 16.1,
+     "lon": 13.434909887389281,
+     "lat": 51.13005763554419
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 15.0,
+     "lon": 13.43541377886569,
+     "lat": 51.129709330706696
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 14.3,
+     "lon": 13.434081484569116,
+     "lat": 51.12959875528316
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 13.7,
+     "lon": 13.435522760819733,
+     "lat": 51.12975125134631
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 11.1,
+     "lon": 13.434223247121038,
+     "lat": 51.12958141416654
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 10.0,
+     "lon": 13.436790493712913,
+     "lat": 51.129906862255254
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-08-29Z",
+     "flaeche_m2": 7.3,
+     "lon": 13.436755364652207,
+     "lat": 51.129923757407774
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Groesserer Muehlen-/Gutshof-Komplex (rote Daecher) in Doerfchen mit Kleingaerten: zentrale Freiflaeche/Wiese, mehrere Wirtschaftsgebaeude (ALKIS: 49 Geb., 24x Wohnen, 14x Gewerbe, 10x Garage), Bachlauf im Sueden, Felder/Wald rundum, KEINE Camping-Struktur",
+   "anzahl_geschaetzt": "0 Camping-Einheiten; Hof mit ~10+ Gebaeuden",
+   "zustand": "mittel (teils Leerstand/Nutzungswandel?)",
+   "notiz": "Kein Campingplatz im Bild, sondern Muehlen-Anwesen mit Wiese = moeglicher Entwicklungs-Standort (Hofkauf/Pacht + Tinyhaus-Dorf am Bach). Bach zu klein fuer Hausboote. 1 B-Plan-Treffer. Nur als Immobilien-Opportunitaet interessant, nicht als Vermietungspartner-Lead.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/37931100": {
+  "name": "Naturbad Niederwiesa",
+  "lat": 50.86427677539291,
+  "lon": 12.99147001531796,
+  "score": 61.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_37931100.jpg",
+   "2014": "luftbilder_hist/way_37931100_esri2014.jpg",
+   "2016": "luftbilder_hist/way_37931100_esri2016.jpg",
+   "2018": "luftbilder_hist/way_37931100_esri2018.jpg",
+   "2020": "luftbilder_hist/way_37931100_esri2020.jpg",
+   "2022": "luftbilder_hist/way_37931100_esri2022.jpg",
+   "2024": "luftbilder_hist/way_37931100_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 9,
+   "flaeche_m2": 588,
+   "typen": {
+    "Gebäude für Erholungszwecke": 6,
+    "Gebäude für Wirtschaft oder Gewerbe": 1,
+    "Freizeit- und Vergnügungsstätte": 1,
+    "Gebäude für Bewirtung": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-04-23Z",
+     "flaeche_m2": 169.1,
+     "lon": 12.991530323525046,
+     "lat": 50.8647351860567
+    },
+    {
+     "funktion": "Gebäude für Bewirtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-04-23Z",
+     "flaeche_m2": 102.2,
+     "lon": 12.991762191230851,
+     "lat": 50.86490004028135
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-04-23Z",
+     "flaeche_m2": 97.3,
+     "lon": 12.991972941238995,
+     "lat": 50.86416943415913
+    },
+    {
+     "funktion": "Freizeit- und Vergnügungsstätte",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-04-23Z",
+     "flaeche_m2": 55.3,
+     "lon": 12.991373128745886,
+     "lat": 50.86474109120354
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-04-23Z",
+     "flaeche_m2": 51.6,
+     "lon": 12.993129577793985,
+     "lat": 50.86440052205509
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-04-23Z",
+     "flaeche_m2": 38.2,
+     "lon": 12.992513431274178,
+     "lat": 50.865366477148825
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-04-23Z",
+     "flaeche_m2": 37.9,
+     "lon": 12.992150858684381,
+     "lat": 50.86530092543027
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-04-23Z",
+     "flaeche_m2": 19.4,
+     "lon": 12.991819412286123,
+     "lat": 50.865236054364075
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2026-04-23Z",
+     "flaeche_m2": 16.9,
+     "lon": 12.992807907444371,
+     "lat": 50.865287340528695
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Naturbad mit angeschlossenem Camping: Teiche im Norden (Badegewaesser), ~80-120 Caravans in erschlossenen Schleifen, moderne Servicegebaeude MIT SOLARDACHECHERN, Beachvolleyball-Feld, zentraler Parkplatz, Wiesen/Felder rundum, ALKIS: 6x Erholungszwecke",
+   "anzahl_geschaetzt": "80-120 Stellplaetze, wenige feste Einheiten",
+   "zustand": "gepflegt (kommunales/junges Naturbad, Solar = investiert)",
+   "notiz": "Moderne Infrastruktur (Solar, Sport) + Naturbad-Anziehungspunkt = gute Basis. Freie Wiesenraender fuer Tinyhaus-Reihe; kein Hausboot (Badeteiche). 1 B-Plan-Treffer. Betreiber evtl. Gemeinde = Vergabe-/Pachtmodell pruefen. Solider mittlerer Lead.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ }
+}

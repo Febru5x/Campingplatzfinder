@@ -35,7 +35,7 @@ def compress_images(src_dir, dst_dir, full=False, maxpx=1000, quality=72):
     files = sorted(src_dir.glob("*.jpg"))
     for f in files:
         out = dst_dir / f.name
-        if out.exists() and not full and out.stat().st_size < 150_000:
+        if out.exists() and not full:
             n_skip += 1
             continue
         try:
@@ -55,6 +55,20 @@ def compress_images(src_dir, dst_dir, full=False, maxpx=1000, quality=72):
 
 
 def build_index():
+    import sqlite3
+    conn = sqlite3.connect(DOCS / "daten" / "camping.db")
+    stats = {}
+    for reg in REGIONS:
+        try:
+            n, w, s = conn.execute("""SELECT COUNT(*),
+                SUM(CASE WHEN e.water_distance_m<=50 THEN 1 ELSE 0 END),
+                SUM(CASE WHEN e.lead_score>=70 THEN 1 ELSE 0 END)
+                FROM sites s JOIN enrichment e ON s.id=e.site_id
+                WHERE s.region=?""", (reg,)).fetchone()
+            stats[reg] = (n or 0, w or 0, s or 0)
+        except Exception:
+            stats[reg] = (0, 0, 0)
+    conn.close()
     cards = []
     for reg in REGIONS:
         xlsx = "campingplaetze_%s.xlsx" % reg
@@ -64,16 +78,19 @@ def build_index():
         n_doss = len(list((DOCS / "dossiers" / reg).glob("*.html"))) \
             if (DOCS / "dossiers" / reg).exists() else 0
         doss_link = ('<a href="dossiers/%s/%s">Top-20-Dossiers</a>' % (reg, _first_dossier(reg))) if n_doss else ""
+        n, w, s = stats.get(reg, (0, 0, 0))
         cards.append("""
     <div class="card">
       <h2>%s</h2>
+      <p class="stats">%d Pl&auml;tze &middot; %d direkt am Wasser &middot; %d Top-Leads (Score &ge;70)</p>
       <p><a class="btn" href="%s">Interaktive Karte</a></p>
       <p><a href="%s">Excel-Tabelle</a> &middot; %s</p>
-    </div>""" % (LABELS[reg], karte, xlsx, doss_link))
+    </div>""" % (LABELS[reg], n, w, s, karte, xlsx, doss_link))
     html = """<!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Campingplatzfinder</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9978;</text></svg>">
 <style>
  body{font-family:system-ui,sans-serif;margin:0;background:#f4f6f8;color:#222}
  header{background:#1a5276;color:#fff;padding:24px 16px;text-align:center}
@@ -82,6 +99,7 @@ def build_index():
  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
  .card{background:#fff;border-radius:10px;padding:18px;box-shadow:0 1px 4px rgba(0,0,0,.12)}
  .card h2{margin:0 0 10px;font-size:1.15em}
+ .stats{color:#555;font-size:.9em;margin:0 0 12px}
  .btn{display:inline-block;background:#1a5276;color:#fff;padding:8px 14px;border-radius:6px;text-decoration:none}
  a{color:#1a5276}
  .note{background:#fff;border-radius:10px;padding:16px;margin-top:20px;box-shadow:0 1px 4px rgba(0,0,0,.12)}
@@ -141,13 +159,16 @@ def main():
                     maxpx=600, quality=55)
 
     # 3) Datenbank (VACUUM-Kopie) + kleine JSONs
+    # parcels-Geometrien sind 54 MB und auf der Karte nicht noetig
+    # (ALKIS-WMS live); online-Version ohne parcels, Originale lokal.
     import sqlite3
     dst_db = DOCS / "daten" / "camping.db"
     if dst_db.exists():
         dst_db.unlink()
     src = sqlite3.connect(C.DB_PATH)
-    dst = sqlite3.connect(dst_db)
+    dst = sqlite3.connect(dst_db, isolation_level=None)
     src.backup(dst)
+    dst.execute("UPDATE enrichment SET parcels=NULL")
     dst.execute("VACUUM")
     dst.close()
     src.close()

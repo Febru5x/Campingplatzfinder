@@ -1,0 +1,602 @@
+{
+ "region": "sachsen",
+ "stand": "2026-11-22T20:50:32.221574+00:00",
+ "benchmarks": {
+  "portal_luxus_median": null,
+  "portal_luxus_spanne": null,
+  "website_median": 60.0,
+  "website_spanne": [
+   40.0,
+   85.0
+  ],
+  "n_portal": 0,
+  "n_website": 22,
+  "booking_hausboot_median": 66,
+  "booking_hausboot_spanne": [
+   66,
+   66
+  ],
+  "n_booking_boote": 1,
+  "airbnb_tiny_median": 113,
+  "airbnb_tiny_spanne": [
+   84,
+   155
+  ],
+  "n_airbnb_tiny": 8,
+  "airbnb_hausboot_median": null,
+  "n_airbnb_boote": 0,
+  "hinweis": "Booking + Airbnb im echten Browser gescrapt (Hauptsaison 2027-07-09, 3 Nächte, 2 Erw.). Preise sind Gesamtpreis/Nächte; Servicegebühren Airbnb inklusive, Booking zzgl. teils Endreinigung. Deep-Links je Platz in Excel für Detailprüfung.",
+  "tiny_vorschlag": 113,
+  "hausboot_vorschlag": 217,
+  "hausboot_hinweis": "Zu wenige Hausboot-Angebote in der Region (n=1); Fallback Brandenburg-Median. Hausboot-Markt hier kaum existent."
+ },
+ "portal_angebote": [],
+ "website_preise": [
+  {
+   "name": "Freizeit- und Erholungszentrum Eilenburg",
+   "preis_nacht": 40.0,
+   "typ": "Mobilheim, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camp David Sport Resort",
+   "preis_nacht": 60.0,
+   "typ": "Mobilheim, Ferienhaus, Hütte, Schlaffass",
+   "quelle": "Website"
+  },
+  {
+   "name": "Zschirnstein-Biwak",
+   "preis_nacht": 65.92,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Nikolsdorf-Biwak",
+   "preis_nacht": 65.92,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Zehrborn-Biwak",
+   "preis_nacht": 65.92,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Biwak-Quirl",
+   "preis_nacht": 65.92,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Rabenstein",
+   "preis_nacht": 47.5,
+   "typ": "Mobilheim, Bungalow, Ferienhaus, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Ferienpark Bad Sonnenland",
+   "preis_nacht": 65.0,
+   "typ": "Ferienhaus, Hütte, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Waldbad Oberau",
+   "preis_nacht": 75.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Waldcamping Erzgebirge",
+   "preis_nacht": 53.0,
+   "typ": "Ferienhaus, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camping Pirna",
+   "preis_nacht": 48.0,
+   "typ": "Bungalow, Schlaffass",
+   "quelle": "Website"
+  },
+  {
+   "name": "Rehbocktal",
+   "preis_nacht": 40.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Natur- und AbenteuerCamping am Stausee Bautzen",
+   "preis_nacht": 40.0,
+   "typ": "Hütte, Schlaffass",
+   "quelle": "Website"
+  },
+  {
+   "name": "Waldbad Niesendorf",
+   "preis_nacht": 64.5,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Basislager Fichtelberg Wohnmobilstellplätze",
+   "preis_nacht": 50.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camping Wostra",
+   "preis_nacht": 60.0,
+   "typ": "Bungalow, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Mutzschen-Roda",
+   "preis_nacht": 40.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Feriendorf Kimbucht",
+   "preis_nacht": 85.0,
+   "typ": "Bungalow, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Taubenteich-Biwak",
+   "preis_nacht": 65.92,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Behütum",
+   "preis_nacht": 55.0,
+   "typ": "Tinyhaus, Ferienhaus, Hütte, Schlaffass",
+   "quelle": "Website"
+  },
+  {
+   "name": "Die geheimen Welt von Turisede",
+   "preis_nacht": 55.0,
+   "typ": "Tinyhaus, Ferienhaus, Hütte, Schlaffass",
+   "quelle": "Website"
+  },
+  {
+   "name": "Spitzstein Biwak",
+   "preis_nacht": 65.92,
+   "typ": "Hütte",
+   "quelle": "Website"
+  }
+ ],
+ "booking_links": [
+  {
+   "name": "Campingplatz Kulkwitzer See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Kulkwitzer%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Waldbad Niesendorf",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Waldbad%20Niesendorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingpark Greifensteine",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Greifensteine&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Dammühlenteich",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Damm%C3%BChlenteich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Riesaer Wassersportverein",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Riesaer%20Wassersportverein&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping Pirna",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Pirna&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Zum Müncherteich",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Zum%20M%C3%BCncherteich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ferienpark Bad Sonnenland",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienpark%20Bad%20Sonnenland&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ostrauer Mühle",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ostrauer%20M%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Dresdner Segelclub 1910 e.V.",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Dresdner%20Segelclub%201910%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Marinekameradschaft Riesa",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Marinekameradschaft%20Riesa&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping am Tonschacht",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20am%20Tonschacht&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Halbendorfer See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Halbendorfer%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingpark Greifensteine",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Greifensteine&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "BWT-Bierwiesenteich Pfaffroda I Camping-Freizeit-Gastro-Bowling",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=BWT-Bierwiesenteich%20Pfaffroda%20I%20Camping-Freizeit-Gastro-Bowling&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Sportgelände Ehrenfriedersdorfer Kanuverein am Greifenbachstauweiher e.V.",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Sportgel%C3%A4nde%20Ehrenfriedersdorfer%20Kanuverein%20am%20Greifenbachstauweiher%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz MC Ehrenfriedersdorf",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20MC%20Ehrenfriedersdorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campinggelegenheit an der Ochelbaude",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campinggelegenheit%20an%20der%20Ochelbaude&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Barth-Mühle",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Barth-M%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturbad Niederwiesa",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturbad%20Niederwiesa&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping Wostra",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Wostra&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Rabenstein",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Rabenstein&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Seebad Neumühle",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Seebad%20Neum%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Marina Camping Geierswalder See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Marina%20Camping%20Geierswalder%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz \"Kleiner Galgenteich\"",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20%22Kleiner%20Galgenteich%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Mittweidaer Aue",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Mittweidaer%20Aue&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Club der Biehainer Sonnenfreunde",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Club%20der%20Biehainer%20Sonnenfreunde&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Mutzschen-Roda",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Mutzschen-Roda&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Gunzenberg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Gunzenberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Am Badesee Coswig-Kötitz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Am%20Badesee%20Coswig-K%C3%B6titz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Erholungsgebiet Biehainer See'n (Camping Biehain)",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Erholungsgebiet%20Biehainer%20See%27n%20%28Camping%20Biehain%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ferienhof Commerau",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienhof%20Commerau&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wohnmobil- und Caravanstellplatz \"In der Sandgrube\"",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobil-%20und%20Caravanstellplatz%20%22In%20der%20Sandgrube%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wohnmobilstellplatz Silberlandhalle - Annaberg-Buchholz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Silberlandhalle%20-%20Annaberg-Buchholz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ferdinands Homestay",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferdinands%20Homestay&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "KNAUS Campingpark Leipzig",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=KNAUS%20Campingpark%20Leipzig&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Mühlteich",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20M%C3%BChlteich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ferienpark Thümmlitzsee (\"Thümmlitz Erholung\")",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienpark%20Th%C3%BCmmlitzsee%20%28%22Th%C3%BCmmlitz%20Erholung%22%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Caravan-Übernachtungsplatz Billy - Bad Gottleuba-Berggießhübel",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Caravan-%C3%9Cbernachtungsplatz%20Billy%20-%20Bad%20Gottleuba-Berggie%C3%9Fh%C3%BCbel&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "See-Camping Altenburg-Pahna",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=See-Camping%20Altenburg-Pahna&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  }
+ ],
+ "booking_hausboote": [
+  {
+   "name": "Schiffsherberge Pöppelmann",
+   "ort": "Dresden Neustadt",
+   "preis_gesamt": 197,
+   "bewertung": "8,5",
+   "typ": "Schiff (Hostel-artig)",
+   "url": "https://www.booking.com/hotel/de/beherbergungsschiff-d-papppelmann.de.html",
+   "preis_nacht": 66
+  }
+ ],
+ "booking_glamping": [
+  {
+   "name": "Campingplatz Altjessen 57 (Mobilheim)",
+   "ort": "Pirna",
+   "preis_gesamt": 243,
+   "bewertung": "7,4",
+   "typ": "Mobilheim",
+   "url": "https://www.booking.com/hotel/de/campingplatz-aj57.de.html",
+   "preis_nacht": 81
+  },
+  {
+   "name": "Schäferwagen Gartenblick Nr 4",
+   "ort": "Radebeul",
+   "preis_gesamt": 153,
+   "bewertung": "8,5",
+   "typ": "Mobilheim",
+   "url": "https://www.booking.com/hotel/de/schaferwagen-gartenblick-nr-4.de.html",
+   "preis_nacht": 51
+  },
+  {
+   "name": "Schäferwagen Auenblick Nr 5",
+   "ort": "Radebeul",
+   "preis_gesamt": 153,
+   "bewertung": "8,7",
+   "typ": "Mobilheim",
+   "url": "https://www.booking.com/hotel/de/ferienhof-elbauenblick-schaferwagen-luxus-camping.de.html",
+   "preis_nacht": 51
+  },
+  {
+   "name": "Bauwagen Villa Maibeere",
+   "ort": "Radebeul",
+   "preis_gesamt": 171,
+   "bewertung": "8,9",
+   "typ": "Bungalow 16 m²",
+   "url": "https://www.booking.com/hotel/de/bauwagen-villa-maibeere.de.html",
+   "preis_nacht": 57
+  },
+  {
+   "name": "KNAUS Campingpark Leipzig (Chalet)",
+   "ort": "Leipzig Nord-West",
+   "preis_gesamt": 193,
+   "bewertung": "7,6",
+   "typ": "Chalet 12 m²",
+   "url": "https://www.booking.com/hotel/de/knaus-campingpark-leipzig.de.html",
+   "preis_nacht": 64
+  },
+  {
+   "name": "Campingfass Zur Adria",
+   "ort": "Großdubrau",
+   "preis_gesamt": 237,
+   "bewertung": "8,0",
+   "typ": "Fass",
+   "url": "https://www.booking.com/hotel/de/wohlfuhlfass-seegluck.de.html",
+   "preis_nacht": 79
+  },
+  {
+   "name": "Camping Erzhütte (Mobilheim)",
+   "ort": "Rechenberg-Bienenmühle",
+   "preis_gesamt": 130,
+   "bewertung": "6,3",
+   "typ": "Mobilheim 10 m²",
+   "url": "https://www.booking.com/hotel/de/camping-erzhutte.de.html",
+   "preis_nacht": 43
+  },
+  {
+   "name": "Campingfass Bunge 1",
+   "ort": "Krostitz",
+   "preis_gesamt": 170,
+   "bewertung": "",
+   "typ": "Fass",
+   "url": "https://www.booking.com/hotel/de/campingfass-bunge-1.de.html",
+   "preis_nacht": 57
+  },
+  {
+   "name": "Campingfass Bunge 2",
+   "ort": "Krostitz",
+   "preis_gesamt": 170,
+   "bewertung": "",
+   "typ": "Fass",
+   "url": "https://www.booking.com/hotel/de/campingfass-bunge-2.de.html",
+   "preis_nacht": 57
+  },
+  {
+   "name": "Familienurlaub im Tiny House auf dem Bauernhof",
+   "ort": "Bühlau (Dresden)",
+   "preis_gesamt": 155,
+   "bewertung": "9,0",
+   "typ": "Mobilheim 21 m²",
+   "url": "https://www.booking.com/hotel/de/famla-hof-in-ruhiger-lage.de.html",
+   "preis_nacht": 52
+  },
+  {
+   "name": "Kleine Freiheit 6 - Waldlichtung (Zelt-Lodge)",
+   "ort": "Reichendorf",
+   "preis_gesamt": 320,
+   "bewertung": "9,0",
+   "typ": "Zelt",
+   "url": "https://www.booking.com/hotel/de/kleine-freiheit-6-waldlichtung.de.html",
+   "preis_nacht": 107
+  },
+  {
+   "name": "Glamping Zelten im ruhigen Garten (Zelt-Lodge)",
+   "ort": "Leipzig Südwest",
+   "preis_gesamt": 363,
+   "bewertung": "10",
+   "typ": "Zelt",
+   "url": "https://www.booking.com/hotel/de/glamping-einzigartiges-zelten-im-ruhigen-garten-mit-guter-anbindung-amp-wc-kuche.de.html",
+   "preis_nacht": 121
+  },
+  {
+   "name": "Modernes TinyHouse mit Klimaanlage Elsterheide (Chalet)",
+   "ort": "Elsterheide (Lausitzer Seenland)",
+   "preis_gesamt": 433,
+   "bewertung": "9,4",
+   "typ": "Chalet 24 m²",
+   "url": "https://www.booking.com/hotel/de/modernes-tiny-house-im-grunen-mit-terrasse-und-parkplatz.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 144
+  },
+  {
+   "name": "Chalet am See - Vogtland Chalet",
+   "ort": "Bad Brambach",
+   "preis_gesamt": 426,
+   "bewertung": "8,4",
+   "typ": "Chalet 25 m²",
+   "url": "https://www.booking.com/hotel/de/chalet-am-see.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 142
+  },
+  {
+   "name": "Bungalow im Märchengarten (Lodge)",
+   "ort": "Krauschwitz",
+   "preis_gesamt": 207,
+   "bewertung": "9,1",
+   "typ": "FeWo 28 m²",
+   "url": "https://www.booking.com/hotel/de/bungalow-im-marchengarten.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 69
+  },
+  {
+   "name": "Trixi Park Zittauer Gebirge (Ferienhaus)",
+   "ort": "Großschönau",
+   "preis_gesamt": 538,
+   "bewertung": "8,6",
+   "typ": "Ferienhaus",
+   "url": "https://www.booking.com/hotel/de/trixi-ferienpark-zittauer-gebirge.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 179
+  }
+ ],
+ "airbnb_angebote": [
+  {
+   "title": "Tiny House in Elsterheide",
+   "desc": "Tiny House mit Klimaanlage in privater Atmosphäre (Lausitzer Seenland)",
+   "total": 465,
+   "url": "https://www.airbnb.de/rooms/1653724378014402156",
+   "rating": "5,0",
+   "preis_nacht": 155
+  },
+  {
+   "title": "Tiny House in Elsterheide",
+   "desc": "Mobilheim Elsterheide Lausitzer Seeland",
+   "total": 294,
+   "url": "https://www.airbnb.de/rooms/1685707201563541859",
+   "rating": "4,73",
+   "preis_nacht": 98
+  },
+  {
+   "title": "Tiny House in Kamenz",
+   "desc": "Badebox",
+   "total": 380,
+   "url": "https://www.airbnb.de/rooms/1127270729794222391",
+   "rating": "5,0",
+   "preis_nacht": 127
+  },
+  {
+   "title": "Tiny House in Welzow",
+   "desc": "Schickes Tiny-House mitten im Lausitzer Seenland!",
+   "total": 315,
+   "url": "https://www.airbnb.de/rooms/657787452390877094",
+   "rating": "4,91",
+   "preis_nacht": 105
+  },
+  {
+   "title": "Tiny House in Dresden",
+   "desc": "Villa Sunnyside – Gartenhaus",
+   "total": 252,
+   "url": "https://www.airbnb.de/rooms/6512620",
+   "rating": "4,99",
+   "preis_nacht": 84
+  },
+  {
+   "title": "Tiny House in Treuen",
+   "desc": "Ferienhaus im Grünen - Entspannen mit Alpakas",
+   "total": 344,
+   "url": "https://www.airbnb.de/rooms/1514987444369046244",
+   "rating": "4,95",
+   "preis_nacht": 115
+  },
+  {
+   "title": "Tiny House in Muldenhammer",
+   "desc": "Hascherle Hitt",
+   "total": 288,
+   "url": "https://www.airbnb.de/rooms/721652304865188013",
+   "rating": "5,0",
+   "preis_nacht": 96
+  },
+  {
+   "title": "Tiny House in Bad Schandau",
+   "desc": "Schäferwagen Tiny House - Parkplatz, Garten, WLAN",
+   "total": 340,
+   "url": "https://www.airbnb.de/rooms/668086600232557891",
+   "rating": "4,96",
+   "preis_nacht": 113
+  },
+  {
+   "title": "Bungalow in Lauta",
+   "desc": "Haus Albatros (Lausitzer Seenland)",
+   "total": 382,
+   "url": "https://www.airbnb.de/rooms/51134979",
+   "rating": "4,83",
+   "preis_nacht": 127
+  },
+  {
+   "title": "Bungalow in Stützengrün",
+   "desc": "Ferienhaus mit Blick über die Talsperre Eibenstock",
+   "total": 470,
+   "url": "https://www.airbnb.de/rooms/2850722",
+   "rating": "4,89",
+   "preis_nacht": 157
+  },
+  {
+   "title": "Bungalow in Dresden",
+   "desc": "Haus Sonnenschein Dresden",
+   "total": 241,
+   "url": "https://www.airbnb.de/rooms/1461465824985934237",
+   "rating": "4,98",
+   "preis_nacht": 80
+  },
+  {
+   "title": "Zelt in Großharthau",
+   "desc": "Glamping-Zelt auf Lebenshof für Rinder",
+   "total": 247,
+   "url": "https://www.airbnb.de/rooms/1530373315813392794",
+   "rating": "4,95",
+   "preis_nacht": 82
+  },
+  {
+   "title": "Hütte in Bad Gottleuba-Berggießhübel",
+   "desc": "Waldhaus Sonnenuntergang mit Fernblick und Sauna",
+   "total": null,
+   "url": "https://www.airbnb.de/rooms/11265153",
+   "rating": "4,82"
+  }
+ ],
+ "scrape_info": {
+  "checkin": "2027-07-09",
+  "checkout": "2027-07-12",
+  "naechte": 3,
+  "methode": "Echter Browser (Chrome via browse), Booking-Regionssuche Sachsen mit Unterkunftstyp-Filtern. Preise = Gesamtpreis 3 Naechte / 2 Erwachsene. Ferienparks: 25/39 sichtbar, fast alle Bungalow-Einzellistings der Seenparks Kimbucht (Reichendorf/Quitzdorfer See) und Finnhytte (Niesky) - als Park-Benchmarks aggregiert. | Echter Browser (Chrome via browse), Airbnb ohne Login. Regionssuche Sachsen + Keyword-Suchen (Tiny House, Lausitzer Seenland). Preise = Gesamtpreis 3 Naechte / 2 Erwachsene. Lokal nach Typ/Ort gefiltert; ST/Niedersachsen-Treffer aussortiert (Thale, Wernigerode, Drochtersen). Befund: KEINE echten Hausboot-Angebote in Sachsen auf Airbnb auffindbar (KNAUS-Hausboote Leipzig nicht auf Airbnb gelistet); Hausboot-Markt in SN praktisch nicht existent = Chance."
+ }
+}

@@ -1,0 +1,4280 @@
+{
+ "way/26312600": {
+  "name": "Campingdomizil Körbiskrug",
+  "lat": 52.26605481395457,
+  "lon": 13.655766375237814,
+  "score": 86.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_26312600.jpg",
+   "2014": "luftbilder_hist/way_26312600_esri2014.jpg",
+   "2016": "luftbilder_hist/way_26312600_esri2016.jpg",
+   "2018": "luftbilder_hist/way_26312600_esri2018.jpg",
+   "2020": "luftbilder_hist/way_26312600_esri2020.jpg",
+   "2022": "luftbilder_hist/way_26312600_esri2022.jpg",
+   "2024": "luftbilder_hist/way_26312600_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 97,
+   "flaeche_m2": 4006,
+   "typen": {
+    "Wochenendhaus": 90,
+    "Nach Quellenlage nicht zu spezifizieren": 3,
+    "Gebäude zur Abwasserbeseitigung": 3,
+    "Gaststätte, Restaurant": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gaststätte, Restaurant",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-06-19Z",
+     "flaeche_m2": 531.1,
+     "lon": 13.657123943065573,
+     "lat": 52.26565661932034
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 376.2,
+     "lon": 13.653549605261826,
+     "lat": 52.26460426029571
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 121.8,
+     "lon": 13.65336910497171,
+     "lat": 52.264633579823176
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 101.4,
+     "lon": 13.656905047365244,
+     "lat": 52.266908153151014
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 96.8,
+     "lon": 13.65607366180061,
+     "lat": 52.265367644378
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 78.8,
+     "lon": 13.653124027505488,
+     "lat": 52.26560658772443
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 73.2,
+     "lon": 13.65319215423774,
+     "lat": 52.26514852167645
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 64.3,
+     "lon": 13.657159390423942,
+     "lat": 52.26689168386424
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 55.9,
+     "lon": 13.655577621184756,
+     "lat": 52.26588552023016
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 52.4,
+     "lon": 13.653444391553675,
+     "lat": 52.264988609206796
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 48.1,
+     "lon": 13.657381463382064,
+     "lat": 52.26604257709602
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 47.3,
+     "lon": 13.657116700618083,
+     "lat": 52.26718902713411
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 45.9,
+     "lon": 13.655995748035458,
+     "lat": 52.265764752496175
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 44.2,
+     "lon": 13.656277207950732,
+     "lat": 52.26607321168955
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 43.4,
+     "lon": 13.656296984037708,
+     "lat": 52.266551435186315
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 43.0,
+     "lon": 13.656004489949757,
+     "lat": 52.265991959101406
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 42.9,
+     "lon": 13.656878834858793,
+     "lat": 52.26650228831803
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 42.7,
+     "lon": 13.656573277693711,
+     "lat": 52.266048994585795
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 42.4,
+     "lon": 13.65600875144917,
+     "lat": 52.26610700150887
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 42.4,
+     "lon": 13.656290865783609,
+     "lat": 52.26644947486712
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 42.3,
+     "lon": 13.656000895800997,
+     "lat": 52.26587871161181
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 42.2,
+     "lon": 13.656567054378568,
+     "lat": 52.265929808105064
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 42.1,
+     "lon": 13.656589037375962,
+     "lat": 52.26663837982258
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 41.3,
+     "lon": 13.657078146141211,
+     "lat": 52.26653463780694
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 40.5,
+     "lon": 13.656275262762316,
+     "lat": 52.26595565959963
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 40.0,
+     "lon": 13.656477339683207,
+     "lat": 52.26691322929311
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 39.0,
+     "lon": 13.657213592331743,
+     "lat": 52.26730329856357
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 38.5,
+     "lon": 13.656299264807297,
+     "lat": 52.266649565862174
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 38.0,
+     "lon": 13.657467726436085,
+     "lat": 52.26639039098497
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 37.6,
+     "lon": 13.656584650027364,
+     "lat": 52.26653082066524
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 37.2,
+     "lon": 13.656882376284603,
+     "lat": 52.26661304267458
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 36.5,
+     "lon": 13.65742491177599,
+     "lat": 52.26620837249464
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 36.0,
+     "lon": 13.656013170846842,
+     "lat": 52.266224058931606
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 35.5,
+     "lon": 13.656576950352607,
+     "lat": 52.26616194128109
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 33.7,
+     "lon": 13.65740500347782,
+     "lat": 52.26672828835688
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 33.6,
+     "lon": 13.657392275053764,
+     "lat": 52.267256636965676
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 32.3,
+     "lon": 13.656624880513899,
+     "lat": 52.265574283676955
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 31.3,
+     "lon": 13.6562832537047,
+     "lat": 52.26619949463124
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 29.8,
+     "lon": 13.655558984518832,
+     "lat": 52.26580106179573
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-31Z",
+     "flaeche_m2": 28.9,
+     "lon": 13.654015650710535,
+     "lat": 52.26447783351796
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 28.9,
+     "lon": 13.657615396625642,
+     "lat": 52.26714171149353
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 28.5,
+     "lon": 13.657697672173379,
+     "lat": 52.26703571698463
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 28.4,
+     "lon": 13.656771377344938,
+     "lat": 52.26558474486498
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 27.6,
+     "lon": 13.656236483179535,
+     "lat": 52.26565839829738
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 27.0,
+     "lon": 13.656057408583811,
+     "lat": 52.26671421436351
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 27.0,
+     "lon": 13.65644876987761,
+     "lat": 52.2662785782479
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 26.8,
+     "lon": 13.65779790287128,
+     "lat": 52.267461833085605
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-31Z",
+     "flaeche_m2": 26.5,
+     "lon": 13.653662136285488,
+     "lat": 52.26433091145539
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 26.5,
+     "lon": 13.657594532909313,
+     "lat": 52.26777476750041
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 24.9,
+     "lon": 13.657562426940297,
+     "lat": 52.26664973944878
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 24.7,
+     "lon": 13.657350330302839,
+     "lat": 52.26706190063707
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 24.5,
+     "lon": 13.655730681870557,
+     "lat": 52.266116215205685
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 24.4,
+     "lon": 13.656544264170023,
+     "lat": 52.26581576333715
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 23.9,
+     "lon": 13.656251297103212,
+     "lat": 52.26584016531483
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 23.6,
+     "lon": 13.656882089885649,
+     "lat": 52.266948772589494
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 23.6,
+     "lon": 13.657428011845532,
+     "lat": 52.266513402636946
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 23.5,
+     "lon": 13.65760720643523,
+     "lat": 52.267650122539344
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 23.4,
+     "lon": 13.656844685479555,
+     "lat": 52.26567389893071
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 23.3,
+     "lon": 13.656857061412673,
+     "lat": 52.26597784061436
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-06-01Z",
+     "flaeche_m2": 23.3,
+     "lon": 13.657326802371825,
+     "lat": 52.266651132036294
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Waldplatz am Westufer eines Sees: ~90 kleine Wochenendhaeuser/Bungalows verstreut unter Kiefern entlang eines Sandwegs (passt zu ALKIS: 90x Wochenendhaus), langes Restaurant-/Servicegebaeude (graues Dach) in der Platzmitte, gruenes Dach am Seeufer SW (Rezeption/Sanitaer?), kleine Stege am Westufer, Teich im Norden, Dorf mit Gaerten/Pools direkt suedlich angrenzend",
+   "anzahl_geschaetzt": "80-100 feste Einheiten (ueberwiegend Wochenendhaeuser), wenig Tourik-Stellplaetze",
+   "zustand": "mittel (heterogene, teils aeltere Bungalow-Generation)",
+   "notiz": "ALKIS bestaetigt: 90 Wochenendhaeuser = etablierte Ferienhaus-Siedlung, kein reiner Campingplatz. Viele kleine Altbauten (20-50 qm) = Austausch-Potenzial gegen moderne Tinyhaeuser. Uferzone im Westen nur duenn besetzt, Lichtungen vorhanden. Dorf direkt angrenzend -> Infrastruktur gut, aber Baurecht pruefen (B-Plan vorhanden).",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/224758381": {
+  "name": "Kuhle Wampe",
+  "lat": 52.38966565129603,
+  "lon": 13.65154393660122,
+  "score": 85.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_224758381.jpg",
+   "2014": "luftbilder_hist/way_224758381_esri2014.jpg",
+   "2016": "luftbilder_hist/way_224758381_esri2016.jpg",
+   "2018": "luftbilder_hist/way_224758381_esri2018.jpg",
+   "2020": "luftbilder_hist/way_224758381_esri2020.jpg",
+   "2022": "luftbilder_hist/way_224758381_esri2022.jpg",
+   "2024": "luftbilder_hist/way_224758381_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Bewaldete Halbinsel: dichter Bogen aus Hausbooten/Schwimmhaeusern (~45-60 lange schmale Daecher) rings um die suedliche Bucht, verstreute Caravans/Huetten unter Baeumen an der Ostseite, grosses zentrales Club-/Servicegebaeude (graues Dach), Steganlagen mit Sportbooten West und Ost",
+   "anzahl_geschaetzt": "45-60 Hausboote + ~30-50 Caravans/Huetten im Wald",
+   "zustand": "gepflegt bis mittel",
+   "notiz": "HAUSBOOT-KOLONIE bestaetigt = direkter Wettbewerb fuer Hausboot-Vermietung! (Website-Befund deckt sich.) Als Tinyhaus-Standort trotzdem interessant: Waldflaeche im Norden frei, Bucht-Infrastruktur (Stege, Strom) vorhanden. Eher Kooperations- als Neugruendungs-Kandidat fuer Boote; Tinyhaeuser auf der freien Nordflaeche als Ergaenzung denkbar.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ },
+ "way/366020444": {
+  "name": "Camping- und Freizeitpark am Plauer See",
+  "lat": 52.40019733715687,
+  "lon": 12.43469031896526,
+  "score": 84.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_366020444.jpg",
+   "2014": "luftbilder_hist/way_366020444_esri2014.jpg",
+   "2016": "luftbilder_hist/way_366020444_esri2016.jpg",
+   "2018": "luftbilder_hist/way_366020444_esri2018.jpg",
+   "2020": "luftbilder_hist/way_366020444_esri2020.jpg",
+   "2022": "luftbilder_hist/way_366020444_esri2022.jpg",
+   "2024": "luftbilder_hist/way_366020444_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 41,
+   "flaeche_m2": 1988,
+   "typen": {
+    "Gebäude zur Freizeitgestaltung": 30,
+    "Schuppen": 4,
+    "Gebäude für betriebliche Sozialeinrichtung": 2,
+    "Lagerhalle, Lagerschuppen, Lagerhaus": 2,
+    "Nach Quellenlage nicht zu spezifizieren": 1,
+    "Garage": 1,
+    "Geschäftsgebäude": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für betriebliche Sozialeinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-12-02Z",
+     "flaeche_m2": 319.5,
+     "lon": 12.436491316891349,
+     "lat": 52.399943807327524
+    },
+    {
+     "funktion": "Geschäftsgebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-03Z",
+     "flaeche_m2": 144.7,
+     "lon": 12.437401723817278,
+     "lat": 52.40026856734771
+    },
+    {
+     "funktion": "Gebäude für betriebliche Sozialeinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 127.9,
+     "lon": 12.434613445516419,
+     "lat": 52.400002668382925
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 89.7,
+     "lon": 12.432116738214697,
+     "lat": 52.40068594038038
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 82.4,
+     "lon": 12.432735765569205,
+     "lat": 52.40026636068358
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 54.7,
+     "lon": 12.432137151060305,
+     "lat": 52.400797352358246
+    },
+    {
+     "funktion": "Lagerhalle, Lagerschuppen, Lagerhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 54.0,
+     "lon": 12.43704799749057,
+     "lat": 52.40032139867612
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 53.8,
+     "lon": 12.432230967123164,
+     "lat": 52.40074830125015
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 53.4,
+     "lon": 12.436140705967182,
+     "lat": 52.3999823492029
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 52.3,
+     "lon": 12.432307286233064,
+     "lat": 52.400698598574635
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 51.6,
+     "lon": 12.431677884243555,
+     "lat": 52.40131170954565
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 50.9,
+     "lon": 12.432036124149658,
+     "lat": 52.40135380645587
+    },
+    {
+     "funktion": "Lagerhalle, Lagerschuppen, Lagerhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 50.4,
+     "lon": 12.437230396275416,
+     "lat": 52.400402506725214
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 50.2,
+     "lon": 12.432982139665043,
+     "lat": 52.40072950126385
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 46.5,
+     "lon": 12.431820438024701,
+     "lat": 52.401265637650155
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 43.9,
+     "lon": 12.431744976555064,
+     "lat": 52.401001501876344
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 40.8,
+     "lon": 12.432530463033778,
+     "lat": 52.40067200170673
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 40.5,
+     "lon": 12.43223635123051,
+     "lat": 52.40107142569006
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 40.2,
+     "lon": 12.437004539078147,
+     "lat": 52.40013764527044
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 36.7,
+     "lon": 12.43235726383474,
+     "lat": 52.40048218400303
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 36.3,
+     "lon": 12.432453729966937,
+     "lat": 52.40051170714645
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 36.2,
+     "lon": 12.432755522846037,
+     "lat": 52.40038819493984
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 36.2,
+     "lon": 12.432688333569144,
+     "lat": 52.40046953749014
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 36.2,
+     "lon": 12.432621574510241,
+     "lat": 52.400551109273074
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 34.0,
+     "lon": 12.432114770674943,
+     "lat": 52.400956531869774
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-03Z",
+     "flaeche_m2": 33.6,
+     "lon": 12.436358756094704,
+     "lat": 52.39976141460925
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 31.5,
+     "lon": 12.431559805769693,
+     "lat": 52.401395794028716
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 28.6,
+     "lon": 12.437164623240596,
+     "lat": 52.40019460178908
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 26.3,
+     "lon": 12.431820177366248,
+     "lat": 52.40094323134302
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 25.9,
+     "lon": 12.431934127430816,
+     "lat": 52.400801492892334
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 25.6,
+     "lon": 12.431538308740084,
+     "lat": 52.4012896465663
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 25.5,
+     "lon": 12.431603140603775,
+     "lat": 52.40121068995834
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 25.5,
+     "lon": 12.432311883421749,
+     "lat": 52.40100200112274
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 25.5,
+     "lon": 12.432003014825373,
+     "lat": 52.4010871385149
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 25.5,
+     "lon": 12.431680803446309,
+     "lat": 52.40111604183201
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 19.3,
+     "lon": 12.437967595527779,
+     "lat": 52.400810577990704
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-03Z",
+     "flaeche_m2": 15.4,
+     "lon": 12.432288862205098,
+     "lat": 52.40046130225867
+    },
+    {
+     "funktion": "Schuppen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 5.5,
+     "lon": 12.432057795954252,
+     "lat": 52.401092356685446
+    },
+    {
+     "funktion": "Schuppen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 5.1,
+     "lon": 12.43208807975734,
+     "lat": 52.401370132763816
+    },
+    {
+     "funktion": "Schuppen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 3.6,
+     "lon": 12.431885909936275,
+     "lat": 52.40125019185092
+    },
+    {
+     "funktion": "Schuppen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-09Z",
+     "flaeche_m2": 3.0,
+     "lon": 12.431832051298256,
+     "lat": 52.40123264106835
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Dicht besetzte Halbinsel am Plauer See: ~150-200 Caravans/Mobilheime in engen Reihen und unter Baeumen, mehrere Servicegebaeude, 30 kleine Freizeit-Haeuser im NW-Teil (ALKIS: 30x Freizeitgestaltung), grosse Marina mit ~100+ Booten an der Ostbucht, Badestrand, interner Teich im Norden, Ackerland nordoestlich angrenzend",
+   "anzahl_geschaetzt": "150-200 Einheiten (Mix Dauer/Touristik) + 30 Freizeithaeuser",
+   "zustand": "mittel (dichter, heterogener Bestand)",
+   "notiz": "Sehr etablierter, dichter Platz mit eigener Marina = Hausboot-Logistik ideal. Kaum freie Flaeche auf der Halbinsel; Erweiterung nur am Nordrand Richtung Acker/Teich denkbar (Eigentum/Baurecht pruefen). Eher Austausch alter Mobilheime gegen Tinyhaeuser als Neubau auf der gruenen Wiese. B-Plan vorhanden (26/30 Treffer in Region).",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/138017660": {
+  "name": "Spreewald-Natur-Camping \"Am See\"",
+  "lat": 51.85524917703104,
+  "lon": 13.853907528132032,
+  "score": 84.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_138017660.jpg",
+   "2014": "luftbilder_hist/way_138017660_esri2014.jpg",
+   "2016": "luftbilder_hist/way_138017660_esri2016.jpg",
+   "2018": "luftbilder_hist/way_138017660_esri2018.jpg",
+   "2020": "luftbilder_hist/way_138017660_esri2020.jpg",
+   "2022": "luftbilder_hist/way_138017660_esri2022.jpg",
+   "2024": "luftbilder_hist/way_138017660_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 14,
+   "flaeche_m2": 614,
+   "typen": {
+    "Gebäude für Beherbergung": 11,
+    "Gebäude zur Abwasserbeseitigung": 1,
+    "Gebäude für Sportzwecke": 1,
+    "Überdachung": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 115.0,
+     "lon": 13.853187762763792,
+     "lat": 51.85641570448726
+    },
+    {
+     "funktion": "Überdachung",
+     "gebnutzbez": "Sonstiges Bauwerk oder sonstige Einrichtung",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 89.3,
+     "lon": 13.852449482742204,
+     "lat": 51.855256468582546
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 65.8,
+     "lon": 13.852746760574558,
+     "lat": 51.85476997209962
+    },
+    {
+     "funktion": "Gebäude für Sportzwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2017-11-22Z",
+     "flaeche_m2": 62.9,
+     "lon": 13.85211443066118,
+     "lat": 51.85505243413325
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 35.3,
+     "lon": 13.852820732608105,
+     "lat": 51.85518572602884
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 34.8,
+     "lon": 13.852772822574831,
+     "lat": 51.85489997607858
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 34.7,
+     "lon": 13.852789134065258,
+     "lat": 51.854999528200125
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 32.5,
+     "lon": 13.853831576978383,
+     "lat": 51.856972693235434
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 30.8,
+     "lon": 13.852637273435471,
+     "lat": 51.85414297568489
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 30.8,
+     "lon": 13.852624692852533,
+     "lat": 51.85424593400245
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 30.8,
+     "lon": 13.852610813655735,
+     "lat": 51.85434934587869
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 30.8,
+     "lon": 13.852598100706171,
+     "lat": 51.854456002182516
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 11.1,
+     "lon": 13.853872648626902,
+     "lat": 51.85734947767891
+    },
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-05-13Z",
+     "flaeche_m2": 9.2,
+     "lon": 13.853817677203804,
+     "lat": 51.85730565184458
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kuenstlicher Badesee (Tagebau-Restloch, gruenes Wasser, frische Sandboeschungen am Ostufer): ~60-80 Caravans in Reihen entlang West- und Suedufer, ~11 Beherbergungs-Huetten/Bungalows (ALKIS) in zwei Gruppen am Westufer, Rezeption/Service am Nordzugang, kleiner Steg West, Ostufer komplett ungenutzt (nur Boeschung/Weg)",
+   "anzahl_geschaetzt": "60-80 Stellplaetze + ~11 feste Miet-Huetten",
+   "zustand": "gepflegt, junge Anlage (Ufer noch in Entwicklung)",
+   "notiz": "Junges, wachsendes Areal: Ost- und Nordufer noch frei = klare Erweiterungsflaeche fuer Tinyhaus-Reihe mit Seeblick. Betreiber baut bereits feste Unterkuenfte (11 Huetten) = investitionsbereit. Wasser wirkt algenreich (Restsee) - Badewasserqualitaet pruefen. Guter Kandidat!",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/1028630742": {
+  "name": "Naturcampingplatz \"Großer Treppelsee\"",
+  "lat": 52.136694508105684,
+  "lon": 14.457799662746348,
+  "score": 82.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_1028630742.jpg",
+   "2014": "luftbilder_hist/way_1028630742_esri2014.jpg",
+   "2016": "luftbilder_hist/way_1028630742_esri2016.jpg",
+   "2018": "luftbilder_hist/way_1028630742_esri2018.jpg",
+   "2020": "luftbilder_hist/way_1028630742_esri2020.jpg",
+   "2022": "luftbilder_hist/way_1028630742_esri2022.jpg",
+   "2024": "luftbilder_hist/way_1028630742_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 2,
+   "flaeche_m2": 132,
+   "typen": {
+    "Pumpstation": 1,
+    "Gebäude zur Freizeitgestaltung": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-11-17Z",
+     "flaeche_m2": 108.5,
+     "lon": 14.457956016365697,
+     "lat": 52.136411813841036
+    },
+    {
+     "funktion": "Pumpstation",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-11-17Z",
+     "flaeche_m2": 23.9,
+     "lon": 14.457016910254612,
+     "lat": 52.136380156376816
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Naturcamping tief im Kiefernwald am Ostufer des Grossen Treppelsees: kleiner Sandstrand/Badestelle im SW, verstreute Zelt-/Caravanplaetze unter Baeumen, nur 2-4 kleine Gebaeude (ALKIS: 1x Freizeitgebaeude + Pumpstation), Sandwege als Erschliessung, grosse zusammenhaengende Waldflaeche ohne Nutzung",
+   "anzahl_geschaetzt": "20-40 Stellplaetze, praktisch keine festen Mietunterkuenfte",
+   "zustand": "naturbelassen, einfache Infrastruktur",
+   "notiz": "Sehr ruhiger, naturnaher Platz mit viel Reserveflaeche im Wald. Kaum feste Bauten = Mietangebot-Luecke bestaetigt. Tinyhaeuser auf Punktfundamenten unter Kiefern mit Seeblick wuerden zum Natur-Konzept passen; Zufahrt/Erschliessung (Sandwege) und Baurecht im Wald pruefen (Naturschutz?).",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/256215462": {
+  "name": "Voigtswiese",
+  "lat": 52.95451521254183,
+  "lon": 13.743550409150854,
+  "score": 81.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_256215462.jpg",
+   "2014": "luftbilder_hist/way_256215462_esri2014.jpg",
+   "2016": "luftbilder_hist/way_256215462_esri2016.jpg",
+   "2018": "luftbilder_hist/way_256215462_esri2018.jpg",
+   "2020": "luftbilder_hist/way_256215462_esri2020.jpg",
+   "2022": "luftbilder_hist/way_256215462_esri2022.jpg",
+   "2024": "luftbilder_hist/way_256215462_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 1,
+   "flaeche_m2": 61,
+   "typen": {
+    "Gebäude für Beherbergung": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Beherbergung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 60.7,
+     "lon": 13.744824313987904,
+     "lat": 52.95508169779251
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kleine offene Wiesen-Lichtung im Kiefernwald direkt am Seeufer: ~20-25 Caravans in zwei Reihen am Waldrand, T-foermiger Holzsteg ins Wasser, 1 kleines Gebaeude (ALKIS: 1x Beherbergung, 61 qm), Feuerstelle/Sitzkreis auf der Wiese, keine weiteren Bauten",
+   "anzahl_geschaetzt": "20-25 Stellplaetze + 1 kleines Beherbergungsgebaeude",
+   "zustand": "gepflegt, klein/ueberschaubar",
+   "notiz": "Top-Lage OHNE Mietunterkuenfte bestaetigt (nur 1 kleines Haus). Wiese zwischen Caravan-Reihe und Ufer frei = idealer Platz fuer 3-6 Tinyhaeuser mit Seeblick; Steg vorhanden -> auch Mini-Hausboot-Option. Kleiner Betreiber/Verein? Kontakt und Baurecht klaeren. Sehr attraktiver Lead.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/45240450": {
+  "name": "Schlaubetal Camping Schervenzsee",
+  "lat": 52.18318114155521,
+  "lon": 14.444131909290011,
+  "score": 78.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_45240450.jpg",
+   "2014": "luftbilder_hist/way_45240450_esri2014.jpg",
+   "2016": "luftbilder_hist/way_45240450_esri2016.jpg",
+   "2018": "luftbilder_hist/way_45240450_esri2018.jpg",
+   "2020": "luftbilder_hist/way_45240450_esri2020.jpg",
+   "2022": "luftbilder_hist/way_45240450_esri2022.jpg",
+   "2024": "luftbilder_hist/way_45240450_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 75,
+   "flaeche_m2": 3920,
+   "typen": {
+    "Gebäude für Erholungszwecke": 60,
+    "Gebäude zur Abwasserbeseitigung": 4,
+    "Gaststätte, Restaurant": 3,
+    "Geschäftsgebäude": 2,
+    "Nach Quellenlage nicht zu spezifizieren": 2,
+    "Schuppen": 2,
+    "Gebäude zur Elektrizitätsversorgung": 1,
+    "Wohnhaus": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Wohnhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2024-11-08Z",
+     "flaeche_m2": 257.3,
+     "lon": 14.442590347280056,
+     "lat": 52.18431827749162
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2024-11-08Z",
+     "flaeche_m2": 254.8,
+     "lon": 14.442328150268581,
+     "lat": 52.18426384837616
+    },
+    {
+     "funktion": "Gaststätte, Restaurant",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2024-11-08Z",
+     "flaeche_m2": 232.6,
+     "lon": 14.443155968237308,
+     "lat": 52.18310936755674
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 198.6,
+     "lon": 14.44052054726455,
+     "lat": 52.18386323319475
+    },
+    {
+     "funktion": "Gaststätte, Restaurant",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-04-13Z",
+     "flaeche_m2": 188.2,
+     "lon": 14.443032569768057,
+     "lat": 52.18289320900443
+    },
+    {
+     "funktion": "Geschäftsgebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 166.4,
+     "lon": 14.443448829166003,
+     "lat": 52.18327705593094
+    },
+    {
+     "funktion": "Gaststätte, Restaurant",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-04-13Z",
+     "flaeche_m2": 117.7,
+     "lon": 14.443275903059298,
+     "lat": 52.18302776122979
+    },
+    {
+     "funktion": "Schuppen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 57.1,
+     "lon": 14.447057318034854,
+     "lat": 52.18483254296739
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 56.3,
+     "lon": 14.443902518607661,
+     "lat": 52.1826343891321
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 52.0,
+     "lon": 14.443812063070443,
+     "lat": 52.1820038494739
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 51.6,
+     "lon": 14.447266140723615,
+     "lat": 52.18266225787185
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 51.2,
+     "lon": 14.447396511950876,
+     "lat": 52.184095584528784
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 50.8,
+     "lon": 14.446858323673254,
+     "lat": 52.183385089168766
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 50.5,
+     "lon": 14.442846167269709,
+     "lat": 52.181771506189065
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 49.8,
+     "lon": 14.444360113318163,
+     "lat": 52.183847487767856
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 48.8,
+     "lon": 14.444706654563204,
+     "lat": 52.18431460623298
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 48.7,
+     "lon": 14.44459608591973,
+     "lat": 52.18373527547001
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 46.6,
+     "lon": 14.444432172631657,
+     "lat": 52.18376394460417
+    },
+    {
+     "funktion": "Schuppen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 46.2,
+     "lon": 14.444929578322839,
+     "lat": 52.182703045593435
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 45.0,
+     "lon": 14.444818575117074,
+     "lat": 52.183993215114384
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 44.8,
+     "lon": 14.446378127067035,
+     "lat": 52.183189551748384
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 43.8,
+     "lon": 14.44306447908621,
+     "lat": 52.182100280538066
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 43.7,
+     "lon": 14.446535870645922,
+     "lat": 52.183215753385134
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 41.4,
+     "lon": 14.447106544010154,
+     "lat": 52.18290969076986
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 41.3,
+     "lon": 14.44774114464193,
+     "lat": 52.18247773119857
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 41.1,
+     "lon": 14.442483163362882,
+     "lat": 52.1820874997813
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 40.3,
+     "lon": 14.447853528159925,
+     "lat": 52.18226425033152
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 40.2,
+     "lon": 14.444319187693399,
+     "lat": 52.18298474397565
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 40.1,
+     "lon": 14.445160412395673,
+     "lat": 52.18332116072188
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 39.9,
+     "lon": 14.443949578480092,
+     "lat": 52.181149264252554
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 39.8,
+     "lon": 14.444086443430683,
+     "lat": 52.18117142712906
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 38.6,
+     "lon": 14.443828745229165,
+     "lat": 52.18362698917478
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 38.6,
+     "lon": 14.447543500219066,
+     "lat": 52.182228471232705
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 38.4,
+     "lon": 14.443925387174263,
+     "lat": 52.18236202711471
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 38.4,
+     "lon": 14.444096685243316,
+     "lat": 52.18218312872882
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 37.8,
+     "lon": 14.44381599497852,
+     "lat": 52.18379319870983
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 37.6,
+     "lon": 14.443603537545163,
+     "lat": 52.18090371838697
+    },
+    {
+     "funktion": "Geschäftsgebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 37.5,
+     "lon": 14.443346002908267,
+     "lat": 52.183308468470145
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 37.4,
+     "lon": 14.44357456070507,
+     "lat": 52.18362673934457
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 37.1,
+     "lon": 14.443714389018547,
+     "lat": 52.18371985400663
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 37.1,
+     "lon": 14.444065406563379,
+     "lat": 52.18196459508606
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 36.8,
+     "lon": 14.445281424878232,
+     "lat": 52.18401459724153
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 36.6,
+     "lon": 14.444045490354341,
+     "lat": 52.18240041920694
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 36.5,
+     "lon": 14.44269197946038,
+     "lat": 52.181272777187544
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 36.2,
+     "lon": 14.447281153685255,
+     "lat": 52.18310384713299
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 36.2,
+     "lon": 14.443644024344708,
+     "lat": 52.18189130177437
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 35.3,
+     "lon": 14.444955218851653,
+     "lat": 52.18374838192045
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 35.1,
+     "lon": 14.447660038993789,
+     "lat": 52.18275750674158
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 35.0,
+     "lon": 14.4426565643033,
+     "lat": 52.182141953862995
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 34.6,
+     "lon": 14.445721612926725,
+     "lat": 52.1836475396086
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 32.9,
+     "lon": 14.444071149908474,
+     "lat": 52.1812786395644
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 32.8,
+     "lon": 14.443925821448104,
+     "lat": 52.18208543039672
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 32.3,
+     "lon": 14.444116861110071,
+     "lat": 52.18231630444518
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 31.9,
+     "lon": 14.444135375121657,
+     "lat": 52.1809689922112
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 31.8,
+     "lon": 14.443939225285172,
+     "lat": 52.181265990758604
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 31.8,
+     "lon": 14.447644007530073,
+     "lat": 52.18212915597236
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 31.6,
+     "lon": 14.444068776190061,
+     "lat": 52.18207170531961
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 31.3,
+     "lon": 14.447506523834251,
+     "lat": 52.18351910634267
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 31.0,
+     "lon": 14.447420486880093,
+     "lat": 52.18331860819519
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-10-21Z",
+     "flaeche_m2": 30.1,
+     "lon": 14.443549567760051,
+     "lat": 52.18253506846659
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Weitlaeufiger Waldplatz am Nordufer des Schervenzsees: Sandstrand mit grossem Parkplatz am Nordzugang, Restaurant-/Servicegebaeude mit roten Daechern, ~60 kleine Erholungshaeuschen/Bungalows verstreut unter Kiefern (ALKIS: 60x Erholungszwecke), Caravan-Reihen entlang der Sandwege, grosse freie Waldflaechen westlich und oestlich",
+   "anzahl_geschaetzt": "60+ feste Haeuschen + 40-80 Stellplaetze",
+   "zustand": "mittel (aeltere, heterogene Haeuschen-Generation)",
+   "notiz": "Etablierte Ferienhaus-Struktur im Wald mit Gastronomie und Parkplatz = gute Basis. Viele kleine Altbauten = Austausch-/Modernisierungspotenzial. Freie Waldflaechen in alle Richtungen fuer Erweiterung; Schlaubetal = Naturschutzgebiet, Baurecht/Naturvertraeglichkeit pruefen. Kein Steg erkennbar -> Hausboot eher nein, Tinyhaus ja.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/164985074": {
+  "name": "Naturcampingplatz am Springsee",
+  "lat": 52.17216095719252,
+  "lon": 13.993636780822495,
+  "score": 77.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_164985074.jpg",
+   "2014": "luftbilder_hist/way_164985074_esri2014.jpg",
+   "2016": "luftbilder_hist/way_164985074_esri2016.jpg",
+   "2018": "luftbilder_hist/way_164985074_esri2018.jpg",
+   "2020": "luftbilder_hist/way_164985074_esri2020.jpg",
+   "2022": "luftbilder_hist/way_164985074_esri2022.jpg",
+   "2024": "luftbilder_hist/way_164985074_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 29,
+   "flaeche_m2": 1446,
+   "typen": {
+    "Wochenendhaus": 23,
+    "Gebäude zur Freizeitgestaltung": 2,
+    "Gebäude für Erholungszwecke": 2,
+    "Überdachung": 2
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 124.0,
+     "lon": 13.995061439771536,
+     "lat": 52.17220080583039
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 105.3,
+     "lon": 13.992999204251019,
+     "lat": 52.17162616895576
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-05-12Z",
+     "flaeche_m2": 77.1,
+     "lon": 13.991740300023949,
+     "lat": 52.17119812124692
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 64.8,
+     "lon": 13.993984492693773,
+     "lat": 52.171857959428486
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-06-15Z",
+     "flaeche_m2": 64.1,
+     "lon": 13.99309657126156,
+     "lat": 52.17148522487712
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 62.9,
+     "lon": 13.995605799067643,
+     "lat": 52.172715390850996
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 62.3,
+     "lon": 13.993736349978187,
+     "lat": 52.17143667483879
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 56.3,
+     "lon": 13.993427632948723,
+     "lat": 52.171737539621
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-05-12Z",
+     "flaeche_m2": 51.8,
+     "lon": 13.996179221534627,
+     "lat": 52.17442718158182
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 50.6,
+     "lon": 13.993816301349458,
+     "lat": 52.171318516957136
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-05-12Z",
+     "flaeche_m2": 49.6,
+     "lon": 13.991599585167522,
+     "lat": 52.17093765813934
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 46.9,
+     "lon": 13.996226257341746,
+     "lat": 52.17297737263682
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 45.3,
+     "lon": 13.994474786119849,
+     "lat": 52.17163251555955
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 43.7,
+     "lon": 13.994059698017013,
+     "lat": 52.1714120442534
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 43.3,
+     "lon": 13.993811123569001,
+     "lat": 52.17156154845364
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 42.5,
+     "lon": 13.994140377010462,
+     "lat": 52.17149465407558
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 42.2,
+     "lon": 13.994266120511748,
+     "lat": 52.17149918058473
+    },
+    {
+     "funktion": "Überdachung",
+     "gebnutzbez": "Sonstiges Bauwerk oder sonstige Einrichtung",
+     "aktualit": "2021-05-19Z",
+     "flaeche_m2": 41.8,
+     "lon": 13.991312814975949,
+     "lat": 52.17061501298583
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 40.1,
+     "lon": 13.995343043961332,
+     "lat": 52.17265676527186
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-05-12Z",
+     "flaeche_m2": 38.4,
+     "lon": 13.99012439131468,
+     "lat": 52.170675966060436
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 37.7,
+     "lon": 13.994722521687363,
+     "lat": 52.17171250166143
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 37.3,
+     "lon": 13.994393550161497,
+     "lat": 52.17135688412847
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 37.0,
+     "lon": 13.9947645944906,
+     "lat": 52.171214761870374
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 36.1,
+     "lon": 13.994202064165064,
+     "lat": 52.17119514990284
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 35.8,
+     "lon": 13.99398562287357,
+     "lat": 52.171593921145764
+    },
+    {
+     "funktion": "Überdachung",
+     "gebnutzbez": "Sonstiges Bauwerk oder sonstige Einrichtung",
+     "aktualit": "2020-12-28Z",
+     "flaeche_m2": 33.8,
+     "lon": 13.996557402790682,
+     "lat": 52.17345797865433
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 30.3,
+     "lon": 13.995207620322905,
+     "lat": 52.17150628684481
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 30.1,
+     "lon": 13.99422743517312,
+     "lat": 52.171356220456566
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-02-21Z",
+     "flaeche_m2": 15.0,
+     "lon": 13.994925392709442,
+     "lat": 52.17147976888338
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Naturcamping im Kiefernwald am Sued-/Ostufer des Springsees (dunkelgruenes, klares Wasser): sehr locker verstreute Caravans/Zelte unter Baeumen, kleine Bade-Lichtung mit 2-3 Gebaeuden am Suedzipfel, ~23 Wochenendhaeuser laut ALKIS (im Bild kaum sichtbar, unter Baumkronen), grosse ungenutzte Waldflaechen, Sandwege",
+   "anzahl_geschaetzt": "30-50 Stellplaetze + ~23 kleine Wochenendhaeuser",
+   "zustand": "naturbelassen, einfach",
+   "notiz": "Ruhiger Naturplatz mit klarem See und viel Reserveflaeche. Wochenendhaus-Bestand zeigt: feste Bauten sind hier grundsaetzlich genehmigungsfaehig. Uferlichtungen fuer Tinyhaeuser mit Seeblick vorhanden; kein Steg/Marina erkennbar. Naturnahe Positionierung passt gut.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/386524495": {
+  "name": "Campingverein Glower See e.V.",
+  "lat": 52.08777107867676,
+  "lon": 14.204236826578821,
+  "score": 77.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_386524495.jpg",
+   "2014": "luftbilder_hist/way_386524495_esri2014.jpg",
+   "2016": "luftbilder_hist/way_386524495_esri2016.jpg",
+   "2018": "luftbilder_hist/way_386524495_esri2018.jpg",
+   "2020": "luftbilder_hist/way_386524495_esri2020.jpg",
+   "2022": "luftbilder_hist/way_386524495_esri2022.jpg",
+   "2024": "luftbilder_hist/way_386524495_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 15,
+   "flaeche_m2": 510,
+   "typen": {
+    "Wochenendhaus": 13,
+    "Gebäude zur Abwasserbeseitigung": 2
+   },
+   "gebaeude": [
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 51.6,
+     "lon": 14.202031787432928,
+     "lat": 52.08746760459868
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 50.5,
+     "lon": 14.205954752841802,
+     "lat": 52.08681784251588
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 45.3,
+     "lon": 14.200822966510621,
+     "lat": 52.08746624437165
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 43.5,
+     "lon": 14.206242087829382,
+     "lat": 52.086786656966744
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 43.2,
+     "lon": 14.201032244722962,
+     "lat": 52.08745494141022
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 39.7,
+     "lon": 14.201480563875947,
+     "lat": 52.08745035593711
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 37.4,
+     "lon": 14.200643598110082,
+     "lat": 52.08741845358853
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 33.3,
+     "lon": 14.202340656683667,
+     "lat": 52.0874449263049
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 29.3,
+     "lon": 14.201317265718899,
+     "lat": 52.08746462220729
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 28.5,
+     "lon": 14.207928892168637,
+     "lat": 52.08626682426991
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 25.9,
+     "lon": 14.207882438481363,
+     "lat": 52.08648266311301
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 22.9,
+     "lon": 14.202885814601885,
+     "lat": 52.08739392068722
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-12-03Z",
+     "flaeche_m2": 22.4,
+     "lon": 14.20693000497759,
+     "lat": 52.08680940917396
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 18.2,
+     "lon": 14.207060527612851,
+     "lat": 52.08688385057539
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2020-11-17Z",
+     "flaeche_m2": 18.0,
+     "lon": 14.207060152489486,
+     "lat": 52.08684741166165
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Schmaler Uferstreifen am Westufer des Glower Sees: ~13 kleine Wochenendhaeuschen (ALKIS) und Caravans zwischen Uferbaeumen, mehrere kleine Bootsstege (5-7) entlang des Ufers, Vereins-/Servicegebaeude am Suedende, dahinter grosse ACKERFLAECHEN und ein Feldgehoelz - kein geschlossener Waldplatz",
+   "anzahl_geschaetzt": "13-20 feste Haeuschen + wenige Stellplaetze",
+   "zustand": "einfach/mittel (Vereinsstruktur)",
+   "notiz": "Kleiner CampingVEREIN = andere Ansprechpartner-Logik (Mitglieder statt Betreiber). Mehrere Stege = Hausboot-Anleger grundsaetzlich vorhanden. Angrenzende Ackerflaeche waere ideale Erweiterungsflaeche, gehoert aber vermutlich einem Landwirt -> Eigentumsfrage klaeren. Uferstreifen schmal, Landschaftsschutz wahrscheinlich.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/24466934": {
+  "name": "Campingplatz Kagel",
+  "lat": 52.43676528388255,
+  "lon": 13.87360846704296,
+  "score": 76.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_24466934.jpg",
+   "2014": "luftbilder_hist/way_24466934_esri2014.jpg",
+   "2016": "luftbilder_hist/way_24466934_esri2016.jpg",
+   "2018": "luftbilder_hist/way_24466934_esri2018.jpg",
+   "2020": "luftbilder_hist/way_24466934_esri2020.jpg",
+   "2022": "luftbilder_hist/way_24466934_esri2022.jpg",
+   "2024": "luftbilder_hist/way_24466934_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 149,
+   "flaeche_m2": 7045,
+   "typen": {
+    "Gebäude zur Freizeitgestaltung": 118,
+    "Gebäude für Erholungszwecke": 19,
+    "Lagerhalle, Lagerschuppen, Lagerhaus": 3,
+    "Gebäude zur Entsorgung": 3,
+    "Schuppen": 2,
+    "Gebäude für Bildung und Forschung": 1,
+    "Kiosk": 1,
+    "Gaststätte, Restaurant": 1,
+    "Wohnhaus": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude zur Entsorgung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 227.2,
+     "lon": 13.874161703684258,
+     "lat": 52.43599976024756
+    },
+    {
+     "funktion": "Gaststätte, Restaurant",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-07-12Z",
+     "flaeche_m2": 203.6,
+     "lon": 13.872817941100566,
+     "lat": 52.43723848232769
+    },
+    {
+     "funktion": "Lagerhalle, Lagerschuppen, Lagerhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 200.9,
+     "lon": 13.873644471681445,
+     "lat": 52.437627946421344
+    },
+    {
+     "funktion": "Kiosk",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-07-12Z",
+     "flaeche_m2": 156.1,
+     "lon": 13.872533678297222,
+     "lat": 52.43721601466468
+    },
+    {
+     "funktion": "Lagerhalle, Lagerschuppen, Lagerhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 129.0,
+     "lon": 13.870431142044678,
+     "lat": 52.43528812958148
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 112.1,
+     "lon": 13.87177581402672,
+     "lat": 52.435871097592695
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 111.6,
+     "lon": 13.872086029043077,
+     "lat": 52.435957324063665
+    },
+    {
+     "funktion": "Wohnhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 107.9,
+     "lon": 13.872914942663911,
+     "lat": 52.43703236390101
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 106.2,
+     "lon": 13.870972081075417,
+     "lat": 52.435539736733716
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 101.4,
+     "lon": 13.871898233723384,
+     "lat": 52.43609877438328
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 100.0,
+     "lon": 13.871479181480826,
+     "lat": 52.43579249106419
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 99.6,
+     "lon": 13.870616046923,
+     "lat": 52.43551052555216
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 99.4,
+     "lon": 13.871592487397375,
+     "lat": 52.43600212882381
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 97.8,
+     "lon": 13.870837470364478,
+     "lat": 52.43566227714536
+    },
+    {
+     "funktion": "Gebäude zur Entsorgung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 95.7,
+     "lon": 13.871836484380907,
+     "lat": 52.43629442876086
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 93.9,
+     "lon": 13.870781695786338,
+     "lat": 52.435379366000426
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 88.4,
+     "lon": 13.871148797501181,
+     "lat": 52.43545248523941
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 86.8,
+     "lon": 13.872184384982798,
+     "lat": 52.435830055365166
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 86.5,
+     "lon": 13.871669063713615,
+     "lat": 52.4356782624993
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 82.6,
+     "lon": 13.87287232813249,
+     "lat": 52.43645740189079
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 81.3,
+     "lon": 13.871931464884494,
+     "lat": 52.435751311352284
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 81.2,
+     "lon": 13.871296243844304,
+     "lat": 52.43590778832603
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 65.4,
+     "lon": 13.872934890042105,
+     "lat": 52.43544164822749
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 64.4,
+     "lon": 13.874120805439173,
+     "lat": 52.43792764609702
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 63.4,
+     "lon": 13.872125826463721,
+     "lat": 52.436306690750094
+    },
+    {
+     "funktion": "Schuppen",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 61.2,
+     "lon": 13.873079218326108,
+     "lat": 52.43709404926034
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 58.2,
+     "lon": 13.874576816797378,
+     "lat": 52.43677328668002
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 57.7,
+     "lon": 13.874395599967304,
+     "lat": 52.43688333258745
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 57.6,
+     "lon": 13.87221927632489,
+     "lat": 52.43619638934355
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 57.3,
+     "lon": 13.873608359315966,
+     "lat": 52.435826773836176
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 56.2,
+     "lon": 13.872410949497938,
+     "lat": 52.43600359611973
+    },
+    {
+     "funktion": "Gebäude für Bildung und Forschung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2023-05-31Z",
+     "flaeche_m2": 55.3,
+     "lon": 13.871009517472134,
+     "lat": 52.43581990467114
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 55.1,
+     "lon": 13.875385393178084,
+     "lat": 52.43743023552639
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 54.7,
+     "lon": 13.87386334202391,
+     "lat": 52.43626359539813
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 53.9,
+     "lon": 13.873560546904496,
+     "lat": 52.43562651015753
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 51.0,
+     "lon": 13.8745449881882,
+     "lat": 52.436611099716
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 50.9,
+     "lon": 13.87400705615343,
+     "lat": 52.4366931099514
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 50.5,
+     "lon": 13.874029242005813,
+     "lat": 52.436330366956724
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 49.4,
+     "lon": 13.875356257845166,
+     "lat": 52.43666930560265
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 48.9,
+     "lon": 13.87323780918637,
+     "lat": 52.43582567937179
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 48.6,
+     "lon": 13.875692088973285,
+     "lat": 52.43616720068321
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 47.6,
+     "lon": 13.87311571853877,
+     "lat": 52.43668100626968
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 46.7,
+     "lon": 13.87529368967843,
+     "lat": 52.437567087468175
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 45.9,
+     "lon": 13.874790467067028,
+     "lat": 52.436842516710094
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 45.8,
+     "lon": 13.875256123989937,
+     "lat": 52.43802094988527
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 45.5,
+     "lon": 13.873579579703977,
+     "lat": 52.438087914706834
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 45.3,
+     "lon": 13.873868450392514,
+     "lat": 52.436782296202196
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 45.2,
+     "lon": 13.875419509797608,
+     "lat": 52.436443528468935
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 44.4,
+     "lon": 13.872300563606977,
+     "lat": 52.43611709856367
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 43.4,
+     "lon": 13.873159308590212,
+     "lat": 52.436582893481436
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 43.4,
+     "lon": 13.874141260795186,
+     "lat": 52.43570862293315
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 43.0,
+     "lon": 13.873869769873048,
+     "lat": 52.43663786142821
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 42.9,
+     "lon": 13.875292239025354,
+     "lat": 52.43749286885699
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 42.2,
+     "lon": 13.87354842705066,
+     "lat": 52.43654652952794
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 42.1,
+     "lon": 13.874124507055651,
+     "lat": 52.43639326217638
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 42.1,
+     "lon": 13.875640001278512,
+     "lat": 52.436538571301405
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 41.8,
+     "lon": 13.872031447659017,
+     "lat": 52.43641994444512
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 41.7,
+     "lon": 13.875405317141311,
+     "lat": 52.43651029728459
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 41.6,
+     "lon": 13.874690390099955,
+     "lat": 52.43781734464352
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-12-19Z",
+     "flaeche_m2": 40.7,
+     "lon": 13.873151023649916,
+     "lat": 52.435761040346925
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Dichter, etablierter Waldcamping am Ostufer eines schmalen Sees bei Berlin-Kagel: ~120-150 Caravans/Freizeit-Haeuschen in Reihen unter Kiefern (ALKIS: 149 Geb., 118 Freizeit), Swimmingpool (tuerkis) und Servicegebaeude in der Mitte, langer Bootssteg am Ostufer, Kanal im Sueden mit Nachbarplatz, Waldflaeche im Westen teilweise frei",
+   "anzahl_geschaetzt": "120-150 Einheiten (ueberwiegend Dauer/Freizeit)",
+   "zustand": "mittel (dichter Altbestand)",
+   "notiz": "Berliner Naherholung, sehr gut erreichbar = hohe Auslastungs-Chance. Aber: Tinyhaeuser laut Website schon vorhanden (Wettbewerb!) und dichter Dauerbestand. Langer Steg = Hausboot-Option. Eher Austausch alter Einheiten als Erweiterung; West-Wald als Reserve. Stadtgrenze Berlin: Zustaendigkeiten/Baurecht pruefen.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/36131528": {
+  "name": "Campingplatz Berlin",
+  "lat": 52.369234724271436,
+  "lon": 13.68650086467138,
+  "score": 76.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_36131528.jpg",
+   "2014": "luftbilder_hist/way_36131528_esri2014.jpg",
+   "2016": "luftbilder_hist/way_36131528_esri2016.jpg",
+   "2018": "luftbilder_hist/way_36131528_esri2018.jpg",
+   "2020": "luftbilder_hist/way_36131528_esri2020.jpg",
+   "2022": "luftbilder_hist/way_36131528_esri2022.jpg",
+   "2024": "luftbilder_hist/way_36131528_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Weitlaeufiger Kiefernwaldplatz am See im Berliner Umland: ~80-120 Caravans/Mobilheime locker unter Baeumen verstreut, langes Restaurant-/Servicegebaeude (rotes Dach) in der Platzmitte, grosser Parkplatz am Nordzugang, GROSSE MARINA mit 2-3 langen Stegen und ~70-100 Sportbooten am SW-Ufer, kleiner Sandstrand im SO, Wald im Osten grossteils ungenutzt",
+   "anzahl_geschaetzt": "80-120 Stellplaetze/Dauereinheiten, wenige feste Mietgebaeude",
+   "zustand": "mittel",
+   "notiz": "Marina = beste Hausboot-Logistik der BB-Topliste (Stegplaetze, Bootsverkehr etabliert). Viel freie Waldflaeche im Osten fuer Tinyhaus-Erweiterung. Berliner Publikum = hohe Auslastungs-Chance. ALKIS fuer diesen Platz nicht abgerufen -> Gebaeudetypen per Website/Vor-Ort pruefen. Baurecht am Seeufer pruefen.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ },
+ "way/35936715": {
+  "name": "Campingplatz D66",
+  "lat": 52.213431532643554,
+  "lon": 13.746374490286271,
+  "score": 75.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_35936715.jpg",
+   "2014": "luftbilder_hist/way_35936715_esri2014.jpg",
+   "2016": "luftbilder_hist/way_35936715_esri2016.jpg",
+   "2018": "luftbilder_hist/way_35936715_esri2018.jpg",
+   "2020": "luftbilder_hist/way_35936715_esri2020.jpg",
+   "2022": "luftbilder_hist/way_35936715_esri2022.jpg",
+   "2024": "luftbilder_hist/way_35936715_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Schmaler bewaldeter Uferstreifen am Ostufer eines Sees: ~50-70 weisse Caravans/Mobilheime in lockerer Reihe zwischen Wald und Ufer, nur 1 kleines Servicegebaeude (graues Dach) im Wald, kleine Bootsstege/Boote am Ufer, keine groesseren festen Bauten",
+   "anzahl_geschaetzt": "50-70 (ueberwiegend Dauer-Caravans), kaum Mietunterkuenfte",
+   "zustand": "einfach/mittel, naturnah",
+   "notiz": "Dauer-Caravan-Struktur mit Mietluecke; Uferstreifen schmal, dahinter dichter Wald. Tinyhaeuser nur als Austausch oder vereinzelt in Lichtungen denkbar; Erweiterungsflaeche begrenzt. ALKIS nicht abgerufen -> Typen unklar. Kleiner Betreiber, Kontakt und Baurecht klaeren.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ },
+ "way/166148083": {
+  "name": "Seecamp Waldreich",
+  "lat": 52.11224957175537,
+  "lon": 14.19102735536596,
+  "score": 75.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_166148083.jpg",
+   "2014": "luftbilder_hist/way_166148083_esri2014.jpg",
+   "2016": "luftbilder_hist/way_166148083_esri2016.jpg",
+   "2018": "luftbilder_hist/way_166148083_esri2018.jpg",
+   "2020": "luftbilder_hist/way_166148083_esri2020.jpg",
+   "2022": "luftbilder_hist/way_166148083_esri2022.jpg",
+   "2024": "luftbilder_hist/way_166148083_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 7,
+   "flaeche_m2": 613,
+   "typen": {
+    "Gebäude für Erholungszwecke": 4,
+    "Garage": 1,
+    "Gaststätte, Restaurant": 1,
+    "Geschäftsgebäude": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-06-18Z",
+     "flaeche_m2": 182.8,
+     "lon": 14.191296344651759,
+     "lat": 52.11219209379279
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 107.1,
+     "lon": 14.190584207407666,
+     "lat": 52.113411231386024
+    },
+    {
+     "funktion": "Gaststätte, Restaurant",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 92.6,
+     "lon": 14.191798694245394,
+     "lat": 52.11351171853221
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 78.0,
+     "lon": 14.191393886439453,
+     "lat": 52.11352542179191
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 61.3,
+     "lon": 14.189813577192458,
+     "lat": 52.11211162172788
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-06-18Z",
+     "flaeche_m2": 60.2,
+     "lon": 14.189620831391014,
+     "lat": 52.112486022088746
+    },
+    {
+     "funktion": "Geschäftsgebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 31.3,
+     "lon": 14.192028851937135,
+     "lat": 52.1135015428495
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Naturcamping im dichten Laub-/Mischwald am Ostufer des Schwielochsees: sehr locker verstreute Caravans/Zelte unter Baeumen, ~7 kleine Gebaeude (ALKIS: 4x Erholung, 1x Gaststaette, 1x Geschaeft), kleine Sandbuchten am Ufer, Dorf mit Gaerten/Pools direkt nordwestlich angrenzend, grosse ungenutzte Waldflaeche im Sueden/Westen",
+   "anzahl_geschaetzt": "30-60 Stellplaetze + ~7 kleine Gebaeude",
+   "zustand": "naturnah, gepflegt-einfach",
+   "notiz": "Ruhiger Naturplatz mit Gastronomie-Ansatz und viel Reserveflaeche im Wald; Uferlichtungen fuer Tinyhaeuser mit Seeblick vorhanden. Kleine Stege/Boote am Ufer -> Mini-Hausboot-Option denkbar. Dorf angrenzend = Infrastruktur gut. Guter Kandidat fuer naturnahe Tinyhaus-Erweiterung.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/39545273": {
+  "name": "Berolina Camping",
+  "lat": 52.902748998362426,
+  "lon": 13.661696136738993,
+  "score": 73.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_39545273.jpg",
+   "2014": "luftbilder_hist/way_39545273_esri2014.jpg",
+   "2016": "luftbilder_hist/way_39545273_esri2016.jpg",
+   "2018": "luftbilder_hist/way_39545273_esri2018.jpg",
+   "2020": "luftbilder_hist/way_39545273_esri2020.jpg",
+   "2022": "luftbilder_hist/way_39545273_esri2022.jpg",
+   "2024": "luftbilder_hist/way_39545273_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 11,
+   "flaeche_m2": 835,
+   "typen": {
+    "Gebäude für Erholungszwecke": 3,
+    "Nach Quellenlage nicht zu spezifizieren": 2,
+    "Gaststätte, Restaurant": 2,
+    "Geschäftsgebäude": 2,
+    "Gebäude zur Wasserversorgung": 1,
+    "Betriebsgebäude für Straßenverkehr": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Betriebsgebäude für Straßenverkehr",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 324.2,
+     "lon": 13.660929565945608,
+     "lat": 52.902043279805966
+    },
+    {
+     "funktion": "Gaststätte, Restaurant",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 108.2,
+     "lon": 13.66331142628875,
+     "lat": 52.90223218131381
+    },
+    {
+     "funktion": "Gebäude zur Wasserversorgung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-04-30Z",
+     "flaeche_m2": 91.4,
+     "lon": 13.660003240486548,
+     "lat": 52.903420141484425
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 60.9,
+     "lon": 13.662207488524254,
+     "lat": 52.90148898391874
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 44.7,
+     "lon": 13.6630389669344,
+     "lat": 52.90200361577985
+    },
+    {
+     "funktion": "Gaststätte, Restaurant",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 43.6,
+     "lon": 13.663359964102135,
+     "lat": 52.90216443099131
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 40.0,
+     "lon": 13.661030190236277,
+     "lat": 52.903511594521504
+    },
+    {
+     "funktion": "Geschäftsgebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 38.6,
+     "lon": 13.663520608030337,
+     "lat": 52.902781987942404
+    },
+    {
+     "funktion": "Geschäftsgebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 32.3,
+     "lon": 13.663226811654487,
+     "lat": 52.90214212595847
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 27.7,
+     "lon": 13.661524625189196,
+     "lat": 52.90368760065444
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 23.3,
+     "lon": 13.66277136308508,
+     "lat": 52.90155248418127
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Sehr dichter Caravan-/Mobilheimpark auf einer Landzunge an tuerkisfarbenem (Restloch-)See: ~150-250 weisse Einheiten in engen Reihen, Sandstrand im Norden, Steg mit Booten NW, zweite kleine Reihe SO, umgebender Wald; ALKIS: 11 Gebaeude (3x Erholung, 2x Gaststaette, 2x Geschaeft)",
+   "anzahl_geschaetzt": "150-250 Einheiten, ueberwiegend Dauerbestand",
+   "zustand": "mittel (dichter Altbestand)",
+   "notiz": "Klassischer Dauer-Caravanpark mit Gastronomie; kaum freie Flaeche auf der Landzunge -> Erweiterung nur im Randwald oder als Austausch alter Einheiten. Steg vorhanden, aber Ufer dicht besetzt -> Hausboot eher nein. Eher Modernisierungs- als Neubaupartner.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/60195114": {
+  "name": "Campingplatz Butzow",
+  "lat": 52.48661064941867,
+  "lon": 12.598208485396297,
+  "score": 73.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_60195114.jpg",
+   "2014": "luftbilder_hist/way_60195114_esri2014.jpg",
+   "2016": "luftbilder_hist/way_60195114_esri2016.jpg",
+   "2018": "luftbilder_hist/way_60195114_esri2018.jpg",
+   "2020": "luftbilder_hist/way_60195114_esri2020.jpg",
+   "2022": "luftbilder_hist/way_60195114_esri2022.jpg",
+   "2024": "luftbilder_hist/way_60195114_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 3,
+   "flaeche_m2": 222,
+   "typen": {
+    "Gebäude zur Abwasserbeseitigung": 2,
+    "Wohngebäude": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-02-06Z",
+     "flaeche_m2": 101.1,
+     "lon": 12.597157159879494,
+     "lat": 52.48588668357622
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-02-06Z",
+     "flaeche_m2": 94.4,
+     "lon": 12.59715326473324,
+     "lat": 52.48604212479482
+    },
+    {
+     "funktion": "Wohngebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-02-06Z",
+     "flaeche_m2": 26.0,
+     "lon": 12.59723052792204,
+     "lat": 52.48623910674705
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Schmaler Uferstreifen am Beetzsee (truebes, gruen-braunes Wasser): ~20-35 Caravans/Huetten in einer Reihe zwischen Uferstrasse und Wasser, 2-3 kleine Bootsstege im Norden, wenige Gebaeude im Wald westlich der Strasse (ALKIS: 2x Abwasser, 1x Wohnhaus), grosse Wiesen-/Ackerflaechen suedlich und westlich",
+   "anzahl_geschaetzt": "20-35 Stellplaetze, kaum feste Mietunterkuenfte",
+   "zustand": "einfach",
+   "notiz": "Kleiner linearer Platz; Mietluecke bestaetigt. Tinyhaeuser mit Seeblick nur in der schmalen Uferreihe (Austausch) oder auf den Wiesen WESTLICH der Strasse (dann ohne direkten Seeblick, Strasse dazwischen). Stege vorhanden -> kleine Hausboot-Option. Wasserqualitaet/Algen pruefen. Eigentum der Wiesen klaeren.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/477469760": {
+  "name": "Allgemeine Körperkultur Birkenheide",
+  "lat": 52.223887276146186,
+  "lon": 13.558719731854653,
+  "score": 72.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_477469760.jpg",
+   "2014": "luftbilder_hist/way_477469760_esri2014.jpg",
+   "2016": "luftbilder_hist/way_477469760_esri2016.jpg",
+   "2018": "luftbilder_hist/way_477469760_esri2018.jpg",
+   "2020": "luftbilder_hist/way_477469760_esri2020.jpg",
+   "2022": "luftbilder_hist/way_477469760_esri2022.jpg",
+   "2024": "luftbilder_hist/way_477469760_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 44,
+   "flaeche_m2": 1244,
+   "typen": {
+    "Gebäude zur Freizeitgestaltung": 26,
+    "Gebäude für andere Erholungseinrichtung": 17,
+    "Gebäude für Sicherheit und Ordnung": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 145.4,
+     "lon": 13.559527522700392,
+     "lat": 52.22381243649254
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 43.2,
+     "lon": 13.56019448435194,
+     "lat": 52.223372023977646
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 40.5,
+     "lon": 13.55594287685305,
+     "lat": 52.22465593662012
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 37.2,
+     "lon": 13.556092483316219,
+     "lat": 52.22521950935286
+    },
+    {
+     "funktion": "Gebäude für Sicherheit und Ordnung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2018-01-24Z",
+     "flaeche_m2": 36.6,
+     "lon": 13.558662535208114,
+     "lat": 52.222663204787565
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 35.7,
+     "lon": 13.55983393954268,
+     "lat": 52.224634981246915
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 31.2,
+     "lon": 13.556438181809217,
+     "lat": 52.22518058021846
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 30.8,
+     "lon": 13.560318710261773,
+     "lat": 52.22437457331409
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 30.4,
+     "lon": 13.559276502825798,
+     "lat": 52.225341278665674
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2018-01-24Z",
+     "flaeche_m2": 28.1,
+     "lon": 13.55943685612121,
+     "lat": 52.221940077499276
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 27.4,
+     "lon": 13.558972687343292,
+     "lat": 52.223253126886505
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 27.2,
+     "lon": 13.55921119398641,
+     "lat": 52.22277840423985
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 27.0,
+     "lon": 13.558432764354343,
+     "lat": 52.22443372920367
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 26.9,
+     "lon": 13.560095991738564,
+     "lat": 52.22345092759117
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 26.9,
+     "lon": 13.559546593021402,
+     "lat": 52.224637723190845
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2018-01-24Z",
+     "flaeche_m2": 26.9,
+     "lon": 13.559293628834588,
+     "lat": 52.22206774022655
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 26.6,
+     "lon": 13.558998348553072,
+     "lat": 52.224665346962986
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 25.5,
+     "lon": 13.560218672393537,
+     "lat": 52.22470845935976
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 25.1,
+     "lon": 13.556627127403322,
+     "lat": 52.22512688850083
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 25.1,
+     "lon": 13.55551912520646,
+     "lat": 52.22496707456289
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 24.3,
+     "lon": 13.559895202239547,
+     "lat": 52.22448190923041
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 24.2,
+     "lon": 13.556279553076072,
+     "lat": 52.225376522142845
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 24.2,
+     "lon": 13.555937027678976,
+     "lat": 52.22499249369438
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 24.0,
+     "lon": 13.557138011669208,
+     "lat": 52.22504929499534
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 24.0,
+     "lon": 13.559825424695482,
+     "lat": 52.22422972464061
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 23.9,
+     "lon": 13.556006364109875,
+     "lat": 52.22539654230777
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 23.8,
+     "lon": 13.560259416737395,
+     "lat": 52.22287184968072
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 23.7,
+     "lon": 13.555743780681953,
+     "lat": 52.225386781430544
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 23.5,
+     "lon": 13.559276464009749,
+     "lat": 52.224447400837015
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 23.2,
+     "lon": 13.559620731897942,
+     "lat": 52.2245058872283
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 23.1,
+     "lon": 13.556271909073484,
+     "lat": 52.22508850325587
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 23.0,
+     "lon": 13.558728147751927,
+     "lat": 52.22168080177962
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 22.9,
+     "lon": 13.556267895363396,
+     "lat": 52.22498107774362
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 22.1,
+     "lon": 13.556507380003142,
+     "lat": 52.22537359526304
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 21.8,
+     "lon": 13.55958990111107,
+     "lat": 52.22328457031577
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 21.1,
+     "lon": 13.559738665789746,
+     "lat": 52.22279797719825
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 21.1,
+     "lon": 13.560342355890546,
+     "lat": 52.223533123150546
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 20.5,
+     "lon": 13.5588618687677,
+     "lat": 52.22420601361142
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 20.0,
+     "lon": 13.556640488801358,
+     "lat": 52.22497942922472
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 19.8,
+     "lon": 13.559256090836243,
+     "lat": 52.22162488008251
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-12-13Z",
+     "flaeche_m2": 18.7,
+     "lon": 13.558788115890735,
+     "lat": 52.223159600793444
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 17.4,
+     "lon": 13.559729310663279,
+     "lat": 52.22287104560664
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 16.2,
+     "lon": 13.560012315664066,
+     "lat": 52.22288116251262
+    },
+    {
+     "funktion": "Gebäude für andere Erholungseinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-01Z",
+     "flaeche_m2": 14.2,
+     "lon": 13.55954709765957,
+     "lat": 52.22265960345312
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Grosse bewaldete Halbinsel an dunklem See: ~40-60 kleine Huetten/Caravans sehr locker unter Kiefern (ALKIS: 44 Geb., 26x Freizeit + 17x Erholung), Sand-Lichtungen/Badestellen, rotes Sportfeld und kleiner tuerkiser Pool in der Mitte, kleine Stege an Nord- und Suedspitze, grosse ungenutzte Waldflaechen im Westen",
+   "anzahl_geschaetzt": "40-60 kleine Huetten + Stellplaetze (Vereinsstruktur)",
+   "zustand": "einfach/mittel, naturnah",
+   "notiz": "FKK-/Koerperkultur-Club = spezielle Zielgruppe und Vereinslogik (Mitglieder, kein klassischer Betreiber). Tinyhaeuser muessten zum FKK-Konzept passen; viel Waldreserve und Berliner Naehe sprechen dafuer, Ansprechpartner-Logik dagegen. Eher nachrangiger Lead.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/94425116": {
+  "name": "Spreewald-Natur-Camping \"Am Schlosspark\"",
+  "lat": 51.870114987408975,
+  "lon": 13.978016805150105,
+  "score": 72.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_94425116.jpg",
+   "2014": "luftbilder_hist/way_94425116_esri2014.jpg",
+   "2016": "luftbilder_hist/way_94425116_esri2016.jpg",
+   "2018": "luftbilder_hist/way_94425116_esri2018.jpg",
+   "2020": "luftbilder_hist/way_94425116_esri2020.jpg",
+   "2022": "luftbilder_hist/way_94425116_esri2022.jpg",
+   "2024": "luftbilder_hist/way_94425116_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 18,
+   "flaeche_m2": 1006,
+   "typen": {
+    "Gebäude zur Freizeitgestaltung": 11,
+    "Überdachung": 2,
+    "Bürogebäude": 1,
+    "Betriebsgebäude für Schiffsverkehr": 1,
+    "Geschäftsgebäude": 1,
+    "Gebäude zur Abwasserbeseitigung": 1,
+    "Gebäude für betriebliche Sozialeinrichtung": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Gebäude für betriebliche Sozialeinrichtung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2018-04-25Z",
+     "flaeche_m2": 226.0,
+     "lon": 13.980112308154158,
+     "lat": 51.86973766301293
+    },
+    {
+     "funktion": "Betriebsgebäude für Schiffsverkehr",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-05-16Z",
+     "flaeche_m2": 183.8,
+     "lon": 13.976420063227847,
+     "lat": 51.87092747389991
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2024-01-29Z",
+     "flaeche_m2": 104.1,
+     "lon": 13.979645255950794,
+     "lat": 51.87004761860078
+    },
+    {
+     "funktion": "Bürogebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2024-01-29Z",
+     "flaeche_m2": 99.7,
+     "lon": 13.980227663601788,
+     "lat": 51.86935363436622
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-10-13Z",
+     "flaeche_m2": 46.1,
+     "lon": 13.976881633635927,
+     "lat": 51.87090987208892
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2018-04-25Z",
+     "flaeche_m2": 38.1,
+     "lon": 13.980242119934106,
+     "lat": 51.86954381870091
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-10-13Z",
+     "flaeche_m2": 35.0,
+     "lon": 13.97616389624064,
+     "lat": 51.87055110427296
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-10-13Z",
+     "flaeche_m2": 34.9,
+     "lon": 13.976419980513526,
+     "lat": 51.87055475410097
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-05-16Z",
+     "flaeche_m2": 34.1,
+     "lon": 13.977077865820599,
+     "lat": 51.87085551131649
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2018-04-25Z",
+     "flaeche_m2": 34.1,
+     "lon": 13.980140270362249,
+     "lat": 51.87001129008159
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2018-04-25Z",
+     "flaeche_m2": 32.1,
+     "lon": 13.978953131363792,
+     "lat": 51.870067917250914
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2018-04-25Z",
+     "flaeche_m2": 24.4,
+     "lon": 13.979729691648354,
+     "lat": 51.86968564114547
+    },
+    {
+     "funktion": "Geschäftsgebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2024-01-29Z",
+     "flaeche_m2": 23.5,
+     "lon": 13.976955005873847,
+     "lat": 51.8707219338178
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2019-05-16Z",
+     "flaeche_m2": 23.5,
+     "lon": 13.977350927933841,
+     "lat": 51.87073693027968
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-10-13Z",
+     "flaeche_m2": 20.2,
+     "lon": 13.977032076009849,
+     "lat": 51.87088443594315
+    },
+    {
+     "funktion": "Überdachung",
+     "gebnutzbez": "Sonstiges Bauwerk oder sonstige Einrichtung",
+     "aktualit": "2017-02-07Z",
+     "flaeche_m2": 17.4,
+     "lon": 13.979697580257296,
+     "lat": 51.87007897769479
+    },
+    {
+     "funktion": "Überdachung",
+     "gebnutzbez": "Sonstiges Bauwerk oder sonstige Einrichtung",
+     "aktualit": "2017-02-07Z",
+     "flaeche_m2": 17.3,
+     "lon": 13.979592897396738,
+     "lat": 51.870016327780576
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2018-04-25Z",
+     "flaeche_m2": 11.4,
+     "lon": 13.9794529858585,
+     "lat": 51.87012447495812
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Camping-Schleife zwischen Spreewald-Fließen bei Luebbenau: ~60-80 Caravans in runden Reihen auf Rasen, grosses Bootshaus/Lagerhalle NW mit Kanus/Kajaks (ALKIS: Betriebsgebaeude Schiffsverkehr + 11x Freizeit), Schlosspark mit alten Baeumen SW, Wasserwege rundherum, freie Rasenflaechen im Westen der Schleife",
+   "anzahl_geschaetzt": "60-80 Stellplaetze + ~11 Freizeitgebaeude",
+   "zustand": "gepflegt",
+   "notiz": "Kanu-/Kahn-Tourismus etabliert (Bootshaus + Verleih) = Wasser-Infrastruktur top. Hausboote auf den schmalen, flachen Fließen unwahrscheinlich (Bruecken/Tiefgang) -> Tinyhaus-Fokus. Freie Rasenflaechen in der Schleife fuer 3-8 Tinyhaeuser; Schlosspark-Naehe = Tourismusmagnet. Guter Lead, Baurecht im Spreewald-Schutzgebiet pruefen.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/38352211": {
+  "name": "Spreewald-Camping Lübben",
+  "lat": 51.93723879546238,
+  "lon": 13.895022100669445,
+  "score": 71.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_38352211.jpg",
+   "2014": "luftbilder_hist/way_38352211_esri2014.jpg",
+   "2016": "luftbilder_hist/way_38352211_esri2016.jpg",
+   "2018": "luftbilder_hist/way_38352211_esri2018.jpg",
+   "2020": "luftbilder_hist/way_38352211_esri2020.jpg",
+   "2022": "luftbilder_hist/way_38352211_esri2022.jpg",
+   "2024": "luftbilder_hist/way_38352211_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 13,
+   "flaeche_m2": 774,
+   "typen": {
+    "Überdachung": 4,
+    "Gebäude zur Freizeitgestaltung": 3,
+    "Wohnhaus": 1,
+    "Gebäude zum Parken": 1,
+    "Gaststätte, Restaurant": 1,
+    "Gebäude für Wirtschaft oder Gewerbe": 1,
+    "Kiosk": 1,
+    "Gebäude zur Versorgungsanlage": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Kiosk",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-02-25Z",
+     "flaeche_m2": 175.4,
+     "lon": 13.894711008148056,
+     "lat": 51.936845775271046
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-02-25Z",
+     "flaeche_m2": 124.1,
+     "lon": 13.895111205830087,
+     "lat": 51.93725833876245
+    },
+    {
+     "funktion": "Gebäude zur Versorgungsanlage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-02-25Z",
+     "flaeche_m2": 121.3,
+     "lon": 13.895935879770665,
+     "lat": 51.93666069849325
+    },
+    {
+     "funktion": "Gaststätte, Restaurant",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-02Z",
+     "flaeche_m2": 84.7,
+     "lon": 13.894648308650046,
+     "lat": 51.93669832646182
+    },
+    {
+     "funktion": "Überdachung",
+     "gebnutzbez": "Sonstiges Bauwerk oder sonstige Einrichtung",
+     "aktualit": "2023-06-30Z",
+     "flaeche_m2": 53.2,
+     "lon": 13.895898124551527,
+     "lat": 51.93663038799593
+    },
+    {
+     "funktion": "Überdachung",
+     "gebnutzbez": "Sonstiges Bauwerk oder sonstige Einrichtung",
+     "aktualit": "2023-06-30Z",
+     "flaeche_m2": 51.1,
+     "lon": 13.894754105844697,
+     "lat": 51.93669991799742
+    },
+    {
+     "funktion": "Gebäude zum Parken",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-04-04Z",
+     "flaeche_m2": 47.9,
+     "lon": 13.893499328337432,
+     "lat": 51.93644337397346
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2015-02-25Z",
+     "flaeche_m2": 40.7,
+     "lon": 13.894876466142057,
+     "lat": 51.93697104412813
+    },
+    {
+     "funktion": "Wohnhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2022-04-04Z",
+     "flaeche_m2": 29.6,
+     "lon": 13.89346568987894,
+     "lat": 51.93650767662565
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-02Z",
+     "flaeche_m2": 20.3,
+     "lon": 13.89569129615918,
+     "lat": 51.93673167336962
+    },
+    {
+     "funktion": "Überdachung",
+     "gebnutzbez": "Sonstiges Bauwerk oder sonstige Einrichtung",
+     "aktualit": "2023-06-30Z",
+     "flaeche_m2": 9.2,
+     "lon": 13.894790385853877,
+     "lat": 51.93680468484467
+    },
+    {
+     "funktion": "Gebäude für Wirtschaft oder Gewerbe",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-02Z",
+     "flaeche_m2": 8.6,
+     "lon": 13.895110908637182,
+     "lat": 51.93710805297925
+    },
+    {
+     "funktion": "Überdachung",
+     "gebnutzbez": "Sonstiges Bauwerk oder sonstige Einrichtung",
+     "aktualit": "2023-06-30Z",
+     "flaeche_m2": 8.1,
+     "lon": 13.895123043541501,
+     "lat": 51.93712716617745
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Gruener Wiesencamping mit ~80-100 Caravans locker zwischen Baeumen, zentrales Service-/Gastrogebaeude (rotes Dach), Spielplatz/Sandkiste, grosser Parkplatz im Sueden, Spree-Kanal mit Stegen und Booten NO, kleine Badestelle am Kanal O, freie Rasenflaeche im NW (ALKIS: 13 Geb., u.a. Gaststaette, Kiosk, 3x Freizeit)",
+   "anzahl_geschaetzt": "80-100 Stellplaetze, wenige feste Mietunterkuenfte",
+   "zustand": "gepflegt",
+   "notiz": "Solide Infrastruktur (Gastro, Kiosk, Parkplatz) und Mietluecke; freie NW-Wiese = klare Erweiterungsflaeche fuer Tinyhaus-Reihe. Spree-Steg vorhanden, aber Hausboote durch Bruecken/Tiefgang begrenzt -> Tinyhaus-Fokus. Tourismuslage Luebben gut. Guter Lead.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "node/3542489129": {
+  "name": "Marina Oderberg",
+  "lat": 52.8638091,
+  "lon": 14.070615,
+  "score": 70.5,
+  "bilder": {
+   "aktuell": "luftbilder/node_3542489129.jpg",
+   "2014": "luftbilder_hist/node_3542489129_esri2014.jpg",
+   "2016": "luftbilder_hist/node_3542489129_esri2016.jpg",
+   "2018": "luftbilder_hist/node_3542489129_esri2018.jpg",
+   "2020": "luftbilder_hist/node_3542489129_esri2020.jpg",
+   "2022": "luftbilder_hist/node_3542489129_esri2022.jpg",
+   "2024": "luftbilder_hist/node_3542489129_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 6,
+   "flaeche_m2": 809,
+   "typen": {
+    "Nach Quellenlage nicht zu spezifizieren": 2,
+    "Hotel, Motel, Pension": 1,
+    "Gebäude für Vorratshaltung": 1,
+    "Fabrik": 1,
+    "Kran": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Hotel, Motel, Pension",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-02Z",
+     "flaeche_m2": 513.4,
+     "lon": 14.070769722589635,
+     "lat": 52.863371713572064
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-02Z",
+     "flaeche_m2": 144.0,
+     "lon": 14.070031819323425,
+     "lat": 52.86325655382909
+    },
+    {
+     "funktion": "Gebäude für Vorratshaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-02Z",
+     "flaeche_m2": 97.0,
+     "lon": 14.070669027100388,
+     "lat": 52.862968134322735
+    },
+    {
+     "funktion": "Fabrik",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-02Z",
+     "flaeche_m2": 44.8,
+     "lon": 14.070693297504032,
+     "lat": 52.862881588250474
+    },
+    {
+     "funktion": "Nach Quellenlage nicht zu spezifizieren",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-02-02Z",
+     "flaeche_m2": 9.8,
+     "lon": 14.070126147711958,
+     "lat": 52.8632512906591
+    },
+    {
+     "funktion": "Kran",
+     "gebnutzbez": "Bauwerk oder Anlage für Industrie und Gewerbe",
+     "aktualit": "2013-02-02Z",
+     "flaeche_m2": 0.3,
+     "lon": 14.071246450075382,
+     "lat": 52.862968922104955
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "MARINA an der Alten Oder: 3-4 lange Bootsstege mit ~30-40 Sportbooten/Kabinenbooten, grosses Hallen-/Lagergebaeude mit PV-Dach, Bootslagerplatz an Land (viele Boote auf Trailer), Kran (ALKIS: Kran + Fabrik + Hotel/Pension), nur ~5-10 Caravans auf der Uferwiese, grosse Solarparks oestlich angrenzend, Ackerland gegenueber",
+   "anzahl_geschaetzt": "30-40 Bootsliegeplaetze, ~5-10 Caravans, 1 Hotel/Pension",
+   "zustand": "gewerblich/technisch, gepflegt",
+   "notiz": "Kein klassischer Campingplatz, sondern Bootswerft/Marina mit Hotel. HAUSBOOT-LOGISTIK HERVORRAGEND: Kran, Slip, Liegeplaetze, Werkstatthalle vorhanden -> idealer Produktions-/Liegeplatz-Partner fuer Hausboote, weniger fuer Tinyhaus-Vermietung. Gewerbegebiet-Charakter (Solarparks) = Baurecht fuer gewerbliche Nutzung wahrscheinlich unkompliziert. Anderer Gespraechstyp: Werftbetreiber.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ },
+ "way/166147370": {
+  "name": "Camping Niewisch",
+  "lat": 52.07986163778343,
+  "lon": 14.229943016574683,
+  "score": 70.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_166147370.jpg",
+   "2014": "luftbilder_hist/way_166147370_esri2014.jpg",
+   "2016": "luftbilder_hist/way_166147370_esri2016.jpg",
+   "2018": "luftbilder_hist/way_166147370_esri2018.jpg",
+   "2020": "luftbilder_hist/way_166147370_esri2020.jpg",
+   "2022": "luftbilder_hist/way_166147370_esri2022.jpg",
+   "2024": "luftbilder_hist/way_166147370_esri2024.jpg"
+  },
+  "alkis_gebaeude": {
+   "n": 84,
+   "flaeche_m2": 3581,
+   "typen": {
+    "Wochenendhaus": 57,
+    "Gebäude für Erholungszwecke": 4,
+    "Gebäude zur Freizeitgestaltung": 3,
+    "Gebäude zur Abwasserbeseitigung": 3,
+    "Garage": 3,
+    "Pumpstation": 2,
+    "Wohnhaus": 2,
+    "Gaststätte, Restaurant": 2,
+    "Land- und forstwirtschaftliches Betriebsgebäude": 2,
+    "Scheune": 2,
+    "Geschäftsgebäude": 1,
+    "Lagerhalle, Lagerschuppen, Lagerhaus": 1,
+    "Stall": 1,
+    "Bürogebäude": 1
+   },
+   "gebaeude": [
+    {
+     "funktion": "Scheune",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 306.9,
+     "lon": 14.232128663269702,
+     "lat": 52.0805698789658
+    },
+    {
+     "funktion": "Gaststätte, Restaurant",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 179.6,
+     "lon": 14.23106972237262,
+     "lat": 52.08109850220898
+    },
+    {
+     "funktion": "Scheune",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-07-25Z",
+     "flaeche_m2": 113.2,
+     "lon": 14.23156515859296,
+     "lat": 52.079889960608675
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-07-25Z",
+     "flaeche_m2": 107.0,
+     "lon": 14.231677699001581,
+     "lat": 52.08007906724578
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-02-18Z",
+     "flaeche_m2": 92.7,
+     "lon": 14.231032996052308,
+     "lat": 52.079508772516505
+    },
+    {
+     "funktion": "Lagerhalle, Lagerschuppen, Lagerhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 91.1,
+     "lon": 14.231325764929277,
+     "lat": 52.08119924298968
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2014-07-08Z",
+     "flaeche_m2": 82.8,
+     "lon": 14.228673816136983,
+     "lat": 52.077846472130354
+    },
+    {
+     "funktion": "Bürogebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 78.2,
+     "lon": 14.232383681906635,
+     "lat": 52.08137319942072
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-02-18Z",
+     "flaeche_m2": 77.6,
+     "lon": 14.231299053483482,
+     "lat": 52.08037817140615
+    },
+    {
+     "funktion": "Wohnhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 77.5,
+     "lon": 14.23059993644989,
+     "lat": 52.08065766508793
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 69.4,
+     "lon": 14.231352176118458,
+     "lat": 52.08110401427731
+    },
+    {
+     "funktion": "Land- und forstwirtschaftliches Betriebsgebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 65.2,
+     "lon": 14.231547550385532,
+     "lat": 52.07969414196095
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 64.4,
+     "lon": 14.230988471507713,
+     "lat": 52.080642447330305
+    },
+    {
+     "funktion": "Stall",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 63.5,
+     "lon": 14.231399112829461,
+     "lat": 52.07974891396299
+    },
+    {
+     "funktion": "Gaststätte, Restaurant",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 60.9,
+     "lon": 14.230968542366549,
+     "lat": 52.08110614714516
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2016-02-18Z",
+     "flaeche_m2": 52.0,
+     "lon": 14.231035881743749,
+     "lat": 52.07963003838656
+    },
+    {
+     "funktion": "Gebäude für Erholungszwecke",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 48.3,
+     "lon": 14.23114048399284,
+     "lat": 52.079725981450885
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 47.0,
+     "lon": 14.22900585010363,
+     "lat": 52.07823023141137
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 44.9,
+     "lon": 14.229855147352355,
+     "lat": 52.07903580342516
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2025-07-25Z",
+     "flaeche_m2": 44.5,
+     "lon": 14.23146839830347,
+     "lat": 52.07983425603734
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 44.3,
+     "lon": 14.228066812805759,
+     "lat": 52.078118510325695
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 43.3,
+     "lon": 14.231737506747232,
+     "lat": 52.08086496061777
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 43.1,
+     "lon": 14.23045787902352,
+     "lat": 52.082086866162875
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 41.5,
+     "lon": 14.229329901609088,
+     "lat": 52.07840527438921
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 41.4,
+     "lon": 14.231477865194034,
+     "lat": 52.08135306502775
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 40.2,
+     "lon": 14.231297929932268,
+     "lat": 52.081616007221804
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 39.7,
+     "lon": 14.227996988514267,
+     "lat": 52.078035171361975
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 39.6,
+     "lon": 14.227672595801192,
+     "lat": 52.07781278117437
+    },
+    {
+     "funktion": "Gebäude zur Abwasserbeseitigung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 38.8,
+     "lon": 14.228975664624391,
+     "lat": 52.07825479300643
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 37.4,
+     "lon": 14.231553506589199,
+     "lat": 52.08117847880899
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 37.1,
+     "lon": 14.22915436316378,
+     "lat": 52.07872146083046
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 36.3,
+     "lon": 14.232387471973935,
+     "lat": 52.080986277519344
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 35.8,
+     "lon": 14.231820489756009,
+     "lat": 52.08070807430403
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 35.3,
+     "lon": 14.230774989146532,
+     "lat": 52.08212842416138
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 34.4,
+     "lon": 14.229524194242376,
+     "lat": 52.0785056744354
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 34.1,
+     "lon": 14.228715820892893,
+     "lat": 52.07851320232127
+    },
+    {
+     "funktion": "Garage",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 34.1,
+     "lon": 14.230808000702236,
+     "lat": 52.07947036300625
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 33.9,
+     "lon": 14.229705612403286,
+     "lat": 52.07853870395797
+    },
+    {
+     "funktion": "Land- und forstwirtschaftliches Betriebsgebäude",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2013-01-29Z",
+     "flaeche_m2": 33.6,
+     "lon": 14.231988221710836,
+     "lat": 52.080440054582006
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 33.1,
+     "lon": 14.231624364199817,
+     "lat": 52.080682631670065
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 32.6,
+     "lon": 14.230280258801969,
+     "lat": 52.07899921732031
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 32.4,
+     "lon": 14.230384322675333,
+     "lat": 52.07916624713087
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 31.5,
+     "lon": 14.230441843381124,
+     "lat": 52.07905702186063
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 31.5,
+     "lon": 14.230563018837314,
+     "lat": 52.079140295026455
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 31.5,
+     "lon": 14.230682810066797,
+     "lat": 52.079223227256875
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 31.3,
+     "lon": 14.231595393967595,
+     "lat": 52.080539803883774
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 31.1,
+     "lon": 14.23189294628576,
+     "lat": 52.080950068711395
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 29.7,
+     "lon": 14.231671494532097,
+     "lat": 52.080961147236366
+    },
+    {
+     "funktion": "Gebäude zur Freizeitgestaltung",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 29.6,
+     "lon": 14.230946755152281,
+     "lat": 52.08082328639361
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 29.4,
+     "lon": 14.23019691474504,
+     "lat": 52.07892483208639
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 29.0,
+     "lon": 14.231300569676517,
+     "lat": 52.08068525218128
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 28.9,
+     "lon": 14.23119423896208,
+     "lat": 52.08072704526509
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 28.8,
+     "lon": 14.231706357812683,
+     "lat": 52.080619174613915
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 28.7,
+     "lon": 14.228816000924429,
+     "lat": 52.07859955854617
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 28.7,
+     "lon": 14.230109565555546,
+     "lat": 52.078846293525366
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 28.6,
+     "lon": 14.231508073154439,
+     "lat": 52.08072572107909
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 28.5,
+     "lon": 14.229413793892045,
+     "lat": 52.078801837153065
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 28.5,
+     "lon": 14.231508564070895,
+     "lat": 52.08079884334257
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 28.4,
+     "lon": 14.22899800979651,
+     "lat": 52.0785910367694
+    },
+    {
+     "funktion": "Wochenendhaus",
+     "gebnutzbez": "Gebäude",
+     "aktualit": "2021-09-28Z",
+     "flaeche_m2": 27.8,
+     "lon": 14.230029568753716,
+     "lat": 52.07877469031074
+    }
+   ],
+   "hinweis": "ALKIS-Gebaeude auf dem Platz (OSM-Polygon +25m bzw. 120m-Radius); 'aktualit' = Kataster-Stand, nicht Baujahr"
+  },
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Langer Uferstreifen am Ostufer des Schwielochsees: ~60-80 Caravans/Wochenendhaeuser in Reihe zwischen Ufer und Strasse (ALKIS: 84 Geb., 57x Wochenendhaus), kleine Bootsstege entlang des Ufers, MARINA mit ~40 Booten an der Nordspitze, Gastro/Service in der Platzmitte, Dorf Niewisch suedlich, GROSSE ACKERFLAECHEN direkt oestlich hinter der Strasse",
+   "anzahl_geschaetzt": "60-80 Einheiten (Mix Wochenendhaeuser/Dauer-Caravans)",
+   "zustand": "mittel (heterogener Altbestand)",
+   "notiz": "Etablierte Wochenendhaus-Struktur (57 feste Haeuser) = Baurecht fuer feste Bauten grundsaetzlich vorhanden; Austausch-Potenzial gegen moderne Tinyhaeuser. Marina an der Nordspitze = Hausboot-Option. Angrenzende Ackerflaeche = grosse Erweiterungsreserve, aber Eigentum (Landwirt?) und Baurecht ausserhalb Ortslage klaeren. Solider Lead.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20 + ALKIS-Quercheck"
+  }
+ }
+}

@@ -1,0 +1,1046 @@
+{
+ "region": "brandenburg",
+ "stand": "2026-11-22T20:52:18.236851+00:00",
+ "benchmarks": {
+  "portal_luxus_median": 106,
+  "portal_luxus_spanne": [
+   106,
+   106
+  ],
+  "website_median": 51.0,
+  "website_spanne": [
+   40.0,
+   209.0
+  ],
+  "n_portal": 1,
+  "n_website": 38,
+  "booking_hausboot_median": 217,
+  "booking_hausboot_spanne": [
+   111,
+   625
+  ],
+  "n_booking_boote": 17,
+  "airbnb_tiny_median": 111,
+  "airbnb_tiny_spanne": [
+   84,
+   156
+  ],
+  "n_airbnb_tiny": 7,
+  "airbnb_hausboot_median": 195,
+  "n_airbnb_boote": 3,
+  "hinweis": "Booking + Airbnb im echten Browser gescrapt (Hauptsaison 2027-07-09, 3 Nächte, 2 Erw.). Preise sind Gesamtpreis/Nächte; Servicegebühren Airbnb inklusive, Booking zzgl. teils Endreinigung. Deep-Links je Platz in Excel für Detailprüfung.",
+  "tiny_vorschlag": 111,
+  "hausboot_vorschlag": 217
+ },
+ "portal_angebote": [
+  {
+   "name": "Spectacular Bubble in Doberlug-Kirchhain, Brandenburg",
+   "url": "https://glampinghub.com/germany/brandenburg/doberlugkirchhain/spectacular-bubble-doberlug-kirchhain-brandenburg/",
+   "preis_nacht": 106,
+   "typ": "Bubbles",
+   "ort": "Doberlug-Kirchhain, Brandenburg (Germany)",
+   "lat": 51.764958,
+   "lon": 13.470121
+  }
+ ],
+ "website_preise": [
+  {
+   "name": "Freizeit- und Campingpark Helene-See",
+   "preis_nacht": 69.0,
+   "typ": "Mobilheim, Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Ferienpark Üdersee",
+   "preis_nacht": 50.0,
+   "typ": "Bungalow, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Wasserwanderrastplatz Finowfurt",
+   "preis_nacht": 85.0,
+   "typ": "Hausboot, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Motorsportzentrum Jänschwalde Stellplatz",
+   "preis_nacht": 48.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz \"An der Geisterschlucht\"",
+   "preis_nacht": 45.0,
+   "typ": "Mobilheim",
+   "quelle": "Website"
+  },
+  {
+   "name": "Havelidyll",
+   "preis_nacht": 70.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Alter Hof am Elbdeich Wohnmobil Stellplätze",
+   "preis_nacht": 130.0,
+   "typ": "Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "StroamCamp - Rezeption",
+   "preis_nacht": 40.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingdomizil Körbiskrug",
+   "preis_nacht": 45.0,
+   "typ": "Bungalow, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Waldcamp Seeblick",
+   "preis_nacht": 40.0,
+   "typ": "Bungalow, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Berlin",
+   "preis_nacht": 85.0,
+   "typ": "Tinyhaus, Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Schwarzhorn",
+   "preis_nacht": 40.0,
+   "typ": "Mobilheim, Bungalow, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Schlaubetal Camping",
+   "preis_nacht": 40.0,
+   "typ": "Bungalow, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Spreewald-Natur-Camping \"Am Schlosspark\"",
+   "preis_nacht": 50.0,
+   "typ": "Ferienhaus, Hütte, Glamping",
+   "quelle": "Website"
+  },
+  {
+   "name": "Blütencamping Riegelspitze",
+   "preis_nacht": 60.0,
+   "typ": "Tinyhaus, Ferienhaus, Hütte, Schlaffass, Glamping",
+   "quelle": "Website"
+  },
+  {
+   "name": "Flaeming Camping",
+   "preis_nacht": 60.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz an der Havel",
+   "preis_nacht": 60.0,
+   "typ": "Mobilheim",
+   "quelle": "Website"
+  },
+  {
+   "name": "Spreewald-Natur-Camping \"Am See\"",
+   "preis_nacht": 100.0,
+   "typ": "Mobilheim, Bungalow, Ferienhaus, Hütte, Schlaffass, Glamping",
+   "quelle": "Website"
+  },
+  {
+   "name": "Seecamp Waldreich",
+   "preis_nacht": 40.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Komfortcamping Senftenberger See",
+   "preis_nacht": 45.0,
+   "typ": "Ferienhaus, Hütte, Glamping, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Wusterhausen",
+   "preis_nacht": 43.0,
+   "typ": "Ferienhaus, Schlaffass, Glamping, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Spreewälder Seecamping Briesensee",
+   "preis_nacht": 140.0,
+   "typ": "Tinyhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "Reisemobilstellplatz Seestrand Buchwalde",
+   "preis_nacht": 45.0,
+   "typ": "Ferienhaus, Hütte, Glamping",
+   "quelle": "Website"
+  },
+  {
+   "name": "Familienpark Senftenberger See",
+   "preis_nacht": 209.0,
+   "typ": "Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "Kuhle Wampe",
+   "preis_nacht": 160.0,
+   "typ": "Bungalow, Hausboot, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Wasserwanderrastplatz Ploch",
+   "preis_nacht": 85.0,
+   "typ": "Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "Tätzschwitz",
+   "preis_nacht": 200.0,
+   "typ": "Hausboot",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camp SOLARIS",
+   "preis_nacht": 45.0,
+   "typ": "Hütte, Glamping",
+   "quelle": "Website"
+  },
+  {
+   "name": "Triangel Camping",
+   "preis_nacht": 51.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camping- und Freizeitpark am Plauer See",
+   "preis_nacht": 87.45,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Odertours",
+   "preis_nacht": 40.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Allgemeine Körperkultur Birkenheide",
+   "preis_nacht": 40.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Sonnenkap",
+   "preis_nacht": 60.0,
+   "typ": "Tinyhaus, Hütte, Glamping, Zelt mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Waldcamping Lausitzer Seenland",
+   "preis_nacht": 45.0,
+   "typ": "Hütte, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Seecamp am Oderbruch",
+   "preis_nacht": 60.0,
+   "typ": "Bungalow, Glamping, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Naturcampingplatz \"Großer Treppelsee\"",
+   "preis_nacht": 50.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camp Casel",
+   "preis_nacht": 100.0,
+   "typ": "Mobilheim, Ferienhaus, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz StroamCamp",
+   "preis_nacht": 40.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  }
+ ],
+ "booking_links": [
+  {
+   "name": "Campingdomizil Körbiskrug",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingdomizil%20K%C3%B6rbiskrug&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Kuhle Wampe",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Kuhle%20Wampe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping- und Freizeitpark am Plauer See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping-%20und%20Freizeitpark%20am%20Plauer%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Spreewald-Natur-Camping \"Am See\"",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Spreewald-Natur-Camping%20%22Am%20See%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturcampingplatz \"Großer Treppelsee\"",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcampingplatz%20%22Gro%C3%9Fer%20Treppelsee%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Voigtswiese",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Voigtswiese&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Schlaubetal Camping Schervenzsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Schlaubetal%20Camping%20Schervenzsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturcampingplatz am Springsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcampingplatz%20am%20Springsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingverein Glower See e.V.",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingverein%20Glower%20See%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Kagel",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Kagel&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Berlin",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Berlin&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz D66",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20D66&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Seecamp Waldreich",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Seecamp%20Waldreich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Berolina Camping",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Berolina%20Camping&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Butzow",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Butzow&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Allgemeine Körperkultur Birkenheide",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Allgemeine%20K%C3%B6rperkultur%20Birkenheide&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Spreewald-Natur-Camping \"Am Schlosspark\"",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Spreewald-Natur-Camping%20%22Am%20Schlosspark%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Spreewald-Camping Lübben",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Spreewald-Camping%20L%C3%BCbben&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Marina Oderberg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Marina%20Oderberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping Niewisch",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Niewisch&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping Am Spring",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Am%20Spring&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Parsteiner See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Parsteiner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "StroamCamp - Rezeption",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=StroamCamp%20-%20Rezeption&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Havelidyll",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Havelidyll&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "CityCamp Süd",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=CityCamp%20S%C3%BCd&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Jägerbude",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20J%C3%A4gerbude&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ferienparadies am Werbellinsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienparadies%20am%20Werbellinsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Schönmacher Camping",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Sch%C3%B6nmacher%20Camping&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingpark Buntspecht",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Buntspecht&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Stadtmarina Brandenburg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stadtmarina%20Brandenburg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Marina Oderberg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Marina%20Oderberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "CampDeulo",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=CampDeulo&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturcamping Kiessee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcamping%20Kiessee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping am Havelkanal",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20am%20Havelkanal&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping-Club Schweriner See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping-Club%20Schweriner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz-2 Waldcamping Am Großsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz-2%20Waldcamping%20Am%20Gro%C3%9Fsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Waldcamp Seeblick",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Waldcamp%20Seeblick&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping am See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20am%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingpark Großer Klobichsee e.V.",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Gro%C3%9Fer%20Klobichsee%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wassersportzentrum Alte Feuerwache",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wassersportzentrum%20Alte%20Feuerwache&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  }
+ ],
+ "booking_hausboote": [
+  {
+   "name": "Hausboot",
+   "ort": "Hennigsdorf",
+   "preis_gesamt": 587,
+   "bewertung": "8,4",
+   "typ": "Mobilheim 30 m²",
+   "url": "https://www.booking.com/hotel/de/hausboot-hennigsdorf.de.html",
+   "preis_nacht": 196
+  },
+  {
+   "name": "WOHLFÜHLBOOT Hausboot - Festlieger Hafen Bad Saarow",
+   "ort": "Bad Saarow",
+   "preis_gesamt": 612,
+   "bewertung": "8,1",
+   "typ": "",
+   "url": "https://www.booking.com/hotel/de/wohlfuhlboot-hausboot.de.html",
+   "preis_nacht": 204
+  },
+  {
+   "name": "HAUSBOOT Schwimmende Ferienwohnung Ketzin",
+   "ort": "Ketzin/Havel",
+   "preis_gesamt": 488,
+   "bewertung": "8,7",
+   "typ": "Studio 24 m²",
+   "url": "https://www.booking.com/hotel/de/hausbootvermietung-ketzin.de.html",
+   "preis_nacht": 163
+  },
+  {
+   "name": "Schiffspension Luise",
+   "ort": "Potsdam",
+   "preis_gesamt": 332,
+   "bewertung": "8,7",
+   "typ": "",
+   "url": "https://www.booking.com/hotel/de/schiffspension-luise.de.html",
+   "preis_nacht": 111
+  },
+  {
+   "name": "Hausboot Joana",
+   "ort": "Zehdenick",
+   "preis_gesamt": 686,
+   "bewertung": "8,6",
+   "typ": "FeWo 44 m²",
+   "url": "https://www.booking.com/hotel/de/hausboot-joana.de.html",
+   "preis_nacht": 229
+  },
+  {
+   "name": "Yacht Amavida - TraumZeitBoot Scharmützelsee",
+   "ort": "Bad Saarow",
+   "preis_gesamt": 631,
+   "bewertung": "9,4",
+   "typ": "Mobilheim 25 m²",
+   "url": "https://www.booking.com/hotel/de/luxusurlaub-auf-der-amavida-yacht-47-scharmutzelsee.de.html",
+   "preis_nacht": 210
+  },
+  {
+   "name": "Yacht Susan - TraumZeitBoot Scharmützelsee",
+   "ort": "Bad Saarow",
+   "preis_gesamt": 606,
+   "bewertung": "10",
+   "typ": "Mobilheim 25 m²",
+   "url": "https://www.booking.com/hotel/de/luxusurlaub-auf-der-susan-yacht.de.html",
+   "preis_nacht": 202
+  },
+  {
+   "name": "Hausboot TraumZeitBoot Helmut Scharmützelsee",
+   "ort": "Bad Saarow",
+   "preis_gesamt": 1268,
+   "bewertung": "9,1",
+   "typ": "Mobilheim 48 m²",
+   "url": "https://www.booking.com/hotel/de/traumzeitboot3-auf-dem-scharmutzelsee-bad-saarow.de.html",
+   "preis_nacht": 423
+  },
+  {
+   "name": "Wasserbungalow Merlin",
+   "ort": "Kloster Lehnin",
+   "preis_gesamt": 644,
+   "bewertung": "9,8",
+   "typ": "Mobilheim 44 m²",
+   "url": "https://www.booking.com/hotel/de/wasserbungalow-merlin.de.html",
+   "preis_nacht": 215
+  },
+  {
+   "name": "AhoiWerder Hausboot Havelzauber führerscheinfrei",
+   "ort": "Werder",
+   "preis_gesamt": 1876,
+   "bewertung": "",
+   "typ": "Mobilheim 48 m²",
+   "url": "https://www.booking.com/hotel/de/hausboot-havelzauber-werder-havel.de.html",
+   "preis_nacht": 625
+  },
+  {
+   "name": "Luxus Hausboote SolarYacht 30",
+   "ort": "Brandenburg an der Havel",
+   "preis_gesamt": 744,
+   "bewertung": "8,3",
+   "typ": "FeWo 70 m²",
+   "url": "https://www.booking.com/hotel/de/solaryacht-30-exklusives-wohnen-auf-dem-wasser.de.html",
+   "preis_nacht": 248
+  },
+  {
+   "name": "Monpti - Hausboot Seeliebe",
+   "ort": "Templin",
+   "preis_gesamt": 652,
+   "bewertung": "",
+   "typ": "Ferienhaus 11 m²",
+   "url": "https://www.booking.com/hotel/de/monpti-hausboot-seeliebe.de.html",
+   "preis_nacht": 217
+  },
+  {
+   "name": "Bohéa Spa Hausboot mit Sauna und Kamin",
+   "ort": "Schwielochsee",
+   "preis_gesamt": 1349,
+   "bewertung": "9,8",
+   "typ": "Mobilheim 70 m²",
+   "url": "https://www.booking.com/hotel/de/spa-hausboot-am-schwielochsee.de.html",
+   "preis_nacht": 450
+  },
+  {
+   "name": "Gemütliches Wohnschiff auf der Havel",
+   "ort": "Brandenburg an der Havel",
+   "preis_gesamt": 369,
+   "bewertung": "6,5",
+   "typ": "Mobilheim 25 m²",
+   "url": "https://www.booking.com/hotel/de/gemutliches-wohnschiff-auf-der-havel.de.html",
+   "preis_nacht": 123
+  },
+  {
+   "name": "Boats & Yachts at Zehdenick Marina by Kuhnle-Tours",
+   "ort": "Mildenberg",
+   "preis_gesamt": 1140,
+   "bewertung": "",
+   "typ": "Mobilheim 36 m²",
+   "url": "https://www.booking.com/hotel/de/kuhnle-tours-zehdenick-mildenberg.de.html",
+   "hinweis": "Charter (Kuhnle-Tours, fahrbare Charterboote)",
+   "preis_nacht": 380
+  },
+  {
+   "name": "Awesome Ship In Havelsee Ot Kützkow",
+   "ort": "Kützkow",
+   "preis_gesamt": 1276,
+   "bewertung": "",
+   "typ": "",
+   "url": "https://www.booking.com/hotel/de/lovely-ship-in-havelsee-ot-kutzkow-with-lake-view.de.html",
+   "preis_nacht": 425
+  },
+  {
+   "name": "Beautiful Ship In Havelsee Ot Kützkow",
+   "ort": "Kützkow",
+   "preis_gesamt": 1280,
+   "bewertung": "",
+   "typ": "",
+   "url": "https://www.booking.com/hotel/de/amazing-ship-in-havelsee-ot-kutzkow-with-kitchen.de.html",
+   "preis_nacht": 427
+  },
+  {
+   "name": "Beach Front Ship In Havelsee Ot Kützkow",
+   "ort": "Fohrde",
+   "preis_gesamt": 914,
+   "bewertung": "",
+   "typ": "",
+   "url": "https://www.booking.com/hotel/de/nice-ship-boat-in-havelsee-with-1-bedrooms.de.html",
+   "preis_nacht": 305
+  },
+  {
+   "name": "Boats & Yachts at Zeuthen Marina by Kuhnle-Tours",
+   "ort": "Zeuthen",
+   "preis_gesamt": 940,
+   "bewertung": "7,0",
+   "typ": "Mobilheim 17 m²",
+   "url": "https://www.booking.com/hotel/de/kuhnle-tours-bootshaus-zeuthen.de.html",
+   "hinweis": "Charter (Kuhnle-Tours, fahrbare Charterboote)",
+   "preis_nacht": 313
+  }
+ ],
+ "booking_glamping": [
+  {
+   "name": "Bauwagen, Tiny House in Warnitz am Oberuckersee",
+   "preis_gesamt": 164,
+   "bewertung": "8,5",
+   "typ": "Mobilheim",
+   "url": "https://www.booking.com/hotel/de/bauwagen-tiny-house-am-oberuckersee.de.html",
+   "preis_nacht": 55
+  },
+  {
+   "name": "Minihotel Hobbit Town Schlaffass (Stolpsee)",
+   "preis_gesamt": 319,
+   "bewertung": "8,6",
+   "typ": "Bungalow 25 m²",
+   "url": "https://www.booking.com/hotel/de/minihotel-am-see-an-der-mecklenburger-seenplatte-schlaffass.de.html",
+   "preis_nacht": 106
+  },
+  {
+   "name": "Magic Kota - Sternenguckerhaus",
+   "preis_gesamt": 252,
+   "bewertung": "9,6",
+   "typ": "Bungalow 15 m²",
+   "url": "https://www.booking.com/hotel/de/magic-kota-sternenguckerhaus.de.html",
+   "preis_nacht": 84
+  },
+  {
+   "name": "La Pura Vida - Glamping Tiny Houses",
+   "preis_gesamt": 495,
+   "bewertung": "9,6",
+   "typ": "Mobilheim 35 m²",
+   "url": "https://www.booking.com/hotel/de/la-pura-vida-glamping-tiny-houses.de.html",
+   "preis_nacht": 165
+  },
+  {
+   "name": "Tinyhaus idyllisch am Waldesrand (Campingski Cottbus)",
+   "preis_gesamt": 237,
+   "bewertung": "7,3",
+   "typ": "Mobilheim 30 m²",
+   "url": "https://www.booking.com/hotel/de/campingski-cottbus.de.html",
+   "preis_nacht": 79
+  },
+  {
+   "name": "Schlaffass Rudolph am Stolpsee",
+   "preis_gesamt": 327,
+   "bewertung": "7,9",
+   "typ": "Bungalow 10 m²",
+   "url": "https://www.booking.com/hotel/de/schlaffass-rudolph-am-stolpsee-an-der-mecklenburger-seenplatte.de.html",
+   "preis_nacht": 109
+  },
+  {
+   "name": "Glampingzelt auf Naturcampingplatz am See",
+   "preis_gesamt": 207,
+   "bewertung": "8,4",
+   "typ": "Zelt",
+   "url": "https://www.booking.com/hotel/de/glampingzelt-auf-naturcampingplatz-am-see.de.html",
+   "preis_nacht": 69
+  },
+  {
+   "name": "Schloss Sigrön Zirkuswagen",
+   "preis_gesamt": 438,
+   "bewertung": "8,8",
+   "typ": "Mobilheim 20 m²",
+   "url": "https://www.booking.com/hotel/de/schloss-sigron-zirkuswagen.de.html",
+   "preis_nacht": 146
+  },
+  {
+   "name": "KNAUS Campingpark Lübben (Mobilheim)",
+   "preis_gesamt": 483,
+   "bewertung": "8,1",
+   "typ": "Mobilheim 32 m²",
+   "url": "https://www.booking.com/hotel/de/knaus-campingpark-lubben.de.html",
+   "preis_nacht": 161
+  },
+  {
+   "name": "TinyHouse Comet am See",
+   "preis_gesamt": 327,
+   "bewertung": "8,0",
+   "typ": "Bungalow 10 m²",
+   "url": "https://www.booking.com/hotel/de/tinyhouse-comet-am-see-an-der-mecklenburger-seenplatte.de.html",
+   "preis_nacht": 109
+  },
+  {
+   "name": "Safarizelte",
+   "preis_gesamt": 535,
+   "bewertung": "9,0",
+   "typ": "Zelt",
+   "url": "https://www.booking.com/hotel/de/safarizelte.de.html",
+   "preis_nacht": 178
+  },
+  {
+   "name": "Wohnwagen Nele",
+   "preis_gesamt": 250,
+   "bewertung": "10",
+   "typ": "Mobilheim 18 m²",
+   "url": "https://www.booking.com/hotel/de/wohnwagen-nele.de.html",
+   "preis_nacht": 83
+  },
+  {
+   "name": "Cabrio-Wohnwagen",
+   "preis_gesamt": 222,
+   "bewertung": "8,1",
+   "typ": "Mobilheim",
+   "url": "https://www.booking.com/hotel/de/kleiner-cabrio-wohnwagen.de.html",
+   "preis_nacht": 74
+  },
+  {
+   "name": "Campingplatz StroamCamp (Mobilheim)",
+   "preis_gesamt": 169,
+   "bewertung": "8,5",
+   "typ": "Mobilheim",
+   "url": "https://www.booking.com/hotel/de/campingplatz-stroamcamp.de.html",
+   "preis_nacht": 56
+  },
+  {
+   "name": "Campingplatz Wusterhausen (Mobilheim)",
+   "preis_gesamt": 246,
+   "bewertung": "7,0",
+   "typ": "Mobilheim 10 m²",
+   "url": "https://www.booking.com/hotel/de/kai-kollner.de.html",
+   "preis_nacht": 82
+  },
+  {
+   "name": "Themencamping Grünewalder Lauch (Mobilheim)",
+   "preis_gesamt": 384,
+   "bewertung": "10",
+   "typ": "Mobilheim 14 m²",
+   "url": "https://www.booking.com/hotel/de/themencamping-grunewalder-lauch.de.html",
+   "preis_nacht": 128
+  },
+  {
+   "name": "Seenland-Oase Reppist",
+   "preis_gesamt": 206,
+   "bewertung": "9,1",
+   "typ": "",
+   "url": "https://www.booking.com/hotel/de/seenland-oase-reppist.de.html",
+   "preis_nacht": 69
+  },
+  {
+   "name": "Whispering Pines (Zelt-Lodge)",
+   "preis_gesamt": 259,
+   "bewertung": "9,9",
+   "typ": "Zelt",
+   "url": "https://www.booking.com/hotel/de/whispering-pines.de.html",
+   "preis_nacht": 86
+  },
+  {
+   "name": "Bubble Tent by Reindahls",
+   "preis_gesamt": 648,
+   "bewertung": "8,9",
+   "typ": "Zelt",
+   "url": "https://www.booking.com/hotel/de/bubble-tent-berlin.de.html",
+   "preis_nacht": 216
+  },
+  {
+   "name": "Wunderschöne gemütliche Jurte direkt am Wasser",
+   "preis_gesamt": 330,
+   "bewertung": "",
+   "typ": "Zelt",
+   "url": "https://www.booking.com/hotel/de/wunderschone-gemutliche-jurte-direkt-am-wasser.de.html",
+   "preis_nacht": 110
+  },
+  {
+   "name": "Ferienwagen Wolfshöhle (Lodge)",
+   "preis_gesamt": 303,
+   "bewertung": "",
+   "typ": "",
+   "url": "https://www.booking.com/hotel/de/ferienwagen-wolfshohle.de.html",
+   "preis_nacht": 101
+  },
+  {
+   "name": "Tropical Islands Campingplatz (Stellplatz)",
+   "preis_gesamt": 313,
+   "bewertung": "6,9",
+   "url": "https://www.booking.com/hotel/de/tropical-islands-campingplatz.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 104
+  },
+  {
+   "name": "Sonnenkap Camping (Zelt)",
+   "preis_gesamt": 176,
+   "bewertung": "8,7",
+   "url": "https://www.booking.com/hotel/de/sonnenkap-camping.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 59
+  },
+  {
+   "name": "Natur- und Aktivresort Senftenberg (Chalet)",
+   "preis_gesamt": 436,
+   "bewertung": "9,1",
+   "url": "https://www.booking.com/hotel/de/natur-und-aktivresort-senftenberg-schipkau9.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 145
+  },
+  {
+   "name": "Chalet Rotbuche",
+   "preis_gesamt": 568,
+   "bewertung": "9,5",
+   "url": "https://www.booking.com/hotel/de/chalet-rotbuche.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 189
+  },
+  {
+   "name": "Green View Tornow (Chalet)",
+   "preis_gesamt": 884,
+   "bewertung": "9,3",
+   "url": "https://www.booking.com/hotel/de/green-view-tornow.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 295
+  },
+  {
+   "name": "Urlaub am Seddiner See (Chalet)",
+   "preis_gesamt": 300,
+   "bewertung": "6,9",
+   "url": "https://www.booking.com/hotel/de/urlaub-am-seddiner-see-michendorf.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 100
+  },
+  {
+   "name": "Nordic Harmony Home - Prignitz (Chalet)",
+   "preis_gesamt": 767,
+   "bewertung": "7,8",
+   "url": "https://www.booking.com/hotel/de/nordic-harmony-home-prignitz.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 256
+  },
+  {
+   "name": "Natura Ferienpark Bungalows Grimnitzsee",
+   "preis_gesamt": 418,
+   "bewertung": "8,6",
+   "url": "https://www.booking.com/hotel/de/ferienpark-griemnitzsee.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 139
+  },
+  {
+   "name": "Ferienbungalows am Wolziger See",
+   "preis_gesamt": 314,
+   "bewertung": "9,0",
+   "url": "https://www.booking.com/hotel/de/ferienbungalows-am-wolziger-see.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 105
+  },
+  {
+   "name": "Sunday Resort Hafendorf Rheinsberg",
+   "preis_gesamt": 432,
+   "bewertung": "8,0",
+   "url": "https://www.booking.com/hotel/de/precise-resort-hafendorf-rheinsberg.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 144
+  },
+  {
+   "name": "seezeit-resort am Werbellinsee",
+   "preis_gesamt": 271,
+   "bewertung": "8,1",
+   "url": "https://www.booking.com/hotel/de/seezeit-resort.de.html",
+   "hinweis": "kein Camping: Chalet/Ferienpark/Haus",
+   "preis_nacht": 90
+  }
+ ],
+ "airbnb_angebote": [
+  {
+   "title": "Tiny House in Mittenwalde",
+   "desc": "Tinyhaus - naturnah! - MIT SAUNA",
+   "total": 398,
+   "url": "https://www.airbnb.de/rooms/1134718829352236433",
+   "rating": "4,85",
+   "preis_nacht": 133
+  },
+  {
+   "title": "Tiny House in Brandenburg",
+   "desc": "Rückzugsort im Grünen auf kleinem Permakultur Hof",
+   "total": 332,
+   "url": "https://www.airbnb.de/rooms/1673106502004276435",
+   "rating": "4,97",
+   "preis_nacht": 111
+  },
+  {
+   "title": "Tiny House in Neuhausen/Spree",
+   "desc": "Romantische Wellness Oase",
+   "total": 467,
+   "url": "https://www.airbnb.de/rooms/1383401148195944458",
+   "rating": "4,98",
+   "preis_nacht": 156
+  },
+  {
+   "title": "Tiny House in Mittenwalde",
+   "desc": "Gartenhaus in märchenhafter Kleinstadt",
+   "total": 253,
+   "url": "https://www.airbnb.de/rooms/24072626",
+   "rating": "4,99",
+   "preis_nacht": 84
+  },
+  {
+   "title": "Tiny House in Amt Friesack",
+   "desc": "Tinyhouse",
+   "total": 328,
+   "url": "https://www.airbnb.de/rooms/50472692",
+   "rating": "4,95",
+   "preis_nacht": 109
+  },
+  {
+   "title": "Tiny House in Dahme/Mark",
+   "desc": "Gypsy Wagen - Genieße die Ruhe des Waldes",
+   "total": 268,
+   "url": "https://www.airbnb.de/rooms/1354487521362764885",
+   "rating": "5,0",
+   "preis_nacht": 89
+  },
+  {
+   "title": "Tiny House in Rheinsberg",
+   "desc": "Tiny House am Schwarzen See",
+   "total": 395,
+   "url": "https://www.airbnb.de/rooms/561529643119659565",
+   "rating": "4,92",
+   "preis_nacht": 132
+  },
+  {
+   "title": "Boot in Bad Saarow",
+   "desc": "Wohlfühlboot mit freiem Seeblick (Festlieger)",
+   "total": 584,
+   "url": "https://www.airbnb.de/rooms/852564475773308050",
+   "rating": "5,0",
+   "preis_nacht": 195
+  },
+  {
+   "title": "Hausboot in Bad Saarow",
+   "desc": "Sealander, Scharmützelsee, Festlieger",
+   "total": 500,
+   "url": "https://www.airbnb.de/rooms/1192517993003137858",
+   "rating": "",
+   "preis_nacht": 167
+  },
+  {
+   "title": "Boot in Bad Saarow",
+   "desc": "Sunset-Sailing und Übernachten auf Segelyacht",
+   "total": 669,
+   "url": "https://www.airbnb.de/rooms/8461870",
+   "rating": "4,89",
+   "preis_nacht": 223
+  },
+  {
+   "title": "Boot in Buckow",
+   "desc": "Campingboot Entenkoje Anneliese",
+   "total": null,
+   "url": "https://www.airbnb.de/rooms/1475480608490995961",
+   "rating": "4,9"
+  },
+  {
+   "title": "Hütte in Heidesee",
+   "desc": "Wunderschönes Holzhaus mit eigenem Bade-Steg",
+   "total": 486,
+   "url": "https://www.airbnb.de/rooms/669406967150478422",
+   "rating": "4,88",
+   "preis_nacht": 162
+  },
+  {
+   "title": "Hütte in Heidesee",
+   "desc": "Abgefahrene Hütte direkt am Wasser",
+   "total": 474,
+   "url": "https://www.airbnb.de/rooms/1683390232670706771",
+   "rating": "4,92",
+   "preis_nacht": 158
+  },
+  {
+   "title": "Blockhütte in Heidesee",
+   "desc": "Traumhafte kleine Holzhütte in völliger Ruhe!",
+   "total": 277,
+   "url": "https://www.airbnb.de/rooms/3854873",
+   "rating": "4,94",
+   "preis_nacht": 92
+  },
+  {
+   "title": "Blockhütte in Heidesee",
+   "desc": "Urgemütliche Hütte in schönem Bauerngarten",
+   "total": 263,
+   "url": "https://www.airbnb.de/rooms/3848065",
+   "rating": "4,87",
+   "preis_nacht": 88
+  },
+  {
+   "title": "Blockhütte in Fürstenwalde",
+   "desc": "Blockhütte Betty",
+   "total": 312,
+   "url": "https://www.airbnb.de/rooms/1130826657270429797",
+   "rating": "4,75",
+   "preis_nacht": 104
+  },
+  {
+   "title": "Blockhütte in Beelitz",
+   "desc": "Gemütliches Blockhaus mit Sauna und Pool",
+   "total": 498,
+   "url": "https://www.airbnb.de/rooms/1608823182262819277",
+   "rating": "5,0",
+   "preis_nacht": 166
+  },
+  {
+   "title": "Bungalow in Werder",
+   "desc": "Naturhäuschen am See, mit großem Garten",
+   "total": 453,
+   "url": "https://www.airbnb.de/rooms/951358953686212480",
+   "rating": "5,0",
+   "preis_nacht": 151
+  },
+  {
+   "title": "Bungalow in Diensdorf-Radlow",
+   "desc": "Ferienbungalow nah am Scharmützelsee",
+   "total": 429,
+   "url": "https://www.airbnb.de/rooms/906255643383367704",
+   "rating": "4,99",
+   "preis_nacht": 143
+  },
+  {
+   "title": "Bungalow in Rheinsberg",
+   "desc": "kleiner Garten Eden",
+   "total": 261,
+   "url": "https://www.airbnb.de/rooms/1537543287159673832",
+   "rating": "5,0",
+   "preis_nacht": 87
+  },
+  {
+   "title": "Privatunterkunft in Wendisch Rietz",
+   "desc": "Bungalow am Wassergrundstück",
+   "total": 281,
+   "url": "https://www.airbnb.de/rooms/21249161",
+   "rating": "4,71",
+   "preis_nacht": 94
+  }
+ ],
+ "scrape_info": {
+  "checkin": "2027-07-09",
+  "checkout": "2027-07-12",
+  "naechte": 3,
+  "methode": "Echter Browser (Chrome via browse), Booking-Regionssuche Brandenburg mit Unterkunftstyp-Filtern (Boote ht_id=215, Campingplaetze 214, Zelt-Lodges 224, Chalets 228, Lodges 221). Preise = Gesamtpreis 3 Naechte / 2 Erwachsene. 25/31 Boote sichtbar (Rest fuer Zeitraum nicht verfuegbar). Achtung: Regionssuche enthaelt Berlin + Randgebiete (Wittenberge=ST, Frauendorf=SN); Filterung nach Ort noetig. | Echter Browser (Chrome via browse), Airbnb ohne Login. Regionssuche + Keyword-Suchen (Hausboot Brandenburg, Tiny House Brandenburg, Boot Brandenburg). Preise = Gesamtpreis 3 Naechte / 2 Erwachsene. Lokal nach Unterkunftstyp (Titel) und Ort gefiltert; ST/MV-Treffer aussortiert (Dessau, Schoenebeck, Annaburg, Mirow, Priepert, Schwarz)."
+ }
+}

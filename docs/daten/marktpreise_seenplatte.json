@@ -1,0 +1,948 @@
+{
+ "region": "seenplatte",
+ "stand": "2026-11-22T20:02:35.928165+00:00",
+ "benchmarks": {
+  "portal_luxus_median": 372,
+  "portal_luxus_spanne": [
+   268,
+   372
+  ],
+  "website_median": 53.0,
+  "website_spanne": [
+   41.0,
+   140.0
+  ],
+  "n_portal": 3,
+  "n_website": 18,
+  "booking_hausboot_median": 272,
+  "booking_hausboot_spanne": [
+   199,
+   426
+  ],
+  "n_booking_boote": 15,
+  "airbnb_tiny_median": 103,
+  "airbnb_tiny_spanne": [
+   31,
+   201
+  ],
+  "n_airbnb_tiny": 32,
+  "airbnb_hausboot_median": 191,
+  "n_airbnb_boote": 4,
+  "hinweis": "Booking + Airbnb im echten Browser gescrapt (Hauptsaison 2027-07-09, 3 Nächte, 2 Erw.). Preise sind Gesamtpreis/Nächte; Servicegebühren Airbnb inklusive, Booking zzgl. teils Endreinigung. Deep-Links je Platz in Excel für Detailprüfung.",
+  "tiny_vorschlag": 103,
+  "hausboot_vorschlag": 272
+ },
+ "portal_angebote": [
+  {
+   "name": "Countryside Airstream with Sauna in Mecklenburg, Germany",
+   "url": "https://glampinghub.com/germany/mecklenburgvorpommern/wesenberg/countryside-airstream-sauna-mecklenburg-germany/",
+   "preis_nacht": 268,
+   "typ": "Airstreams",
+   "ort": "Wesenberg, Mecklenburg-Vorpommern (Germany)",
+   "lat": 53.29774579999997,
+   "lon": 13.018100399999991
+  },
+  {
+   "name": "Breezy Safari Tent Rentals for Couples near Schwerin in Northern Germany",
+   "url": "https://glampinghub.com/germany/mecklenburgvorpommern/lubz/tent-rentals-couples-northern-germany/",
+   "preis_nacht": 372,
+   "typ": "Safari Tents",
+   "ort": "Lübz, Mecklenburg-Vorpommern (Germany)",
+   "lat": 53.46183999526779,
+   "lon": 12.028876429013566
+  },
+  {
+   "name": "Luxury Bell Tent Rentals near Schwerin in Northern Germany",
+   "url": "https://glampinghub.com/germany/mecklenburgvorpommern/lubz/bell-tents-northern-germany/",
+   "preis_nacht": 372,
+   "typ": "Bell Tents",
+   "ort": "Lübz, Mecklenburg-Vorpommern (Germany)",
+   "lat": 53.46183999526779,
+   "lon": 12.028876429013566
+  }
+ ],
+ "website_preise": [
+  {
+   "name": "Gästehaus Ahlimbsmühle",
+   "preis_nacht": 50.0,
+   "typ": "Bungalow, Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "Naturcampingplatz am Röddelinsee",
+   "preis_nacht": 53.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camping Am Dobbertiner See",
+   "preis_nacht": 45.0,
+   "typ": "Bungalow, Ferienhaus, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplätze am Grossen Zechliner See",
+   "preis_nacht": 50.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplätze am Grossen Zechliner See",
+   "preis_nacht": 50.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Schwaan",
+   "preis_nacht": 60.0,
+   "typ": "Mobilheim, Bungalow, Hausboot, Ferienhaus, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Natur und Strandcamping am Jabelschen See",
+   "preis_nacht": 79.0,
+   "typ": "Ferienhaus, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Naturcamp e.V. Röddelin",
+   "preis_nacht": 53.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camping am Dreetzsee",
+   "preis_nacht": 80.0,
+   "typ": "Ferienhaus, Schlaffass, Glamping",
+   "quelle": "Website"
+  },
+  {
+   "name": "Wurlseecamping Lychen",
+   "preis_nacht": 50.0,
+   "typ": "Bungalow, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camping am Bauernhof",
+   "preis_nacht": 140.0,
+   "typ": "Mobilheim, Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "NaturCamping am Ellbogensee",
+   "preis_nacht": 41.0,
+   "typ": "Tinyhaus, Hütte, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Bad Stuer",
+   "preis_nacht": 95.0,
+   "typ": "Mobilheim, Tinyhaus, Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz am Garder See",
+   "preis_nacht": 62.14,
+   "typ": "Mobilheim, Bungalow, Ferienhaus, Glamping",
+   "quelle": "Website"
+  },
+  {
+   "name": "Ahoi Camp Canow",
+   "preis_nacht": 50.0,
+   "typ": "Tinyhaus, Hausboot",
+   "quelle": "Website"
+  },
+  {
+   "name": "WoMo Platz Bruchmühle",
+   "preis_nacht": 48.0,
+   "typ": "Tinyhaus, Ferienhaus, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Caravan Resort Gützkow",
+   "preis_nacht": 59.0,
+   "typ": "Tinyhaus, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Camping am See Alt Schwerin",
+   "preis_nacht": 65.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  }
+ ],
+ "booking_links": [
+  {
+   "name": "Havelberge",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Havelberge&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingpark Sommersdorf",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Sommersdorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "C25 Naturcampingplatz am Mössensee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=C25%20Naturcampingplatz%20am%20M%C3%B6ssensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Schwaan",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Schwaan&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz am Garder See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20am%20Garder%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping am Bauernhof",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20am%20Bauernhof&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Biber-Camp",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Biber-Camp&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplätze am Grossen Zechliner See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpl%C3%A4tze%20am%20Grossen%20Zechliner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz am Großen Pälitzsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20am%20Gro%C3%9Fen%20P%C3%A4litzsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Am Gobenowsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Am%20Gobenowsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ahoi Camp Canow",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ahoi%20Camp%20Canow&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Am Glambecksee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Am%20Glambecksee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "NaturCamping am Ellbogensee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=NaturCamping%20am%20Ellbogensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ferienidyll am Rätzsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienidyll%20am%20R%C3%A4tzsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "SEEBOOTECH",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=SEEBOOTECH&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingpark Zuruf",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Zuruf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Heidepark Silz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Heidepark%20Silz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Yachthafen Maribell",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Yachthafen%20Maribell&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wohnmobilstellplatz Wesenberg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Wesenberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wurlseecamping Lychen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wurlseecamping%20Lychen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wildwood Camping Uckermark",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wildwood%20Camping%20Uckermark&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "VCP Bundeszeltplatz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=VCP%20Bundeszeltplatz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camp am Labussee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camp%20am%20Labussee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Zeltplatz & Pfahlhauscamp Wesenberg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Zeltplatz%20%26%20Pfahlhauscamp%20Wesenberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplätze am Grossen Zechliner See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpl%C3%A4tze%20am%20Grossen%20Zechliner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Natur und Strandcamping am Jabelschen See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Natur%20und%20Strandcamping%20am%20Jabelschen%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturcamp e.V. Röddelin",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcamp%20e.V.%20R%C3%B6ddelin&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturcamping Bolter Kanal",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcamping%20Bolter%20Kanal&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping am Blanksee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20am%20Blanksee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingoase Waldsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingoase%20Waldsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "C42 Naturcampingplatz am Zotzensee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=C42%20Naturcampingplatz%20am%20Zotzensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "FKK Campingplatz am Rätzsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=FKK%20Campingplatz%20am%20R%C3%A4tzsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wohnmobilstellplatz Winkel Kleinzerlang",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Winkel%20Kleinzerlang&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Feriencamp Rackwitz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Feriencamp%20Rackwitz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Schiefe Eiche",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Schiefe%20Eiche&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Sonnen- und Naturfreunde e.V. Hügelland",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Sonnen-%20und%20Naturfreunde%20e.V.%20H%C3%BCgelland&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping \"Am Kluger See\"'",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20%22Am%20Kluger%20See%22%27&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturcampingplatz am Dranser See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcampingplatz%20am%20Dranser%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping Am Goldberger See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Am%20Goldberger%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Stendenitz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Stendenitz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  }
+ ],
+ "booking_hausboote": [
+  {
+   "name": "Lisa Boot 1",
+   "preis_gesamt": 815,
+   "ort": "Priepert",
+   "url": "https://www.booking.com/hotel/de/lisa-priepert.de.html",
+   "bewertung": "10",
+   "preis_nacht": 272
+  },
+  {
+   "name": "Lisa Boot 2",
+   "preis_gesamt": 815,
+   "ort": "Priepert",
+   "url": "https://www.booking.com/hotel/de/lisa-boot-2.de.html",
+   "bewertung": "10",
+   "preis_nacht": 272
+  },
+  {
+   "name": "Lisa Boot 3",
+   "preis_gesamt": 898,
+   "ort": "Priepert",
+   "url": "https://www.booking.com/hotel/de/lisa-boot-3.de.html",
+   "bewertung": "9,0",
+   "preis_nacht": 299
+  },
+  {
+   "name": "Lisa Boot 4",
+   "preis_gesamt": 898,
+   "ort": "Priepert",
+   "url": "https://www.booking.com/hotel/de/lisa-boot-4.de.html",
+   "bewertung": "9,0",
+   "preis_nacht": 299
+  },
+  {
+   "name": "Lisa Boot 5",
+   "preis_gesamt": 898,
+   "ort": "Priepert",
+   "url": "https://www.booking.com/hotel/de/lisa-boot-5.de.html",
+   "bewertung": "9,0",
+   "preis_nacht": 299
+  },
+  {
+   "name": "Lisa Boot 6",
+   "preis_gesamt": 898,
+   "ort": "Priepert",
+   "url": "https://www.booking.com/hotel/de/lisa-boot-6.de.html",
+   "preis_nacht": 299
+  },
+  {
+   "name": "Floss Priepert 1",
+   "preis_gesamt": 736,
+   "ort": "Priepert",
+   "url": "https://www.booking.com/hotel/de/floss-priepert-1.de.html",
+   "bewertung": "9,6",
+   "preis_nacht": 245
+  },
+  {
+   "name": "Floss Priepert 2",
+   "preis_gesamt": 801,
+   "ort": "Priepert",
+   "url": "https://www.booking.com/hotel/de/floss-priepert-2.de.html",
+   "bewertung": "9,4",
+   "preis_nacht": 267
+  },
+  {
+   "name": "Boats & Yachts at Rechlin Marina by Kuhnle-Tours",
+   "preis_gesamt": 436,
+   "ort": "Rechlin",
+   "url": "https://www.booking.com/hotel/de/kuhnle-tours.de.html",
+   "bewertung": "7,5",
+   "hinweis": "Charter-Hausboote",
+   "preis_nacht": 145
+  },
+  {
+   "name": "Boats & Yachts at Zehdenick Marina by Kuhnle-Tours",
+   "preis_gesamt": 1140,
+   "ort": "Zehdenick",
+   "url": "https://www.booking.com/hotel/de/kuhnle-tours-zehdenick-mildenberg.de.html",
+   "hinweis": "Charter-Hausboote",
+   "preis_nacht": 380
+  },
+  {
+   "name": "Filippa",
+   "preis_gesamt": 651,
+   "ort": "Waren/Müritz",
+   "url": "https://www.booking.com/hotel/de/filippa.de.html",
+   "bewertung": "7,5",
+   "preis_nacht": 217
+  },
+  {
+   "name": "Monpti - Hausboot Seeliebe",
+   "preis_gesamt": 652,
+   "ort": "südl. Seenplatte",
+   "url": "https://www.booking.com/hotel/de/monpti-hausboot-seeliebe.de.html",
+   "preis_nacht": 217
+  },
+  {
+   "name": "Houseboat in Plau am See",
+   "preis_gesamt": 785,
+   "ort": "Plau am See",
+   "url": "https://www.booking.com/hotel/de/houseboat-in-plau-am-see.de.html",
+   "preis_nacht": 262
+  },
+  {
+   "name": "Neues Hausboot für 4 Personen Müritz und Plauer See (Lara)",
+   "preis_gesamt": 597,
+   "ort": "Plau am See",
+   "url": "https://www.booking.com/hotel/de/hausboot-lara.de.html",
+   "bewertung": "9,7",
+   "preis_nacht": 199
+  },
+  {
+   "name": "Floatinghouse Fru Püttelkow",
+   "preis_gesamt": 1047,
+   "ort": "Röbel",
+   "url": "https://www.booking.com/hotel/de/floatinghouse-fru-puttelkow.de.html",
+   "bewertung": "9,5",
+   "preis_nacht": 349
+  },
+  {
+   "name": "Luxboot Röbel exklusives Hausboot mit Dachterrasse und Müritzblick",
+   "preis_gesamt": 1279,
+   "ort": "Röbel",
+   "url": "https://www.booking.com/hotel/de/luxboot-robel-muritz1.de.html",
+   "preis_nacht": 426
+  },
+  {
+   "name": "Hausboot Joana",
+   "preis_gesamt": 734,
+   "ort": "südl. Seenplatte (BB)",
+   "url": "https://www.booking.com/hotel/de/hausboot-joana.de.html",
+   "bewertung": "8,6",
+   "preis_nacht": 245
+  }
+ ],
+ "booking_glamping": [
+  {
+   "name": "Glamping Nest Mecklenburger Seenplatte",
+   "preis_gesamt": 183,
+   "ort": "Penzlin",
+   "url": "https://www.booking.com/hotel/de/nest-penzlin.de.html",
+   "preis_nacht": 61
+  },
+  {
+   "name": "Idyllisches Campen im Zelt",
+   "preis_gesamt": 194,
+   "ort": "Region",
+   "url": "https://www.booking.com/hotel/de/idyllisches-campen-im-zelt.de.html",
+   "preis_nacht": 65
+  }
+ ],
+ "airbnb_angebote": [
+  {
+   "title": "Tiny House in Dargun",
+   "desc": "Hüttchen ganzjährig nutzbar mit Kamin&Sauna",
+   "total": 201,
+   "url": "https://www.airbnb.de/rooms/1270053991400552558",
+   "rating": "4,9",
+   "reviews": 109,
+   "preis_nacht": 67
+  },
+  {
+   "title": "Tiny House in Altkalen",
+   "desc": "Gemütliches Tiny House, Terrasse, Garten, Sauna, Weite",
+   "total": 350,
+   "url": "https://www.airbnb.de/rooms/1794216506567411007",
+   "preis_nacht": 117
+  },
+  {
+   "title": "Privatunterkunft in Lindenberg",
+   "desc": "Jurte mit Kaminofen, Sauna und Sternenhimmel",
+   "total": 423,
+   "url": "https://www.airbnb.de/rooms/1388228886297770091",
+   "rating": "4,98",
+   "reviews": 53,
+   "preis_nacht": 141
+  },
+  {
+   "title": "Campingbus/Wohnmobil in Peenehagen",
+   "desc": "Bauwagen MARIE in der Mecklenburgischen Seenplatte",
+   "total": 222,
+   "url": "https://www.airbnb.de/rooms/22406194",
+   "rating": "4,95",
+   "reviews": 263,
+   "preis_nacht": 74
+  },
+  {
+   "title": "Tiny House in Südmüritz",
+   "desc": "Tiny House Lilleborg: Dein kleines Urlaubsglück!",
+   "total": 352,
+   "url": "https://www.airbnb.de/rooms/1761572960909549216",
+   "rating": "5,0",
+   "reviews": 4,
+   "preis_nacht": 117
+  },
+  {
+   "title": "Privatunterkunft in Lindenberg",
+   "desc": "Luxuriöse Jurte mit Kamin, Sauna & Sternenkuppel",
+   "total": 390,
+   "url": "https://www.airbnb.de/rooms/1358707647705240011",
+   "rating": "5,0",
+   "reviews": 23,
+   "preis_nacht": 130
+  },
+  {
+   "title": "Tiny House in Dargun",
+   "desc": "Bienen-Wagen mit Kamin& Sauna ganzjährig nutzbar",
+   "total": 195,
+   "url": "https://www.airbnb.de/rooms/1146308386157787212",
+   "rating": "4,9",
+   "reviews": 99,
+   "preis_nacht": 65
+  },
+  {
+   "title": "Tiny House in Dargun",
+   "desc": "Autarker Schäferwagen mit Kamin ganzjährig nutzbar",
+   "total": 201,
+   "url": "https://www.airbnb.de/rooms/1006414270031039949",
+   "rating": "4,95",
+   "reviews": 132,
+   "preis_nacht": 67
+  },
+  {
+   "title": "Tiny House in Zirzow",
+   "desc": "Blick auf Feld und Wald",
+   "total": 212,
+   "url": "https://www.airbnb.de/rooms/1775944065910166720",
+   "rating": "4,67",
+   "reviews": 3,
+   "preis_nacht": 71
+  },
+  {
+   "title": "Campingbus/Wohnmobil in Peenehagen",
+   "desc": "Bauwagen ELLA in der Mecklenburgischen Seenplatte",
+   "total": 222,
+   "url": "https://www.airbnb.de/rooms/41081314",
+   "rating": "4,95",
+   "reviews": 147,
+   "preis_nacht": 74
+  },
+  {
+   "title": "Hausboot in Neuruppin",
+   "desc": "Hausboot (einfach, WC und Waschbecken)",
+   "total": 502,
+   "url": "https://www.airbnb.de/rooms/10581490",
+   "rating": "4,9",
+   "reviews": 69,
+   "preis_nacht": 167
+  },
+  {
+   "title": "Baumhaus in Schlockow",
+   "desc": "Tiny House am Stiel",
+   "total": 307,
+   "url": "https://www.airbnb.de/rooms/1160653245683642059",
+   "rating": "4,97",
+   "reviews": 65,
+   "preis_nacht": 102
+  },
+  {
+   "title": "Tiny House in Loitz",
+   "desc": "Ökologischer Urlaub. Retreat. Nähe Greifswald, HST",
+   "total": 192,
+   "url": "https://www.airbnb.de/rooms/1144065123997039305",
+   "rating": "5,0",
+   "reviews": 114,
+   "preis_nacht": 64
+  },
+  {
+   "title": "Tiny House in Altkalen",
+   "desc": "tiny house/ Wohnwagen",
+   "total": 176,
+   "url": "https://www.airbnb.de/rooms/1125878421285582730",
+   "rating": "5,0",
+   "reviews": 57,
+   "preis_nacht": 59
+  },
+  {
+   "title": "Tiny House in Lohmen",
+   "desc": "Tiny House direkt am See",
+   "total": 308,
+   "url": "https://www.airbnb.de/rooms/866366159241328699",
+   "rating": "4,78",
+   "reviews": 51,
+   "preis_nacht": 103
+  },
+  {
+   "title": "Tiny House in Schönbeck",
+   "desc": "Tiny House – Cowboy-Feeling",
+   "total": 250,
+   "url": "https://www.airbnb.de/rooms/1356295646721309635",
+   "rating": "5,0",
+   "reviews": 6,
+   "preis_nacht": 83
+  },
+  {
+   "title": "Tiny House in Templin",
+   "desc": "Tiny House",
+   "total": 285,
+   "url": "https://www.airbnb.de/rooms/1723121686466062120",
+   "preis_nacht": 95
+  },
+  {
+   "title": "Zelt in Malchin",
+   "desc": "Glamping-Zelt",
+   "total": 491,
+   "url": "https://www.airbnb.de/rooms/50513251",
+   "rating": "4,91",
+   "reviews": 86,
+   "preis_nacht": 164
+  },
+  {
+   "title": "Tiny House in Kritzmow",
+   "desc": "Tinyhouse Idylle",
+   "total": 347,
+   "url": "https://www.airbnb.de/rooms/39275925",
+   "rating": "4,95",
+   "reviews": 207,
+   "preis_nacht": 116
+  },
+  {
+   "title": "Tiny House in Warnow",
+   "desc": "Gemütlich entspannen im Bauwagen, bei jedem Wetter",
+   "total": 248,
+   "url": "https://www.airbnb.de/rooms/11898366",
+   "rating": "4,96",
+   "reviews": 326,
+   "preis_nacht": 83
+  },
+  {
+   "title": "Tiny House in Schwasdorf",
+   "desc": "Gemütliches Tiny Haus am Land",
+   "total": 377,
+   "url": "https://www.airbnb.de/rooms/1652151737006557624",
+   "rating": "4,94",
+   "reviews": 18,
+   "preis_nacht": 126
+  },
+  {
+   "title": "Tiny House in Daberkow",
+   "desc": "Tiny House am Tollensee",
+   "total": 359,
+   "url": "https://www.airbnb.de/rooms/51340735",
+   "rating": "4,94",
+   "reviews": 122,
+   "preis_nacht": 120
+  },
+  {
+   "title": "Tiny House in Stuer",
+   "desc": "Tiny House",
+   "total": 308,
+   "url": "https://www.airbnb.de/rooms/658324617565608458",
+   "rating": "4,7",
+   "reviews": 61,
+   "preis_nacht": 103
+  },
+  {
+   "title": "Tiny House in Altkalen",
+   "desc": "My Tiny House im Grünen mit Terrasse & Sauna",
+   "total": 430,
+   "url": "https://www.airbnb.de/rooms/1638489749685842376",
+   "rating": "5,0",
+   "reviews": 16,
+   "preis_nacht": 143
+  },
+  {
+   "title": "Tiny House in Gerswalde",
+   "desc": "Tiny House in Gerswalde",
+   "total": 330,
+   "url": "https://www.airbnb.de/rooms/40999422",
+   "rating": "5,0",
+   "reviews": 44,
+   "preis_nacht": 110
+  },
+  {
+   "title": "Tiny House in Lohmen",
+   "desc": "Tiny House 2 mit eig. Grillecke",
+   "total": 226,
+   "url": "https://www.airbnb.de/rooms/1368742912675406787",
+   "rating": "4,67",
+   "reviews": 9,
+   "preis_nacht": 75
+  },
+  {
+   "title": "Campingbus/Wohnmobil in Neuruppin",
+   "desc": "Gemütlicher Bauwagen Herbert im Wald am See",
+   "total": 247,
+   "url": "https://www.airbnb.de/rooms/44010564",
+   "rating": "4,8",
+   "reviews": 50,
+   "preis_nacht": 82
+  },
+  {
+   "title": "Tiny House in Wittstock/Dosse",
+   "desc": "Traumhaft Urlauben am Wald auf dem Gnadenhof",
+   "total": 287,
+   "url": "https://www.airbnb.de/rooms/1093389642845709023",
+   "rating": "4,87",
+   "reviews": 98,
+   "preis_nacht": 96
+  },
+  {
+   "title": "Tiny House in Alt Tellin",
+   "desc": "Zirkuswagen im Grünen in traumhafter Lage",
+   "total": 289,
+   "url": "https://www.airbnb.de/rooms/638091183205840662",
+   "rating": "4,96",
+   "reviews": 52,
+   "preis_nacht": 96
+  },
+  {
+   "title": "Tiny House in Schönbeck",
+   "desc": "Tiny House – „Dat kleene House“",
+   "total": 334,
+   "url": "https://www.airbnb.de/rooms/1091211218968961497",
+   "preis_nacht": 111
+  },
+  {
+   "title": "Tiny House in Stuer",
+   "desc": "Gemütliches Tiny House Ella/Plau am See MV",
+   "total": 308,
+   "url": "https://www.airbnb.de/rooms/51466775",
+   "rating": "4,84",
+   "reviews": 90,
+   "preis_nacht": 103
+  },
+  {
+   "title": "Campingbus/Wohnmobil in Molchow",
+   "desc": "Gemütlicher DDR-Bauwagen Norbert im Wald am See",
+   "total": 247,
+   "url": "https://www.airbnb.de/rooms/6996826",
+   "rating": "4,85",
+   "reviews": 67,
+   "preis_nacht": 82
+  },
+  {
+   "title": "Boot in Laage",
+   "desc": "Boot-Übernachtung",
+   "total": 240,
+   "url": "https://www.airbnb.de/rooms/1203545326879421138",
+   "rating": "4,73",
+   "reviews": 98,
+   "preis_nacht": 80
+  },
+  {
+   "title": "Tiny House in Rheinsberg",
+   "desc": "Tiny House am Schwarzen See",
+   "total": 395,
+   "url": "https://www.airbnb.de/rooms/561529643119659565",
+   "rating": "4,92",
+   "reviews": 59,
+   "preis_nacht": 132
+  },
+  {
+   "title": "Tiny House in Prenzlau",
+   "desc": "Raus aufs Land – gemütlicher Bauwagen in der Natur",
+   "total": 93,
+   "url": "https://www.airbnb.de/rooms/1766545018181878790",
+   "rating": "4,88",
+   "reviews": 8,
+   "preis_nacht": 31
+  },
+  {
+   "title": "Tiny House in Altkalen",
+   "desc": "Chilly Tiny House für 4, zwei Terrassen & Sauna",
+   "total": 485,
+   "url": "https://www.airbnb.de/rooms/857170731719385596",
+   "rating": "4,92",
+   "reviews": 26,
+   "preis_nacht": 162
+  },
+  {
+   "title": "Tiny House in Gielow",
+   "desc": "Tiny House",
+   "total": 177,
+   "url": "https://www.airbnb.de/rooms/1192561944500003922",
+   "rating": "4,89",
+   "reviews": 64,
+   "preis_nacht": 59
+  },
+  {
+   "title": "Hausboot in Fürstenberg/Havel",
+   "desc": "Seeloge-Sauna Apartment mit Beiboot &Naturerlebnis",
+   "total": 573,
+   "url": "https://www.airbnb.de/rooms/1515905211934153363",
+   "rating": "4,88",
+   "reviews": 16,
+   "preis_nacht": 191
+  },
+  {
+   "title": "Tiny House in Peenehagen",
+   "desc": "Tiny House",
+   "total": 195,
+   "url": "https://www.airbnb.de/rooms/683342403671681545",
+   "rating": "4,91",
+   "reviews": 149,
+   "preis_nacht": 65
+  },
+  {
+   "title": "Zelt in Brunn",
+   "desc": "Glamping-Zelt",
+   "total": 240,
+   "url": "https://www.airbnb.de/rooms/1217117696138815565",
+   "rating": "5,0",
+   "reviews": 22,
+   "preis_nacht": 80
+  },
+  {
+   "title": "Tiny House in Carpin",
+   "desc": "Haus am See mit Kamin Mecklenburgische Seenplatte",
+   "total": 326,
+   "url": "https://www.airbnb.de/rooms/1130108143839585081",
+   "rating": "4,89",
+   "reviews": 9,
+   "preis_nacht": 109
+  },
+  {
+   "title": "Tiny House in Wredenhagen",
+   "desc": "Tiny House 5 dein kleines Reich",
+   "total": 386,
+   "url": "https://www.airbnb.de/rooms/25603950",
+   "rating": "4,98",
+   "reviews": 54,
+   "preis_nacht": 129
+  },
+  {
+   "title": "Tiny House in Gumtow",
+   "desc": "Tiny House am Wiesenrand mit Schafen",
+   "total": 604,
+   "url": "https://www.airbnb.de/rooms/1700551126473834700",
+   "rating": "5,0",
+   "reviews": 5,
+   "preis_nacht": 201
+  },
+  {
+   "title": "Baumhaus in Templin",
+   "desc": "Entenstrich – Baumhaushotel Uckermark",
+   "total": 555,
+   "url": "https://www.airbnb.de/rooms/24078373",
+   "rating": "5,0",
+   "reviews": 5,
+   "preis_nacht": 185
+  },
+  {
+   "title": "Zelt in Malchin",
+   "desc": "Glamping im Gutspark - Ritter Suite",
+   "total": 439,
+   "url": "https://www.airbnb.de/rooms/660491393057190999",
+   "rating": "4,86",
+   "reviews": 14,
+   "preis_nacht": 146
+  },
+  {
+   "title": "Campingbus/Wohnmobil in Peenehagen",
+   "desc": "Wohnwagen mit Countryflair auf Obstkoppel",
+   "total": 102,
+   "url": "https://www.airbnb.de/rooms/1068062622437236207",
+   "rating": "4,9",
+   "reviews": 51,
+   "preis_nacht": 34
+  },
+  {
+   "title": "Campingplatz in Priborn",
+   "desc": "Glamping auf dem Ponyhof",
+   "total": 285,
+   "url": "https://www.airbnb.de/rooms/1137448178639340912",
+   "rating": "4,92",
+   "reviews": 92,
+   "preis_nacht": 95
+  },
+  {
+   "title": "Hausboot in Lindow (Mark)",
+   "desc": "leise los Hausboote: Die Lux",
+   "total": 932,
+   "url": "https://www.airbnb.de/rooms/1638234112521933740",
+   "rating": "5,0",
+   "reviews": 3,
+   "preis_nacht": 311
+  },
+  {
+   "title": "Zelt in Malchin",
+   "desc": "Glamping im Gutspark - Park Suite",
+   "total": 507,
+   "url": "https://www.airbnb.de/rooms/918806971863426343",
+   "rating": "5,0",
+   "reviews": 4,
+   "preis_nacht": 169
+  },
+  {
+   "title": "Tiny House in Kletzin",
+   "desc": "Tiny-Haus \"Anja\" mit Garten, Lehm-Fachwerkbauweise",
+   "total": 180,
+   "url": "https://www.airbnb.de/rooms/1056365606192041515",
+   "rating": "4,92",
+   "reviews": 117,
+   "preis_nacht": 60
+  },
+  {
+   "title": "Zelt in Malchin",
+   "desc": "Glamping im Gutspark - Hainbuchen Suite",
+   "total": 475,
+   "url": "https://www.airbnb.de/rooms/50529982",
+   "rating": "4,95",
+   "reviews": 43,
+   "preis_nacht": 158
+  }
+ ],
+ "scrape_info": {
+  "checkin": "2027-07-09",
+  "checkout": "2027-07-12",
+  "naechte": 3,
+  "methode": "Echter Browser (Chrome, Session-Cookies), Such-URLs mit Hauptsaison-Daten; Booking: Cookie-Banner akzeptiert + einmal Formular-Suche, danach Direkt-URLs; Airbnb: ohne Login, 15 Seiten Regionssuche, lokal nach Unterkunftstyp gefiltert. Preise = Gesamtpreis fuer 3 Naechte / 2 Erwachsene."
+ }
+}

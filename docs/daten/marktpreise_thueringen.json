@@ -1,0 +1,388 @@
+{
+ "region": "thueringen",
+ "stand": "2026-11-22T22:32:41.401030+00:00",
+ "benchmarks": {
+  "portal_luxus_median": null,
+  "portal_luxus_spanne": null,
+  "website_median": 65.0,
+  "website_spanne": [
+   40.0,
+   400.0
+  ],
+  "n_portal": 0,
+  "n_website": 20,
+  "booking_hausboot_median": null,
+  "booking_hausboot_spanne": null,
+  "n_booking_boote": 0,
+  "airbnb_tiny_median": 161,
+  "airbnb_tiny_spanne": [
+   134,
+   161
+  ],
+  "n_airbnb_tiny": 2,
+  "airbnb_hausboot_median": null,
+  "n_airbnb_boote": 0,
+  "hinweis": "Booking + Airbnb im echten Browser gescrapt (Hauptsaison 2027-07-09, 3 Nächte, 2 Erw.). Preise sind Gesamtpreis/Nächte; Servicegebühren Airbnb inklusive, Booking zzgl. teils Endreinigung. Deep-Links je Platz in Excel für Detailprüfung.",
+  "tiny_vorschlag": 161,
+  "hausboot_vorschlag": 217,
+  "hausboot_hinweis": "Zu wenige Hausboot-Angebote in der Region (n=0); Fallback Brandenburg-Median. Hausboot-Markt hier kaum existent."
+ },
+ "portal_angebote": [],
+ "website_preise": [
+  {
+   "name": "Campingplatz Weißensee",
+   "preis_nacht": 90.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Seecamping Kelbra Quick-Camping",
+   "preis_nacht": 400.0,
+   "typ": "Bungalow, Schlaffass",
+   "quelle": "Website"
+  },
+  {
+   "name": "Seecamping Kelbra",
+   "preis_nacht": 400.0,
+   "typ": "Bungalow, Schlaffass",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingpark Erfurt",
+   "preis_nacht": 65.0,
+   "typ": "Hütte, Glamping",
+   "quelle": "Website"
+  },
+  {
+   "name": "Waldcampingplatz Meyersgrund",
+   "preis_nacht": 92.0,
+   "typ": "Bungalow, Ferienhaus, Schlaffass",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Stausee Hohenfelden",
+   "preis_nacht": 89.0,
+   "typ": "Bungalow, Tinyhaus, Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz und Bungalowdorf Erlau",
+   "preis_nacht": 52.0,
+   "typ": "Bungalow, Ferienhaus, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz am Waldbad",
+   "preis_nacht": 75.0,
+   "typ": "Bungalow, Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz \"Bergsee Ratscher\"",
+   "preis_nacht": 68.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Rennsteig-Caravaning Valentinsteich",
+   "preis_nacht": 60.0,
+   "typ": "Bungalow, Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Saalburg - Bad",
+   "preis_nacht": 80.0,
+   "typ": "Bungalow",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Neumannshof",
+   "preis_nacht": 66.0,
+   "typ": "Bungalow, Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Paulfeld",
+   "preis_nacht": 50.0,
+   "typ": "Mobilheim, Bungalow, Ferienhaus, Wohnwagen mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Pfadizentrum Drei Gleichen",
+   "preis_nacht": 50.0,
+   "typ": "Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Nüßleshof",
+   "preis_nacht": 55.0,
+   "typ": "Bungalow, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Palumpa-Land",
+   "preis_nacht": 50.0,
+   "typ": "Ferienhaus",
+   "quelle": "Website"
+  },
+  {
+   "name": "Naturcamp Lenkgrund",
+   "preis_nacht": 40.0,
+   "typ": "Tinyhaus, Glamping, Zelt mietbar",
+   "quelle": "Website"
+  },
+  {
+   "name": "Reisemobilplatz Saalfelder Feengrotten",
+   "preis_nacht": 50.0,
+   "typ": "Ferienhaus, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Wohnmobilstellplatz am Saaleturm Burgk",
+   "preis_nacht": 60.0,
+   "typ": "Ferienhaus, Hütte",
+   "quelle": "Website"
+  },
+  {
+   "name": "Campingplatz Nüßleshof Stellplatze",
+   "preis_nacht": 55.0,
+   "typ": "Bungalow, Hütte",
+   "quelle": "Website"
+  }
+ ],
+ "booking_links": [
+  {
+   "name": "Campingplatz Neumannshof",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Neumannshof&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Paulfeld",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Paulfeld&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Waldcampingplatz Meyersgrund",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Waldcampingplatz%20Meyersgrund&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz am Schönsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20am%20Sch%C3%B6nsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Palumpa-Land",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Palumpa-Land&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping \"Stausee Wangenheim\"",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20%22Stausee%20Wangenheim%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping & Freizeitanlage Droschkau e.V.",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20%26%20Freizeitanlage%20Droschkau%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingpark Eisenach",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Eisenach&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Linkenmühle",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Linkenm%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping Plothener Teiche",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Plothener%20Teiche&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Hopfenmühle Drognitz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Hopfenm%C3%BChle%20Drognitz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz \"Bergsee Ratscher\"",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20%22Bergsee%20Ratscher%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Stellplatz Urnshausen - Familienparadies Schönsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20Urnshausen%20-%20Familienparadies%20Sch%C3%B6nsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Stausee Hohenfelden",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Stausee%20Hohenfelden&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Sole Reisemobilhafen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Sole%20Reisemobilhafen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Unter den Linden",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Unter%20den%20Linden&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Verkehrsgarten Lessingstraße",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Verkehrsgarten%20Lessingstra%C3%9Fe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ferienland Crispendorf",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienland%20Crispendorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Stellplatz Großmutterwiese",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20Gro%C3%9Fmutterwiese&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturcampingplatz Ebenshausen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcampingplatz%20Ebenshausen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "See-Camping Altenburg-Pahna",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=See-Camping%20Altenburg-Pahna&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Sport- und Freizeitzentrum Uhlstädt",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Sport-%20und%20Freizeitzentrum%20Uhlst%C3%A4dt&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Kloster",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Kloster&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wohnmobilstellplatz Lindewerra",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Lindewerra&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz am Schwimmbad",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20am%20Schwimmbad&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Oberhof Camping Lütschesee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Oberhof%20Camping%20L%C3%BCtschesee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Friedebach",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Friedebach&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Saalthal Alter",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Saalthal%20Alter&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Stellplatz Seeba",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20Seeba&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "An der Ulster",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=An%20der%20Ulster&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "(unbenannt)",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=%28unbenannt%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Stellplatz Sport- und Freizeitbad Arnstadt",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20Sport-%20und%20Freizeitbad%20Arnstadt&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wohnmobilstellplatz Volkshausplatz - Meiningen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Volkshausplatz%20-%20Meiningen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "(unbenannt)",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=%28unbenannt%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "(unbenannt)",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=%28unbenannt%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping und Strandbar Strand 24",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20und%20Strandbar%20Strand%2024&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Pfadizentrum Drei Gleichen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Pfadizentrum%20Drei%20Gleichen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Probstei Zella",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Probstei%20Zella&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Stellplatz SaaleStrand",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20SaaleStrand&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Feriendorf Saaldorf",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Feriendorf%20Saaldorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  }
+ ],
+ "booking_hausboote": [],
+ "booking_glamping": [],
+ "airbnb_angebote": [
+  {
+   "title": "Tiny House in Schmölln",
+   "desc": "Hütte Tiny House Kamin Sauna & Whirlpool (Zimmer-Typ, aber Tiny House)",
+   "total": 483,
+   "url": "https://www.airbnb.de/rooms/1281931551384816868",
+   "preis_nacht": 161
+  },
+  {
+   "title": "Tiny House in Eisenach",
+   "desc": "vandra-eisenach | Ferienhaus mit Garten & Terrasse",
+   "total": 402,
+   "url": "https://www.airbnb.de/rooms/1126618207778818235",
+   "preis_nacht": 134
+  },
+  {
+   "title": "Blockhütte in Blankenhain",
+   "desc": "Cottage Wilder Efeu",
+   "total": 270,
+   "url": "https://www.airbnb.de/rooms/1469786897805126125",
+   "preis_nacht": 90
+  },
+  {
+   "title": "Blockhütte in Geratal",
+   "desc": "Waldloft im Thüringer Wald",
+   "total": 753,
+   "url": "https://www.airbnb.de/rooms/997651112883237841",
+   "preis_nacht": 251
+  },
+  {
+   "title": "Gästehaus in Schleusegrund",
+   "desc": "Ferienbungalow Edelmann – Thüringer Wald",
+   "total": 174,
+   "url": "https://www.airbnb.de/rooms/1743475078682978365",
+   "preis_nacht": 58
+  },
+  {
+   "title": "Bungalow in Zella-Mehlis",
+   "desc": "Ferienhaus Feuerzauber",
+   "total": 558,
+   "url": "https://www.airbnb.de/rooms/16388151",
+   "preis_nacht": 186
+  },
+  {
+   "title": "Cottage in Unterwellenborn",
+   "desc": "Glückshütte mit wundervollem Ausblick (Hohenwarte-Stausee)",
+   "total": 605,
+   "url": "https://www.airbnb.de/rooms/43620088",
+   "preis_nacht": 202
+  },
+  {
+   "title": "Privatunterkunft in Unterwellenborn",
+   "desc": "Bungalow mit atemberaubendem Seeblick und Garten (Hohenwarte)",
+   "total": 530,
+   "url": "https://www.airbnb.de/rooms/668570549992579378",
+   "preis_nacht": 177
+  },
+  {
+   "title": "Blockhütte in Probstzella",
+   "desc": "Naturstamm Blockhaus im Thüringer Schiefergebirge",
+   "total": 398,
+   "url": "https://www.airbnb.de/rooms/14769560",
+   "preis_nacht": 133
+  }
+ ],
+ "scrape_info": {
+  "checkin": "2027-07-09",
+  "checkout": "2027-07-12",
+  "naechte": 3,
+  "methode": "Echter Browser (Chrome via browse), Booking-Regionssuche Thueringen mit Unterkunftstyp-Filtern (ht_id=215 Hausboote, 216 Camping, 220 Ferienhaeuser, 224 Luxuszelte) + Ortssuche Hohenwarte-Stausee. Airbnb ohne Login, Regionssuche Thueringen + Hohenwarte. Preise = Gesamtpreis 3 Naechte / 2 Erwachsene. Fremdland-Treffer lokal aussortiert (Bad Sachsa/Niedersachsen, Hilders+Sontra+Machtlos+Wildeck/Hessen, Treuen+Muldenhammer/Sachsen, Bad Rodach+Konradsreuth/Bayern). Befund: KEINE Hausboot-Listings auf Booking/Airbnb in Thueringen (einziger ht_id=215-Treffer 'Houseboat in Plau am See' liegt in MV). Hohenwarte-Hausbootverleih (Hopfenmuehle etc.) laeuft ueber eigene Websites, nicht ueber Portale = Marktluecke/Chance. Tiny-House-Angebot duenn aber vorhanden (Schmoelln, Eisenach, Heiligenstadt, Rennsteig)."
+ }
+}

@@ -54,8 +54,13 @@ git add -A && git commit -m "Update" && git push
 ```
 
 GitHub Pages serviert den Ordner `docs/` (Settings → Pages → Branch `main`,
-Ordner `/docs`). Luftbilder werden fürs Web auf ≤1000 px / JPEG q72 komprimiert
-(~345 MB → ~40 MB); die Originale bleiben lokal.
+Ordner `/docs`). Luftbilder werden fürs Web auf ≤800 px / JPEG q60 komprimiert
+(~345 MB → ~125 MB); die Originale bleiben lokal. Die Online-DB enthält alle
+Scores/Analysen, aber nicht die 54 MB Flurstück-Rohgeometrien (Karte lädt
+ALKIS live; vollständige DB bleibt lokal).
+
+**Alles in einem Schritt:** `powershell -ExecutionPolicy Bypass -File tools\publish.ps1`
+(spiegelt Code aus der Arbeitskopie, baut docs/, committet, pusht).
 
 ## Rechtliches / Datenlizenzen
 

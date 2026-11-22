@@ -1,27 +1,18 @@
-# STATUS – Stand 2026-11-22 nachts (ALLE 5 REGIONEN FERTIG)
+# STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online)
 
-## WICHTIG: Arbeitskopie des Codes + Documents-Sperre
-- **Ursache der Documents-Sperre GEKLAERT:** Windows Defender
-  „Überwachter Ordnerzugriff" (Controlled Folder Access) ist AKTIV
-  (`Get-MpPreference` → EnableControlledFolderAccess = 1).
-  Defender-Eventlog ID 1123 blockiert python.exe / powershell.exe /
-  Robocopy.exe beim Schreiben nach `Documents\Campingplatzfinder`
-  (Lesen geht). Das war KEIN paralleler Agent.
-- **Fix (nur manuell durch den Nutzer, Admin):** Windows-Sicherheit →
-  Viren- & Bedrohungsschutz → Ransomware-Schutz → „Überwachter
-  Ordnerzugriff" → App zulassen: `python.exe`
-  (C:\Users\bruen\AppData\Local\Programs\Python\Python39\python.exe) und
-  ggf. `robocopy.exe`/`powershell.exe` freigeben – ODER Schutz aus.
-  Agent-seitig nicht aenderbar (Admin noetig, Sicherheitsentscheidung).
-- **Aktiver Code bleibt:** `%LOCALAPPDATA%\Campingplatzfinder\code\`
-  (pipeline + config). Aufruf: `cd %LOCALAPPDATA%\Campingplatzfinder\code`,
-  `python -m pipeline.run_all <region>`.
+## Repo + Hosting (2026-11-23)
+- Oeffentliches GitHub-Repo `Febru5x/Campingplatzfinder`, lokale Kopie
+  `C:\Users\bruen\Campingplatzfinder` (git + gh als Febru5x eingerichtet).
+- GitHub Pages aus `docs/` → https://febru5x.github.io/Campingplatzfinder/
+  (Karten/Excel/Dossiers/DB online, Luftbilder web-komprimiert ~100 MB).
+  Update-Workflow + Details: DEPLOYMENT.md im Repo.
+- Documents-Sync damit OBSOLET (Nutzer: muss nicht in Documents liegen;
+  Defender-Freigabe nicht mehr noetig).
+- **Aktiver Code:** `%LOCALAPPDATA%\Campingplatzfinder\code\` (Pipeline
+  laeuft dort); Repo-Kopie wird per robocopy aktualisiert (DEPLOYMENT.md).
 - Daten/Output zentral: `%LOCALAPPDATA%\Campingplatzfinder\{data,output}`.
-- Nach Freigabe: `robocopy "%LOCALAPPDATA%\Campingplatzfinder\code"
-  "%USERPROFILE%\Documents\Campingplatzfinder" /E /XD __pycache__ .git`
-  (ohne Endlos-Retry: `/R:2 /W:2` anhaengen!).
 
-## Ergebnisstand (MV/BB/SN FERTIG; ST+TH Anreicherung laeuft)
+## Ergebnisstand (alle 5 Regionen FERTIG)
 | Region | Plaetze | ≤50m Wasser | Flurstuecke | B-Plan Top-30 | Hist Top-30 | ALKIS Top-40 | Bildsichtung |
 |---|---|---|---|---|---|---|---|
 | seenplatte | 223 | (Pilot) | ja | ja | 1953/1991+Esri | – (MV keine Typen) | Top-6 gesichtet |
@@ -232,17 +223,20 @@
   lead_score steht in enrichment, NICHT in sites.
 
 ## Naechste Schritte / offene Entscheidungen
-1. Documents-Sync nach Defender-Freigabe (siehe oben; Schutz noch
-   aktiv, EnableControlledFolderAccess=1), dann STATUS/DATENQUELLEN
-   zurueckkopieren.
-4. Optional: restliche MV-Plaetze (mecklenburg_vorpommern 21) dem
-   Pilot zuschlagen oder separate Region.
-5. Optional: Top-Leads anschreiben (BAUAMT_VORLAGEN.md in output/).
+1. Sinnvolle Erweiterungen (Vorschlaege, noch nicht beauftragt):
+   - Kontakt-/CRM-Liste der Top-Leads (Ansprechpartner, Status,
+     naechster Schritt) als eigene Excel/Seite.
+   - Restliche MV-Plaetze (21) + neue Regionen (BY/HE/NI sind durch
+     s16 bereits in der DB) konfigurieren.
+   - Saisonkalender/Auslastungs-Annahmen je Region fuer realistischere
+     Rechenbeispiele (140 Naechte ist pauschal).
+   - Preis-Update-Lauf (s13) vor Vertragsverhandlungen.
+2. Top-Leads anschreiben (BAUAMT_VORLAGEN.md, jetzt auch online).
    Erste Kontakte: Jersleber See (ST, B-Plan rechtskraeftig!),
-   Neumannshof + Kelbra + Palumpa-Land + Wangenheim (TH),
+   Neumannshof + Kelbra + Palumpa-Land + Wangenheim + ThuerKies (TH),
    Bluetengrund + Niegripper See (ST).
-6. ST-DOP-WMS spaeter erneut pruefen (Serverstoerung), ImageServer
+3. ST-DOP-WMS spaeter erneut pruefen (Serverstoerung), ImageServer
    funktioniert aber vollwertig.
-7. Hausboot-Logistik: ST hat mit Geiseltalsee (Marina Braunsbedra)
+4. Hausboot-Logistik: ST hat mit Geiseltalsee (Marina Braunsbedra)
    und Goitzsche Resort bereits kommerzielle Hausboot-Vermieter =
    potenzielle Kooperationspartner statt nur Wettbewerb.
