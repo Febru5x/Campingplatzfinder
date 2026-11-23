@@ -1,4 +1,25 @@
-# STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online)
+# STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online + Nachschaerfung)
+
+## Nachschaerfung 2026-11-23 (Nutzer-Feedback)
+- **s17_datenqualitaet** neu: Klassifizierung camping/stellplatz/verein/
+  sonstiges/unbenannt + Online-Praesenz (website/nur_verzeichnis/keine)
+  + Gewaesser-Typ + Hausboot-Eignung (nur See/Stausee; Teich/Fluss nein).
+  Default ausgeblendet: ST 107, TH 133, SN 247, BB 245, MV 108 Plaetze
+  (Stellplaetze, Vereine mit Vereinsheim, Parkplaetze/Fahrerlager/Biwak,
+  unbenannte ohne Kontakt, keine Online-Praesenz). Daten bleiben in DB/
+  Excel; Karte zeigt sie nur per Filter. WATER_OVERRIDE aus Sichtungen:
+  Kelbra=nein (Schwanksee), ThuerKies/Erfurt am See=ja (Kiesseen).
+- **Karten-UI**: Filter-Panel mit aufklappbaren Gruppen (Typ, Wasser/
+  Hausboot, Score/Ausstattung, Bebaubarkeit, Kontakt/Daten) + Zaehler;
+  Bild-Karussell im Popup (DOP + Hist + Website-Fotos, ‹ ›).
+- **Website-Fotos**: Subagent fertig (2026-11-23): 91/125 Top-Plaetze,
+  226 Bilder (23 MB) in output/webbilder/ + enrichment.web_images.
+  31 ohne grosse Fotos (Textseiten/JS-Galerien) → optional Browser-
+  Zweitlauf. Skript: %TEMP%\opencode\cp_webbilder.py (idempotent).
+- s08-Dossiers: nur nicht-ausgeblendete Plaetze in Top-20.
+- User-Beispiele verifiziert: Camping Freiberg=Stellplatz+Pferdeschwemme
+  (nein), Parkplatz Klein Erzgebirge=sonstiges, Fahrerlager=sonstiges,
+  KSV Floeha=Verein (kein Vereinsheim erfasst → sichtbar, Einzelfall).
 
 ## Repo + Hosting (2026-11-23)
 - Oeffentliches GitHub-Repo `Febru5x/Campingplatzfinder`, lokale Kopie
@@ -184,6 +205,9 @@
   liegt in ausland_pl. Kulturpark liegt beidseits der Neiße.
 
 ## Pipeline-Besonderheiten (Service-Quirks)
+- **SQLite-Migrationsfallen**: ALTER TABLE ADD COLUMN ... TEXT liefert
+  bestehende Zeilen als TEXT zurueck (auch '0'/'1'!) → bool('0')=True.
+  Neue Flags immer als int schreiben und beim Lesen str(...)!='1' testen.
 - s04: `region --size= --workers=`; DOP-Nachladen einzeln moeglich
   (site_bbox_25833 + get_dop + get_flight_year, Meta-JSON pflegen!).
 - s05: --shard=i/n + --only-missing; s02: Wasser-Cache 180 Tage.
@@ -206,6 +230,12 @@
   `sichtung{bestand,anzahl_geschaetzt,zustand,notiz,datum,methode}` +
   status="gesichtet" ein (Umlaute ae/oe/ue); Re-Run spiegelt in
   enrichment.bildsichtung → s06 → s07 → s08.
+- s17: Klassifizierung + Hausboot-Gewaesser; WATER_OVERRIDE fuer
+  Sichtungskorrekturen (Kelbra nein, ThuerKies/Erfurt ja). Neue
+  Korrekturen dort eintragen, dann s17+s07 neu.
+- Website-Fotos: Skript %TEMP%\opencode\cp_webbilder.py (Subagent),
+  idempotent; schreibt enrichment.web_images + output/webbilder/.
+  Danach s07 neu (Karussell) + build_site (webbilder kopieren).
 - s07: Popup zeigt jetzt auch KI-Bildsichtung (Zeile 'KI-Bildsichtung',
   bildsichtung_txt im Map-JSON) – seit 2026-11-22 nachts in ALLEN
   Regionen-Karten (TH+ST im Browser verifiziert).

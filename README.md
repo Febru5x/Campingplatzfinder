@@ -31,6 +31,26 @@ und die komplette SQLite-Datenbank zum Download.
 | s14 | ALKIS-Gebäude: Anzahl, Fläche, Nutzungstypen | ALKIS-WFS |
 | s15 | KI-Bildsichtung der Top-20 (Bestand/Zustand/Hebel) | DOP + Agent |
 | s16 | Bundesland-Check (Grenzfälle) | Nominatim |
+| s17 | Datenqualität: Klassifizierung (Camping/Stellplatz/Verein/Sonstiges), Online-Präsenz-Check, Hausboot-Gewässer-Eignung; Default-Ausblendung von Nicht-Leads | eigene Heuristik + Sichtungen |
+
+## Karten-Features (seit 2026-11-23)
+
+- **Filter-Panel** (Button „Filter ▾", aufklappbare Gruppen): Platz-Typ
+  (Camping/Stellplatz/Verein/Sonstiges/unbenannt), Wasser & Hausboot
+  (≤50 m, Hausboot-taugliches Gewässer, Gewässer-Typ), Score & Ausstattung
+  (Min-Score, Steg/Marina, Mietunterkünfte ja/nein/Lücke, Dauercamper),
+  Bebaubarkeit (B-Plan, Ampel), Kontakt & Daten (Online-Präsenz, E-Mail,
+  KI-Sichtung). Zähler „X von Y sichtbar".
+- **Default ausgeblendet** (s17): reine Wohnmobilstellplätze, Vereine mit
+  Vereinsheim, Parkplätze/Fahrerlager/Biwak, unbenannte ohne Kontakt,
+  Plätze ohne Online-Präsenz. Per Filter zuschaltbar; Daten bleiben in
+  Excel/DB.
+- **Bild-Karussell** im Popup: aktuelles DOP + historische Luftbilder +
+  Website-Fotos (‹ › durchklickbar, Label + Zähler).
+- **Hausboot-Gewässer-Bewertung**: nur See/Stausee (≥ ~5 ha) = „ja";
+  Teich/Fluss/Kanal/Bach = „nein"; untypisierte = „unklar". Manuelle
+  Overrides aus KI-Sichtungen in s17 (WATER_OVERRIDE: Kelbra nein,
+  ThürKies/Erfurt am See ja).
 
 ## Schnellstart (Pipeline lokal laufen lassen)
 

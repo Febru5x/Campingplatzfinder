@@ -63,7 +63,9 @@ def db():
     # Migration: neue Spalten fuer bestehende DBs (nur wenn Tabelle existiert)
     cols = {r[1] for r in conn.execute("PRAGMA table_info(enrichment)")}
     if cols:
-        for col in ("buildings", "bildsichtung"):
+        for col in ("buildings", "bildsichtung", "site_class", "class_reason",
+                    "online_status", "waterbody_class", "houseboat_water",
+                    "default_hidden", "web_images"):
             if col not in cols:
                 conn.execute("ALTER TABLE enrichment ADD COLUMN %s TEXT" % col)
         conn.commit()
@@ -122,6 +124,11 @@ def init_db():
         has_tinyhouse INTEGER, has_houseboat INTEGER,
         buildings TEXT,             -- ALKIS-Gebaeude (BB/SN), JSON
         bildsichtung TEXT,          -- KI-Luftbild-Sichtung, JSON
+        site_class TEXT,            -- camping/stellplatz/verein/sonstiges/unbenannt
+        class_reason TEXT, online_status TEXT,
+        waterbody_class TEXT, houseboat_water TEXT,
+        default_hidden INTEGER,     -- 1 = auf Karte initial ausgeblendet
+        web_images TEXT,            -- JSON-Liste Bild-URLs von der Website
         -- Website / Markt
         price_pitch REAL, price_tent REAL, price_rental REAL,
         season TEXT, chain TEXT, contact_name TEXT, contact_email TEXT,

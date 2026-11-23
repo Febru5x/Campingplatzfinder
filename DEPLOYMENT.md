@@ -20,6 +20,7 @@
 | campingplaetze_<region>.xlsx ×5 | output/ |
 | dossiers/<region>/ (Top-20 HTML) ×5 | output/ |
 | luftbilder/ + luftbilder_hist/ (Web-komprimiert ≤800px q60 / 600px q55) | output/, Pillow |
+| webbilder/ (Website-Fotos der Top-Plätze, ≤1000px q75) | output/webbilder (Bilder-Subagent) |
 | daten/camping.db (VACUUM-Kopie; ohne parcels-Rohgeometrien, die bleiben lokal) | data/ |
 | daten/marktpreise_*.json, bildsichtung_*.json | data/ |
 | BAUAMT_VORLAGEN.md | output/ |

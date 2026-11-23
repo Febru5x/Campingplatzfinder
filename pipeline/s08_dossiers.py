@@ -72,7 +72,8 @@ def run(region_name, top=20):
     hist_src = ("%s (%s)" % (geoquelle, "/".join(hist_years))) if hist_years else geoquelle
     conn = C.db()
     rows = conn.execute("""SELECT s.*, e.* FROM sites s JOIN enrichment e ON s.id=e.site_id
-        WHERE s.region=? ORDER BY e.lead_score DESC LIMIT ?""",
+        WHERE s.region=? AND (e.default_hidden IS NULL OR e.default_hidden != 1)
+        ORDER BY e.lead_score DESC LIMIT ?""",
         (region_name, top)).fetchall()
     meta_path = C.DATA / ("luftbild_meta_%s.json" % region_name)
     meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}

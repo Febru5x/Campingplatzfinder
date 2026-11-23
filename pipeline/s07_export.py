@@ -13,9 +13,15 @@ from . import common as C
 COLS = [
     ("lead_score", "Lead-Score"),
     ("name", "Name"),
-    ("category", "Kategorie"),
+    ("site_class", "Typ (Klassifizierung)"),
+    ("default_hidden", "Default ausgeblendet"),
+    ("class_reason", "Klassifizierung: Grund"),
+    ("online_status", "Online-Präsenz"),
+    ("category", "Kategorie (OSM)"),
     ("water_score", "Wasser-Score"),
     ("water_name", "Gewässer"),
+    ("waterbody_class", "Gewässer-Typ"),
+    ("houseboat_water", "Hausboot-Gewässer geeignet"),
     ("water_distance_m", "Abstand Wasser (m)"),
     ("shoreline_m", "Uferlänge (m)"),
     ("has_pier", "Steg"),
@@ -219,19 +225,75 @@ MAP_TMPL = """<!DOCTYPE html>
  .badge{{display:inline-block;padding:1px 7px;border-radius:9px;color:#fff;font-size:11px;margin-right:4px}}
  table.kv td{{padding:1px 6px 1px 0;vertical-align:top}} table.kv td:first-child{{color:#666}}
  #filter{{position:absolute;top:10px;right:10px;z-index:1000;background:#fff;padding:10px 14px;
-   border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.3);font-size:13px}}
+   border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.3);font-size:13px;max-height:92vh;overflow:auto;width:250px}}
+ #filter summary{{cursor:pointer;font-weight:600;margin:4px 0}}
+ #filter .fgroup{{border-top:1px solid #eee;padding:4px 0}}
+ #filter label{{display:block;margin:1px 0;font-weight:400}}
+ #fToggle{{position:absolute;top:10px;right:10px;z-index:1001;background:#1a5276;color:#fff;
+   border:none;border-radius:8px;padding:8px 12px;font-size:14px;cursor:pointer;box-shadow:0 1px 6px rgba(0,0,0,.3)}}
+ #fCount{{font-size:12px;color:#555;margin-top:6px}}
+ .carousel{{position:relative;margin:6px 0}}
+ .carousel .cimg{{width:100%;height:190px;object-fit:cover;border-radius:6px;display:block}}
+ .carousel .clabel{{font-size:11px;color:#666;text-align:center;margin-top:2px}}
+ .carousel button{{position:absolute;top:80px;background:rgba(0,0,0,.45);color:#fff;border:none;
+   border-radius:50%;width:28px;height:28px;font-size:15px;cursor:pointer;line-height:1}}
+ .carousel .cprev{{left:4px}} .carousel .cnext{{right:4px}}
+ .carousel .cdot{{text-align:center;font-size:10px;color:#999}}
  .leaflet-control-layers{{font-size:12px}}
  #legend{{position:absolute;bottom:20px;left:10px;z-index:1000;background:#fff;padding:8px 12px;
    border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.3);font-size:12px;line-height:1.7}}
  .dot{{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px}}
 </style></head><body>
 <div id="map"></div>
-<div id="filter">
- <b>Filter</b><br>
- <label><input type="checkbox" id="fWater"> nur direkt am Wasser (≤50 m)</label><br>
- <label><input type="checkbox" id="fScore"> nur Lead-Score ≥ 50</label><br>
- <label>Min-Score: <input type="range" id="fMin" min="0" max="100" value="0" style="width:110px">
- <span id="fMinVal">0</span></label>
+<button id="fToggle">Filter ▾</button>
+<div id="filter" style="display:none">
+ <b>Filter</b> <span style="float:right;cursor:pointer" id="fClose">✕</span>
+ <details open class="fgroup"><summary>Platz-Typ</summary>
+  <label><input type="checkbox" class="fClass" value="camping" checked> Campingplätze</label>
+  <label><input type="checkbox" class="fClass" value="stellplatz"> reine Wohnmobilstellplätze</label>
+  <label><input type="checkbox" class="fClass" value="verein"> Vereine</label>
+  <label><input type="checkbox" class="fClass" value="sonstiges"> Sonstiges (Parkplatz, Biwak …)</label>
+  <label><input type="checkbox" class="fClass" value="unbenannt"> unbenannte Plätze</label>
+ </details>
+ <details open class="fgroup"><summary>Wasser &amp; Hausboot</summary>
+  <label><input type="checkbox" id="fWater"> nur direkt am Wasser (≤50 m)</label>
+  <label><input type="checkbox" id="fHb"> nur Hausboot-taugliches Gewässer</label>
+  <label>Gewässer-Typ:
+   <select id="fWb"><option value="">alle</option>
+    <option>see/stausee</option><option>see/stausee (Name)</option>
+    <option>fluss/kanal</option><option>teich/becken</option>
+    <option>untypisiert</option><option>bach/graben</option><option>kein/fern</option>
+   </select></label>
+ </details>
+ <details open class="fgroup"><summary>Score &amp; Ausstattung</summary>
+  <label>Min-Score: <input type="range" id="fMin" min="0" max="100" value="0" style="width:100px">
+   <span id="fMinVal">0</span></label>
+  <label><input type="checkbox" id="fPier"> nur mit Steg/Marina</label>
+  <label><input type="checkbox" id="fRent"> nur mit Mietunterkünften</label>
+  <label><input type="checkbox" id="fNoRent"> nur OHNE Mietunterkünfte (Lücke)</label>
+  <label><input type="checkbox" id="fSeasonal"> nur mit Dauercampern</label>
+ </details>
+ <details class="fgroup"><summary>Bebaubarkeit</summary>
+  <label><input type="checkbox" id="fBplan"> nur mit B-Plan</label>
+  <label>Ampel:
+   <select id="fFlag"><option value="">alle</option>
+    <option value="grün">grün (Anteil)</option>
+    <option value="gelb-grün">gelb-grün</option>
+    <option value="gelb">gelb</option>
+    <option value="rot">rot (Anteil)</option>
+   </select></label>
+ </details>
+ <details class="fgroup"><summary>Kontakt &amp; Daten</summary>
+  <label>Online-Präsenz:
+   <select id="fOnline"><option value="">alle</option>
+    <option value="website">eigene Website</option>
+    <option value="nur_verzeichnis">nur Verzeichnis</option>
+    <option value="keine">keine</option>
+   </select></label>
+  <label><input type="checkbox" id="fEmail"> nur mit E-Mail</label>
+  <label><input type="checkbox" id="fSicht"> nur mit KI-Bildsichtung</label>
+ </details>
+ <div id="fCount"></div>
 </div>
 <div id="legend">
  <b>Lead-Score</b><br>
@@ -258,19 +320,43 @@ const layerCtl = L.control.layers(bases, overlays,
   {{collapsed:false, position:'topleft'}}).addTo(map);
 
 function color(s){{return s>=70?'#d73027':s>=50?'#fc8d59':s>=30?'#fee08b':'#91bfdb';}}
-function esc(t){{return (t==null?'':String(t)).replace(/&/g,'&amp;').replace(/</g,'&lt;');}}
+function esc(t){{return (t==null?'':String(t)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}}
+function carStep(btn,d){{
+ const c=btn.closest('.carousel');
+ const slides=JSON.parse(c.getAttribute('data-slides'));
+ let i=(+c.getAttribute('data-i')+d+slides.length)%slides.length;
+ c.setAttribute('data-i',i);
+ const img=c.querySelector('.cimg');
+ img.style.opacity=1; img.src=slides[i].src;
+ c.querySelector('.clabel').textContent=slides[i].label;
+ const dot=c.querySelector('.cdot'); if(dot) dot.textContent=(i+1)+' / '+slides.length;
+}}
 function popupHtml(p){{
  let h='<div class="panel"><h3>'+esc(p.name)+'</h3>';
  h+='<span class="badge" style="background:'+color(p.lead_score)+'">Score '+(p.lead_score??'–')+'</span>';
  if(p.water_score>=70) h+='<span class="badge" style="background:#1a9850">Top-Wasserlage</span>';
- if(p.img) h+='<img src="luftbilder/'+p.img+'" loading="lazy">';
- if(p.hist&&p.hist.length){{
-  h+='<div style="display:flex;gap:4px;flex-wrap:wrap">';
-  for(const t of p.hist) h+='<figure style="margin:0;flex:1;min-width:45%"><img src="'+t.img+'" loading="lazy"><figcaption style="font-size:10px;color:#666">'+esc(t.label)+'</figcaption></figure>';
+ if(p.site_class&&p.site_class!=='camping') h+='<span class="badge" style="background:#777">'+esc(p.site_class)+'</span>';
+ if(p.houseboat_water==='ja') h+='<span class="badge" style="background:#2c7fb8">Hausboot-Gewässer</span>';
+ else if(p.houseboat_water==='nein'&&p.water_name) h+='<span class="badge" style="background:#999">kein Hausboot-Gewässer</span>';
+ // Bild-Karussell: aktuelles DOP + Hist + Website-Fotos
+ const slides=[];
+ if(p.img) slides.push({{src:'luftbilder/'+p.img,label:'Luftbild aktuell'+(p.imgyear?' '+p.imgyear:'')}});
+ if(p.hist) for(const t of p.hist) slides.push({{src:t.img,label:t.label}});
+ if(p.webimg) for(const w of p.webimg) slides.push({{src:'webbilder/'+w,label:'Website-Foto',ext:true}});
+ if(slides.length){{
+  h+='<div class="carousel" data-i="0" data-slides="'+esc(JSON.stringify(slides))+'">';
+  h+='<img class="cimg" src="'+slides[0].src+'" loading="lazy" onerror="this.style.opacity=.2">';
+  h+='<div class="clabel">'+esc(slides[0].label)+'</div>';
+  if(slides.length>1){{
+   h+='<button class="cprev" onclick="carStep(this,-1)">‹</button><button class="cnext" onclick="carStep(this,1)">›</button>';
+   h+='<div class="cdot">1 / '+slides.length+'</div>';
+  }}
   h+='</div>';
  }}
  h+='<table class="kv">';
- const rows=[['Gewässer',p.water_name],['Abstand Wasser',p.water_distance_m!=null?p.water_distance_m+' m':null],
+ const rows=[['Gewässer',p.water_name],['Gewässer-Typ',p.waterbody_class],
+  ['Hausboot-Eignung',p.houseboat_water==='ja'?'ja (See/Stausee)':p.houseboat_water==='nein'?'nein (zu klein/Fluss/Teich)':'unklar – prüfen'],
+  ['Abstand Wasser',p.water_distance_m!=null?p.water_distance_m+' m':null],
   ['Uferlänge',p.shoreline_m?p.shoreline_m+' m':null],['Steg',p.has_pier?'ja':null],
   ['Motorboot',p.motorboat_flag],['Fläche',p.area_m2?Math.round(p.area_m2).toLocaleString('de')+' m²':null],
   ['Flurstücke',p.parcel_area_m2?Math.round(p.parcel_area_m2).toLocaleString('de')+' m²':null],
@@ -317,24 +403,63 @@ map.on('zoomend',()=>{{
  if(map.getZoom()>=12) for(const m of markers) if(m._poly&&group.hasLayer(m)) polyGroup.addLayer(m._poly);
 }});
 function applyFilter(){{
+ const cls=new Set([...document.querySelectorAll('.fClass:checked')].map(c=>c.value));
  const w=document.getElementById('fWater').checked;
- const s50=document.getElementById('fScore').checked;
+ const hb=document.getElementById('fHb').checked;
+ const wb=document.getElementById('fWb').value;
  const mn=+document.getElementById('fMin').value;
  document.getElementById('fMinVal').textContent=mn;
+ const pier=document.getElementById('fPier').checked;
+ const rent=document.getElementById('fRent').checked;
+ const norent=document.getElementById('fNoRent').checked;
+ const seas=document.getElementById('fSeasonal').checked;
+ const bplan=document.getElementById('fBplan').checked;
+ const flag=document.getElementById('fFlag').value;
+ const online=document.getElementById('fOnline').value;
+ const email=document.getElementById('fEmail').checked;
+ const sicht=document.getElementById('fSicht').checked;
  group.clearLayers();
+ let n=0;
+ const anyClassFilter=[...document.querySelectorAll('.fClass')].some(c=>c.checked!==c.defaultChecked);
  for(const m of markers){{
   const p=m._p;
+  // Initial: nur nicht-ausgeblendete Plaetze; sobald Typ-Filter angefasst, gilt Auswahl
+  if(!anyClassFilter&&!p.init_visible)continue;
+  if(anyClassFilter&&!cls.has(p.site_class||'camping'))continue;
   if(w&&!(p.water_distance_m!=null&&p.water_distance_m<=50))continue;
-  if(s50&&!(p.lead_score>=50))continue;
+  if(hb&&p.houseboat_water!=='ja')continue;
+  if(wb&&p.waterbody_class!==wb)continue;
   if((p.lead_score||0)<mn)continue;
-  group.addLayer(m);
+  if(pier&&!(p.has_pier||(p.marina_distance_m!=null&&p.marina_distance_m<100)))continue;
+  if(rent&&!p.rentals)continue;
+  if(norent&&p.rentals)continue;
+  if(seas&&!p.seasonal)continue;
+  if(bplan&&!(p.bplan&&p.bplan.length))continue;
+  if(flag&&!(p.build_flag||'').includes(flag))continue;
+  if(online&&p.online_status!==online)continue;
+  if(email&&!(p.contact_email||p.email))continue;
+  if(sicht&&!p.bildsichtung_txt)continue;
+  group.addLayer(m); n++;
  }}
+ document.getElementById('fCount').textContent=n+' von '+markers.length+' Plätzen sichtbar';
  polyGroup.clearLayers();
  if(map.getZoom()>=12) for(const m of markers) if(m._poly&&group.hasLayer(m)) polyGroup.addLayer(m._poly);
 }}
-document.getElementById('fWater').onchange=applyFilter;
-document.getElementById('fScore').onchange=applyFilter;
+for(const el of document.querySelectorAll('#filter input,#filter select')){{
+ el.onchange=applyFilter;
+}}
 document.getElementById('fMin').oninput=applyFilter;
+document.getElementById('fToggle').onclick=()=>{{
+ const f=document.getElementById('filter');
+ const open=f.style.display!=='none';
+ f.style.display=open?'none':'block';
+ document.getElementById('fToggle').style.display=open?'block':'none';
+}};
+document.getElementById('fClose').onclick=()=>{{
+ document.getElementById('filter').style.display='none';
+ document.getElementById('fToggle').style.display='block';
+}};
+applyFilter();
 </script></body></html>
 """
 
@@ -351,7 +476,9 @@ def export_map(df, region_name):
               "protected_area", "parcel_area_m2", "build_flag", "seasonal",
               "rentals", "rental_age_est", "price_pitch", "price_rental",
               "top_argument", "revenue_example", "contact_email", "buildings",
-              "bildsichtung_txt"]
+              "bildsichtung_txt", "site_class", "class_reason", "online_status",
+              "waterbody_class", "houseboat_water", "default_hidden",
+              "web_images", "marina_distance_m"]
     # History-Infos (hist. Luftbilder) und B-Pläne laden
     hist = {}
     conn = C.db()
@@ -376,6 +503,15 @@ def export_map(df, region_name):
         m = meta.get(r["id"], {})
         if m.get("file") and (imgdir_src / m["file"]).exists():
             d["img"] = m["file"]
+            d["imgyear"] = m.get("year")
+        # Website-Fotos (Subagent s18/web_images)
+        try:
+            wi = json.loads(r.get("web_images") or "null")
+            if wi:
+                d["webimg"] = [w for w in wi
+                               if (C.OUTPUT / "webbilder" / w).exists()]
+        except Exception:
+            pass
         hi = hist.get(r["id"], {})
         h = hi.get("hist_luftbilder", {})
         caps = hi.get("esri_aufnahmedaten", {})
@@ -421,6 +557,9 @@ def export_map(df, region_name):
                 d["geom"] = json.loads(r["geometry"])
             except Exception:
                 pass
+        # Default-Ausblendung: nur echte Camping-Plaetze mit Online-Praesenz
+        # sichtbar; Rest per Filter zuschaltbar. (SQLite liefert 0/1 als TEXT!)
+        d["init_visible"] = str(d.get("default_hidden") or "0") != "1"
         sites.append(d)
     bbox = region["bbox"]
     # Overlays je Bundesland aus Regions-Config (ALKIS + historische DOPs)

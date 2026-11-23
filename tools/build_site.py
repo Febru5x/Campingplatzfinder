@@ -161,6 +161,17 @@ def main():
     print("Luftbilder komprimieren (historisch)...")
     compress_images(C.OUTPUT / "luftbilder_hist", DOCS / "luftbilder_hist", full,
                     maxpx=600, quality=55)
+    # Website-Fotos (vom Bilder-Subagent bereits <=1000px/q75 komprimiert)
+    wb_src = C.OUTPUT / "webbilder"
+    if wb_src.exists():
+        (DOCS / "webbilder").mkdir(exist_ok=True)
+        n = 0
+        for f in wb_src.glob("*.jpg"):
+            out = DOCS / "webbilder" / f.name
+            if not out.exists() or full:
+                shutil.copy2(f, out)
+                n += 1
+        print("webbilder kopiert: neu=%d" % n)
 
     # 3) Datenbank (VACUUM-Kopie) + kleine JSONs
     # parcels-Geometrien sind 54 MB und auf der Karte nicht noetig
