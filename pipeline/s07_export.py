@@ -610,12 +610,14 @@ def export_map(df, region_name):
             if not (C.OUTPUT / h[y]).exists():
                 continue
             cap = caps.get(y)
-            # identische Quellbilder (gleiches Aufnahmedatum) nur einmal zeigen
+            label = cap[:4] if cap else y
+            # identische Quellbilder nur einmal zeigen: gleiches
+            # Aufnahmedatum ODER gleiches Anzeigejahr (neuestes Bild gewinnt)
             dedup_key = cap if cap else y
-            if dedup_key in seen_cap:
+            if dedup_key in seen_cap or label in seen_cap:
                 continue
             seen_cap.add(dedup_key)
-            label = cap[:4] if cap else y
+            seen_cap.add(label)
             # nur Aufnahmejahr anzeigen (Release-Jahr ist fuer Nutzer irrelevant)
             timeline.append({"label": label, "img": h[y]})
         if timeline:

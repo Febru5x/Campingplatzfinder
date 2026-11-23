@@ -219,11 +219,13 @@ def run(region_name, top=20):
                 if not rel or not (C.OUTPUT / rel).exists():
                     continue
                 cap = caps.get(y)
+                year = cap[:4] if cap else y
                 dedup = cap or y
-                if dedup in seen_cap:
+                if dedup in seen_cap or year in seen_cap:
                     continue
                 seen_cap.add(dedup)
-                label = "Befliegung %s" % (cap[:4] if cap else y)
+                seen_cap.add(year)
+                label = "Befliegung %s" % year
                 imgs.append('<figure style="margin:0;flex:1;min-width:30%%"><img src="../%s" style="max-height:240px">'
                             '<figcaption style="font-size:11px;color:#666">%s</figcaption></figure>' % (rel, label))
             wb = h.get("wayback", {})
