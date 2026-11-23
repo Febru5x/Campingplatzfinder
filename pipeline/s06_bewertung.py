@@ -1,15 +1,20 @@
 """Schritt 06: Lead-Scores, Baurecht-Ampel, Umsatz-Rechenbeispiel.
 
 Drei Scores je Platz:
-- lead_score  kombinierter Lead-Score (Ranking/Top-Listen, wie bisher):
+- lead_score  kombinierter Lead-Score (Ranking/Top-Listen):
   Wasserlage max 35, Flaeche max 15+4, Bestand/Luecke max 20, Markt max 10,
-  Erreichbarkeit max 10, Groesse max 5, Steg +6, Abzuege (Tiny -5, Biwak
-  x0.35, strenges Schutzgebiet x0.6)
+  Website-Modernitaet max 10, Groesse max 5, Steg +6, Abzuege (Tiny -5,
+  Biwak x0.35, strenges Schutzgebiet x0.6)
 - score_th    Tiny-House-Score: Wasserlage nur Bonus (max 10), dafuer
   Bebaubarkeit 0-15; Rest wie Lead-Score ohne Steg-Bonus
 - score_hb    Hausboot-Score: Wasserlage max 35 + Gewaesser-Eignung 15
-  + Steg/Marina 12 + Uferlaenge max 8 + Markt/Erreichbarkeit/Dauer;
+  + Steg/Marina 12 + Uferlaenge max 8 + Markt/Modernitaet/Dauer;
   kein Hausboot-Gewaesser -> Deckel 40
+
+Reine Erreichbarkeit gibt keine Punkte mehr (ist Filterkriterium);
+stattdessen Website-Modernitaet (s19) als Investitions-Proxy.
+Rechenbeispiel: 3 Einheiten, Preis aus Portal-Angeboten im Umkreis 25 km
+(Airbnb/Booking, geokodiert via Nominatim) minus 20 % Camping-Abschlag.
 
 Aufruf:  python -m pipeline.s06_bewertung seenplatte
 """
@@ -20,20 +25,124 @@ from datetime import datetime, timezone
 
 from . import common as C
 
-# regionale Benchmarks (konservativ; spaeter aus echten Portalpreisen kalibrieren)
+# regionale Benchmarks (Fallback; Preise werden je Platz aus Portal-Daten
+# im Umkreis 25 km kalibriert, s.u.)
 BENCH = {
     "seenplatte": {
         "tiny_price": 110.0,      # EUR/Nacht Tinyhaus am See (Spanne 80-160)
-        "occupancy_nights": 140,  # vermietbare Naechte/Jahr
+        "occupancy_nights": 140,  # vermietbare Naechte/Jahr (ganzjaehrig)
         "pitch_price": 30.0,      # EUR/Nacht Standard-Stellplatz
         "pitch_nights": 110,
-        "n_units": 5,
+        "n_units": 3,
     },
     "default": {
         "tiny_price": 120.0, "occupancy_nights": 140,
-        "pitch_price": 32.0, "pitch_nights": 110, "n_units": 5,
+        "pitch_price": 32.0, "pitch_nights": 110, "n_units": 3,
     },
 }
+
+RADIUS_M = 25000       # Umkreis fuer lokale Markt-Benchmarks
+CAMP_DISCOUNT = 0.8    # Camping-Ausstattung vs. Premium-Portal-Inserate
+
+
+def _haversine(lat1, lon1, lat2, lon2):
+    from math import radians, sin, cos, asin, sqrt
+    dlat, dlon = radians(lat2 - lat1), radians(lon2 - lon1)
+    a = sin(dlat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2) ** 2
+    return 2 * 6371000 * asin(sqrt(a))
+
+
+def geocode_town(town):
+    """Orts-Koordinate via Photon/Komoot (frei, OSM-basiert, gecacht).
+    Fallback Nominatim. None bei Fehlschlag."""
+    try:
+        raw = C.http_get("https://photon.komoot.io/api/",
+                         params={"q": town + ", Deutschland", "limit": 1},
+                         cache_key="geoc_" + re.sub(r"[^\w]", "_", town.lower())[:60],
+                         max_age_h=24 * 180, polite=0.5, retries=2, timeout=45)
+        j = json.loads(raw)
+        feats = j.get("features") or []
+        if feats:
+            lon, lat = feats[0]["geometry"]["coordinates"][:2]
+            return float(lat), float(lon)
+    except Exception:
+        pass
+    try:
+        raw = C.http_get("https://nominatim.openstreetmap.org/search",
+                         params={"q": town + ", Deutschland", "format": "json", "limit": 1},
+                         cache_key="geocn_" + re.sub(r"[^\w]", "_", town.lower())[:60],
+                         max_age_h=24 * 180, polite=1.2, retries=2, timeout=45)
+        j = json.loads(raw)
+        if j:
+            return float(j[0]["lat"]), float(j[0]["lon"])
+    except Exception:
+        pass
+    return None
+
+
+def local_portal_offers(region_name):
+    """Airbnb/Booking-Angebote mit Ort geokodiert (fuer 25-km-Benchmarks).
+    Titel-Muster 'Tiny House in X' / '... am Y' -> Ortsname -> Nominatim.
+    Ergebnis gecacht in data/portal_geo_<region>.json."""
+    cache = C.DATA / ("portal_geo_%s.json" % region_name)
+    if cache.exists():
+        try:
+            return json.loads(cache.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    raw_p = C.DATA / ("portalpreise_%s_raw.json" % region_name)
+    out = []
+    if raw_p.exists():
+        raw = json.loads(raw_p.read_text(encoding="utf-8"))
+        nights = raw.get("naechte", 3) or 3
+        offers = []
+        for a in raw.get("airbnb", {}).get("angebote", []):
+            if a.get("total"):
+                offers.append({"quelle": "Airbnb", "title": a.get("title", ""),
+                               "preis_nacht": a["total"] / nights,
+                               "tiny": bool(re.match(r"tiny house", a.get("title", ""), re.I)),
+                               "boot": bool(re.search(r"hausboot|^boot", a.get("title", ""), re.I))})
+        for b in raw.get("booking", {}).get("hausboote", []):
+            if b.get("preis_gesamt") and "Charter" not in (b.get("hinweis") or ""):
+                offers.append({"quelle": "Booking", "title": b.get("name", ""),
+                               "ort_fix": b.get("ort"), "preis_nacht": b["preis_gesamt"] / nights,
+                               "tiny": False, "boot": True})
+        for b in raw.get("booking", {}).get("glamping_camping", []):
+            if b.get("preis_gesamt"):
+                offers.append({"quelle": "Booking", "title": b.get("name", ""),
+                               "ort_fix": b.get("ort"), "preis_nacht": b["preis_gesamt"] / nights,
+                               "tiny": bool(re.search(r"tiny", (b.get("typ") or "") + " " + b.get("name", ""), re.I)),
+                               "boot": False})
+        towns = {}
+        for o in offers:
+            town = o.get("ort_fix")
+            if not town:
+                m = re.search(r"\b(?:in|am|an der|bei)\s+([A-ZÄÖÜ][\wäöüßÄÖÜ .\-/]+)$", o["title"])
+                town = m.group(1).strip() if m else None
+            o["ort"] = town
+            if town:
+                if town not in towns:
+                    towns[town] = geocode_town(town)
+                if towns[town]:
+                    o["lat"], o["lon"] = towns[town]
+            out.append(o)
+    cache.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    return out
+
+
+def local_price(offers, site, kind):
+    """Median der passenden Portal-Angebote im Umkreis 25 km (mind. 2),
+    sonst None. kind: 'tiny' oder 'boot'. Roh-Median (Abschlag macht Aufrufer)."""
+    vals = []
+    for o in offers:
+        if not o.get(kind) or o.get("lat") is None or not o.get("preis_nacht"):
+            continue
+        if _haversine(site["lat"], site["lon"], o["lat"], o["lon"]) <= RADIUS_M:
+            vals.append(o["preis_nacht"])
+    if len(vals) >= 2:
+        vals.sort()
+        return vals[len(vals) // 2], len(vals)
+    return None, len(vals)
 
 
 def build_flag(site, enr):
@@ -88,6 +197,10 @@ def run(region_name):
         bench["pitch_price"] = round(pitch_prices[len(pitch_prices) // 2], 1)
     print("Benchmark: Tinyhaus %.0f EUR/Nacht, Stellplatz %.1f EUR" %
           (bench["tiny_price"], bench["pitch_price"]))
+    # Portal-Angebote mit Koordinaten fuer lokale 25-km-Benchmarks
+    offers = local_portal_offers(region_name)
+    print("Portal-Angebote geokodiert: %d/%d" % (
+        sum(1 for o in offers if o.get("lat") is not None), len(offers)))
 
     for site in sites:
         args = []
@@ -126,9 +239,15 @@ def run(region_name):
             v_market = 5
         else:
             v_market = 0
-        contact = (4 if site["website"] else 0) + \
-            (4 if (site["contact_email"] or site["email"]) else 0) + \
-            (2 if site["phone"] else 0)
+        # Website-Modernitaet (s19) statt reiner Erreichbarkeit: Proxy fuer
+        # Investitionsbereitschaft. Kontakt ist bereits Filterkriterium.
+        try:
+            wm = int(site["web_modern"]) if site["web_modern"] is not None else None
+        except (TypeError, ValueError):
+            wm = None
+        v_modern = wm if wm is not None else 0
+        if wm is not None and wm >= 7:
+            args.append("moderne, gepflegte Website (Proxy: investitionsfreudig)")
         v_size = 5 if eff_area >= 60000 else 3 if eff_area >= 25000 else 0
         pier = bool(site["has_pier"]) or (site["marina_distance_m"] is not None
                                           and site["marina_distance_m"] < 100)
@@ -145,44 +264,36 @@ def run(region_name):
             args.append("Schutzgebiet: %s" % prot[:60])
 
         def finalize(parts, mult):
-            s = sum(v for _, v in parts if isinstance(v, (int, float)))
-            for _, v in parts:
-                if v is None:
+            # Eintraege: [Label, Wert] oder [Label, Wert, Max]
+            s = sum(p[1] for p in parts if isinstance(p[1], (int, float)))
+            for p in parts:
+                if p[1] is None:
                     s *= mult
             return round(min(max(s, 0), 100), 1)
 
         # --- Tiny-House-Score: Wasserlage nur kleiner Bonus (max 10) ---
         th = []
         v_water_th = round(ws * 0.10, 1)
-        if v_water_th:
-            th.append(["Wasserlage (nur Bonus, max 10)", v_water_th])
-        th.append(["Bebaubarkeit (B-Plan/Bauvorrecht)", 0])  # Platzhalter unten
+        th.append(["Wasserlage (Bonus)", v_water_th, 10])
         bf = (site["build_flag"] or build_flag(site, site)).lower()
         v_bau = 15 if ("grün" in bf and "gelb-grün" not in bf and "grün-gelb" not in bf) \
             else 12 if ("gelb-grün" in bf or "grün-gelb" in bf) \
             else 8 if bf.startswith("gelb") else 0
-        th[-1] = ["Bebaubarkeit (B-Plan/Bauvorrecht)", v_bau]
-        th.append(["Fläche/Platzangebot", v_area])
-        if v_reserve:
-            th.append(["Reserve: Grundstück > genutzte Fläche", v_reserve])
-        if v_seasonal:
-            th.append(["Dauercamper vorhanden", v_seasonal])
-        if v_fixed:
-            th.append(["Feste Mietunterkünfte (Erneuerungsbedarf)", v_fixed])
-        if v_cycle:
-            th.append(["Mobilheime/Bungalows (Erneuerungszyklus)", v_cycle])
+        th.append(["Bebaubarkeit (B-Plan/Bauvorrecht)", v_bau, 15])
+        th.append(["Fläche/Platzangebot", v_area, 15])
+        th.append(["Reserve: Grundstück > genutzte Fläche", v_reserve, 4])
+        th.append(["Dauercamper vorhanden", v_seasonal, 6])
+        th.append(["Feste Mietunterkünfte (Erneuerungsbedarf)", v_fixed, 8])
+        th.append(["Mobilheime/Bungalows (Erneuerungszyklus)", v_cycle, 4])
         if site["has_tinyhouse"]:
             th.append(["Tinyhäuser vorhanden (Wettbewerb)", -5])
             args_th = "Tinyhäuser bereits vorhanden (Wettbewerb!)"
             if args_th not in args:
                 args.append(args_th)
-        if v_gap:
-            th.append(["Top-Lage OHNE Mietunterkünfte (Lücke)", v_gap])
-        if v_market:
-            th.append(["Preisniveau (Markt)", v_market])
-        th.append(["Erreichbarkeit (Website/E-Mail/Telefon)", contact])
-        if v_size:
-            th.append(["Platzgröße", v_size])
+        th.append(["Top-Lage OHNE Mietunterkünfte (Lücke)", v_gap, 10])
+        th.append(["Preisniveau (Markt)", v_market, 10])
+        th.append(["Website-Modernität", v_modern, 10])
+        th.append(["Platzgröße", v_size, 5])
         if m_biwak < 1:
             th.append(["Abzug: nur Biwak-/Rastplatz (×0,35)", None])
         if m_prot < 1:
@@ -191,17 +302,15 @@ def run(region_name):
 
         # --- Hausboot-Score: Wasserlage + Steg dominant, Gewaesser-Eignung ---
         hb = []
-        hb.append(["Wasserlage (Abstand/Ufer)", round(ws * 0.35, 1)])
+        hb.append(["Wasserlage (Abstand/Ufer)", round(ws * 0.35, 1), 35])
         hbw = site["houseboat_water"]
         v_hbw = 15 if hbw == "ja" else 5 if hbw == "unklar" else 0
-        hb.append(["Gewässer für Hausboot geeignet (See ≥5 ha)", v_hbw])
-        hb.append(["Steg/Marina am Platz", 12 if pier else 0])
-        hb.append(["Uferlänge am Platz", min(round((site["shoreline_m"] or 0) / 50), 8)])
-        if v_market:
-            hb.append(["Preisniveau (Markt)", v_market])
-        hb.append(["Erreichbarkeit (Website/E-Mail/Telefon)", contact])
-        if v_seasonal:
-            hb.append(["Dauercamper (Betrieb vorhanden)", v_seasonal])
+        hb.append(["Gewässer für Hausboot geeignet", v_hbw, 15])
+        hb.append(["Steg/Marina am Platz", 12 if pier else 0, 12])
+        hb.append(["Uferlänge am Platz", min(round((site["shoreline_m"] or 0) / 50), 8), 8])
+        hb.append(["Preisniveau (Markt)", v_market, 10])
+        hb.append(["Website-Modernität", v_modern, 10])
+        hb.append(["Dauercamper (Betrieb vorhanden)", v_seasonal, 6])
         if site["has_houseboat"]:
             hb.append(["Hausboote vorhanden (Wettbewerb)", -5])
             if "Hausboote bereits vorhanden (Wettbewerb!)" not in args:
@@ -217,41 +326,41 @@ def run(region_name):
             hb.append(["Deckel: kein Hausboot-Gewässer (max 40)", None])
         score_hb = round(score_hb, 1)
 
-        # Lead-Score (Ranking gesamt) = bisherige kombinierte Heuristik
+        # Lead-Score (Ranking gesamt) = kombinierte Heuristik (mit Max-Werten)
         comp = []
         score = round(ws * 0.35, 1)
-        comp.append(["Wasserlage (Abstand/Ufer/Steg)", round(ws * 0.35, 1)])
+        comp.append(["Wasserlage (Abstand/Ufer/Steg)", round(ws * 0.35, 1), 35])
         score += v_area
-        comp.append(["Fläche/Platzangebot", v_area])
+        comp.append(["Fläche/Platzangebot", v_area, 15])
         if v_reserve:
             score += v_reserve
-            comp.append(["Reserve: Grundstück > genutzte Fläche", v_reserve])
+            comp.append(["Reserve: Grundstück > genutzte Fläche", v_reserve, 4])
         if v_seasonal:
             score += v_seasonal
-            comp.append(["Dauercamper vorhanden", v_seasonal])
+            comp.append(["Dauercamper vorhanden", v_seasonal, 6])
         if v_fixed:
             score += v_fixed
-            comp.append(["Feste Mietunterkünfte (Erneuerungsbedarf)", v_fixed])
+            comp.append(["Feste Mietunterkünfte (Erneuerungsbedarf)", v_fixed, 8])
         if v_cycle:
             score += v_cycle
-            comp.append(["Mobilheime/Bungalows (Erneuerungszyklus)", v_cycle])
+            comp.append(["Mobilheime/Bungalows (Erneuerungszyklus)", v_cycle, 4])
         if site["has_tinyhouse"]:
             score -= 5
             comp.append(["Tinyhäuser vorhanden (Wettbewerb)", -5])
         if v_gap:
             score += v_gap
-            comp.append(["Top-Lage OHNE Mietunterkünfte (Lücke)", v_gap])
+            comp.append(["Top-Lage OHNE Mietunterkünfte (Lücke)", v_gap, 10])
         if v_market:
             score += v_market
-            comp.append(["Preisniveau (Markt)", v_market])
-        score += contact
-        comp.append(["Erreichbarkeit (Website/E-Mail/Telefon)", contact])
+            comp.append(["Preisniveau (Markt)", v_market, 10])
+        score += v_modern
+        comp.append(["Website-Modernität", v_modern, 10])
         if v_size:
             score += v_size
-            comp.append(["Platzgröße", v_size])
+            comp.append(["Platzgröße", v_size, 5])
         if pier:
             score += 6
-            comp.append(["Steg/Marina am Platz (Hausboot-Potenzial)", 6])
+            comp.append(["Steg/Marina am Platz (Hausboot-Potenzial)", 6, 6])
         if m_biwak < 1:
             score *= m_biwak
             comp.append(["Abzug: nur Biwak-/Rastplatz (×0,35)", None])
@@ -260,21 +369,52 @@ def run(region_name):
             comp.append(["Abzug: strenges Schutzgebiet (×0,6)", None])
         score = round(min(score, 100), 1)
 
-        # Rechenbeispiel
+        # Rechenbeispiel: 3 Einheiten (konservativ), Preis je Platz aus
+        # Portal-Angeboten (Airbnb/Booking) im Umkreis 25 km; sonst Regions-
+        # Median. Portal-Preise sind Premium-Inserate -> 20 % Abschlag fuer
+        # Camping-Ausstattung. Naechte/Jahr = konservative Auslastungsannahme.
         n = bench["n_units"]
-        rev_tiny = n * bench["tiny_price"] * bench["occupancy_nights"]
-        rev_pitch = n * bench["pitch_price"] * bench["pitch_nights"]
+        lp, l_n = local_price(offers, site, "tiny")
+        if lp:
+            tiny_p = round(lp * CAMP_DISCOUNT)
+            p_src = "Ø %d Airbnb/Booking-Angebote im Umkreis 25 km (%.0f €) minus 20 %% Camping-Abschlag" % (l_n, lp)
+        else:
+            tiny_p = round(bench["tiny_price"])
+            p_src = "Regions-Median (%.0f €, zu wenige Portal-Angebote im Umkreis)" % tiny_p
+        # Stellplatz: eigener Website-Preis des Platzes, sonst Regions-Median
+        own_pitch = site["price_pitch"] if (site["price_pitch"] and
+                                           15 <= site["price_pitch"] <= 80) else None
+        pitch_p = own_pitch or bench["pitch_price"]
+        pitch_src = "eigene Website" if own_pitch else "Regions-Median"
+        nights = bench["occupancy_nights"]
+        rev_tiny = n * tiny_p * nights
+        rev_pitch = n * pitch_p * bench["pitch_nights"]
         example = (
-            "%d Tinyhäuser × %.0f €/Nacht × %d Nächte = %.0f €/Jahr "
-            "(vs. %d Stellplätze: %.0f €/Jahr; Differenz +%.0f €)"
-            % (n, bench["tiny_price"], bench["occupancy_nights"], rev_tiny,
-               n, rev_pitch, rev_tiny - rev_pitch))
+            "3 Tinyhäuser × %d €/Nacht × %d Nächte/Jahr ≈ %s €/Jahr "
+            "(statt 3 Stellplätzen à %.0f € × %d Nächte: %s €; +%.0f €). "
+            "Preis: %s. Nächte = konservative Auslastungsannahme (ganzjährig)."
+            % (tiny_p, nights, format(round(rev_tiny), ",").replace(",", "."),
+               pitch_p, bench["pitch_nights"],
+               format(round(rev_pitch), ",").replace(",", "."),
+               rev_tiny - rev_pitch, p_src))
         # Hausboot-Rechenbeispiel, wenn Steg/Marina am Platz
-        if hausboot_price and (site["has_pier"] or (site["marina_distance_m"] is not None
-                                                   and site["marina_distance_m"] < 100)):
-            rev_boat = 2 * hausboot_price * bench["occupancy_nights"]
-            example += (" | Hausboot-Option: 2 Hausboote × %.0f €/Nacht × %d Nächte = %.0f €/Jahr "
-                        "(Booking-Marktmedian Region)" % (hausboot_price, bench["occupancy_nights"], rev_boat))
+        if pier and (hausboot_price or lp is not None):
+            bp_l, bp_n = local_price(offers, site, "boot")
+            if bp_l:
+                boat_p = round(bp_l * CAMP_DISCOUNT)
+                b_src = "%d Hausboot-Angebote im Umkreis 25 km" % bp_n
+            elif hausboot_price:
+                boat_p = hausboot_price
+                b_src = "Booking-Marktmedian Region" + (
+                    " (Fallback Brandenburg)" if region_name != "brandenburg"
+                    and mp_bench.get("hausboot_hinweis") else "")
+            else:
+                boat_p, b_src = None, None
+            if boat_p:
+                rev_boat = 2 * boat_p * nights
+                example += (" | Hausboot-Option: 2 Hausboote × %d €/Nacht × %d Nächte ≈ %s €/Jahr (%s)"
+                            % (boat_p, nights,
+                               format(round(rev_boat), ",").replace(",", "."), b_src))
 
         # B-Plan-Ampel (s11) hat Vorrang vor der Heuristik
         if site["bplan_info"]:

@@ -45,7 +45,8 @@ VERZEICHNIS_PAT = re.compile(
     r"alpenvereinaktiv|camping\.info|pitchup|campercontact|park4night|"
     r"stellplatz\.info|promobil|adac|booking\.com|airbnb|facebook|"
     r"google\.[a-z.]+/maps|maps\.google|tripadvisor|holidaycheck|"
-    r"campingplatz-verzeichnis|eurocampings|alanrogers|top-of-the-world",
+    r"campingplatz-verzeichnis|eurocampings|alanrogers|top-of-the-world|"
+    r"lausitzerseenland\.de|alpacacamping\.de",
     re.I)
 # Gewaesser, die als Hausboot-Standort NICHT taugen ( unabhaengig vom Typ-Tag)
 KLEIN_PAT = re.compile(
@@ -106,7 +107,7 @@ def classify(site, enr):
 AMTLICH_PAT = re.compile(
     r"https?://(?:www\.)?(?:stadt-|gemeinde-|-markt-|landkreis-|lk-)|"
     r"\.de/(?:aktuelles|rathaus|buergerservice|verwaltung|gemeinde|stadt)|"
-    r"zschopau\.de|\.gv\.at", re.I)
+    r"zschopau\.de|goerlitz\.de|gerstungen\.de|\.gv\.at", re.I)
 
 
 def online_status(site, enr):
@@ -195,6 +196,11 @@ def run(region_name):
                 reason += "; keine Online-Praesenz"
             elif online == "nur_verzeichnis" and cls == "camping":
                 reason += "; nur Verzeichnis-Link"
+                # unbenannt + nur Verzeichnis/Stadtseite: Identitaet unklar,
+                # kein echter Betreiber-Auftritt -> Default aus
+                if (site["name"] or "") in ("", "(unbenannt)"):
+                    hidden = True
+                    reason += "; unbenannt + kein eigener Auftritt"
             wb, hb = waterbody(site)
             if site["id"] in WATER_OVERRIDE:
                 wb, hb = WATER_OVERRIDE[site["id"]]

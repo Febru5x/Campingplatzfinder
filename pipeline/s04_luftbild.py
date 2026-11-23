@@ -7,8 +7,10 @@
 Aufruf:  python -m pipeline.s04_luftbild seenplatte [--size 1200]
 """
 import json
+import os
 import re
 import sys
+import time
 from datetime import datetime, timezone
 
 from pyproj import Transformer
@@ -151,7 +153,11 @@ def run(region_name, size=1000, workers=1):
         img_path = outdir / (sid_safe + ".jpg")
         bbox = site_bbox_25833(site)
         try:
-            if not img_path.exists():
+            # CAMPING_REFRESH=1: Bestand aelter als 180 Tage neu holen
+            # (amtliche DOP erscheinen je Bundesland nur alle 1-3 Jahre)
+            stale = (os.environ.get("CAMPING_REFRESH") and img_path.exists()
+                     and time.time() - img_path.stat().st_mtime > 180 * 24 * 3600)
+            if not img_path.exists() or stale:
                 data = get_dop(wms_url, layer, bbox, size)
                 if data[:2] in (b"\xff\xd8", b"\x89P"):
                     img_path.write_bytes(data)

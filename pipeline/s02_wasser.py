@@ -9,6 +9,7 @@ Aufruf:  python -m pipeline.s02_wasser seenplatte
 import hashlib
 import json
 import math
+import os
 import sys
 import time
 from datetime import datetime, timezone
@@ -42,7 +43,8 @@ def _cached_post(query, cache_key, timeout):
     import time as _t
     cpath = C.CACHE / (cache_key + ".txt")
     mpath = C.CACHE / (cache_key + ".meta")
-    if cpath.exists() and mpath.exists():
+    # Bei CAMPING_REFRESH=1 (Update-Lauf) Cache-Alter ignorieren -> live holen
+    if cpath.exists() and mpath.exists() and not os.environ.get("CAMPING_REFRESH"):
         try:
             meta = json.loads(mpath.read_text(encoding="utf-8"))
             if _t.time() - meta["ts"] < 180 * 24 * 3600:

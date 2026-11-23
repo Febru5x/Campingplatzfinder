@@ -77,9 +77,10 @@ def polygon_area_m2(geom, lat0, lon0):
 def run(region_name):
     region = C.load_region(region_name)
     conn = C.init_db()
-    # bevorzugt gecachte Testantwort nutzen (regionsspezifisch!), sonst live holen
+    # bevorzugt gecachte Testantwort nutzen (regionsspezifisch!), sonst live holen.
+    # Bei CAMPING_REFRESH=1 (Update-Lauf) wird der Testcache ignoriert.
     testfile = Path(os.environ.get("TEMP", ".")) / "opencode" / ("overpass_test_%s.json" % region_name)
-    if testfile.exists():
+    if testfile.exists() and not os.environ.get("CAMPING_REFRESH"):
         data = json.loads(testfile.read_text(encoding="utf-8"))
         print("Nutze gecachte Overpass-Antwort:", testfile)
     else:

@@ -33,6 +33,8 @@ und die komplette SQLite-Datenbank zum Download.
 | s16 | Bundesland-Check (Grenzfälle) | Nominatim |
 | s17 | Datenqualität: Klassifizierung (Camping/Stellplatz/Verein/Sonstiges), Online-Präsenz-Check, Hausboot-Gewässer-Eignung; Default-Ausblendung von Nicht-Leads | eigene Heuristik + Sichtungen |
 | s18 | Gewässerflächen: Fläche des nächsten Gewässers in ha (einheitliche Basis der Hausboot-Eignung, ≥5 ha) | OSM-Geometrie |
+| s19 | Website-Modernität (0–10): Proxy für Investitionsbereitschaft; ersetzt reine Erreichbarkeit im Score | HTML-Merkmale der Betreiber-Website |
+| s20 | Namen für unbenannte Plätze aus dem Website-Titel (bereinigt + Plausibilitätsfilter; keine erfundenen Namen – sonst „(unbenannt)") | og:site_name / h1 / title |
 
 ## Karten-Features (seit 2026-11-23)
 
@@ -57,17 +59,45 @@ und die komplette SQLite-Datenbank zum Download.
   Bonus max 10, dafür Bebaubarkeit bis 15) und **Hausboot-Score**
   (Wasserlage max 35 + Gewässer-Eignung 15 + Steg 12 + Uferlänge max 8;
   ohne Hausboot-Gewässer max 40). Der Lead-Score kombiniert beides für
-  die Rangliste. Alle drei mit aufklappbarer Komponenten-Tabelle in
+  die Rangliste. Komponenten als „erreicht / erreichbar" (z. B. 8/15) in
   Popup, Excel und Dossier; Score-Typ im Filter umschaltbar (inkl.
   Marker-Einfärbung).
+- **Website-Modernität (0–10)** statt reiner Erreichbarkeit im Score
+  (Kontakt ist Filterkriterium): mobil-tauglich, HTTPS, Online-Buchung,
+  Aktualität, Social Media, Framework – Proxy für Investitionsbereitschaft.
+- **Rechenbeispiel je Platz**: 3 Einheiten × Nachtpreis × 140 Nächte;
+  Preis bevorzugt aus Airbnb/Booking-Angeboten im Umkreis 25 km
+  (Median − 20 % Camping-Abschlag), sonst Regions-Median; Quelle im Text.
 - **Info-Symbole ⓘ** mit Hover-Erklärung bei Flurstücken, ALKIS,
-  Bebaubarkeits-Ampel, Gewässer-Einstufung, Mietunterkünften,
-  KI-Luftbild-Sichtung und Scoring. Flurstücke nur als Gesamtgröße +
-  Anzahl.
+  Bebaubarkeits-Ampel (+ Punkt-Unterteilung), Gewässer-Einstufung,
+  Mietunterkünften, KI-Luftbild-Sichtung, Scoring, genutzter Fläche
+  (OSM), Website-Modernität und Rechenbeispiel. Flurstücke nur als
+  Gesamtgröße + Anzahl.
 - **Bestand im Popup**: „Hausboot vorhanden ja/nein",
   „Tinyhaus vorhanden ja/nein" (Website-Angaben), B-Plan-Erklärung
   (Gebietsarten wie WA = Wohngebiet, Versorgungsfläche = angrenzende
   Planflächen).
+
+## Update-Lauf (neue Plätze / Daten auffrischen)
+
+Die Pipeline ist **komplett ohne KI lauffähig** – alle Schritte sind
+mechanische Skripte (OSM, Kataster-WMS, Luftbild-WMS, Website-Scrape,
+Heuristiken). Nur zwei Dinge brauchen einen Agenten/Browser und sind
+bewusst *nicht* Teil des Updates: die KI-Luftbild-Sichtung (s15) und die
+Booking/Airbnb-Portal-Scrapes (vorhandene Rohdaten werden weiterverwendet;
+bestehende KI-Sichtungen bleiben in der DB erhalten).
+
+```bat
+python -m pipeline.refresh alle        :: alle 5 Regionen auffrischen + exportieren
+python -m pipeline.refresh sachsen     :: einzelne Region
+```
+
+Der Refresh holt die OSM-Grundliste **live** (neue/umbenannte/entfernte
+Plätze werden automatisch übernommen), scrapt Websites neu, lädt fehlende
+bzw. >180 Tage alte Luftbilder neu (neue Befliegungen) und rechnet alles
+durch. Für regelmäßige Updates (z. B. alle 4 Wochen) einfach
+`tools\refresh.ps1` in die Windows-Aufgabenplanung legen – das Skript
+aktualisiert alle Regionen und veröffentlicht danach automatisch.
 
 ## Schnellstart (Pipeline lokal laufen lassen)
 

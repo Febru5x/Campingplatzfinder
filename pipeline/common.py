@@ -67,7 +67,8 @@ def db():
                     "online_status", "waterbody_class", "houseboat_water",
                     "default_hidden", "web_images", "water_area_ha",
                     "water_class_src", "score_details", "score_th", "score_hb",
-                    "score_th_details", "score_hb_details"):
+                    "score_th_details", "score_hb_details",
+                    "web_modern", "web_modern_info", "name_source"):
             if col not in cols:
                 conn.execute("ALTER TABLE enrichment ADD COLUMN %s TEXT" % col)
         conn.commit()
@@ -137,7 +138,10 @@ def init_db():
         score_th REAL,              -- Tiny-House-Score (Wasser nur Bonus)
         score_hb REAL,              -- Hausboot-Score (Wasserlage/Steg dominant)
         score_th_details TEXT,      -- JSON-Komponenten Tiny House
-        score_hb_details TEXT       -- JSON-Komponenten Hausboot
+        score_hb_details TEXT,      -- JSON-Komponenten Hausboot
+        web_modern INTEGER,         -- Website-Modernität 0-10 (s19, Proxy Investitionsbereitschaft)
+        web_modern_info TEXT,       -- Merkmale der Modernitäts-Bewertung
+        name_source TEXT            -- Herkunft des Namens, falls nicht aus OSM (s20)
         -- Website / Markt
         price_pitch REAL, price_tent REAL, price_rental REAL,
         season TEXT, chain TEXT, contact_name TEXT, contact_email TEXT,

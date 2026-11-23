@@ -111,8 +111,33 @@ Brandenburg (gesamt), Sachsen (gesamt), Sachsen-Anhalt + Thüringen
    **s13-Fallback**: Hausboot-Vorschlag nur bei ≥3 echten Boot-Angeboten;
    sonst Brandenburg-Median + `hausboot_hinweis`. Sachsen hat keine
    Hausboot-Portalangebote → Marktlücke (Chance!), Benchmark geliehen.
-8. **Motorboot-Flaggen** aus OSM-Tags – lückenhaft. Vor Hausboot-Vertrieb:
+8. **Motorboot-Flaggen** aus OSM-Tags – lückenhaft, für die Lead-Auswahl
+   irrelevant (nicht mehr in Karte/Dossier). Vor Hausboot-Vertrieb:
    WSA-Regeln je Gewässer prüfen (Elbe = Bundeswasserstraße, Hochwasser!).
+8b. **Gewässer-Eignung (s18+s17)**: einheitliche Basis = OSM-Typ-Tag +
+   gemessene Fläche des nächsten Gewässers (s18, Hektar aus OSM-Geometrie,
+   Quelle in `water_class_src`). Hausboot „ja" nur bei See/Stausee-Typ
+   bzw. ≥ 5 ha; Teich/Fluss/Kanal/Bach = „nein"; große Teiche ≥ 5 ha
+   zählen als See-Alternative. Punktkorrekturen aus KI-Sichtungen:
+   `WATER_OVERRIDE` in s17 (Kelbra nein = Schwanksee/Schlick;
+   ThürKies/Erfurt am See ja = große Kiesseen).
+8c. **Lokale Preis-Benchmarks (s06)**: Portal-Angebote (7.) werden je Ort
+   geokodiert (Photon/Komoot, Fallback Nominatim; Ort aus Airbnb-Titel
+   „Tiny House in X" bzw. Booking-Ortsfeld; Cache
+   `data/portal_geo_<region>.json`). Rechenbeispiel
+   je Platz: Median passender Angebote im Umkreis 25 km (mind. 2), minus
+   20 % Camping-Abschlag gegenüber Premium-Inseraten; sonst Regions-Median.
+   3 Einheiten × 140 Nächte (konservative Auslastungsannahme, ganzjährig).
+8d. **Website-Modernität (s19)**: Heuristik 0–10 aus HTML-Merkmalen der
+   Betreiber-Website (mobil-tauglich, HTTPS, Online-Buchung, aktuelles
+   Jahr, Social Media, Framework; Abzüge für Uralt-Technik/Copyright).
+   Proxy für Investitionsbereitschaft – keine Aussage über tatsächliche
+   Auslastung. Nur eigene Websites, keine Verzeichnis-/Stadtseiten.
+8e. **Namen unbenannter Plätze (s20)**: aus og:site_name/h1/Seitentitel,
+   bereinigt (Suffixe/Stadtzusätze/Füllwörter entfernt) + Plausibilitätsfilter
+   (muss nach Platz klingen). Herkunft in `name_source`. **Keine erfundenen
+   Namen**: liefert die Website keinen echten Platznamen, bleibt
+   „(unbenannt)" stehen.
 9. **Bundesland-Check (s16)**: Nominatim-Reverse ordnet jeden Platz dem
    echten Bundesland zu; Grenzflächen können falsch liegen (Beispiel
    Turisede: Kulturpark beidseits der Neiße – deutsches Polygon bleibt

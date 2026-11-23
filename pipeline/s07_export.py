@@ -14,6 +14,9 @@ COLS = [
     ("lead_score", "Lead-Score (gesamt)"),
     ("score_th", "Tiny-House-Score"),
     ("score_hb", "Hausboot-Score"),
+    ("web_modern", "Website-Modernität (0-10)"),
+    ("web_modern_info", "Website-Modernität: Merkmale"),
+    ("name_source", "Namensquelle (falls nicht OSM)"),
     ("name", "Name"),
     ("site_class", "Typ (Klassifizierung)"),
     ("default_hidden", "Default ausgeblendet"),
@@ -142,9 +145,19 @@ def load_df(region_name):
                 sd = json.loads(d.get(key) or "null")
             except Exception:
                 sd = None
-            return "; ".join(
-                "%s: %s" % (k, ("×" if v is None else ("+%s" % v if v >= 0 else str(v))))
-                for k, v in sd) if sd else ""
+            def one(row):
+                k, v = row[0], row[1]
+                mx = row[2] if len(row) > 2 else None
+                if v is None:
+                    vs = "×"
+                elif v < 0:
+                    vs = str(v)
+                elif mx is not None:
+                    vs = "%s/%s" % (v, mx)
+                else:
+                    vs = "+%s" % v
+                return "%s: %s" % (k, vs)
+            return "; ".join(one(row) for row in sd) if sd else ""
         d["score_details_txt"] = sd_txt("score_details")
         d["score_th_txt"] = sd_txt("score_th_details")
         d["score_hb_txt"] = sd_txt("score_hb_details")
@@ -274,7 +287,7 @@ MAP_TMPL = """<!DOCTYPE html>
 <div id="map"></div>
 <button id="fToggle">Filter ▾</button>
 <div id="filter" style="display:none">
- <b>Filter</b> <span style="float:right;cursor:pointer" id="fClose">✕</span>
+ <b>Filter</b> <span id="fReset" style="float:right;cursor:pointer;color:#2c7fb8;margin-right:10px;font-weight:400" title="alle Filter auf Standard zurücksetzen">↺ zurücksetzen</span> <span style="float:right;cursor:pointer" id="fClose">✕</span>
  <details open class="fgroup"><summary>Platz-Typ</summary>
   <label><input type="checkbox" class="fClass" value="camping" checked> Campingplätze</label>
   <label><input type="checkbox" class="fClass" value="stellplatz"> reine Wohnmobilstellplätze</label>
@@ -360,7 +373,11 @@ const INFO={{
  wasser:'Einheitliche Einstufung: OSM-Gewässertyp + gemessene Fläche des nächsten Gewässers (Hektar). Hausboot „ja" nur bei See/Stausee bzw. ≥5 ha; Teich/Fluss/Kanal/Bach = „nein". Quelle je Platz unten angegeben; einzelne Korrekturen aus KI-Luftbild-Sichtungen.',
  sicht:'Eine KI hat das aktuelle amtliche Luftbild (DOP20) des Platzes gesichtet und Bestand, Zustand und Erweiterungsflächen beschrieben. Luftbildeindruck – keine Vor-Ort-Prüfung.',
  miet:'Aus der Betreiber-Website ausgelesene Mietunterkünfte. Kann Fehltreffer enthalten (z. B. Angebote des Betreibers an anderem Ort) – vor Kontakt prüfen.',
- score:'Zwei getrennte Bewertungen: Tiny-House-Score (Wasserlage nur kleiner Bonus max 10, dafür Bebaubarkeit bis 15) und Hausboot-Score (Wasserlage max 35 + Gewässer-Eignung 15 + Steg 12 + Uferlänge max 8; ohne Hausboot-Gewässer max 40). Der Lead-Score kombiniert beides für die Rangliste. Heuristik zur Vorauswahl.'
+ score:'Zwei getrennte Bewertungen: Tiny-House-Score (Wasserlage nur kleiner Bonus, dafür Bebaubarkeit) und Hausboot-Score (Wasserlage, Gewässer-Eignung, Steg und Uferlänge dominant; ohne Hausboot-Gewässer max 40). Der Lead-Score kombiniert beides für die Rangliste. Je Zeile: erreichte / erreichbare Punkte. Heuristik zur Vorauswahl.',
+ modern:'Wie modern und gepflegt ist die eigene Website (0–10)? Merkmale: mobil-tauglich, HTTPS, Online-Buchung, aktuelles Jahr, Social Media, modernes Framework; Abzug für Uralt-Technik oder veraltetes Copyright. Proxy für Investitionsbereitschaft: wer die Website pflegt, pflegt oft auch den Platz. Reine Erreichbarkeit gibt keine Punkte (ist bereits Filterkriterium).',
+ flaeche:'Genutzte Platzfläche aus OpenStreetMap: die dort von Freiwilligen eingezeichnete Platzgrenze (Polygon), berechnet aus der Geometrie. Keine AI-Bilderkennung, kein amtlicher Plan – kann ungenau sein (±30 %). Die amtliche Eigentumsfläche steht darunter (Grundstück gesamt, aus dem Liegenschaftskataster).',
+ rechen:'Modellrechnung, kein Businessplan: 3 Einheiten (konservativ) × Nachtpreis × 140 vermietbare Nächte/Jahr (Auslastungsannahme, ganzjährig). Nachtpreis bevorzugt aus echten Airbnb-/Booking-Angeboten im Umkreis 25 km (Median, minus 20 % Camping-Abschlag gegenüber Premium-Inseraten); sonst Regions-Median. Stellplatz-Vergleich: gleicher Flächenbedarf, eigener Website-Preis oder Regions-Median × 110 Nächte.',
+ bau:'Unterteilung nach Bebaubarkeits-Ampel: 15/15 = B-Plan weist Ferienhaus-/Campinggebiet aus (grün); 12/15 = feste Unterkünfte vorhanden, Details prüfen (gelb-grün); 8/15 = unklar, Bauamt fragen (gelb); 0/15 = keine belastbare Basis.'
 }};
 function info(k){{return '<span class="info">i<span class="tip">'+INFO[k]+'</span></span>';}}
 function carStep(btn,d){{
@@ -407,36 +424,43 @@ function popupHtml(p){{
    ['Tinyhaus vorhanden',jaNein(p.has_tinyhouse),null],
    ['Abstand Wasser',p.water_distance_m!=null?p.water_distance_m+' m':null,null],
    ['Uferlänge',p.shoreline_m?p.shoreline_m+' m':null,null],['Steg',p.has_pier?'ja':null,null],
-   ['Fläche genutzt (OSM)',p.area_m2?Math.round(p.area_m2).toLocaleString('de')+' m²':null,null],
+   ['Fläche genutzt'+info('flaeche'),p.area_m2?Math.round(p.area_m2).toLocaleString('de')+' m²':null,'html'],
    ['Grundstück gesamt'+info('flurst'),p.parcel_area_m2?Math.round(p.parcel_area_m2).toLocaleString('de')+' m²'+(p.parcel_count?' · '+p.parcel_count+' Flurstück'+(p.parcel_count>1?'e':''):''):null,'html'],
    ['Bebaubarkeit (Ampel)'+info('ampel'),p.build_flag,'html'],
    ['Dauercamper',p.seasonal?'ja':null,null],
    ['Mietunterkünfte'+info('miet'),p.rentals,'html'],['Bestandsalter',p.rental_age_est,null],
    ['Gebäude (amtl. Kataster)'+info('alkis'),p.geb?p.geb.n+' Geb., '+p.geb.flaeche.toLocaleString('de')+' m² ('+p.geb.typen.map(t=>t[0]+'×'+t[1]).join(', ')+')':null,'html'],
+   ['Website-Modernität'+info('modern'),p.web_modern!=null?p.web_modern+' / 10'+(p.web_modern_info?' <span style="color:#666;font-size:11px">('+esc(p.web_modern_info)+')</span>':''):null,'html'],
    ['Preis Stellplatz',p.price_pitch?p.price_pitch+' €':null,null],
    ['Preis Unterkunft',p.price_rental?p.price_rental+' €':null,null],
    ['Luftbild-Sichtung (KI)'+info('sicht'),p.bildsichtung_txt,'html'],
    ['Schutzgebiet',p.protected_area,null],['Argument',p.top_argument,null],
-   ['Rechenbeispiel',p.revenue_example,null],['Telefon',p.phone,null],['E-Mail',p.contact_email||p.email,null]];
+   ['Rechenbeispiel'+info('rechen'),p.revenue_example,'html'],['Telefon',p.phone,null],['E-Mail',p.contact_email||p.email,null]];
   for(const [k,v,mode] of rows){{
    if(v==null||v==='')continue;
    h+='<tr><td>'+k+'</td><td>'+(mode==='html'?v:esc(v))+'</td></tr>';
   }}
   h+='</table>';
-  function scoreBlock(title,val,details,note){{
+  function scoreBlock(title,val,details){{
    if(!details||!details.length)return '';
    let s='<details style="margin:6px 0"><summary style="cursor:pointer"><b>'+title+': '+(val??'–')+'/100</b>'+info('score')+'</summary>';
    s+='<table class="kv" style="margin:4px 0">';
-   for(const [k,v] of details) s+='<tr><td>'+esc(k)+'</td><td>'+(v==null?'Multiplikator/Deckel':(v>0?'+':'')+v)+'</td></tr>';
-   s+='</table><div style="font-size:11px;color:#666">'+note+'</div></details>';
+   for(const row of details){{
+    const k=row[0],v=row[1],mx=row[2];
+    let vv;
+    if(v==null) vv='Multiplikator/Deckel';
+    else if(v<0) vv=String(v);
+    else if(mx!=null) vv=v+' / '+mx;
+    else vv='+'+v;
+    const kk=esc(k)+(k.indexOf('Bebaubarkeit')===0?info('bau'):'');
+    s+='<tr><td>'+kk+'</td><td>'+vv+'</td></tr>';
+   }}
+   s+='</table></details>';
    return s;
   }}
-  h+=scoreBlock('Tiny-House-Score',p.score_th,p.score_th_details,
-   'Wasserlage nur Bonus (max 10) · Bebaubarkeit max 15 · Fläche max 15+4 · Bestand/Lücke max 20 · Markt max 10 · Erreichbarkeit max 10 · Größe max 5 · Abzüge: Tinyhäuser −5, Biwak ×0,35, strenges Schutzgebiet ×0,6.');
-  h+=scoreBlock('Hausboot-Score',p.score_hb,p.score_hb_details,
-   'Wasserlage max 35 · Gewässer-Eignung 15 · Steg/Marina 12 · Uferlänge max 8 · Markt max 10 · Erreichbarkeit max 10 · Dauercamper 6 · Abzug: Hausboote vorhanden −5. Ohne Hausboot-Gewässer: max 40.');
-  h+=scoreBlock('Lead-Score (Rangliste kombiniert)',p.lead_score,p.score_details,
-   'Kombiniert beide Perspektiven für die Sortierung: Wasserlage max 35 · Fläche max 15+4 · Bestand/Lücke max 20 · Markt max 10 · Erreichbarkeit max 10 · Größe max 5 · Steg +6 · Abzüge wie oben. Heuristik zur Vorauswahl, kein amtlicher Wert.');
+  h+=scoreBlock('Tiny-House-Score',p.score_th,p.score_th_details);
+  h+=scoreBlock('Hausboot-Score',p.score_hb,p.score_hb_details);
+  h+=scoreBlock('Lead-Score (Rangliste kombiniert)',p.lead_score,p.score_details);
  if(p.bplan){{
   h+='<details style="margin:6px 0"><summary style="cursor:pointer"><b>Bebauungspläne im Umkreis (amtlich)</b></summary>';
   h+='<div style="font-size:11px;color:#666;margin:3px 0">Ein B-Plan regelt, was auf den Flächen gebaut werden darf. „Sondergebiet Camping/Erholung" = Camping ausgewiesen; „Allgemeines Wohngebiet (WA)" = Wohnbebauung; „Versorgungsfläche" = z. B. Handel/Verkehr – nicht der Campingplatz selbst, sondern angrenzende Planflächen. Entscheidend ist der Plan, der das Platz-Grundstück überdeckt.</div><ul style="margin:4px 0;padding-left:18px">';
@@ -536,6 +560,16 @@ for(const el of document.querySelectorAll('#filter input,#filter select')){{
  el.onchange=applyFilter;
 }}
 document.getElementById('fMin').oninput=applyFilter;
+// Alle Filter auf Standard zuruecksetzen (verhindert '0 Plaetze' durch
+// vergessene Kombinationen aus anderen Filter-Gruppen)
+document.getElementById('fReset').onclick=()=>{{
+ for(const el of document.querySelectorAll('#filter input,#filter select')){{
+  if(el.type==='checkbox') el.checked=el.defaultChecked;
+  else if(el.tagName==='SELECT') el.selectedIndex=0;
+  else if(el.type==='range') el.value=el.defaultValue;
+ }}
+ applyFilter();
+}};
 document.getElementById('fToggle').onclick=()=>{{
  const f=document.getElementById('filter');
  const open=f.style.display!=='none';
@@ -567,7 +601,8 @@ def export_map(df, region_name):
               "bildsichtung_txt", "site_class", "class_reason", "online_status",
               "waterbody_class", "houseboat_water", "default_hidden",
               "web_images", "marina_distance_m", "has_houseboat", "has_tinyhouse",
-              "water_area_ha", "water_class_src"]
+              "water_area_ha", "water_class_src", "web_modern", "web_modern_info",
+              "name_source"]
     # History-Infos (hist. Luftbilder) und B-Pläne laden
     hist = {}
     conn = C.db()

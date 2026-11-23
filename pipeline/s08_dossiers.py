@@ -35,13 +35,14 @@ TMPL = """<!DOCTYPE html><html><head><meta charset="utf-8"><title>{name}</title>
 <tr><td>Tinyhaus vorhanden</td><td>{tiny_ex}</td></tr>
 <tr><td>Eigene Uferlänge (geschätzt)</td><td>{shoreline}</td></tr>
 <tr><td>Steg / Marina</td><td>{pier}</td></tr>
-<tr><td>Fläche (OSM / Grundstücke)</td><td>{area}</td></tr>
+<tr><td>Fläche genutzt (OSM) / Grundstück gesamt (Kataster)</td><td>{area}</td></tr>
 <tr><td>Flurstücke (amtliche Grundstücke)</td><td>{parcels}</td></tr>
 <tr><td>Dauercamper</td><td>{seasonal}</td></tr>
 <tr><td>Mietunterkünfte (Website-Angabe)</td><td>{rentals}</td></tr>
 <tr><td>Gebäude (amtl. Kataster/ALKIS)</td><td>{gebaeude}</td></tr>
 <tr><td>Preise</td><td>{prices}</td></tr>
 <tr><td>Schutzgebiet</td><td>{protected}</td></tr>
+<tr><td>Website-Modernität (0-10)</td><td>{webmodern}</td></tr>
 <tr><td>Kontakt</td><td>{contact}</td></tr>
 </table>
 <div class="box"><b>Bebaubarkeit (Vorabeinschätzung):</b> {buildflag}</div>
@@ -51,13 +52,13 @@ TMPL = """<!DOCTYPE html><html><head><meta charset="utf-8"><title>{name}</title>
 <div class="box"><b>Verkaufsargument:</b> {argument}</div>
 <details style="margin:10px 0"><summary style="cursor:pointer"><b>Tiny-House-Score: {score_th}/100</b></summary>
 <table>{scorerows_th}</table>
-<div style="font-size:11px;color:#666">Wasserlage nur Bonus (max 10) · Bebaubarkeit max 15 · Fläche max 15+4 · Bestand/Lücke max 20 · Markt max 10 · Erreichbarkeit max 10 · Größe max 5 · Abzüge: Tinyhäuser −5, Biwak ×0,35, strenges Schutzgebiet ×0,6.</div></details>
+<div style="font-size:11px;color:#666">Je Zeile: erreichte / erreichbare Punkte. Bebaubarkeit: 15 = B-Plan Ferienhaus-/Campinggebiet (grün), 12 = feste Unterkünfte vorhanden (gelb-grün), 8 = unklar/Bauamt fragen (gelb), 0 = keine Basis.</div></details>
 <details style="margin:10px 0"><summary style="cursor:pointer"><b>Hausboot-Score: {score_hb}/100</b></summary>
 <table>{scorerows_hb}</table>
-<div style="font-size:11px;color:#666">Wasserlage max 35 · Gewässer-Eignung 15 · Steg/Marina 12 · Uferlänge max 8 · Markt max 10 · Erreichbarkeit max 10 · Dauercamper 6 · Hausboote vorhanden −5. Ohne Hausboot-Gewässer: max 40.</div></details>
+<div style="font-size:11px;color:#666">Je Zeile: erreichte / erreichbare Punkte. Ohne Hausboot-Gewässer ist der Score auf 40 gedeckelt.</div></details>
 <details style="margin:10px 0"><summary style="cursor:pointer"><b>Lead-Score (Rangliste kombiniert): {score}/100</b></summary>
 <table>{scorerows}</table>
-<div style="font-size:11px;color:#666">Heuristik zur Vorauswahl: Wasserlage max 35 · Fläche max 15+4 · Bestand/Lücke max 20 · Markt max 10 · Erreichbarkeit max 10 · Größe max 5 · Steg +6 · Abzüge: Tinyhäuser −5, Biwak ×0,35, strenges Schutzgebiet ×0,6.</div></details>
+<div style="font-size:11px;color:#666">Je Zeile: erreichte / erreichbare Punkte. Kombinierte Heuristik für die Rangliste, kein amtlicher Wert.</div></details>
 <div class="box"><b>Umsatz-Rechenbeispiel:</b><br>{revenue}</div>
 {market}
 {notes}
@@ -245,9 +246,19 @@ def run(region_name, top=20):
                 sd = json.loads(r[key] or "null") or []
             except Exception:
                 sd = []
-            return "".join("<tr><td>%s</td><td>%s</td></tr>" % (
-                escape(k), "Multiplikator/Deckel" if v is None else ("+%s" % v if v >= 0 else str(v)))
-                for k, v in sd)
+            def one(row):
+                k, v = row[0], row[1]
+                mx = row[2] if len(row) > 2 else None
+                if v is None:
+                    vs = "Multiplikator/Deckel"
+                elif v < 0:
+                    vs = str(v)
+                elif mx is not None:
+                    vs = "%s / %s" % (v, mx)
+                else:
+                    vs = "+%s" % v
+                return "<tr><td>%s</td><td>%s</td></tr>" % (escape(k), vs)
+            return "".join(one(row) for row in sd)
         scorerows = srows("score_details")
         scorerows_th = srows("score_th_details")
         scorerows_hb = srows("score_hb_details")
@@ -279,6 +290,8 @@ def run(region_name, top=20):
             notes=notes, year=m.get("year") or "", date=date,
             geoquelle=escape(geoquelle),
             bplan=bplan, bildsichtung=bildsichtung, history=history, market=market,
+            webmodern=("%s / 10 (%s)" % (r["web_modern"], escape(r["web_modern_info"] or "")))
+                if r["web_modern"] is not None else "nicht bewertet",
             scorerows=scorerows, scorerows_th=scorerows_th, scorerows_hb=scorerows_hb,
             score_th=fmt(float(r["score_th"])) if r["score_th"] is not None else "–",
             score_hb=fmt(float(r["score_hb"])) if r["score_hb"] is not None else "–")

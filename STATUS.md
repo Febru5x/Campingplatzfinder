@@ -1,4 +1,45 @@
-# STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online + Nachschaerfung Runde 2)
+# STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online + Nachschaerfung Runde 4)
+
+## Nachschaerfung Runde 4 (2026-11-23, Scoring-Feinschliff + Rechenbeispiel)
+- **Score-Anzeige**: Komponenten als 'erreicht / erreichbar' (z.B. 8/15),
+  keine Max-Fussnoten mehr. Bebaubarkeit-Unterteilung als Info-Icon:
+  15=B-Plan Ferienhaus-/Campinggebiet, 12=feste Unterkuenfte (gelb-gruen),
+  8=unklar/Bauamt (gelb), 0=keine Basis. score_*_details jetzt [Label,Wert,Max].
+- **Erreichbarkeit gibt keine Punkte mehr** (ist Filterkriterium). Ersatz:
+  **s19_website_modern** (neu): Website-Modernitaet 0-10 aus HTML-Merkmalen
+  (mobil-tauglich +2, HTTPS +2, Online-Buchung +2, aktuelles Jahr +2,
+  Social +1, Framework +1; Uralt-Technik -2, Steinzeit-Copyright -2,
+  duenner Inhalt -1). Proxy fuer Investitionsbereitschaft/Auslastung.
+  Nur eigene Websites (online_status='website'); Spalten web_modern,
+  web_modern_info. In allen 3 Scores statt 'Erreichbarkeit'.
+- **Rechenbeispiel neu (s06)**: 3 Einheiten (statt 5), Preis je Platz aus
+  Airbnb/Booking-Angeboten im Umkreis 25 km (Ort aus Titel geparst +
+  Nominatim-Geocoding, Cache portal_geo_<region>.json; Median ab 2
+  Angeboten) minus 20 % Camping-Abschlag; sonst Regions-Median.
+  140 Naechte = Auslastungsannahme; Stellplatz-Vergleich mit eigenem
+  Website-Preis. Quelle steht im Text.
+- **s20_namen** (neu): unbenannte Plaetze mit Website bekommen Namen aus
+  og:site_name/h1/title (bereinigt, Plausibilitaetsfilter); name_source.
+  KEINE erfundenen Namen (Nutzer-Entscheidung): generische Titel
+  ('Camping', 'Camping & Caravan') oder nicht ableitbare Namen ->
+  '(unbenannt)'. Zuvor abgeleitete Pseudo-Namen ('Campingplatz am
+  Berzdorfer See' aus Gewaessername) werden zurueckgenommen.
+- **s17**: goerlitz.de/gerstungen.de = AMTLICH; lausitzerseenland.de/
+  alpacacamping.de = Verzeichnis. Berzdorfer-See-'unbenannt' war
+  Stadt-Seite -> korrekt nur_verzeichnis/hidden bzw. Name ergaenzt.
+- **Info-Icons neu**: Flaeche genutzt (OSM-Polygon, keine AI!),
+  Website-Modernitaet, Rechenbeispiel, Bebaubarkeit-Unterteilung.
+- run_all: s20 vor s17; s19 + s06-Neulauf ('6c') vor Export.
+- **Filter-Reset-Button** ('↺ zuruecksetzen') im Filter-Panel: setzt alle
+  Filter (auch in zugeklappten Gruppen) auf Standard. Ursache Nutzer-
+  'Filter zeigt 0': Kombinationen wie 'Hausboot-Gewaesser' + 'Bestand
+  Hausboot vorhanden=ja' sind logisch fast leer (Ziel-Leads haben gerade
+  NOCH kein Hausboot). Filter selbst korrekt (SN: hb=24, Wasser=37).
+- **refresh.py + tools/refresh.ps1** (neu): Update-Lauf OHNE KI.
+  CAMPING_REFRESH=1 -> s01/s02 ignorieren Cache (OSM live, neue Plaetze),
+  s04 laedt >180 Tage alte DOP neu. s15 (KI-Sichtung) + Portal-Browser-
+  Scrapes bewusst nicht enthalten; vorhandene Daten bleiben.
+  Aufgabenplanung: refresh.ps1 alle X Wochen -> aktualisiert + publisht.
 
 ## Nachschaerfung Runde 3 (2026-11-23, Dual-Scoring + Info-Icons)
 - **Zwei Scores (s06)**: score_th (Tiny House: Wasserlage nur Bonus max 10,
