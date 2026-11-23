@@ -1,16 +1,20 @@
-"""Schritt 06: Lead-Score, Baurecht-Ampel, Umsatz-Rechenbeispiel.
+"""Schritt 06: Lead-Scores, Baurecht-Ampel, Umsatz-Rechenbeispiel.
 
-Score-Komponenten:
-- Wasserlage (water_score aus s02)                       max 35
-- Freie/verfuegbare Flaeche (Parzellen vs. OSM-Flaeche)  max 15
-- Bestand-Erneuerungsbedarf (alte Unterkünfte, Dauer)    max 20
-- Markt/Preisniveau (regionale Mietpreise)               max 15
-- Erreichbarkeit (Website, E-Mail, Telefon)              max 10
-- Groesse (Flaeche/Stellplaetze)                         max 5
+Drei Scores je Platz:
+- lead_score  kombinierter Lead-Score (Ranking/Top-Listen, wie bisher):
+  Wasserlage max 35, Flaeche max 15+4, Bestand/Luecke max 20, Markt max 10,
+  Erreichbarkeit max 10, Groesse max 5, Steg +6, Abzuege (Tiny -5, Biwak
+  x0.35, strenges Schutzgebiet x0.6)
+- score_th    Tiny-House-Score: Wasserlage nur Bonus (max 10), dafuer
+  Bebaubarkeit 0-15; Rest wie Lead-Score ohne Steg-Bonus
+- score_hb    Hausboot-Score: Wasserlage max 35 + Gewaesser-Eignung 15
+  + Steg/Marina 12 + Uferlaenge max 8 + Markt/Erreichbarkeit/Dauer;
+  kein Hausboot-Gewaesser -> Deckel 40
 
 Aufruf:  python -m pipeline.s06_bewertung seenplatte
 """
 import json
+import re
 import sys
 from datetime import datetime, timezone
 
@@ -86,93 +90,174 @@ def run(region_name):
           (bench["tiny_price"], bench["pitch_price"]))
 
     for site in sites:
-        score = 0.0
         args = []
         ws = site["water_score"] or 0
-        score += ws * 0.35
         if ws >= 70:
             args.append("Top-Wasserlage (%s)" % (site["water_name"] or "See"))
         elif ws >= 50:
             args.append("direkt am Wasser (%s)" % (site["water_name"] or "?"))
 
-        # Fläche: OSM-Fläche +Parcelldifferenz
+        # gemeinsame Basis-Komponenten (fuer beide Scores)
         area = site["area_m2"] or 0
         parcel_area = site["parcel_area_m2"] or 0
         eff_area = max(area, parcel_area)
-        if eff_area >= 100000:
-            score += 15
-        elif eff_area >= 50000:
-            score += 11
-        elif eff_area >= 20000:
-            score += 7
-        elif eff_area > 0:
-            score += 3
-        if parcel_area and area and parcel_area > area * 1.5:
-            score += 4
+        v_area = 15 if eff_area >= 100000 else 11 if eff_area >= 50000 \
+            else 7 if eff_area >= 20000 else 3 if eff_area > 0 else 0
+        v_reserve = 4 if (parcel_area and area and parcel_area > area * 1.5) else 0
+        if v_reserve:
             args.append("Grundstück deutlich größer als genutzte Fläche")
-
-        # Bestand / Erneuerungsbedarf
         rentals = site["rentals"] or ""
-        if site["seasonal"]:
-            score += 6
+        v_seasonal = 6 if site["seasonal"] else 0
+        if v_seasonal:
             args.append("Dauercamper vorhanden")
-        if any(t in rentals for t in ("Bungalow", "Mobilheim", "Hütte", "Ferienhaus")):
-            score += 8
+        v_fixed = 8 if any(t in rentals for t in ("Bungalow", "Mobilheim", "Hütte", "Ferienhaus")) else 0
+        if v_fixed:
             args.append("feste Mietunterkünfte vorhanden (%s)" % rentals)
-        if "Mobilheim" in rentals or "Bungalow" in rentals:
-            score += 4  # Erneuerungszyklus wahrscheinlich
-        if site["has_tinyhouse"]:
-            score -= 5  # Wettbewerb, aber Markt validiert
-            args.append("Tinyhäuser bereits vorhanden (Wettbewerb!)")
-        if site["has_houseboat"]:
-            args.append("Hausboote bereits vorhanden (Wettbewerb!)")
-        if not rentals and ws >= 60:
-            score += 10
+        v_cycle = 4 if ("Mobilheim" in rentals or "Bungalow" in rentals) else 0
+        v_gap = 10 if (not rentals and ws >= 60) else 0
+        if v_gap:
             args.append("Top-Lage OHNE Mietunterkünfte – Lücke im Angebot")
-
-        # Markt
         if site["price_rental"] and site["price_rental"] >= 90:
-            score += 10
+            v_market = 10
             args.append("hohes Preisniveau (%.0f EUR Unterkünfte)" % site["price_rental"])
         elif site["price_rental"]:
-            score += 5
+            v_market = 5
         elif site["price_pitch"] and site["price_pitch"] >= 30:
-            score += 5
-
-        # Erreichbarkeit
-        contact = 0
-        if site["website"]:
-            contact += 4
-        if site["contact_email"] or site["email"]:
-            contact += 4
-        if site["phone"]:
-            contact += 2
-        score += contact
-
-        # Größe
-        if eff_area >= 60000:
-            score += 5
-        elif eff_area >= 25000:
-            score += 3
-
-        # Penalty: Biwak/Wasserwander-Rastplätze (keine echten Campingplätze)
-        name_low = (site["name"] or "").lower()
-        if any(w in name_low for w in ("biwak", "wasserwander", "kanustation", "rastplatz")):
-            score *= 0.35
-            args.append("nur Biwak-/Rastplatz")
-
-        # Bonus: eigener Steg/Marina direkt am Platz (Hausboot-Potenzial)
-        if site["has_pier"] or (site["marina_distance_m"] is not None
-                                and site["marina_distance_m"] < 100):
-            score += 6
+            v_market = 5
+        else:
+            v_market = 0
+        contact = (4 if site["website"] else 0) + \
+            (4 if (site["contact_email"] or site["email"]) else 0) + \
+            (2 if site["phone"] else 0)
+        v_size = 5 if eff_area >= 60000 else 3 if eff_area >= 25000 else 0
+        pier = bool(site["has_pier"]) or (site["marina_distance_m"] is not None
+                                          and site["marina_distance_m"] < 100)
+        if pier:
             args.append("Steg/Marina am Platz – Hausboot-Standort")
-
-        # Penalty: Schutzgebiet mit strenger Klasse
+        name_low = (site["name"] or "").lower()
+        m_biwak = 0.35 if any(w in name_low for w in
+                              ("biwak", "wasserwander", "kanustation", "rastplatz")) else 1.0
+        if m_biwak < 1:
+            args.append("nur Biwak-/Rastplatz")
         prot = site["protected_area"] or ""
-        if "Klasse 2" in prot or "Nationalpark" in prot:
-            score *= 0.6
+        m_prot = 0.6 if ("Klasse 2" in prot or "Nationalpark" in prot) else 1.0
+        if m_prot < 1:
             args.append("Schutzgebiet: %s" % prot[:60])
 
+        def finalize(parts, mult):
+            s = sum(v for _, v in parts if isinstance(v, (int, float)))
+            for _, v in parts:
+                if v is None:
+                    s *= mult
+            return round(min(max(s, 0), 100), 1)
+
+        # --- Tiny-House-Score: Wasserlage nur kleiner Bonus (max 10) ---
+        th = []
+        v_water_th = round(ws * 0.10, 1)
+        if v_water_th:
+            th.append(["Wasserlage (nur Bonus, max 10)", v_water_th])
+        th.append(["Bebaubarkeit (B-Plan/Bauvorrecht)", 0])  # Platzhalter unten
+        bf = (site["build_flag"] or build_flag(site, site)).lower()
+        v_bau = 15 if ("grün" in bf and "gelb-grün" not in bf and "grün-gelb" not in bf) \
+            else 12 if ("gelb-grün" in bf or "grün-gelb" in bf) \
+            else 8 if bf.startswith("gelb") else 0
+        th[-1] = ["Bebaubarkeit (B-Plan/Bauvorrecht)", v_bau]
+        th.append(["Fläche/Platzangebot", v_area])
+        if v_reserve:
+            th.append(["Reserve: Grundstück > genutzte Fläche", v_reserve])
+        if v_seasonal:
+            th.append(["Dauercamper vorhanden", v_seasonal])
+        if v_fixed:
+            th.append(["Feste Mietunterkünfte (Erneuerungsbedarf)", v_fixed])
+        if v_cycle:
+            th.append(["Mobilheime/Bungalows (Erneuerungszyklus)", v_cycle])
+        if site["has_tinyhouse"]:
+            th.append(["Tinyhäuser vorhanden (Wettbewerb)", -5])
+            args_th = "Tinyhäuser bereits vorhanden (Wettbewerb!)"
+            if args_th not in args:
+                args.append(args_th)
+        if v_gap:
+            th.append(["Top-Lage OHNE Mietunterkünfte (Lücke)", v_gap])
+        if v_market:
+            th.append(["Preisniveau (Markt)", v_market])
+        th.append(["Erreichbarkeit (Website/E-Mail/Telefon)", contact])
+        if v_size:
+            th.append(["Platzgröße", v_size])
+        if m_biwak < 1:
+            th.append(["Abzug: nur Biwak-/Rastplatz (×0,35)", None])
+        if m_prot < 1:
+            th.append(["Abzug: strenges Schutzgebiet (×0,6)", None])
+        score_th = finalize(th, m_biwak * m_prot)
+
+        # --- Hausboot-Score: Wasserlage + Steg dominant, Gewaesser-Eignung ---
+        hb = []
+        hb.append(["Wasserlage (Abstand/Ufer)", round(ws * 0.35, 1)])
+        hbw = site["houseboat_water"]
+        v_hbw = 15 if hbw == "ja" else 5 if hbw == "unklar" else 0
+        hb.append(["Gewässer für Hausboot geeignet (See ≥5 ha)", v_hbw])
+        hb.append(["Steg/Marina am Platz", 12 if pier else 0])
+        hb.append(["Uferlänge am Platz", min(round((site["shoreline_m"] or 0) / 50), 8)])
+        if v_market:
+            hb.append(["Preisniveau (Markt)", v_market])
+        hb.append(["Erreichbarkeit (Website/E-Mail/Telefon)", contact])
+        if v_seasonal:
+            hb.append(["Dauercamper (Betrieb vorhanden)", v_seasonal])
+        if site["has_houseboat"]:
+            hb.append(["Hausboote vorhanden (Wettbewerb)", -5])
+            if "Hausboote bereits vorhanden (Wettbewerb!)" not in args:
+                args.append("Hausboote bereits vorhanden (Wettbewerb!)")
+        if m_biwak < 1:
+            hb.append(["Abzug: nur Biwak-/Rastplatz (×0,35)", None])
+        if m_prot < 1:
+            hb.append(["Abzug: strenges Schutzgebiet (×0,6)", None])
+        score_hb = finalize(hb, m_biwak * m_prot)
+        # kein Hausboot-Gewaesser -> Hausboot-Score deckeln
+        if hbw == "nein":
+            score_hb = min(score_hb, 40.0)
+            hb.append(["Deckel: kein Hausboot-Gewässer (max 40)", None])
+        score_hb = round(score_hb, 1)
+
+        # Lead-Score (Ranking gesamt) = bisherige kombinierte Heuristik
+        comp = []
+        score = round(ws * 0.35, 1)
+        comp.append(["Wasserlage (Abstand/Ufer/Steg)", round(ws * 0.35, 1)])
+        score += v_area
+        comp.append(["Fläche/Platzangebot", v_area])
+        if v_reserve:
+            score += v_reserve
+            comp.append(["Reserve: Grundstück > genutzte Fläche", v_reserve])
+        if v_seasonal:
+            score += v_seasonal
+            comp.append(["Dauercamper vorhanden", v_seasonal])
+        if v_fixed:
+            score += v_fixed
+            comp.append(["Feste Mietunterkünfte (Erneuerungsbedarf)", v_fixed])
+        if v_cycle:
+            score += v_cycle
+            comp.append(["Mobilheime/Bungalows (Erneuerungszyklus)", v_cycle])
+        if site["has_tinyhouse"]:
+            score -= 5
+            comp.append(["Tinyhäuser vorhanden (Wettbewerb)", -5])
+        if v_gap:
+            score += v_gap
+            comp.append(["Top-Lage OHNE Mietunterkünfte (Lücke)", v_gap])
+        if v_market:
+            score += v_market
+            comp.append(["Preisniveau (Markt)", v_market])
+        score += contact
+        comp.append(["Erreichbarkeit (Website/E-Mail/Telefon)", contact])
+        if v_size:
+            score += v_size
+            comp.append(["Platzgröße", v_size])
+        if pier:
+            score += 6
+            comp.append(["Steg/Marina am Platz (Hausboot-Potenzial)", 6])
+        if m_biwak < 1:
+            score *= m_biwak
+            comp.append(["Abzug: nur Biwak-/Rastplatz (×0,35)", None])
+        if m_prot < 1:
+            score *= m_prot
+            comp.append(["Abzug: strenges Schutzgebiet (×0,6)", None])
         score = round(min(score, 100), 1)
 
         # Rechenbeispiel
@@ -196,9 +281,35 @@ def run(region_name):
             flag = site["build_flag"] or build_flag(site, site)
         else:
             flag = build_flag(site, site)
+        # B-Plan-Gebietsarten kuerzen (Popup/Excel lesbar statt Textwand)
+        try:
+            bpj = json.loads(site["bplan_info"])
+            changed = False
+            for p in bpj.get("plans", []):
+                for key in ("planart", "nutzung"):
+                    t = p.get(key)
+                    if t and len(t) > 60:
+                        seen = []
+                        for part in re.split(r";\s*", t):
+                            part = part.strip()
+                            if part and part not in seen:
+                                seen.append(part)
+                        p[key] = "; ".join(seen)[:160]
+                        changed = True
+            if changed:
+                site_bp = json.dumps(bpj, ensure_ascii=False)
+            else:
+                site_bp = site["bplan_info"]
+        except Exception:
+            site_bp = site["bplan_info"]
         conn.execute("""UPDATE enrichment SET lead_score=?, top_argument=?,
-            revenue_example=?, build_flag=?, updated=? WHERE site_id=?""",
+            revenue_example=?, build_flag=?, score_details=?, bplan_info=?,
+            score_th=?, score_hb=?, score_th_details=?, score_hb_details=?,
+            updated=? WHERE site_id=?""",
             (score, "; ".join(args[:4]), example, flag,
+             json.dumps(comp, ensure_ascii=False), site_bp,
+             score_th, score_hb,
+             json.dumps(th, ensure_ascii=False), json.dumps(hb, ensure_ascii=False),
              datetime.now(timezone.utc).isoformat(), site["id"]))
     conn.commit()
     # Benchmarks fuer Dossiers/Export persistieren

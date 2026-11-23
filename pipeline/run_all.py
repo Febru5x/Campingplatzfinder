@@ -8,7 +8,7 @@ import time
 from . import (s01_grundliste, s02_wasser, s03_grundstueck, s04_luftbild,
                s05_website, s06_bewertung, s07_export, s08_dossiers,
                s11_bplan, s12_bestandsalter, s13_marktpreise, s14_gebaeude,
-               s17_datenqualitaet)
+               s17_datenqualitaet, s18_gewaesserflaeche)
 
 STEPS = [
     ("1", "Grundliste (OSM)", s01_grundliste.run),
@@ -22,6 +22,7 @@ STEPS = [
     ("14", "Gebaeude ALKIS (Top-40, nur BB/SN)", lambda r: s14_gebaeude.run(r, top=40)),
     ("13", "Marktpreise/Benchmarks", s13_marktpreise.run),
     ("6b", "Bewertung (final)", s06_bewertung.run),
+    ("18", "Gewaesserflaechen", s18_gewaesserflaeche.run),
     ("17", "Datenqualitaet/Klassifizierung", s17_datenqualitaet.run),
     ("7", "Export Excel+Karte", s07_export.run),
     ("8", "Top-Dossiers", s08_dossiers.run),

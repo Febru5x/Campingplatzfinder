@@ -1,4 +1,47 @@
-# STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online + Nachschaerfung)
+# STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online + Nachschaerfung Runde 2)
+
+## Nachschaerfung Runde 3 (2026-11-23, Dual-Scoring + Info-Icons)
+- **Zwei Scores (s06)**: score_th (Tiny House: Wasserlage nur Bonus max 10,
+  Bebaubarkeit 0-15 nach Ampel) und score_hb (Hausboot: Wasserlage max 35,
+  Gewaesser-Eignung 15, Steg 12, Uferlaenge max 8; ohne Hausboot-Gewaesser
+  Deckel 40). lead_score bleibt kombinierte Heuristik fuer Ranking/Top-20.
+  Alle drei mit JSON-Komponenten (score_*_details) in Popup/Excel/Dossier.
+- **Karte**: Score-Typ-Dropdown (Lead/TH/HB) fuer Min-Score-Filter +
+  optionale Marker-Einfaerbung; Badges Lead/TH/HB im Popup; Ampel-Filter
+  ohne rot (Stellplaetze sind eh default aus).
+- **Info-Icons (i)** mit Hover-Erklaerung: Flurstuecke, ALKIS, Ampel,
+  Gewaesser-Einstufung, Mietunterkuenfte, KI-Sichtung, Scoring.
+  Flurstuecke nur noch als 'Grundstueck gesamt: X m² · N Flurstuecke'.
+- **s18 Performance**: STRtree-Nearest-Index statt O(n*m) (BB 31k
+  Gewaesser); alle 5 Regionen in ~2 Min.
+
+## Nachschaerfung Runde 2 (2026-11-23, Nutzer-Feedback Karte/Popup)
+- **s18_gewaesserflaeche** neu: misst Flaeche des naechsten Gewaessers in ha
+  (OSM-Geometrie, einheitliche Quelle water_class_src). s17 nutzt jetzt:
+  Typ-Tag > Flaechenmessung (>=5 ha = Hausboot ja) > Name nur als Hinweis.
+  Grosser Teich >=5 ha zaehlt als See-Alternative. WATER_OVERRIDE bleibt.
+- **Sandgrube-Fix (s17)**: OSM-Tag caravan_site=motorhome_stopover bzw.
+  Name 'Wohnmobilstellplatz' = harter Stellplatz-Nachweis; Scrape-Fehltreffer
+  (z.B. 'Ferienhaus' von Stadt-Website) werden dann ignoriert. Stadt-/
+  Gemeindeseiten (AMTLICH_PAT) = nur_verzeichnis, nicht eigene Website.
+  Zusaetzlich: camping ohne Online-Auftritt UND ohne E-Mail -> hidden.
+- **Popup**: Breite 460px + max-height 62vh scrollbar; Karussell-Labels
+  nur Aufnahmejahr (kein 'Release'); Hausboot vorhanden ja/nein + Tinyhaus
+  vorhanden ja/nein; Gewaesserflaeche + Quelle; Scoring-Zusammensetzung
+  als aufklappbare Tabelle (score_details aus s06); B-Plan-Block mit
+  Erklaerung (WA/Versorgungsflaeche = Nachbar-Planflaechen); Labels
+  'Grundstuecksflaeche (Flurstuecke)', 'Gebaeude (amtl. Kataster)',
+  'Luftbild-Sichtung (KI)'. Motorboot-Zeile entfernt (irrelevant).
+- **Filter**: Kontakt-Gruppe jetzt Checkboxen 'nur eigene Website',
+  'nur Online-Auftritt', 'nur E-Mail', 'nur KI-Luftbild-Pruefung';
+  neue Gruppe Bestand: Hausboot/Tinyhaus vorhanden ja/nein/egal.
+- **s06**: score_details (JSON-Komponentenliste) je Platz; B-Plan-planart
+  Duplikate dedupliziert + auf 160 Zeichen gekuerzt.
+- **s08**: Motorboot raus, Hausboot/Tiny-Status + Gewaesserklasse +
+  Scoring-Tabelle rein; Befliegungs-Labels nur Jahr.
+- PowerShell-Falle: Get-Content/Set-Content zerlegt UTF-8-Umlaute
+  (cp1252-Mojibake) + BOM. NIE fuer Code-Dateien nutzen; Reparatur:
+  text.encode('cp1252').decode('utf-8'). Nur edit/write-Tools verwenden.
 
 ## Nachschaerfung 2026-11-23 (Nutzer-Feedback)
 - **s17_datenqualitaet** neu: Klassifizierung camping/stellplatz/verein/

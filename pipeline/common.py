@@ -65,7 +65,9 @@ def db():
     if cols:
         for col in ("buildings", "bildsichtung", "site_class", "class_reason",
                     "online_status", "waterbody_class", "houseboat_water",
-                    "default_hidden", "web_images"):
+                    "default_hidden", "web_images", "water_area_ha",
+                    "water_class_src", "score_details", "score_th", "score_hb",
+                    "score_th_details", "score_hb_details"):
             if col not in cols:
                 conn.execute("ALTER TABLE enrichment ADD COLUMN %s TEXT" % col)
         conn.commit()
@@ -129,6 +131,13 @@ def init_db():
         waterbody_class TEXT, houseboat_water TEXT,
         default_hidden INTEGER,     -- 1 = auf Karte initial ausgeblendet
         web_images TEXT,            -- JSON-Liste Bild-URLs von der Website
+        water_area_ha REAL,         -- Flaeche des naechsten Gewaessers (s18)
+        water_class_src TEXT,       -- Quelle der Gewaesser-Einordnung
+        score_details TEXT,         -- Score-Zusammensetzung (JSON, s06)
+        score_th REAL,              -- Tiny-House-Score (Wasser nur Bonus)
+        score_hb REAL,              -- Hausboot-Score (Wasserlage/Steg dominant)
+        score_th_details TEXT,      -- JSON-Komponenten Tiny House
+        score_hb_details TEXT       -- JSON-Komponenten Hausboot
         -- Website / Markt
         price_pitch REAL, price_tent REAL, price_rental REAL,
         season TEXT, chain TEXT, contact_name TEXT, contact_email TEXT,

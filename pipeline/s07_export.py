@@ -11,7 +11,9 @@ import pandas as pd
 from . import common as C
 
 COLS = [
-    ("lead_score", "Lead-Score"),
+    ("lead_score", "Lead-Score (gesamt)"),
+    ("score_th", "Tiny-House-Score"),
+    ("score_hb", "Hausboot-Score"),
     ("name", "Name"),
     ("site_class", "Typ (Klassifizierung)"),
     ("default_hidden", "Default ausgeblendet"),
@@ -21,23 +23,24 @@ COLS = [
     ("water_score", "Wasser-Score"),
     ("water_name", "Gewässer"),
     ("waterbody_class", "Gewässer-Typ"),
+    ("water_area_ha", "Gewässerfläche (ha)"),
+    ("water_class_src", "Gewässer-Einstufung: Quelle"),
     ("houseboat_water", "Hausboot-Gewässer geeignet"),
     ("water_distance_m", "Abstand Wasser (m)"),
     ("shoreline_m", "Uferlänge (m)"),
     ("has_pier", "Steg"),
     ("marina_distance_m", "Marina-Abstand (m)"),
-    ("motorboat_flag", "Motorboot"),
     ("protected_area", "Schutzgebiet"),
     ("area_m2", "OSM-Fläche (m²)"),
-    ("parcel_area_m2", "Flurstück-Fläche (m²)"),
+    ("parcel_area_m2", "Grundstücksfläche/Flurstücke (m²)"),
     ("parcel_count", "Flurstücke (#)"),
     ("flurstuecke", "Flurstück-Kennzeichen"),
     ("build_flag", "Bebaubarkeit (Ampel)"),
     ("bplan_namen", "B-Pläne (amtlich)"),
     ("bplan_links", "B-Plan-PDFs"),
     ("rental_age_est", "Bestandsalter / Erneuerung"),
-    ("gebaeude_alkis", "Gebäude (ALKIS amtlich)"),
-    ("bildsichtung_txt", "KI-Bildsichtung (Bestand/Zustand)"),
+    ("gebaeude_alkis", "Gebäude (amtl. Kataster/ALKIS)"),
+    ("bildsichtung_txt", "Luftbild-Sichtung KI (Bestand/Zustand)"),
     ("hist_img", "Hist. Luftbilder"),
     ("booking_link", "Booking-Link (manuell)"),
     ("seasonal", "Dauercamper"),
@@ -50,6 +53,9 @@ COLS = [
     ("season", "Saison"),
     ("revenue_example", "Rechenbeispiel Tinyhäuser"),
     ("top_argument", "Top-Argument"),
+    ("score_details_txt", "Scoring-Zusammensetzung (Lead)"),
+    ("score_th_txt", "Scoring-Zusammensetzung (Tiny House)"),
+    ("score_hb_txt", "Scoring-Zusammensetzung (Hausboot)"),
     ("website", "Website"),
     ("phone", "Telefon"),
     ("contact_email", "E-Mail (Website)"),
@@ -130,6 +136,18 @@ def load_df(region_name):
         d["bildsichtung_txt"] = ("%s | Zustand: %s | %s" % (
             bs.get("bestand", "?"), bs.get("zustand", "?"), bs.get("notiz", "")
         )).strip(" |") if bs else ""
+        # Scoring-Zusammensetzung als Text (Lead / Tiny / Hausboot)
+        def sd_txt(key):
+            try:
+                sd = json.loads(d.get(key) or "null")
+            except Exception:
+                sd = None
+            return "; ".join(
+                "%s: %s" % (k, ("×" if v is None else ("+%s" % v if v >= 0 else str(v))))
+                for k, v in sd) if sd else ""
+        d["score_details_txt"] = sd_txt("score_details")
+        d["score_th_txt"] = sd_txt("score_th_details")
+        d["score_hb_txt"] = sd_txt("score_hb_details")
         d["booking_link"] = (
             "https://www.booking.com/searchresults.de.html?ss=%s"
             "&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
@@ -220,7 +238,9 @@ MAP_TMPL = """<!DOCTYPE html>
 <script src="https://unpkg.com/esri-leaflet@3.0.12/dist/esri-leaflet.js"></script>
 <style>
  body{{margin:0;font-family:system-ui,sans-serif}} #map{{height:100vh}}
- .panel{{max-width:340px;font-size:13px;line-height:1.45}}
+ .panel{{max-width:440px;font-size:13px;line-height:1.45}}
+ .leaflet-popup-content{{max-height:62vh;overflow-y:auto;overflow-x:hidden;margin:12px 14px}}
+ .leaflet-popup-content-wrapper{{border-radius:8px}}
  .panel h3{{margin:0 0 6px}} .panel img{{width:100%;border-radius:6px;margin:6px 0}}
  .badge{{display:inline-block;padding:1px 7px;border-radius:9px;color:#fff;font-size:11px;margin-right:4px}}
  table.kv td{{padding:1px 6px 1px 0;vertical-align:top}} table.kv td:first-child{{color:#666}}
@@ -243,6 +263,13 @@ MAP_TMPL = """<!DOCTYPE html>
  #legend{{position:absolute;bottom:20px;left:10px;z-index:1000;background:#fff;padding:8px 12px;
    border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.3);font-size:12px;line-height:1.7}}
  .dot{{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px}}
+ .info{{display:inline-block;width:14px;height:14px;border-radius:50%;background:#8aa;color:#fff;
+   font-size:10px;font-style:normal;text-align:center;line-height:14px;cursor:help;margin-left:4px;
+   position:relative;vertical-align:middle}}
+ .info .tip{{display:none;position:absolute;left:16px;top:-6px;width:240px;background:#333;color:#fff;
+   padding:7px 9px;border-radius:6px;font-size:11px;line-height:1.4;z-index:2000;text-align:left;
+   font-weight:400;box-shadow:0 2px 8px rgba(0,0,0,.4)}}
+ .info:hover .tip{{display:block}}
 </style></head><body>
 <div id="map"></div>
 <button id="fToggle">Filter ▾</button>
@@ -266,12 +293,22 @@ MAP_TMPL = """<!DOCTYPE html>
    </select></label>
  </details>
  <details open class="fgroup"><summary>Score &amp; Ausstattung</summary>
+  <label>Score-Typ:
+   <select id="fScoreKind"><option value="lead">Lead (kombiniert)</option>
+    <option value="th">Tiny House</option><option value="hb">Hausboot</option></select></label>
   <label>Min-Score: <input type="range" id="fMin" min="0" max="100" value="0" style="width:100px">
    <span id="fMinVal">0</span></label>
+  <label><input type="checkbox" id="fColor"> Marker nach diesem Score einfärben</label>
   <label><input type="checkbox" id="fPier"> nur mit Steg/Marina</label>
   <label><input type="checkbox" id="fRent"> nur mit Mietunterkünften</label>
   <label><input type="checkbox" id="fNoRent"> nur OHNE Mietunterkünfte (Lücke)</label>
   <label><input type="checkbox" id="fSeasonal"> nur mit Dauercampern</label>
+ </details>
+ <details class="fgroup"><summary>Bestand: Hausboot / Tinyhaus</summary>
+  <label>Hausboot vorhanden:
+   <select id="fHbEx"><option value="">egal</option><option value="ja">ja</option><option value="nein">nein</option></select></label>
+  <label>Tinyhaus vorhanden:
+   <select id="fThEx"><option value="">egal</option><option value="ja">ja</option><option value="nein">nein</option></select></label>
  </details>
  <details class="fgroup"><summary>Bebaubarkeit</summary>
   <label><input type="checkbox" id="fBplan"> nur mit B-Plan</label>
@@ -280,18 +317,13 @@ MAP_TMPL = """<!DOCTYPE html>
     <option value="grün">grün (Anteil)</option>
     <option value="gelb-grün">gelb-grün</option>
     <option value="gelb">gelb</option>
-    <option value="rot">rot (Anteil)</option>
    </select></label>
  </details>
  <details class="fgroup"><summary>Kontakt &amp; Daten</summary>
-  <label>Online-Präsenz:
-   <select id="fOnline"><option value="">alle</option>
-    <option value="website">eigene Website</option>
-    <option value="nur_verzeichnis">nur Verzeichnis</option>
-    <option value="keine">keine</option>
-   </select></label>
+  <label><input type="checkbox" id="fWeb"> nur mit eigener Website</label>
+  <label><input type="checkbox" id="fOnlineAny"> nur mit Online-Auftritt (Website oder Verzeichnis)</label>
   <label><input type="checkbox" id="fEmail"> nur mit E-Mail</label>
-  <label><input type="checkbox" id="fSicht"> nur mit KI-Bildsichtung</label>
+  <label><input type="checkbox" id="fSicht"> nur Plätze mit KI-Luftbild-Prüfung (Bestand per Luftbild gesichtet)</label>
  </details>
  <div id="fCount"></div>
 </div>
@@ -321,6 +353,16 @@ const layerCtl = L.control.layers(bases, overlays,
 
 function color(s){{return s>=70?'#d73027':s>=50?'#fc8d59':s>=30?'#fee08b':'#91bfdb';}}
 function esc(t){{return (t==null?'':String(t)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}}
+const INFO={{
+ flurst:'Flurstück = kleinste amtliche Einheit im Liegenschaftskataster: ein vermessenes, nummeriertes Stück Land. Mehrere Flurstücke bilden ein Grundstück. Hier: Anzahl der Flurstücke unter dem Platz und deren Gesamtfläche – wichtig für Ausbau-Reserve und spätere Eigentümer-/Grundbuch-Anfragen.',
+ alkis:'ALKIS = amtliches Liegenschaftskataster der Vermessungsämter (keine Schätzung). Zeigt Anzahl, Grundfläche und Nutzungstyp der offiziell erfassten Gebäude auf dem Platz – die harte Faktenbasis für festen Bestand (z. B. Vereinsheim-Prüfung).',
+ ampel:'Vorabeinschätzung, ob ortsfeste Tinyhäuser genehmigungsfähig wären: grün(-gelb) = B-Plan mit Ferienhaus-/Campinggebiet oder feste Unterkünfte vorhanden → gute Basis. gelb = unklar (B-Plan ohne Camping-Bezug oder Außenbereich §35 BauGB) → Bauamt fragen. Heuristik, keine Rechtsauskunft.',
+ wasser:'Einheitliche Einstufung: OSM-Gewässertyp + gemessene Fläche des nächsten Gewässers (Hektar). Hausboot „ja" nur bei See/Stausee bzw. ≥5 ha; Teich/Fluss/Kanal/Bach = „nein". Quelle je Platz unten angegeben; einzelne Korrekturen aus KI-Luftbild-Sichtungen.',
+ sicht:'Eine KI hat das aktuelle amtliche Luftbild (DOP20) des Platzes gesichtet und Bestand, Zustand und Erweiterungsflächen beschrieben. Luftbildeindruck – keine Vor-Ort-Prüfung.',
+ miet:'Aus der Betreiber-Website ausgelesene Mietunterkünfte. Kann Fehltreffer enthalten (z. B. Angebote des Betreibers an anderem Ort) – vor Kontakt prüfen.',
+ score:'Zwei getrennte Bewertungen: Tiny-House-Score (Wasserlage nur kleiner Bonus max 10, dafür Bebaubarkeit bis 15) und Hausboot-Score (Wasserlage max 35 + Gewässer-Eignung 15 + Steg 12 + Uferlänge max 8; ohne Hausboot-Gewässer max 40). Der Lead-Score kombiniert beides für die Rangliste. Heuristik zur Vorauswahl.'
+}};
+function info(k){{return '<span class="info">i<span class="tip">'+INFO[k]+'</span></span>';}}
 function carStep(btn,d){{
  const c=btn.closest('.carousel');
  const slides=JSON.parse(c.getAttribute('data-slides'));
@@ -333,16 +375,18 @@ function carStep(btn,d){{
 }}
 function popupHtml(p){{
  let h='<div class="panel"><h3>'+esc(p.name)+'</h3>';
- h+='<span class="badge" style="background:'+color(p.lead_score)+'">Score '+(p.lead_score??'–')+'</span>';
+ h+='<span class="badge" style="background:'+color(p.lead_score)+'">Lead '+(p.lead_score??'–')+'</span>';
+ h+='<span class="badge" style="background:#8e6c3a" title="Tiny-House-Score">TH '+(p.score_th??'–')+'</span>';
+ h+='<span class="badge" style="background:#2c7fb8" title="Hausboot-Score">HB '+(p.score_hb??'–')+'</span>';
  if(p.water_score>=70) h+='<span class="badge" style="background:#1a9850">Top-Wasserlage</span>';
  if(p.site_class&&p.site_class!=='camping') h+='<span class="badge" style="background:#777">'+esc(p.site_class)+'</span>';
  if(p.houseboat_water==='ja') h+='<span class="badge" style="background:#2c7fb8">Hausboot-Gewässer</span>';
  else if(p.houseboat_water==='nein'&&p.water_name) h+='<span class="badge" style="background:#999">kein Hausboot-Gewässer</span>';
  // Bild-Karussell: aktuelles DOP + Hist + Website-Fotos
  const slides=[];
- if(p.img) slides.push({{src:'luftbilder/'+p.img,label:'Luftbild aktuell'+(p.imgyear?' '+p.imgyear:'')}});
+ if(p.img) slides.push({{src:'luftbilder/'+p.img,label:'Luftbild aktuell'+(p.imgyear?' ('+p.imgyear+')':'')}});
  if(p.hist) for(const t of p.hist) slides.push({{src:t.img,label:t.label}});
- if(p.webimg) for(const w of p.webimg) slides.push({{src:'webbilder/'+w,label:'Website-Foto',ext:true}});
+ if(p.webimg) p.webimg.forEach((w,i)=>slides.push({{src:'webbilder/'+w,label:'Website-Foto '+(i+1)}}));
  if(slides.length){{
   h+='<div class="carousel" data-i="0" data-slides="'+esc(JSON.stringify(slides))+'">';
   h+='<img class="cimg" src="'+slides[0].src+'" loading="lazy" onerror="this.style.opacity=.2">';
@@ -353,31 +397,56 @@ function popupHtml(p){{
   }}
   h+='</div>';
  }}
- h+='<table class="kv">';
- const rows=[['Gewässer',p.water_name],['Gewässer-Typ',p.waterbody_class],
-  ['Hausboot-Eignung',p.houseboat_water==='ja'?'ja (See/Stausee)':p.houseboat_water==='nein'?'nein (zu klein/Fluss/Teich)':'unklar – prüfen'],
-  ['Abstand Wasser',p.water_distance_m!=null?p.water_distance_m+' m':null],
-  ['Uferlänge',p.shoreline_m?p.shoreline_m+' m':null],['Steg',p.has_pier?'ja':null],
-  ['Motorboot',p.motorboat_flag],['Fläche',p.area_m2?Math.round(p.area_m2).toLocaleString('de')+' m²':null],
-  ['Flurstücke',p.parcel_area_m2?Math.round(p.parcel_area_m2).toLocaleString('de')+' m²':null],
-  ['Bebaubarkeit',p.build_flag],['Dauercamper',p.seasonal?'ja':null],
-  ['Mietunterkünfte',p.rentals],['Bestandsalter',p.rental_age_est],
-  ['Gebäude (ALKIS)',p.geb?p.geb.n+' Geb., '+p.geb.flaeche.toLocaleString('de')+' m² ('+p.geb.typen.map(t=>t[0]+'×'+t[1]).join(', ')+')':null],
-  ['Preis Stellplatz',p.price_pitch?p.price_pitch+' €':null],
-  ['Preis Unterkunft',p.price_rental?p.price_rental+' €':null],
-  ['KI-Bildsichtung',p.bildsichtung_txt],
-  ['Schutzgebiet',p.protected_area],['Argument',p.top_argument],
-  ['Rechenbeispiel',p.revenue_example],['Telefon',p.phone],['E-Mail',p.contact_email||p.email]];
- for(const [k,v] of rows) if(v!=null&&v!=='') h+='<tr><td>'+k+'</td><td>'+esc(v)+'</td></tr>';
- h+='</table>';
+  h+='<table class="kv">';
+  const jaNein=v=>v?'ja':'nein';
+  const rows=[['Gewässer',p.water_name,null],
+   ['Gewässer-Typ'+info('wasser'),p.waterbody_class+(p.water_area_ha!=null?' ('+Number(p.water_area_ha).toLocaleString('de')+' ha)':''),'html'],
+   ['↳ Quelle der Einstufung',p.water_class_src,null],
+   ['Hausboot-Gewässer geeignet',p.houseboat_water==='ja'?'ja (See/Stausee ≥5 ha)':p.houseboat_water==='nein'?'nein (zu klein/Fluss/Teich)':'unklar – prüfen',null],
+   ['Hausboot vorhanden',jaNein(p.has_houseboat),null],
+   ['Tinyhaus vorhanden',jaNein(p.has_tinyhouse),null],
+   ['Abstand Wasser',p.water_distance_m!=null?p.water_distance_m+' m':null,null],
+   ['Uferlänge',p.shoreline_m?p.shoreline_m+' m':null,null],['Steg',p.has_pier?'ja':null,null],
+   ['Fläche genutzt (OSM)',p.area_m2?Math.round(p.area_m2).toLocaleString('de')+' m²':null,null],
+   ['Grundstück gesamt'+info('flurst'),p.parcel_area_m2?Math.round(p.parcel_area_m2).toLocaleString('de')+' m²'+(p.parcel_count?' · '+p.parcel_count+' Flurstück'+(p.parcel_count>1?'e':''):''):null,'html'],
+   ['Bebaubarkeit (Ampel)'+info('ampel'),p.build_flag,'html'],
+   ['Dauercamper',p.seasonal?'ja':null,null],
+   ['Mietunterkünfte'+info('miet'),p.rentals,'html'],['Bestandsalter',p.rental_age_est,null],
+   ['Gebäude (amtl. Kataster)'+info('alkis'),p.geb?p.geb.n+' Geb., '+p.geb.flaeche.toLocaleString('de')+' m² ('+p.geb.typen.map(t=>t[0]+'×'+t[1]).join(', ')+')':null,'html'],
+   ['Preis Stellplatz',p.price_pitch?p.price_pitch+' €':null,null],
+   ['Preis Unterkunft',p.price_rental?p.price_rental+' €':null,null],
+   ['Luftbild-Sichtung (KI)'+info('sicht'),p.bildsichtung_txt,'html'],
+   ['Schutzgebiet',p.protected_area,null],['Argument',p.top_argument,null],
+   ['Rechenbeispiel',p.revenue_example,null],['Telefon',p.phone,null],['E-Mail',p.contact_email||p.email,null]];
+  for(const [k,v,mode] of rows){{
+   if(v==null||v==='')continue;
+   h+='<tr><td>'+k+'</td><td>'+(mode==='html'?v:esc(v))+'</td></tr>';
+  }}
+  h+='</table>';
+  function scoreBlock(title,val,details,note){{
+   if(!details||!details.length)return '';
+   let s='<details style="margin:6px 0"><summary style="cursor:pointer"><b>'+title+': '+(val??'–')+'/100</b>'+info('score')+'</summary>';
+   s+='<table class="kv" style="margin:4px 0">';
+   for(const [k,v] of details) s+='<tr><td>'+esc(k)+'</td><td>'+(v==null?'Multiplikator/Deckel':(v>0?'+':'')+v)+'</td></tr>';
+   s+='</table><div style="font-size:11px;color:#666">'+note+'</div></details>';
+   return s;
+  }}
+  h+=scoreBlock('Tiny-House-Score',p.score_th,p.score_th_details,
+   'Wasserlage nur Bonus (max 10) · Bebaubarkeit max 15 · Fläche max 15+4 · Bestand/Lücke max 20 · Markt max 10 · Erreichbarkeit max 10 · Größe max 5 · Abzüge: Tinyhäuser −5, Biwak ×0,35, strenges Schutzgebiet ×0,6.');
+  h+=scoreBlock('Hausboot-Score',p.score_hb,p.score_hb_details,
+   'Wasserlage max 35 · Gewässer-Eignung 15 · Steg/Marina 12 · Uferlänge max 8 · Markt max 10 · Erreichbarkeit max 10 · Dauercamper 6 · Abzug: Hausboote vorhanden −5. Ohne Hausboot-Gewässer: max 40.');
+  h+=scoreBlock('Lead-Score (Rangliste kombiniert)',p.lead_score,p.score_details,
+   'Kombiniert beide Perspektiven für die Sortierung: Wasserlage max 35 · Fläche max 15+4 · Bestand/Lücke max 20 · Markt max 10 · Erreichbarkeit max 10 · Größe max 5 · Steg +6 · Abzüge wie oben. Heuristik zur Vorauswahl, kein amtlicher Wert.');
  if(p.bplan){{
-  h+='<b>B-Pläne (amtlich):</b><ul style="margin:4px 0;padding-left:18px">';
+  h+='<details style="margin:6px 0"><summary style="cursor:pointer"><b>Bebauungspläne im Umkreis (amtlich)</b></summary>';
+  h+='<div style="font-size:11px;color:#666;margin:3px 0">Ein B-Plan regelt, was auf den Flächen gebaut werden darf. „Sondergebiet Camping/Erholung" = Camping ausgewiesen; „Allgemeines Wohngebiet (WA)" = Wohnbebauung; „Versorgungsfläche" = z. B. Handel/Verkehr – nicht der Campingplatz selbst, sondern angrenzende Planflächen. Entscheidend ist der Plan, der das Platz-Grundstück überdeckt.</div><ul style="margin:4px 0;padding-left:18px">';
   for(const bp of p.bplan){{
    h+='<li>'+esc(bp.name)+(bp.rechtsstand?' <i>('+esc(bp.rechtsstand)+')</i>':'');
+   if(bp.planart) h+='<br><span style="color:#666;font-size:12px">'+esc(bp.planart)+'</span>';
    if(bp.pdf) h+=' <a href="'+esc(bp.pdf)+'" target="_blank">Plan-PDF</a>';
    h+='</li>';
   }}
-  h+='</ul>';
+  h+='</ul></details>';
  }}
  if(p.website) h+='<a href="'+esc(p.website)+'" target="_blank">Website öffnen</a>';
  if(p.booking) h+=' · <a href="'+esc(p.booking)+'" target="_blank">Booking-Preise prüfen</a>';
@@ -387,10 +456,10 @@ const markers=[];
 for(const p of SITES){{
  const m=L.circleMarker([p.lat,p.lon],{{radius:p.lead_score>=70?9:7,
    color:'#333',weight:1,fillColor:color(p.lead_score),fillOpacity:.9}});
- m.bindPopup(()=>popupHtml(p),{{maxWidth:360}});
+ m.bindPopup(()=>popupHtml(p),{{maxWidth:460}});
  if(p.geom){{
   const poly=L.geoJSON(p.geom,{{style:{{color:color(p.lead_score),weight:2,fillOpacity:.08}}}});
-  poly.bindPopup(()=>popupHtml(p),{{maxWidth:360}});
+  poly.bindPopup(()=>popupHtml(p),{{maxWidth:460}});
   m._poly=poly;
  }}
  m._p=p; markers.push(m);
@@ -409,13 +478,26 @@ function applyFilter(){{
  const wb=document.getElementById('fWb').value;
  const mn=+document.getElementById('fMin').value;
  document.getElementById('fMinVal').textContent=mn;
+ const sk=document.getElementById('fScoreKind').value;
+ const scoreOf=p=>sk==='th'?(p.score_th??0):sk==='hb'?(p.score_hb??0):(p.lead_score||0);
+ // Marker optional nach gewaehltem Score einfaerben
+ if(document.getElementById('fColor').checked){{
+  for(const m of markers){{
+   const c=color(scoreOf(m._p));
+   m.setStyle({{fillColor:c}});
+   if(m._poly) m._poly.setStyle({{color:c}});
+  }}
+ }}
  const pier=document.getElementById('fPier').checked;
  const rent=document.getElementById('fRent').checked;
  const norent=document.getElementById('fNoRent').checked;
  const seas=document.getElementById('fSeasonal').checked;
  const bplan=document.getElementById('fBplan').checked;
  const flag=document.getElementById('fFlag').value;
- const online=document.getElementById('fOnline').value;
+ const onlineany=document.getElementById('fOnlineAny').checked;
+ const web=document.getElementById('fWeb').checked;
+ const hbex=document.getElementById('fHbEx').value;
+ const thex=document.getElementById('fThEx').value;
  const email=document.getElementById('fEmail').checked;
  const sicht=document.getElementById('fSicht').checked;
  group.clearLayers();
@@ -429,14 +511,19 @@ function applyFilter(){{
   if(w&&!(p.water_distance_m!=null&&p.water_distance_m<=50))continue;
   if(hb&&p.houseboat_water!=='ja')continue;
   if(wb&&p.waterbody_class!==wb)continue;
-  if((p.lead_score||0)<mn)continue;
+  if(scoreOf(p)<mn)continue;
   if(pier&&!(p.has_pier||(p.marina_distance_m!=null&&p.marina_distance_m<100)))continue;
   if(rent&&!p.rentals)continue;
   if(norent&&p.rentals)continue;
   if(seas&&!p.seasonal)continue;
   if(bplan&&!(p.bplan&&p.bplan.length))continue;
   if(flag&&!(p.build_flag||'').includes(flag))continue;
-  if(online&&p.online_status!==online)continue;
+  if(onlineany&&!(p.online_status==='website'||p.online_status==='nur_verzeichnis'))continue;
+  if(web&&p.online_status!=='website')continue;
+  if(hbex==='ja'&&!p.has_houseboat)continue;
+  if(hbex==='nein'&&p.has_houseboat)continue;
+  if(thex==='ja'&&!p.has_tinyhouse)continue;
+  if(thex==='nein'&&p.has_tinyhouse)continue;
   if(email&&!(p.contact_email||p.email))continue;
   if(sicht&&!p.bildsichtung_txt)continue;
   group.addLayer(m); n++;
@@ -471,14 +558,16 @@ def export_map(df, region_name):
     meta = json.loads(src.read_text(encoding="utf-8")) if src.exists() else {}
     imgdir_src = C.OUTPUT / "luftbilder"
     fields = ["id", "name", "category", "lat", "lon", "area_m2", "website",
-              "phone", "email", "lead_score", "water_score", "water_name",
-              "water_distance_m", "shoreline_m", "has_pier", "motorboat_flag",
-              "protected_area", "parcel_area_m2", "build_flag", "seasonal",
+              "phone", "email", "lead_score", "score_th", "score_hb",
+              "water_score", "water_name",
+              "water_distance_m", "shoreline_m", "has_pier",
+              "protected_area", "parcel_area_m2", "parcel_count", "build_flag", "seasonal",
               "rentals", "rental_age_est", "price_pitch", "price_rental",
               "top_argument", "revenue_example", "contact_email", "buildings",
               "bildsichtung_txt", "site_class", "class_reason", "online_status",
               "waterbody_class", "houseboat_water", "default_hidden",
-              "web_images", "marina_distance_m"]
+              "web_images", "marina_distance_m", "has_houseboat", "has_tinyhouse",
+              "water_area_ha", "water_class_src"]
     # History-Infos (hist. Luftbilder) und B-Pläne laden
     hist = {}
     conn = C.db()
@@ -527,8 +616,7 @@ def export_map(df, region_name):
                 continue
             seen_cap.add(dedup_key)
             label = cap[:4] if cap else y
-            if cap and cap[:4] != y:
-                label = "%s (Release %s)" % (cap[:4], y)
+            # nur Aufnahmejahr anzeigen (Release-Jahr ist fuer Nutzer irrelevant)
             timeline.append({"label": label, "img": h[y]})
         if timeline:
             d["hist"] = timeline
@@ -539,6 +627,15 @@ def export_map(df, region_name):
                             "typen": list(gb["typen"].items())[:6]}
         except Exception:
             pass
+        for key, dst in (("score_details", "score_details"),
+                         ("score_th_details", "score_th_details"),
+                         ("score_hb_details", "score_hb_details")):
+            try:
+                sd = json.loads(r.get(key) or "null")
+                if sd:
+                    d[dst] = sd
+            except Exception:
+                pass
         bp = bplans.get(r["id"])
         if bp:
             bl = []
@@ -546,6 +643,7 @@ def export_map(df, region_name):
                 pdf = next((doc["url"] for doc in p.get("dokumente", [])
                             if "rechtsplan" in doc["typ"].lower()), None)
                 bl.append({"name": p["name"], "rechtsstand": p.get("rechtsstand"),
+                           "planart": p.get("nutzung") or p.get("planart"),
                            "pdf": pdf})
             d["bplan"] = bl
         if d["name"] and d["name"] != "(unbenannt)":

@@ -22,20 +22,24 @@ TMPL = """<!DOCTYPE html><html><head><meta charset="utf-8"><title>{name}</title>
  .score{{font-size:30px;font-weight:700;color:{scorecolor}}}
  @media print{{body{{margin:0}}}}
 </style></head><body>
-<div style="float:right;text-align:center"><div class="score">{score}</div><div style="color:#666;font-size:12px">Lead-Score</div></div>
+<div style="float:right;text-align:center"><div class="score">{score}</div><div style="color:#666;font-size:12px">Lead-Score</div>
+<div style="font-size:13px;margin-top:6px"><b style="color:#8e6c3a">TH {score_th}</b> · <b style="color:#2c7fb8">HB {score_hb}</b></div>
+<div style="color:#666;font-size:11px">Tiny House · Hausboot</div></div>
 <h1>{name}</h1>
 <div class="sub">{category} · {watername} · {website}</div>
 {img}
 <table>
 <tr><td>Gewässer / Abstand</td><td>{watername} — {waterdist}</td></tr>
+<tr><td>Gewässer-Typ / Hausboot-Eignung</td><td>{waterclass}</td></tr>
+<tr><td>Hausboot vorhanden</td><td>{houseboat_ex}</td></tr>
+<tr><td>Tinyhaus vorhanden</td><td>{tiny_ex}</td></tr>
 <tr><td>Eigene Uferlänge (geschätzt)</td><td>{shoreline}</td></tr>
 <tr><td>Steg / Marina</td><td>{pier}</td></tr>
-<tr><td>Motorboote</td><td>{motorboat}</td></tr>
-<tr><td>Fläche (OSM / Flurstücke)</td><td>{area}</td></tr>
-<tr><td>Flurstücke</td><td>{parcels}</td></tr>
+<tr><td>Fläche (OSM / Grundstücke)</td><td>{area}</td></tr>
+<tr><td>Flurstücke (amtliche Grundstücke)</td><td>{parcels}</td></tr>
 <tr><td>Dauercamper</td><td>{seasonal}</td></tr>
-<tr><td>Mietunterkünfte</td><td>{rentals}</td></tr>
-<tr><td>Gebäude (ALKIS amtlich)</td><td>{gebaeude}</td></tr>
+<tr><td>Mietunterkünfte (Website-Angabe)</td><td>{rentals}</td></tr>
+<tr><td>Gebäude (amtl. Kataster/ALKIS)</td><td>{gebaeude}</td></tr>
 <tr><td>Preise</td><td>{prices}</td></tr>
 <tr><td>Schutzgebiet</td><td>{protected}</td></tr>
 <tr><td>Kontakt</td><td>{contact}</td></tr>
@@ -45,6 +49,15 @@ TMPL = """<!DOCTYPE html><html><head><meta charset="utf-8"><title>{name}</title>
 {bildsichtung}
 {history}
 <div class="box"><b>Verkaufsargument:</b> {argument}</div>
+<details style="margin:10px 0"><summary style="cursor:pointer"><b>Tiny-House-Score: {score_th}/100</b></summary>
+<table>{scorerows_th}</table>
+<div style="font-size:11px;color:#666">Wasserlage nur Bonus (max 10) · Bebaubarkeit max 15 · Fläche max 15+4 · Bestand/Lücke max 20 · Markt max 10 · Erreichbarkeit max 10 · Größe max 5 · Abzüge: Tinyhäuser −5, Biwak ×0,35, strenges Schutzgebiet ×0,6.</div></details>
+<details style="margin:10px 0"><summary style="cursor:pointer"><b>Hausboot-Score: {score_hb}/100</b></summary>
+<table>{scorerows_hb}</table>
+<div style="font-size:11px;color:#666">Wasserlage max 35 · Gewässer-Eignung 15 · Steg/Marina 12 · Uferlänge max 8 · Markt max 10 · Erreichbarkeit max 10 · Dauercamper 6 · Hausboote vorhanden −5. Ohne Hausboot-Gewässer: max 40.</div></details>
+<details style="margin:10px 0"><summary style="cursor:pointer"><b>Lead-Score (Rangliste kombiniert): {score}/100</b></summary>
+<table>{scorerows}</table>
+<div style="font-size:11px;color:#666">Heuristik zur Vorauswahl: Wasserlage max 35 · Fläche max 15+4 · Bestand/Lücke max 20 · Markt max 10 · Erreichbarkeit max 10 · Größe max 5 · Steg +6 · Abzüge: Tinyhäuser −5, Biwak ×0,35, strenges Schutzgebiet ×0,6.</div></details>
 <div class="box"><b>Umsatz-Rechenbeispiel:</b><br>{revenue}</div>
 {market}
 {notes}
@@ -141,7 +154,7 @@ def run(region_name, top=20):
         except Exception:
             bs = None
         if bs:
-            bildsichtung = ('<div class="box"><b>KI-Bildsichtung (Luftbild):</b> %s<br>'
+            bildsichtung = ('<div class="box"><b>Luftbild-Sichtung (KI):</b> %s<br>'
                             '<b>Zustand:</b> %s<br>%s</div>'
                             % (escape(bs.get("bestand", "–")), escape(bs.get("zustand", "–")),
                                escape(bs.get("notiz", ""))))
@@ -210,7 +223,7 @@ def run(region_name, top=20):
                 if dedup in seen_cap:
                     continue
                 seen_cap.add(dedup)
-                label = ("Befliegung %s" % cap) if cap else ("Befliegung %s" % y)
+                label = "Befliegung %s" % (cap[:4] if cap else y)
                 imgs.append('<figure style="margin:0;flex:1;min-width:30%%"><img src="../%s" style="max-height:240px">'
                             '<figcaption style="font-size:11px;color:#666">%s</figcaption></figure>' % (rel, label))
             wb = h.get("wayback", {})
@@ -225,6 +238,17 @@ def run(region_name, top=20):
                            '<div style="font-size:11px;color:#666;margin-top:4px">Quellen: %s, '
                            'Esri World Imagery Wayback (2014–2024, Datum = tatsächliche Aufnahme)</div></div>'
                            % (wbtxt, "".join(imgs), escape(hist_src)))
+        def srows(key):
+            try:
+                sd = json.loads(r[key] or "null") or []
+            except Exception:
+                sd = []
+            return "".join("<tr><td>%s</td><td>%s</td></tr>" % (
+                escape(k), "Multiplikator/Deckel" if v is None else ("+%s" % v if v >= 0 else str(v)))
+                for k, v in sd)
+        scorerows = srows("score_details")
+        scorerows_th = srows("score_th_details")
+        scorerows_hb = srows("score_hb_details")
         html = TMPL.format(
             name=escape(r["name"] or ""), category=escape(r["category"] or ""),
             watername=escape(r["water_name"] or "–"),
@@ -234,7 +258,11 @@ def run(region_name, top=20):
             shoreline=fmt(r["shoreline_m"], " m"),
             pier=("Steg vorhanden" if r["has_pier"] else "kein Steg erfasst") +
                  ("; Marina %s m" % fmt(r["marina_distance_m"]) if r["marina_distance_m"] else ""),
-            motorboat=escape(r["motorboat_flag"] or "unbekannt"),
+            waterclass=escape((r["waterbody_class"] or "?") +
+                (" (%.1f ha)" % float(r["water_area_ha"]) if r["water_area_ha"] else "") +
+                " – Hausboot: " + (r["houseboat_water"] or "?")),
+            houseboat_ex="ja" if r["has_houseboat"] else "nein",
+            tiny_ex="ja" if r["has_tinyhouse"] else "nein",
             area="%s / %s m²" % (fmt(r["area_m2"]), fmt(r["parcel_area_m2"])),
             parcels=escape(parcels),
             seasonal="ja" if r["seasonal"] else "nein/unbekannt",
@@ -248,7 +276,10 @@ def run(region_name, top=20):
             revenue=escape(r["revenue_example"] or "–"),
             notes=notes, year=m.get("year") or "", date=date,
             geoquelle=escape(geoquelle),
-            bplan=bplan, bildsichtung=bildsichtung, history=history, market=market)
+            bplan=bplan, bildsichtung=bildsichtung, history=history, market=market,
+            scorerows=scorerows, scorerows_th=scorerows_th, scorerows_hb=scorerows_hb,
+            score_th=fmt(float(r["score_th"])) if r["score_th"] is not None else "–",
+            score_hb=fmt(float(r["score_hb"])) if r["score_hb"] is not None else "–")
         fname = "%02d_%s.html" % (i, r["id"].replace("/", "_"))
         (outdir / fname).write_text(html, encoding="utf-8")
     print("Dossiers:", outdir, "(%d Stueck)" % len(rows))

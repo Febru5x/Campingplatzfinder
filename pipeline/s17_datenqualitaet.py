@@ -59,9 +59,13 @@ def classify(site, enr):
     name = site["name"] or ""
     tags = json.loads(site["raw_tags"] or "{}")
     rentals = enr["rentals"] or ""
-    has_camp_structure = bool(rentals) or bool(enr["seasonal"]) \
-        or tags.get("tents") == "yes"
     low = name.lower()
+    # harter Stellplatz-Nachweis: OSM-Tag oder Name (Scrape-Fehltreffer
+    # wie 'Ferienhaus' von Stadt-Websites zaehlen dann NICHT)
+    stopover = tags.get("caravan_site") == "motorhome_stopover" \
+        or re.search(r"wohnmobil|caravan-?stellplatz|reisemobil|wohnmobilhafen", low)
+    has_camp_structure = (bool(rentals) and not stopover) or bool(enr["seasonal"]) \
+        or tags.get("tents") == "yes"
 
     if not name or name == "(unbenannt)":
         # anonymer Platz: nur interessant, wenn Website UND Kontakt vorhanden
@@ -89,6 +93,8 @@ def classify(site, enr):
         if heim:
             return "verein", "Verein mit Vereinsheim-Gebaeuden (ALKIS)", True
         return "verein", "Verein ohne erfasstes Vereinsheim – Einzelfall pruefen", False
+    if site["category"] == "caravan_site" and stopover:
+        return "stellplatz", "Wohnmobilstellplatz (OSM-Tag/Name eindeutig)", True
     if site["category"] == "caravan_site" and not has_camp_structure:
         return "stellplatz", "reiner Wohnmobilstellplatz (keine Zelte/Mietunterkuenfte/Dauer)", True
     if site["category"] == "caravan_site" and has_camp_structure:
@@ -96,12 +102,19 @@ def classify(site, enr):
     return "camping", "Campingplatz", False
 
 
+# amtliche Stadt-/Gemeinde-Seiten (kein eigener Betreiber-Auftritt)
+AMTLICH_PAT = re.compile(
+    r"https?://(?:www\.)?(?:stadt-|gemeinde-|-markt-|landkreis-|lk-)|"
+    r"\.de/(?:aktuelles|rathaus|buergerservice|verwaltung|gemeinde|stadt)|"
+    r"zschopau\.de|\.gv\.at", re.I)
+
+
 def online_status(site, enr):
     web = site["website"] or ""
     if not web:
         return "keine"
-    if VERZEICHNIS_PAT.search(web):
-        # Tourismus-POI/Verzeichnis zaehlt nicht als eigene Online-Praesenz
+    if VERZEICHNIS_PAT.search(web) or AMTLICH_PAT.search(web):
+        # Tourismus-POI/Verzeichnis/Stadtseite zaehlt nicht als eigene Praesenz
         notes = enr["scrape_notes"] or ""
         if "FEHLER" in notes:
             return "keine"
@@ -113,10 +126,16 @@ def online_status(site, enr):
 
 
 def waterbody(enr):
-    """(waterbody_class, houseboat_water)"""
+    """(waterbody_class, houseboat_water) – einheitlich:
+    1) OSM-Typ-Tag, 2) gemessene Gewaesserflaeche (s18, >= 5 ha),
+    3) Name nur als letzter Hinweis. Quelle steht in water_class_src."""
     wt = (enr["water_type"] or "").lower()
     wn = enr["water_name"] or ""
     dist = enr["water_distance_m"]
+    try:
+        ha = float(enr["water_area_ha"]) if enr["water_area_ha"] is not None else None
+    except (TypeError, ValueError):
+        ha = None
     if wt in ("", "none") or (dist is not None and dist > 300):
         return "kein/fern", "nein"
     if wt in ("stream", "ditch", "wastewater", "drain"):
@@ -124,13 +143,20 @@ def waterbody(enr):
     if wt in ("river", "canal"):
         return "fluss/kanal", "nein"
     if wt in ("pond", "fishpond", "basin") or KLEIN_PAT.search(wn):
+        # Teich-Tag/Name: nur gross genug (>= 5 ha) zaehlt als See-Alternative
+        if ha is not None and ha >= 5:
+            return "see/stausee (grosser Teich)", "ja"
         return "teich/becken", "nein"
-    if wt in ("lake", "reservoir", "oxbow", "harbour") or GROSS_PAT.search(wn):
-        # benannte Seen/Stauseen: Grundannahme >= 5 ha; kleine Ausnahmen
-        # koennen per Sichtung korrigiert werden
+    if wt in ("lake", "reservoir", "oxbow", "harbour"):
+        if ha is not None and ha < 5:
+            return "teich/becken", "nein"   # See-Tag, aber winzig
         return "see/stausee", "ja"
     if wt == "water":
-        # OSM water= ohne Untertyp: Name entscheidet
+        # OSM water= ohne Untertyp: Flaechenmessung entscheidet, dann Name
+        if ha is not None:
+            if ha >= 5:
+                return "see/stausee", "ja"
+            return "teich/becken", "nein"
         if KLEIN_PAT.search(wn):
             return "teich/becken", "nein"
         if GROSS_PAT.search(wn):
@@ -172,6 +198,12 @@ def run(region_name):
             wb, hb = waterbody(site)
             if site["id"] in WATER_OVERRIDE:
                 wb, hb = WATER_OVERRIDE[site["id"]]
+            # Erreichbarkeit: ohne jeglichen Online-Auftritt UND ohne E-Mail
+            # kein Partner-Kandidat -> Default aus (Daten bleiben erhalten)
+            email = site["email"] or site["contact_email"]
+            if cls == "camping" and online == "keine" and not email:
+                hidden = True
+                reason += "; nicht erreichbar (kein Online-Auftritt, keine E-Mail)"
             conn.execute("""UPDATE enrichment SET site_class=?, class_reason=?,
                 online_status=?, waterbody_class=?, houseboat_water=?,
                 default_hidden=? WHERE site_id=?""",

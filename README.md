@@ -32,6 +32,7 @@ und die komplette SQLite-Datenbank zum Download.
 | s15 | KI-Bildsichtung der Top-20 (Bestand/Zustand/Hebel) | DOP + Agent |
 | s16 | Bundesland-Check (Grenzfälle) | Nominatim |
 | s17 | Datenqualität: Klassifizierung (Camping/Stellplatz/Verein/Sonstiges), Online-Präsenz-Check, Hausboot-Gewässer-Eignung; Default-Ausblendung von Nicht-Leads | eigene Heuristik + Sichtungen |
+| s18 | Gewässerflächen: Fläche des nächsten Gewässers in ha (einheitliche Basis der Hausboot-Eignung, ≥5 ha) | OSM-Geometrie |
 
 ## Karten-Features (seit 2026-11-23)
 
@@ -46,11 +47,27 @@ und die komplette SQLite-Datenbank zum Download.
   Plätze ohne Online-Präsenz. Per Filter zuschaltbar; Daten bleiben in
   Excel/DB.
 - **Bild-Karussell** im Popup: aktuelles DOP + historische Luftbilder +
-  Website-Fotos (‹ › durchklickbar, Label + Zähler).
-- **Hausboot-Gewässer-Bewertung**: nur See/Stausee (≥ ~5 ha) = „ja";
-  Teich/Fluss/Kanal/Bach = „nein"; untypisierte = „unklar". Manuelle
-  Overrides aus KI-Sichtungen in s17 (WATER_OVERRIDE: Kelbra nein,
-  ThürKies/Erfurt am See ja).
+  Website-Fotos (‹ › durchklickbar, Label = Aufnahmejahr bzw. „Website-Foto").
+  Popup scrollbar (max. 62 % Fensterhöhe) und 460 px breit.
+- **Hausboot-Gewässer-Bewertung**: einheitlich über OSM-Typ + gemessene
+  Gewässerfläche (s18, ≥ 5 ha = „ja"); Teich/Fluss/Kanal/Bach = „nein";
+  Quelle der Einstufung wird im Popup angezeigt. Manuelle Overrides aus
+  KI-Sichtungen in s17 (WATER_OVERRIDE: Kelbra nein, ThürKies/Erfurt am See ja).
+- **Zwei Scores je Platz**: **Tiny-House-Score** (Wasserlage nur kleiner
+  Bonus max 10, dafür Bebaubarkeit bis 15) und **Hausboot-Score**
+  (Wasserlage max 35 + Gewässer-Eignung 15 + Steg 12 + Uferlänge max 8;
+  ohne Hausboot-Gewässer max 40). Der Lead-Score kombiniert beides für
+  die Rangliste. Alle drei mit aufklappbarer Komponenten-Tabelle in
+  Popup, Excel und Dossier; Score-Typ im Filter umschaltbar (inkl.
+  Marker-Einfärbung).
+- **Info-Symbole ⓘ** mit Hover-Erklärung bei Flurstücken, ALKIS,
+  Bebaubarkeits-Ampel, Gewässer-Einstufung, Mietunterkünften,
+  KI-Luftbild-Sichtung und Scoring. Flurstücke nur als Gesamtgröße +
+  Anzahl.
+- **Bestand im Popup**: „Hausboot vorhanden ja/nein",
+  „Tinyhaus vorhanden ja/nein" (Website-Angaben), B-Plan-Erklärung
+  (Gebietsarten wie WA = Wohngebiet, Versorgungsfläche = angrenzende
+  Planflächen).
 
 ## Schnellstart (Pipeline lokal laufen lassen)
 
