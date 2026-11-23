@@ -73,10 +73,10 @@ def classify(site, enr):
         if site["website"] and (site["email"] or enr["contact_email"] or site["phone"]):
             return "camping", "unbenannt, aber Website+Kontakt vorhanden", False
         return "unbenannt", "kein Name – Identitaet unklar", True
-    # Vereinsheim-Check (ALKIS-Gebaeude): Vereinsheim allein macht einen
-    # Wassersport-/Campingverein nicht uninteressant – Platz mit Camping-
-    # Struktur (Mietunterkuenfte/Zelte/Dauer) bleibt sichtbar. Nur Verein
-    # MIT Heim und OHNE Camping-Struktur wird default ausgeblendet.
+    # Vereinsheim-Check (ALKIS-Gebaeude): Verein MIT erfasstem Vereinsheim
+    # (Wohn-/Wirtschafts-/oeffentliche Gebaeude) -> default raus (Nutzer-
+    # Entscheidung: Vereinsheime sind kein Vermietungs-Geschaeft).
+    # Verein OHNE erfasstes Heim bleibt sichtbar ('Einzelfall pruefen').
     gb = None
     try:
         gb = json.loads(enr["buildings"] or "null")
@@ -91,10 +91,8 @@ def classify(site, enr):
                 heim = True
     is_verein = bool(VEREIN_PAT.search(low)) or low.endswith(" e.v.") or "e.v." in low
     if is_verein:
-        if heim and not has_camp_structure:
-            return "verein", "Verein mit Vereinsheim, ohne Camping-Struktur (ALKIS)", True
         if heim:
-            return "verein", "Verein mit Vereinsheim, aber Camping-Struktur – Einzelfall pruefen", False
+            return "verein", "Verein mit Vereinsheim-Gebäuden (ALKIS) – kein Lead", True
         return "verein", "Verein ohne erfasstes Vereinsheim – Einzelfall pruefen", False
     if SONSTIGES_PAT.search(low):
         return "sonstiges", "Name deutet auf Parkplatz/Rast/Biwak/Stellplatz", True

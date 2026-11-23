@@ -1,14 +1,16 @@
 # STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online + Runde 5)
 
 ## Nachschaerfung Runde 5 (2026-11-23, Vereine + Preis-Benchmark + Flaechen)
-- **Vereins-Logik (s17) verschaerft-praezisiert**: Verein MIT Vereinsheim
-  (ALKIS Wohn-/Wirtschafts-/oeffentliche Gebaeude) aber MIT Camping-
-  Struktur (Mietunterkuenfte/Zelte/Dauercamper) bleibt jetzt SICHTBAR
-  ('Einzelfall pruefen'); nur ohne Camping-Struktur hidden. Vereine ohne
-  erfasstes Heim bleiben sichtbar. s14 nimmt bei --top=N jetzt ALLE
-  Vereine mit (nicht nur Top-N nach Score) → Heim-Pruefung vollstaendig.
-  Vereins-ERFASSUNG kommt nur aus OSM camp_site/caravan_site (44 Vereine
-  gesamt) – Vereinsgelaende ohne Camping-Tag sind bewusst nicht drin.
+- **Vereins-Logik (s17, Nutzer-Entscheidung Runde 5b)**: Verein MIT
+  Vereinsheim (ALKIS Wohn-/Wirtschafts-/oeffentliche Gebaeude) ->
+  default AUSGEBLENDET (kein Vermietungspartner), auch mit Camping-
+  Struktur. Verein OHNE erfasstes Heim bleibt sichtbar ('Einzelfall
+  pruefen'). s14 nimmt bei --top=N ALLE Vereine mit → Heim-Pruefung
+  vollstaendig (MV: keine Gebaeudetypen ueber freie Dienste, Pruefung
+  offen). Vereins-ERFASSUNG nur aus OSM camp_site/caravan_site (45
+  Vereine) – Vereinsgelaende ohne Camping-Tag bewusst nicht drin.
+  **Info-Box im Filter-Panel** ('ⓘ Warum sind Vereine aufgefuehrt?')
+  erklaert die Logik; Vereins-Badge im Popup mit Grund als Tooltip.
 - **Preis-Benchmark auf ganze Unterkuenfte erweitert (s06/s13)**:
   Vergleichsobjekt = eigenstaendige kleine Unterkunft MIT Kueche fuer
   ~4 Personen (2 Erw.+2 Kinder): Ferienhaus/FeWo/Bungalow/Chalet/

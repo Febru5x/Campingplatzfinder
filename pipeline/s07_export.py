@@ -296,6 +296,18 @@ MAP_TMPL = """<!DOCTYPE html>
   <label><input type="checkbox" class="fClass" value="verein"> Vereine</label>
   <label><input type="checkbox" class="fClass" value="sonstiges"> Sonstiges (Parkplatz, Biwak …)</label>
   <label><input type="checkbox" class="fClass" value="unbenannt"> unbenannte Plätze</label>
+  <details style="margin:4px 0 2px 2px"><summary style="cursor:pointer;font-size:11.5px;color:#2c7fb8">ⓘ Warum sind Vereine aufgeführt?</summary>
+   <div style="font-size:11.5px;line-height:1.45;color:#444;padding:4px 2px 2px">
+    Erfasst werden nur Gelände, die in OpenStreetMap als <b>Campingplatz</b> eingetragen sind –
+    deshalb finden sich hier nur Vereine mit Camping-Struktur (Zelt-/Wohnwagenbetrieb),
+    nicht alle Sportvereine der Region.<br>
+    <b>Verein mit Vereinsheim</b> (amtlich erfasste Wohn-/Wirtschafts-/öffentliche Gebäude, ALKIS):
+    standardmäßig <b>ausgeblendet</b> – kein Vermietungspartner.<br>
+    <b>Verein ohne erfasstes Heim</b>: sichtbar als „Einzelfall prüfen“ – oft nur eine Wiese
+    am Wasser, die für Tinyhäuser interessant sein kann.<br>
+    Hinweis: MV liefert über freie Dienste keine Gebäudetypen – dort ist die Heim-Prüfung offen;
+    ausgeblendete Vereine zeigt der Filter oben.
+   </div></details>
  </details>
  <details open class="fgroup"><summary>Wasser &amp; Hausboot</summary>
   <label><input type="checkbox" id="fWater"> nur direkt am Wasser (≤50 m)</label>
@@ -398,7 +410,7 @@ function popupHtml(p){{
  h+='<span class="badge" style="background:#8e6c3a" title="Tiny-House-Score">TH '+(p.score_th??'–')+'</span>';
  h+='<span class="badge" style="background:#2c7fb8" title="Hausboot-Score">HB '+(p.score_hb??'–')+'</span>';
  if(p.water_score>=70) h+='<span class="badge" style="background:#1a9850">Top-Wasserlage</span>';
- if(p.site_class&&p.site_class!=='camping') h+='<span class="badge" style="background:#777">'+esc(p.site_class)+'</span>';
+ if(p.site_class&&p.site_class!=='camping') h+='<span class="badge" style="background:#777"'+(p.class_reason?' title="'+esc(p.class_reason)+'"':'')+'>'+esc(p.site_class)+'</span>';
  if(p.houseboat_water==='ja') h+='<span class="badge" style="background:#2c7fb8">Hausboot-Gewässer</span>';
  else if(p.houseboat_water==='nein'&&p.water_name) h+='<span class="badge" style="background:#999">kein Hausboot-Gewässer</span>';
  // Bild-Karussell: aktuelles DOP + Hist + Website-Fotos
