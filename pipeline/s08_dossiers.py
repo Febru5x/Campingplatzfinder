@@ -31,8 +31,7 @@ TMPL = """<!DOCTYPE html><html><head><meta charset="utf-8"><title>{name}</title>
 <table>
 <tr><td>Gewässer / Abstand</td><td>{watername} — {waterdist}</td></tr>
 <tr><td>Gewässer-Typ / Hausboot-Eignung</td><td>{waterclass}</td></tr>
-<tr><td>Hausboot vorhanden</td><td>{houseboat_ex}</td></tr>
-<tr><td>Tinyhaus vorhanden</td><td>{tiny_ex}</td></tr>
+<tr><td>Vorhanden: Hausboot / Tinyhaus</td><td>{houseboat_ex} / {tiny_ex}</td></tr>
 <tr><td>Eigene Uferlänge (geschätzt)</td><td>{shoreline}</td></tr>
 <tr><td>Steg / Marina</td><td>{pier}</td></tr>
 <tr><td>Fläche genutzt (OSM) / Grundstück gesamt (Kataster)</td><td>{area}</td></tr>

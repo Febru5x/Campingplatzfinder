@@ -119,7 +119,7 @@ def run(region_name):
                 d["name"][:60], d["preis_nacht"], d.get("typ", "?")))
     # 1b) Booking/Airbnb-Browser-Scrape
     raw = load_portal_raw(region_name)
-    booking_boats, booking_glamp, airbnb_offers = [], [], []
+    booking_boats, booking_glamp, booking_sonst, airbnb_offers = [], [], [], []
     nights = 3
     if raw:
         nights = raw.get("naechte", 3)
@@ -131,6 +131,10 @@ def run(region_name):
             if b.get("preis_gesamt"):
                 b["preis_nacht"] = round(b["preis_gesamt"] / nights)
             booking_glamp.append(b)
+        for b in raw.get("booking", {}).get("sonstige_relevante", []):
+            if b.get("preis_gesamt"):
+                b["preis_nacht"] = round(b["preis_gesamt"] / nights)
+            booking_sonst.append(b)
         for a in raw.get("airbnb", {}).get("angebote", []):
             if a.get("total"):
                 a["preis_nacht"] = round(a["total"] / nights)
@@ -156,6 +160,15 @@ def run(region_name):
                 if a.get("preis_nacht") and a["title"].startswith("Tiny House")]
     air_boats = [a["preis_nacht"] for a in airbnb_offers
                  if a.get("preis_nacht") and ("Hausboot" in a["title"] or a["title"].startswith("Boot"))]
+    # breite Vergleichsbasis: ganze kleine Unterkuenfte mit Kueche (~4 Pers.),
+    # Airbnb + Booking; keine Zimmer/Hotels/Zelte/Faesser (s06-Klassifikation)
+    from .s06_bewertung import classify_offer
+    unit_prices = [a["preis_nacht"] for a in airbnb_offers
+                   if a.get("preis_nacht")
+                   and classify_offer(a.get("title", ""), a.get("desc", "")) == "unit"]
+    for b in booking_glamp + booking_sonst:
+        if b.get("preis_nacht") and classify_offer(b.get("name", ""), b.get("typ", "")) == "unit":
+            unit_prices.append(b["preis_nacht"])
     bench = {
         "portal_luxus_median": median(portal_prices),
         "portal_luxus_spanne": [min(portal_prices), max(portal_prices)] if portal_prices else None,
@@ -168,6 +181,9 @@ def run(region_name):
         "airbnb_tiny_median": median(air_tiny),
         "airbnb_tiny_spanne": [min(air_tiny), max(air_tiny)] if air_tiny else None,
         "n_airbnb_tiny": len(air_tiny),
+        "unterkunft_median": median(unit_prices),
+        "unterkunft_spanne": [min(unit_prices), max(unit_prices)] if unit_prices else None,
+        "n_unterkuenfte": len(unit_prices),
         "airbnb_hausboot_median": median(air_boats),
         "n_airbnb_boote": len(air_boats),
         "hinweis": ("Booking + Airbnb im echten Browser gescrapt (Hauptsaison %s, "
@@ -176,8 +192,11 @@ def run(region_name):
                     "Deep-Links je Platz in Excel für Detailprüfung."
                     % ((raw or {}).get("checkin", "?"), nights)),
     }
-    # Vorschlag Tinyhaus-Preis: Airbnb-Tiny-Median (realer Markt!), sonst Website-Median
-    if bench["airbnb_tiny_median"]:
+    # Vorschlag Tinyhaus-Preis: Median ganzer kleiner Unterkuenfte mit Kueche
+    # (Airbnb+Booking, ~4 Pers.), sonst Airbnb-Tiny-Median, sonst Website-Median
+    if bench["unterkunft_median"]:
+        bench["tiny_vorschlag"] = round(max(90, min(bench["unterkunft_median"], 200)))
+    elif bench["airbnb_tiny_median"]:
         bench["tiny_vorschlag"] = round(max(90, min(bench["airbnb_tiny_median"], 200)))
     elif bench["website_median"]:
         bench["tiny_vorschlag"] = round(max(90, min(bench["website_median"], 200)))

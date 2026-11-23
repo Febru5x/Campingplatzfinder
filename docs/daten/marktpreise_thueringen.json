@@ -1,6 +1,6 @@
 {
  "region": "thueringen",
- "stand": "2026-11-22T22:32:41.401030+00:00",
+ "stand": "2026-11-23T14:07:23.200788+00:00",
  "benchmarks": {
   "portal_luxus_median": null,
   "portal_luxus_spanne": null,
@@ -14,16 +14,22 @@
   "booking_hausboot_median": null,
   "booking_hausboot_spanne": null,
   "n_booking_boote": 0,
-  "airbnb_tiny_median": 161,
+  "airbnb_tiny_median": 135,
   "airbnb_tiny_spanne": [
-   134,
-   161
+   115,
+   338
   ],
-  "n_airbnb_tiny": 2,
+  "n_airbnb_tiny": 6,
+  "unterkunft_median": 152,
+  "unterkunft_spanne": [
+   58,
+   348
+  ],
+  "n_unterkuenfte": 58,
   "airbnb_hausboot_median": null,
   "n_airbnb_boote": 0,
   "hinweis": "Booking + Airbnb im echten Browser gescrapt (Hauptsaison 2027-07-09, 3 Nächte, 2 Erw.). Preise sind Gesamtpreis/Nächte; Servicegebühren Airbnb inklusive, Booking zzgl. teils Endreinigung. Deep-Links je Platz in Excel für Detailprüfung.",
-  "tiny_vorschlag": 161,
+  "tiny_vorschlag": 152,
   "hausboot_vorschlag": 217,
   "hausboot_hinweis": "Zu wenige Hausboot-Angebote in der Region (n=0); Fallback Brandenburg-Median. Hausboot-Markt hier kaum existent."
  },
@@ -156,20 +162,20 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Neumannshof&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Paulfeld",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Paulfeld&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
    "name": "Waldcampingplatz Meyersgrund",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Waldcampingplatz%20Meyersgrund&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz am Schönsee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20am%20Sch%C3%B6nsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingplatz Paulfeld",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Paulfeld&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Palumpa-Land",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Palumpa-Land&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Seecamping Kelbra",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Seecamping%20Kelbra&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz am Schönsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20am%20Sch%C3%B6nsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Camping \"Stausee Wangenheim\"",
@@ -180,96 +186,104 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20%26%20Freizeitanlage%20Droschkau%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingpark Eisenach",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Eisenach&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Palumpa-Land",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Palumpa-Land&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Linkenmühle",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Linkenm%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingpark Eisenach",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Eisenach&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Camping Plothener Teiche",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Plothener%20Teiche&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
+   "name": "Seecamping Kelbra Quick-Camping",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Seecamping%20Kelbra%20Quick-Camping&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
    "name": "Campingplatz Hopfenmühle Drognitz",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Hopfenm%C3%BChle%20Drognitz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "ThürKies",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Th%C3%BCrKies&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Erfurt am See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Erfurt%20am%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Linkenmühle",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Linkenm%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Campingplatz \"Bergsee Ratscher\"",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20%22Bergsee%20Ratscher%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Stellplatz Urnshausen - Familienparadies Schönsee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20Urnshausen%20-%20Familienparadies%20Sch%C3%B6nsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
    "name": "Campingplatz Stausee Hohenfelden",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Stausee%20Hohenfelden&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Sole Reisemobilhafen",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Sole%20Reisemobilhafen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Unter den Linden",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Unter%20den%20Linden&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Verkehrsgarten Lessingstraße",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Verkehrsgarten%20Lessingstra%C3%9Fe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Ferienland Crispendorf",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienland%20Crispendorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Stellplatz Großmutterwiese",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20Gro%C3%9Fmutterwiese&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Naturcampingplatz Ebenshausen",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcampingplatz%20Ebenshausen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Sole Reisemobilhafen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Sole%20Reisemobilhafen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "See-Camping Altenburg-Pahna",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=See-Camping%20Altenburg-Pahna&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingwiese Kanu-Club Sömmerda",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingwiese%20Kanu-Club%20S%C3%B6mmerda&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Sport- und Freizeitzentrum Uhlstädt",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Sport-%20und%20Freizeitzentrum%20Uhlst%C3%A4dt&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Kloster",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Kloster&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Unter den Linden",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Unter%20den%20Linden&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Wohnmobilstellplatz Lindewerra",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Lindewerra&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingplatz Weißensee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Wei%C3%9Fensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz am Schwimmbad",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20am%20Schwimmbad&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Ferienland Crispendorf",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienland%20Crispendorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturcampingplatz Ebenshausen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcampingplatz%20Ebenshausen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz actionsport",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20actionsport&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Oberhof Camping Lütschesee",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Oberhof%20Camping%20L%C3%BCtschesee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
+   "name": "Wohnmobilstellplatz Ankerplatz Erfurt",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Ankerplatz%20Erfurt&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Stellplatz Urnshausen - Familienparadies Schönsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20Urnshausen%20-%20Familienparadies%20Sch%C3%B6nsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "See-Camping Altenburg-Pahna",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=See-Camping%20Altenburg-Pahna&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
    "name": "Campingplatz Friedebach",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Friedebach&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Saalthal Alter",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Saalthal%20Alter&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Stellplatz Seeba",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20Seeba&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "An der Ulster",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=An%20der%20Ulster&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Verkehrsgarten Lessingstraße",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Verkehrsgarten%20Lessingstra%C3%9Fe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "(unbenannt)",
@@ -292,24 +306,16 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=%28unbenannt%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Camping und Strandbar Strand 24",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20und%20Strandbar%20Strand%2024&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Stellplatz Seeba",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20Seeba&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Pfadizentrum Drei Gleichen",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Pfadizentrum%20Drei%20Gleichen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingplatz Kloster",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Kloster&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Probstei Zella",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Probstei%20Zella&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Stellplatz SaaleStrand",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20SaaleStrand&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Feriendorf Saaldorf",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Feriendorf%20Saaldorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingplatz Saalthal Alter",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Saalthal%20Alter&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   }
  ],
  "booking_hausboote": [],
@@ -377,6 +383,420 @@
    "total": 398,
    "url": "https://www.airbnb.de/rooms/14769560",
    "preis_nacht": 133
+  },
+  {
+   "title": "Wohnung in Heßles",
+   "desc": "Entspannung im Wald - mit Schwimmbad1 Schlafzimmer1 Schlafzimmer,  · 5 Betten5 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPriv",
+   "total": 507,
+   "url": "https://www.airbnb.de/rooms/1286359378931074149",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 169
+  },
+  {
+   "title": "Tiny House in Konradsreuth",
+   "desc": "Tinyhouse / Bauernhof / Tiere / Kinder / Franken1 Schlafzimmer1 Schlafzimmer,  · 5 Betten5 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gast",
+   "total": 404,
+   "url": "https://www.airbnb.de/rooms/1523003866355977503",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 135
+  },
+  {
+   "title": "Wohnung in Bodenrode-Westhausen",
+   "desc": "Stay Lenela2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:inGesamtp",
+   "total": 327,
+   "url": "https://www.airbnb.de/rooms/1662159442278088837",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 109
+  },
+  {
+   "title": "Wohnung in Schönau an der Brend",
+   "desc": "Baumhaus-Suite | Waldvilla Schönau1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGe",
+   "total": 532,
+   "url": "https://www.airbnb.de/rooms/1356027318611265851",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 177
+  },
+  {
+   "title": "Jurte (Rundzelt) in Herbsleben",
+   "desc": "Moderne Jurte Herbsleben „Im Schlossgarten“1 Schlafzimmer1 Schlafzimmer,  · 6 Einzelbetten6 Einzelbetten,  · 1 Badezimmer1 BadezimmerPrivate",
+   "total": 495,
+   "url": "https://www.airbnb.de/rooms/20844499",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 165
+  },
+  {
+   "title": "Privatunterkunft in Sulzdorf a.d.Lederhecke",
+   "desc": "Haus am See2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1,5 Bäder1,5 BäderPrivate:r Gastgeber:inPrivate:r Gastgeber:inGesamtpreis 3",
+   "total": 323,
+   "url": "https://www.airbnb.de/rooms/1407186667369447739",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 108
+  },
+  {
+   "title": "Gästehaus in Krombach",
+   "desc": "Urlaub auf dem Lande2 Schlafzimmer2 Schlafzimmer,  · 7 Betten7 Betten,  · 2 Badezimmer2 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:",
+   "total": 544,
+   "url": "https://www.airbnb.de/rooms/29824094",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 181
+  },
+  {
+   "title": "Tiny House in Wilhelmsthal",
+   "desc": "Tinyhouse „Wald (t)room“2 Schlafzimmer2 Schlafzimmer,  · 6 Betten6 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastge",
+   "total": 393,
+   "url": "https://www.airbnb.de/rooms/1055707659023027074",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 131
+  },
+  {
+   "title": "Privatunterkunft in Sonneberg",
+   "desc": "Foto 1 von 6Privatunterkunft in SonnebergNeue UnterkunftNeuNeubau im Naturidyll für Wellness, Spiel und Spaß2 Schlafzimmer2 Schlafzimmer,  ·",
+   "total": 769,
+   "url": "https://www.airbnb.de/rooms/1791508665798373088",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 256
+  },
+  {
+   "title": "Tiny House in Treuen",
+   "desc": "Ferienhaus im Grünen - Entspannen mit Alpakas1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeb",
+   "total": 344,
+   "url": "https://www.airbnb.de/rooms/1514987444369046244",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 115
+  },
+  {
+   "title": "Blockhütte in Sontra",
+   "desc": "Ruhige Blockhütte mit Whirlpool im Grünen 1 Schlafzimmer1 Schlafzimmer,  · 2 Schlafsofas2 Schlafsofas,  · 1 Badezimmer1 BadezimmerPrivate:r ",
+   "total": 578,
+   "url": "https://www.airbnb.de/rooms/1741121662824958358",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 193
+  },
+  {
+   "title": "Tiny House in Weitramsdorf",
+   "desc": "Foto 1 von 6Tiny House in WeitramsdorfNordisch Minimalistisches Ferienhaus Waldheimelig3 Schlafzimmer3 Schlafzimmer,  · 2 Betten2 Betten,  ·",
+   "total": 1014,
+   "url": "https://www.airbnb.de/rooms/1431846495964956033",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 338
+  },
+  {
+   "title": "Privatunterkunft in Ronshausen",
+   "desc": "Ferienhaus Waldperle2 Schlafzimmer2 Schlafzimmer,  · 2 Doppelbetten2 Doppelbetten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:",
+   "total": 309,
+   "url": "https://www.airbnb.de/rooms/1371532107446250456",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 103
+  },
+  {
+   "title": "Eigentumswohnung in Sandberg",
+   "desc": "Boho Ferienwohnung am Kunstanger No. 87 mit Kamin2 Schlafzimmer2 Schlafzimmer,  · 2 Kingsize-Doppelbetten2 Kingsize-Doppelbetten,  · 1,5 Bäd",
+   "total": 278,
+   "url": "https://www.airbnb.de/rooms/53575854",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 93
+  },
+  {
+   "title": "Blockhütte in Wolfsburg-Unkeroda",
+   "desc": "Modernes Ferienhaus im Grünen2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbl",
+   "total": 716,
+   "url": "https://www.airbnb.de/rooms/1339971526401808648",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 239
+  },
+  {
+   "title": "Wohnung in Netzschkau",
+   "desc": "stilvolle 3-Zi.-Whg. für einen Familienurlaub2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeb",
+   "total": 195,
+   "url": "https://www.airbnb.de/rooms/1800818209218459108",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 65
+  },
+  {
+   "title": "Privatunterkunft in Ronshausen",
+   "desc": "Foto 1 von 6Privatunterkunft in RonshausenNeue UnterkunftNeuFerienhaus Lavendel mit großer Sonnenterrasse2 Schlafzimmer2 Schlafzimmer,  · 5 ",
+   "total": 328,
+   "url": "https://www.airbnb.de/rooms/1794833577998920112",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 109
+  },
+  {
+   "title": "Privatunterkunft in Sulzfeld",
+   "desc": "Waldhäuschen in Unterfranken2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Ga",
+   "total": 382,
+   "url": "https://www.airbnb.de/rooms/10287625",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 127
+  },
+  {
+   "title": "Wohnung in Gerbstedt",
+   "desc": "Urlaub auf dem Rittergut1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastge",
+   "total": 409,
+   "url": "https://www.airbnb.de/rooms/1424457725737602111",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 136
+  },
+  {
+   "title": "Privatunterkunft in Jena",
+   "desc": "Kleines Haus mit Garten am Waldrand von Jena2 Schlafzimmer2 Schlafzimmer,  · 2 Doppelbetten2 Doppelbetten,  · 1 Badezimmer1 BadezimmerPrivat",
+   "total": 450,
+   "url": "https://www.airbnb.de/rooms/1682767990634214196",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 150
+  },
+  {
+   "title": "Privatunterkunft in Ruhla",
+   "desc": "4 Personen mit Sauna (F0H8) (267456)2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1,5 Bäder1,5 BäderGewerbliche:r Gastgeber:inGewerb",
+   "total": 919,
+   "url": "https://www.airbnb.de/rooms/1358775263938960722",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 306
+  },
+  {
+   "title": "Wohnung in Elsterberg",
+   "desc": "Ferienwohnung Vogtland - Kerstins Ferien-Nest-Plus2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Ga",
+   "total": 285,
+   "url": "https://www.airbnb.de/rooms/36763817",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 95
+  },
+  {
+   "title": "Privatunterkunft in Ronshausen",
+   "desc": "Häuschen am Waldesrand2 Schlafzimmer2 Schlafzimmer,  · 6 Betten6 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgebe",
+   "total": 234,
+   "url": "https://www.airbnb.de/rooms/1471113972108138099",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 78
+  },
+  {
+   "title": "Privatunterkunft in Poppenhausen",
+   "desc": "Ferienhaus an der Wasserkuppe2 Schlafzimmer2 Schlafzimmer,  · 2 Kingsize-Doppelbetten2 Kingsize-Doppelbetten,  · 1 Badezimmer1 BadezimmerGew",
+   "total": 792,
+   "url": "https://www.airbnb.de/rooms/1744166750254378202",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 264
+  },
+  {
+   "title": "Privatunterkunft in Walkenried",
+   "desc": "Ferienhaus im Harz 2c2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber",
+   "total": 668,
+   "url": "https://www.airbnb.de/rooms/902141865146091402",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 223
+  },
+  {
+   "title": "Wohnung in Erfurt",
+   "desc": "Dein Zuhause auf Zeit | 10min bis ins Zentrum2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeb",
+   "total": 465,
+   "url": "https://www.airbnb.de/rooms/825381709975710461",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 155
+  },
+  {
+   "title": "Chalet in Zella-Mehlis",
+   "desc": "mit Sauna und Kamin am Waldrand mit viel Ruhe2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gas",
+   "total": 1044,
+   "url": "https://www.airbnb.de/rooms/45089416",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 348
+  },
+  {
+   "title": "Wohnung in Nessetal",
+   "desc": "Stilvolle Familien-Auszeit im Herzen Thüringens2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 2 Badezimmer2 BadezimmerPrivate:r Gastg",
+   "total": 524,
+   "url": "https://www.airbnb.de/rooms/1756727688099515795",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 175
+  },
+  {
+   "title": "Blockhütte in Walkenried",
+   "desc": "Ferienhaus im Harz 2b3 Schlafzimmer3 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber",
+   "total": 819,
+   "url": "https://www.airbnb.de/rooms/1749114005486154407",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 273
+  },
+  {
+   "title": "Wohnung in Drei Gleichen",
+   "desc": "Wohnung am Seeberg1 Schlafzimmer1 Schlafzimmer,  · 1 Queensize-Doppelbett1 Queensize-Doppelbett,  · 1 Badezimmer1 BadezimmerPrivate:r Gastge",
+   "total": 250,
+   "url": "https://www.airbnb.de/rooms/1503758614274013360",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 83
+  },
+  {
+   "title": "Chalet in Römhild",
+   "desc": "Foto 1 von 6SuperhostSuperhostChalet in RömhildNeue UnterkunftNeuChalet am Fuße der Gleichberge (Römhild)2 Schlafzimmer2 Schlafzimmer,  · 2 ",
+   "total": 470,
+   "url": "https://www.airbnb.de/rooms/1796486583929473505",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 157
+  },
+  {
+   "title": "Wohnung in Amt Wachsenburg",
+   "desc": "gemütliche Ferienwohnung mit Terrasse und Pool2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastge",
+   "total": 365,
+   "url": "https://www.airbnb.de/rooms/39660154",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 122
+  },
+  {
+   "title": "Ferienunterkunft in Neukieritzsch",
+   "desc": "(H)Auszeit 37 / Privates Ferienhaus am See1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1,5 Bäder1,5 BäderPrivate:r Gastgeber:inPriv",
+   "total": 796,
+   "url": "https://www.airbnb.de/rooms/588985152671417377",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 265
+  },
+  {
+   "title": "Wohnung in Meißner",
+   "desc": "Foto 1 von 6Beliebter Gäste-Favorit.Gäste-FavoritWohnung in MeißnerDurchschnittliche Bewertung: 5,0 von 5, 18 Bewertungen5,0 (18)Fewo Mariec",
+   "total": 330,
+   "url": "https://www.airbnb.de/rooms/1497220778846291172",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 110
+  },
+  {
+   "title": "Blockhütte in Eisfeld",
+   "desc": "Bungalow Stuga \"Am Rennsteig\" Kamin, Garten, Hund2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r",
+   "total": 457,
+   "url": "https://www.airbnb.de/rooms/1329700410230450057",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 152
+  },
+  {
+   "title": "Bungalow in Stützengrün",
+   "desc": "Ferienhaus mit Blick über die Talsperre Eibenstock1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:",
+   "total": 470,
+   "url": "https://www.airbnb.de/rooms/2850722",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 157
+  },
+  {
+   "title": "Privatunterkunft in Ruhla",
+   "desc": "4 Personen mit Sauna (F4H0) (267457)2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1,5 Bäder1,5 BäderGewerbliche:r Gastgeber:inGewerb",
+   "total": 919,
+   "url": "https://www.airbnb.de/rooms/1358774015617973279",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 306
+  },
+  {
+   "title": "Loft in Schöneck/Vogtland",
+   "desc": "Blickinsfreie - Loft2 Queensize-Doppelbetten2 Queensize-Doppelbetten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:i",
+   "total": 447,
+   "url": "https://www.airbnb.de/rooms/21454792",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 149
+  },
+  {
+   "title": "Wohnung in Erfurt",
+   "desc": "Gemütliche Stadtwohnung am Wald2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1,5 Bäder1,5 BäderGewerbliche:r Gastgeber:inGewerbliche",
+   "total": 330,
+   "url": "https://www.airbnb.de/rooms/1151391540040799226",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 110
+  },
+  {
+   "title": "Schloss in Teuchern",
+   "desc": "Romantische Ferienwohnung im Schloss mit pool (11)2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Ga",
+   "total": 471,
+   "url": "https://www.airbnb.de/rooms/933209583039558400",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 157
+  },
+  {
+   "title": "Blockhütte in Wettin-Löbejün",
+   "desc": "idyllische Finnhütte am Saaleradweg in Wettin 1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastge",
+   "total": 320,
+   "url": "https://www.airbnb.de/rooms/1755174089272213294",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 107
+  },
+  {
+   "title": "Wohnung in Erfurt",
+   "desc": "2 Schlafzimmer für 4 Erwachsene · frei parken2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeb",
+   "total": 487,
+   "url": "https://www.airbnb.de/rooms/9386598",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 162
+  },
+  {
+   "title": "Blockhütte in Sangerhausen",
+   "desc": "Chalet mit Gästehaus in der Natur + Fass-Sauna2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Ga",
+   "total": 694,
+   "url": "https://www.airbnb.de/rooms/655563047769604629",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 231
+  },
+  {
+   "title": "Bungalow in Suhl",
+   "desc": "Ferienhaus Rennsteigpanorama1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Ga",
+   "total": 415,
+   "url": "https://www.airbnb.de/rooms/1725274476472172004",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 138
+  },
+  {
+   "title": "Privatunterkunft in Geratal",
+   "desc": "Bootshaus mit direkter Seelage 2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 3 Badezimmer3 BadezimmerPrivate:r Gastgeber:inPrivate:r",
+   "total": 700,
+   "url": "https://www.airbnb.de/rooms/1336096104016619438",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 233
+  },
+  {
+   "title": "Wohnung in Gotha",
+   "desc": "90m² Ferienwohnung in der Altstadt: Eckhof Domizil3 Schlafzimmer3 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Ga",
+   "total": 529,
+   "url": "https://www.airbnb.de/rooms/27893592",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 176
   }
  ],
  "scrape_info": {

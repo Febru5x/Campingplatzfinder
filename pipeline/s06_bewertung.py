@@ -44,6 +44,61 @@ BENCH = {
 RADIUS_M = 25000       # Umkreis fuer lokale Markt-Benchmarks
 CAMP_DISCOUNT = 0.8    # Camping-Ausstattung vs. Premium-Portal-Inserate
 
+# --- Angebots-Klassifikation fuer die lokalen Preis-Benchmarks ---
+# Vergleichsobjekt: eigenstaendige kleine Unterkunft fuer ~4 Personen
+# (2 Erwachsene + 2 Kinder) MIT Kueche. Keine Zimmer in fremder Wohnung,
+# keine Hotels/Pensionen, keine Zelte/Busse/Schlaffaesser (keine Kueche).
+UNIT_TITLE = re.compile(
+    r"tiny\s?h|ferienhaus|ferienh[äa]user|bungalow|blockh[üu]tte|blockhaus|"
+    r"chalet|ferienwohnung|fewo|apartment|appartement|h[üu]tte|lodge|"
+    r"mobilheim|bauwagen|sch[äa]ferwagen|casa|villa|hausboot|floating|"
+    r"houseboat|boot\b|cottage|stadl|ferienh[äa]uschen|ferienunterkunft|"
+    r"\bwohnung\b|eigentumswohnung|\bloft\b|g[äa]stehaus|privatunterkunft|"
+    r"bauernhof|\bschloss\b", re.I)
+# 'Privatunterkunft' ist bei Airbnb nur die Kategorie-Bezeichnung fuer
+# ganze Unterkuenfte (Suche mit Filter 'ganze Unterkunft') -> kein Ausschluss;
+# Beschreibung entscheidet (Ferienhaus ... = unit, Zimmer ... = raus).
+ROOM_EXCL = re.compile(
+    r"privatzimmer|g[äa]stezimmer|zimmer in |eigenes zimmer|"
+    r"hotel|pension|hostel|jugendherberge|fr[üu]hst[üu]ck", re.I)
+NO_KITCHEN = re.compile(
+    r"zelt|campingbus|wohnmobil|schlaffass|fass\b|iglu|tipi|"
+    r"yurt|jurte|pod\b|campingfass", re.I)
+
+
+def classify_offer(title, typ=""):
+    """'unit' (ganze Unterkunft mit Kueche), 'boot' oder None (raus).
+    Titel + Typ zusammen bewerten."""
+    t = ((title or "") + " " + (typ or "")).strip()
+    if NO_KITCHEN.search(t):
+        return None
+    if re.search(r"hausboot|houseboat|floating|\bboot\b", t, re.I):
+        return "boot"
+    if ROOM_EXCL.search(t):
+        return None
+    if UNIT_TITLE.search(t):
+        return "unit"
+    return None
+
+
+def units_from_area(area_m2, parcel_m2):
+    """Grobe, konservative Anzahl Tinyhaeuser aus der Flaechenreserve.
+    Beide Flaechen bekannt -> Reserve = Grundstueck - genutzte Flaeche.
+    Nur eine bekannt -> 15 % davon konservativ als frei angenommen.
+    ~250 m² Stellflaeche je Einheit inkl. Abstand/Gruen/Terrasse.
+    Ergebnis 1-5; (None, ...) ohne Flaechenangabe -> Standard 3."""
+    if area_m2 and parcel_m2 and parcel_m2 > area_m2:
+        free = parcel_m2 - area_m2
+        basis = "Reserve %.0f m² (Grundstück − genutzte Fläche)" % free
+    elif area_m2 or parcel_m2:
+        known = area_m2 or parcel_m2
+        free = known * 0.15
+        basis = "%.0f m² bekannt, 15 %% davon konservativ als frei angenommen" % known
+    else:
+        return None, None
+    n = max(1, min(5, int(free / 250)))
+    return n, basis + "; ~250 m² je Einheit inkl. Abstand/Grün"
+
 
 def _haversine(lat1, lon1, lat2, lon2):
     from math import radians, sin, cos, asin, sqrt
@@ -82,12 +137,16 @@ def geocode_town(town):
 
 def local_portal_offers(region_name):
     """Airbnb/Booking-Angebote mit Ort geokodiert (fuer 25-km-Benchmarks).
-    Titel-Muster 'Tiny House in X' / '... am Y' -> Ortsname -> Nominatim.
+    Nur ganze kleine Unterkuenfte mit Kueche (~4 Personen) zaehlen als
+    'unit'; Hausboote als 'boot'. Zimmer/Hotels/Zelte/Faesser fallen raus.
+    Titel-Muster '... in X' / '... am Y' -> Ortsname -> Photon/Nominatim.
     Ergebnis gecacht in data/portal_geo_<region>.json."""
     cache = C.DATA / ("portal_geo_%s.json" % region_name)
     if cache.exists():
         try:
-            return json.loads(cache.read_text(encoding="utf-8"))
+            j = json.loads(cache.read_text(encoding="utf-8"))
+            if j and "unit" in j[0]:  # neues Format (klassifiziert)
+                return j
         except Exception:
             pass
     raw_p = C.DATA / ("portalpreise_%s_raw.json" % region_name)
@@ -96,23 +155,35 @@ def local_portal_offers(region_name):
         raw = json.loads(raw_p.read_text(encoding="utf-8"))
         nights = raw.get("naechte", 3) or 3
         offers = []
+        n_drop = 0
         for a in raw.get("airbnb", {}).get("angebote", []):
-            if a.get("total"):
-                offers.append({"quelle": "Airbnb", "title": a.get("title", ""),
-                               "preis_nacht": a["total"] / nights,
-                               "tiny": bool(re.match(r"tiny house", a.get("title", ""), re.I)),
-                               "boot": bool(re.search(r"hausboot|^boot", a.get("title", ""), re.I))})
+            if not a.get("total"):
+                continue
+            kind = classify_offer(a.get("title", ""), a.get("desc", ""))
+            if kind is None:
+                n_drop += 1
+                continue
+            offers.append({"quelle": "Airbnb", "title": a.get("title", ""),
+                           "preis_nacht": a["total"] / nights,
+                           "unit": kind == "unit", "boot": kind == "boot"})
         for b in raw.get("booking", {}).get("hausboote", []):
             if b.get("preis_gesamt") and "Charter" not in (b.get("hinweis") or ""):
                 offers.append({"quelle": "Booking", "title": b.get("name", ""),
                                "ort_fix": b.get("ort"), "preis_nacht": b["preis_gesamt"] / nights,
-                               "tiny": False, "boot": True})
-        for b in raw.get("booking", {}).get("glamping_camping", []):
-            if b.get("preis_gesamt"):
+                               "unit": False, "boot": True})
+        for key in ("glamping_camping", "sonstige_relevante"):
+            for b in raw.get("booking", {}).get(key, []):
+                if not b.get("preis_gesamt"):
+                    continue
+                kind = classify_offer(b.get("name", ""), b.get("typ", ""))
+                if kind is None:
+                    n_drop += 1
+                    continue
                 offers.append({"quelle": "Booking", "title": b.get("name", ""),
                                "ort_fix": b.get("ort"), "preis_nacht": b["preis_gesamt"] / nights,
-                               "tiny": bool(re.search(r"tiny", (b.get("typ") or "") + " " + b.get("name", ""), re.I)),
-                               "boot": False})
+                               "unit": kind == "unit", "boot": kind == "boot"})
+        print("  Angebote: %d passend, %d aussortiert (Zimmer/Hotel/ohne Küche)"
+              % (len(offers), n_drop))
         towns = {}
         for o in offers:
             town = o.get("ort_fix")
@@ -132,7 +203,7 @@ def local_portal_offers(region_name):
 
 def local_price(offers, site, kind):
     """Median der passenden Portal-Angebote im Umkreis 25 km (mind. 2),
-    sonst None. kind: 'tiny' oder 'boot'. Roh-Median (Abschlag macht Aufrufer)."""
+    sonst None. kind: 'unit' oder 'boot'. Roh-Median (Abschlag macht Aufrufer)."""
     vals = []
     for o in offers:
         if not o.get(kind) or o.get("lat") is None or not o.get("preis_nacht"):
@@ -369,18 +440,22 @@ def run(region_name):
             comp.append(["Abzug: strenges Schutzgebiet (×0,6)", None])
         score = round(min(score, 100), 1)
 
-        # Rechenbeispiel: 3 Einheiten (konservativ), Preis je Platz aus
-        # Portal-Angeboten (Airbnb/Booking) im Umkreis 25 km; sonst Regions-
-        # Median. Portal-Preise sind Premium-Inserate -> 20 % Abschlag fuer
-        # Camping-Ausstattung. Naechte/Jahr = konservative Auslastungsannahme.
-        n = bench["n_units"]
-        lp, l_n = local_price(offers, site, "tiny")
+        # Rechenbeispiel: Einheitenzahl je Platz aus Flaechenreserve (1-5,
+        # ~250 m² je Einheit inkl. Abstand; ohne Flaechen Standard 3).
+        # Preis je Platz aus Portal-Angeboten (Airbnb/Booking) im Umkreis
+        # 25 km: ganze kleine Unterkuenfte mit Kueche (~4 Personen),
+        # keine Zimmer/Hotels/Zelte/Faesser. Sonst Regions-Median.
+        # Portal-Preise sind Premium-Inserate -> 20 % Camping-Abschlag.
+        n, n_basis = units_from_area(area, parcel_area)
+        if n is None:
+            n, n_basis = bench["n_units"], None
+        lp, l_n = local_price(offers, site, "unit")
         if lp:
             tiny_p = round(lp * CAMP_DISCOUNT)
-            p_src = "Ø %d Airbnb/Booking-Angebote im Umkreis 25 km (%.0f €) minus 20 %% Camping-Abschlag" % (l_n, lp)
+            p_src = "Median %d passender Airbnb/Booking-Unterkünfte im Umkreis 25 km (%.0f €) minus 20 %% Camping-Abschlag" % (l_n, lp)
         else:
             tiny_p = round(bench["tiny_price"])
-            p_src = "Regions-Median (%.0f €, zu wenige Portal-Angebote im Umkreis)" % tiny_p
+            p_src = "Regions-Median (%.0f €, zu wenige passende Portal-Angebote im Umkreis)" % tiny_p
         # Stellplatz: eigener Website-Preis des Platzes, sonst Regions-Median
         own_pitch = site["price_pitch"] if (site["price_pitch"] and
                                            15 <= site["price_pitch"] <= 80) else None
@@ -390,13 +465,19 @@ def run(region_name):
         rev_tiny = n * tiny_p * nights
         rev_pitch = n * pitch_p * bench["pitch_nights"]
         example = (
-            "3 Tinyhäuser × %d €/Nacht × %d Nächte/Jahr ≈ %s €/Jahr "
-            "(statt 3 Stellplätzen à %.0f € × %d Nächte: %s €; +%.0f €). "
+            "%d %s × %d €/Nacht × %d Nächte/Jahr ≈ %s €/Jahr "
+            "(statt %d %s à %.0f € [%s] × %d Nächte: %s €; +%.0f €). "
             "Preis: %s. Nächte = konservative Auslastungsannahme (ganzjährig)."
-            % (tiny_p, nights, format(round(rev_tiny), ",").replace(",", "."),
-               pitch_p, bench["pitch_nights"],
+            % (n, "Tinyhaus" if n == 1 else "Tinyhäuser",
+               tiny_p, nights, format(round(rev_tiny), ",").replace(",", "."),
+               n, "Stellplatz" if n == 1 else "Stellplätzen",
+               pitch_p, pitch_src, bench["pitch_nights"],
                format(round(rev_pitch), ",").replace(",", "."),
                rev_tiny - rev_pitch, p_src))
+        if n_basis:
+            example += " Anzahl (%d, grobe Schätzung 1–5): %s." % (n, n_basis)
+        else:
+            example += " Anzahl: Standardannahme 3 (keine Flächenangaben)."
         # Hausboot-Rechenbeispiel, wenn Steg/Marina am Platz
         if pier and (hausboot_price or lp is not None):
             bp_l, bp_n = local_price(offers, site, "boot")

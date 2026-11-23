@@ -1,6 +1,6 @@
 {
  "region": "brandenburg",
- "stand": "2026-11-22T20:52:18.236851+00:00",
+ "stand": "2026-11-23T14:05:56.691535+00:00",
  "benchmarks": {
   "portal_luxus_median": 106,
   "portal_luxus_spanne": [
@@ -20,16 +20,22 @@
    625
   ],
   "n_booking_boote": 17,
-  "airbnb_tiny_median": 111,
+  "airbnb_tiny_median": 132,
   "airbnb_tiny_spanne": [
    84,
-   156
+   170
   ],
-  "n_airbnb_tiny": 7,
+  "n_airbnb_tiny": 11,
+  "unterkunft_median": 136,
+  "unterkunft_spanne": [
+   55,
+   337
+  ],
+  "n_unterkuenfte": 84,
   "airbnb_hausboot_median": 195,
-  "n_airbnb_boote": 3,
+  "n_airbnb_boote": 8,
   "hinweis": "Booking + Airbnb im echten Browser gescrapt (Hauptsaison 2027-07-09, 3 Nächte, 2 Erw.). Preise sind Gesamtpreis/Nächte; Servicegebühren Airbnb inklusive, Booking zzgl. teils Endreinigung. Deep-Links je Platz in Excel für Detailprüfung.",
-  "tiny_vorschlag": 111,
+  "tiny_vorschlag": 136,
   "hausboot_vorschlag": 217
  },
  "portal_angebote": [
@@ -275,16 +281,12 @@
  ],
  "booking_links": [
   {
-   "name": "Campingdomizil Körbiskrug",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingdomizil%20K%C3%B6rbiskrug&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Kuhle Wampe",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Kuhle%20Wampe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
    "name": "Camping- und Freizeitpark am Plauer See",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Camping-%20und%20Freizeitpark%20am%20Plauer%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingdomizil Körbiskrug",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingdomizil%20K%C3%B6rbiskrug&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Spreewald-Natur-Camping \"Am See\"",
@@ -295,8 +297,8 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcampingplatz%20%22Gro%C3%9Fer%20Treppelsee%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Voigtswiese",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Voigtswiese&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Kuhle Wampe",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Kuhle%20Wampe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Schlaubetal Camping Schervenzsee",
@@ -307,36 +309,28 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcampingplatz%20am%20Springsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingverein Glower See e.V.",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingverein%20Glower%20See%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Kagel",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Kagel&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Berlin",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Berlin&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Voigtswiese",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Voigtswiese&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Campingplatz D66",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20D66&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Seecamp Waldreich",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Seecamp%20Waldreich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
    "name": "Berolina Camping",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Berolina%20Camping&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Butzow",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Butzow&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Seecamp Waldreich",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Seecamp%20Waldreich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Allgemeine Körperkultur Birkenheide",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Allgemeine%20K%C3%B6rperkultur%20Birkenheide&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingverein Glower See e.V.",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingverein%20Glower%20See%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Berlin",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Berlin&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Spreewald-Natur-Camping \"Am Schlosspark\"",
@@ -347,92 +341,104 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Spreewald-Camping%20L%C3%BCbben&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Marina Oderberg",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Marina%20Oderberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Camping Niewisch",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Niewisch&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Camping Am Spring",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Am%20Spring&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Parsteiner See",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Parsteiner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "StroamCamp - Rezeption",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=StroamCamp%20-%20Rezeption&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Havelidyll",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Havelidyll&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "CityCamp Süd",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=CityCamp%20S%C3%BCd&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Jägerbude",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20J%C3%A4gerbude&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Ferienparadies am Werbellinsee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienparadies%20am%20Werbellinsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Schönmacher Camping",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Sch%C3%B6nmacher%20Camping&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingpark Buntspecht",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Buntspecht&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Stadtmarina Brandenburg",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Stadtmarina%20Brandenburg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Marina Oderberg",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Marina%20Oderberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "CampDeulo",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=CampDeulo&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Naturcamping Kiessee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcamping%20Kiessee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Camping-Club Schweriner See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping-Club%20Schweriner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Camping am Havelkanal",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20am%20Havelkanal&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Camping-Club Schweriner See",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping-Club%20Schweriner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingpark Großer Klobichsee e.V.",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Gro%C3%9Fer%20Klobichsee%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Allgemeine Körperkultur Birkenheide",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Allgemeine%20K%C3%B6rperkultur%20Birkenheide&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "StroamCamp - Rezeption",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=StroamCamp%20-%20Rezeption&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Schönmacher Camping",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Sch%C3%B6nmacher%20Camping&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping Am Spring",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Am%20Spring&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Marina Oderberg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Marina%20Oderberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Butzow",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Butzow&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping Niewisch",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Niewisch&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingpark Buntspecht",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Buntspecht&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturcamping Kiessee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcamping%20Kiessee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "CampDeulo",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=CampDeulo&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Kagel",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Kagel&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Dahmsdorf",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Dahmsdorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Stadtmarina Brandenburg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stadtmarina%20Brandenburg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Dauercamping- u. Zeltplatz Möllensee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Dauercamping-%20u.%20Zeltplatz%20M%C3%B6llensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturcamping Teupitz e.V.",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcamping%20Teupitz%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Hölzerner See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20H%C3%B6lzerner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Campingplatz-2 Waldcamping Am Großsee",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz-2%20Waldcamping%20Am%20Gro%C3%9Fsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Waldcamp Seeblick",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Waldcamp%20Seeblick&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Ferienparadies am Werbellinsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienparadies%20am%20Werbellinsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Spreewälder Seecamping Briesensee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Spreew%C3%A4lder%20Seecamping%20Briesensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Familienpark Senftenberger See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Familienpark%20Senftenberger%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Havelidyll",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Havelidyll&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Camping am See",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20am%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingpark Großer Klobichsee e.V.",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Gro%C3%9Fer%20Klobichsee%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Wassersportzentrum Alte Feuerwache",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Wassersportzentrum%20Alte%20Feuerwache&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   }
  ],
  "booking_hausboote": [
@@ -1035,6 +1041,429 @@
    "url": "https://www.airbnb.de/rooms/21249161",
    "rating": "4,71",
    "preis_nacht": 94
+  },
+  {
+   "title": "Bungalow in Kropstädt",
+   "desc": "Ferienhaus im Hohen Fläming Nähe Luth.Wittenberg1 Schlafzimmer1 Schlafzimmer,  · 4 Betten4 Betten,  · 2,5 Bäder2,5 BäderPrivate:r Gastgeber:",
+   "total": 276,
+   "url": "https://www.airbnb.de/rooms/805560061389234166",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 92
+  },
+  {
+   "title": "Gästehaus in Werder",
+   "desc": "Schwielowseer Fischerhaus2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1,5 Bäder1,5 BäderPrivate:r Gastgeber:inPrivate:r Gastgeber:i",
+   "total": 402,
+   "url": "https://www.airbnb.de/rooms/835544885453906009",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 134
+  },
+  {
+   "title": "Privatunterkunft in Bad Schmiedeberg",
+   "desc": "NatureDreams.1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:inGesam",
+   "total": 423,
+   "url": "https://www.airbnb.de/rooms/1618629041266754161",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 141
+  },
+  {
+   "title": "Schäferhütte in Wandlitz",
+   "desc": "Urlaub im Bauwagen1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:in",
+   "total": 276,
+   "url": "https://www.airbnb.de/rooms/1404191102725140694",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 92
+  },
+  {
+   "title": "Bauernhof in Milower Land",
+   "desc": "Landurlaub auf altem Hof  inklusive frischen Eiern2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:",
+   "total": 410,
+   "url": "https://www.airbnb.de/rooms/43653453",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 137
+  },
+  {
+   "title": "Tiny House in Schönebeck",
+   "desc": "Gemütliches Tiny House am Ferienpark1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPriv",
+   "total": 413,
+   "url": "https://www.airbnb.de/rooms/1395367311146055017",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 138
+  },
+  {
+   "title": "Wohnung in Wandlitz",
+   "desc": "Dachgeschosswohnung auf kleinem Hof bei Berlin2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastge",
+   "total": 389,
+   "url": "https://www.airbnb.de/rooms/1197759145945841269",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 130
+  },
+  {
+   "title": "Tiny House in Kloster Lehnin",
+   "desc": "Auszeit im Tiny House Hilde/ 2 Stand Up Paddeling2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r",
+   "total": 510,
+   "url": "https://www.airbnb.de/rooms/1389626470513143020",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 170
+  },
+  {
+   "title": "Wohnung in Cavertitz",
+   "desc": "Ferienwohnung bei Elke Zuhause2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerb",
+   "total": 225,
+   "url": "https://www.airbnb.de/rooms/1266450521807922156",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 75
+  },
+  {
+   "title": "Wohnung in Teupitz",
+   "desc": "Ferienwohnung auf historischem Hofgrundstück1 Schlafzimmer1 Schlafzimmer,  · 1 Queensize-Doppelbett1 Queensize-Doppelbett,  · 1 Badezimmer1 ",
+   "total": 458,
+   "url": "https://www.airbnb.de/rooms/50534882",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 153
+  },
+  {
+   "title": "Cottage in Klitsche",
+   "desc": "Historisches Fachwerkhaus mit Pool & Sauna2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastge",
+   "total": 465,
+   "url": "https://www.airbnb.de/rooms/1587043005649211763",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 155
+  },
+  {
+   "title": "Gästehaus in Neuruppin",
+   "desc": "Ferienhaus Libelle am See1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastg",
+   "total": 269,
+   "url": "https://www.airbnb.de/rooms/1429553048883229043",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 90
+  },
+  {
+   "title": "Cottage in Rheinsberg",
+   "desc": "Natur, Seen, Sauna & Ruhe im brandenburg. Seenland3 Schlafzimmer3 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Ga",
+   "total": 529,
+   "url": "https://www.airbnb.de/rooms/26734794",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 176
+  },
+  {
+   "title": "Bungalow in Hohenwarthe",
+   "desc": "Chillma Hütte – Outdoorwhirlpool-Sauna-Wald3 Schlafzimmer3 Schlafzimmer,  · 3 Betten3 Betten,  · 2 Badezimmer2 BadezimmerPrivate:r Gastgeber",
+   "total": 839,
+   "url": "https://www.airbnb.de/rooms/26392942",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 280
+  },
+  {
+   "title": "Wohnung in Steinhöfel",
+   "desc": "Ferienwohnung \"Landlust\"1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastge",
+   "total": 360,
+   "url": "https://www.airbnb.de/rooms/1471218245124142568",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 120
+  },
+  {
+   "title": "Hausboot in Berlin",
+   "desc": "Historisches Hausboot mit Kamin & optionaler Sauna1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:",
+   "total": 1055,
+   "url": "https://www.airbnb.de/rooms/48651189",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 352
+  },
+  {
+   "title": "Hausboot in Havelsee",
+   "desc": "Foto 1 von 6Hausboot in HavelseeHausboot Übernachtung mit Wasserblick 2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 Ba",
+   "total": 489,
+   "url": "https://www.airbnb.de/rooms/1721764883727603535",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 163
+  },
+  {
+   "title": "Hausboot in Neuruppin",
+   "desc": "Floß - AHOI!1 Schlafzimmer1 Schlafzimmer,  · 4 Betten4 Betten,  · WC und WaschbeckenWC und WaschbeckenGewerbliche:r Gastgeber:inGewerbliche:",
+   "total": 502,
+   "url": "https://www.airbnb.de/rooms/10581490",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 167
+  },
+  {
+   "title": "Privatunterkunft in Fehrbellin",
+   "desc": "Landidyll – Bauernhaus Ländchen Bellin2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:",
+   "total": 580,
+   "url": "https://www.airbnb.de/rooms/30097378",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 193
+  },
+  {
+   "title": "Jurte (Rundzelt) in Uckerfelde",
+   "desc": "Jurte am Feld1 Schlafzimmer1 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:inGesam",
+   "total": 276,
+   "url": "https://www.airbnb.de/rooms/1416131119547122284",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 92
+  },
+  {
+   "title": "Wohnung in Dreetz",
+   "desc": "Historische Ferienwohnung2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastg",
+   "total": 212,
+   "url": "https://www.airbnb.de/rooms/1408720151487361743",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 71
+  },
+  {
+   "title": "Wohnung in Steinhöfel",
+   "desc": "Ferienwohnung \"Gänsenest\"1 Schlafzimmer1 Schlafzimmer,  · 1 Bett1 Bett,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber",
+   "total": 360,
+   "url": "https://www.airbnb.de/rooms/1473085310736901117",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 120
+  },
+  {
+   "title": "Chalet in Fürstenberg/Havel",
+   "desc": "Deluxe Maisonette-Chalet mit Terrasse und Jacuzzi2 Schlafzimmer2 Schlafzimmer,  · 2 Queensize-Doppelbetten2 Queensize-Doppelbetten,  · 1 Bad",
+   "total": 1010,
+   "url": "https://www.airbnb.de/rooms/1493324536283587263",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 337
+  },
+  {
+   "title": "Wohnung in Amt Friesack",
+   "desc": "Studio auf dem Land1 Schlafzimmer1 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:i",
+   "total": 454,
+   "url": "https://www.airbnb.de/rooms/1085262479558276127",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 151
+  },
+  {
+   "title": "Gästehaus in Zossen",
+   "desc": "Romantisches Haus mit Sauna und Kamin in Seenähe2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gast",
+   "total": 560,
+   "url": "https://www.airbnb.de/rooms/33754593",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 187
+  },
+  {
+   "title": "Hausboot in Lindow (Mark)",
+   "desc": "leise los Hausboote: Die Lux1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbli",
+   "total": 932,
+   "url": "https://www.airbnb.de/rooms/1638234112521933740",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 311
+  },
+  {
+   "title": "Hausboot in Havelsee",
+   "desc": "Foto 1 von 6Hausboot in HavelseeHausboot Übernachtung mit Wasserblick 2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 Ba",
+   "total": 489,
+   "url": "https://www.airbnb.de/rooms/1745018729172465174",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 163
+  },
+  {
+   "title": "Bauernhof in Gumtow",
+   "desc": "Hof Rittersporn3 Schlafzimmer3 Schlafzimmer,  · 3 Kingsize-Doppelbetten3 Kingsize-Doppelbetten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gas",
+   "total": 791,
+   "url": "https://www.airbnb.de/rooms/51533169",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 264
+  },
+  {
+   "title": "Campingplatz in Märkische Heide",
+   "desc": "Eurocamp Spreewaldtor – Tinyhouse2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGew",
+   "total": 480,
+   "url": "https://www.airbnb.de/rooms/48732314",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 160
+  },
+  {
+   "title": "Wohnung in Neuruppin",
+   "desc": "Künstlerstudio mit Kinderzimmer1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r",
+   "total": 309,
+   "url": "https://www.airbnb.de/rooms/882327159137713025",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 103
+  },
+  {
+   "title": "Wohnung in Rehfelde",
+   "desc": "Wohnung in der Natur2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:",
+   "total": 222,
+   "url": "https://www.airbnb.de/rooms/859872931619821425",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 74
+  },
+  {
+   "title": "Wohnung in Gerbstedt",
+   "desc": "Urlaub auf dem Rittergut1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastge",
+   "total": 409,
+   "url": "https://www.airbnb.de/rooms/1424457725737602111",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 136
+  },
+  {
+   "title": "Eigentumswohnung in Wiesenburg/Mark",
+   "desc": "Traumhafte Schlosswohnung2 Schlafzimmer2 Schlafzimmer,  · 2 Doppelbetten2 Doppelbetten,  · 2 Badezimmer2 BadezimmerGewerbliche:r Gastgeber:i",
+   "total": 378,
+   "url": "https://www.airbnb.de/rooms/3418724",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 126
+  },
+  {
+   "title": "Privatunterkunft in Fürstenberg/Havel",
+   "desc": "Auszeit zwischen Wald und See – Waldhäuschen2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgebe",
+   "total": 477,
+   "url": "https://www.airbnb.de/rooms/1703044608035413677",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 159
+  },
+  {
+   "title": "Bungalow in Rathenow",
+   "desc": "Dein eigenes Ferienhaus am See - komm mal raus...1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gas",
+   "total": 552,
+   "url": "https://www.airbnb.de/rooms/43447898",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 184
+  },
+  {
+   "title": "Campingplatz in Priborn",
+   "desc": "Glamping auf dem Ponyhof1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastge",
+   "total": 285,
+   "url": "https://www.airbnb.de/rooms/1137448178639340912",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 95
+  },
+  {
+   "title": "Tiny House in Arendsee (Altmark)",
+   "desc": "Gemütliches Tiny House am Arendsee Sauna&Terrasse2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gas",
+   "total": 447,
+   "url": "https://www.airbnb.de/rooms/1268709651156767795",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 149
+  },
+  {
+   "title": "Privatunterkunft in Wandlitz",
+   "desc": "Hyggely Marie Sophie2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:",
+   "total": 516,
+   "url": "https://www.airbnb.de/rooms/1461069838779328033",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 172
+  },
+  {
+   "title": "Wohnung in Steinhöfel",
+   "desc": "Ferienwohnung „Blick ins Land“1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r ",
+   "total": 360,
+   "url": "https://www.airbnb.de/rooms/1473125574439566658",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 120
+  },
+  {
+   "title": "Chalet in Fürstenberg/Havel",
+   "desc": "Maisonette-Chalet mit Terrasse2 Schlafzimmer2 Schlafzimmer,  · 2 Queensize-Doppelbetten2 Queensize-Doppelbetten,  · 1 Badezimmer1 Badezimmer",
+   "total": 950,
+   "url": "https://www.airbnb.de/rooms/1493324360259322258",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 317
+  },
+  {
+   "title": "Wohnung in Selke-Aue",
+   "desc": "Alte Post am historischen Pfarrhof1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivat",
+   "total": 378,
+   "url": "https://www.airbnb.de/rooms/1729198239418194736",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 126
+  },
+  {
+   "title": "Privatunterkunft in Rathenow",
+   "desc": "Naturhaus Havelland – Seeblick1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r ",
+   "total": 539,
+   "url": "https://www.airbnb.de/rooms/1651319211187469471",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 180
+  },
+  {
+   "title": "Tiny House in Eberswalde",
+   "desc": "Häuschen in den Erlen1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber",
+   "total": 359,
+   "url": "https://www.airbnb.de/rooms/1439606478068475325",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 120
+  },
+  {
+   "title": "Wohnung in Großthiemig",
+   "desc": "Ferienwohnung \"Heuboden\" im Igelnest Großthiemig2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gast",
+   "total": 535,
+   "url": "https://www.airbnb.de/rooms/637534279416610719",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 178
+  },
+  {
+   "title": "Privatunterkunft in Mittenwalde",
+   "desc": "Ferienhaus Luba2 Schlafzimmer2 Schlafzimmer,  · 6 Betten6 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:inGes",
+   "total": 333,
+   "url": "https://www.airbnb.de/rooms/1681092598228034678",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 111
+  },
+  {
+   "title": "Privatunterkunft in Annaburg",
+   "desc": "Behagliches Haus mit Kamin und Garten2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1,5 Bäder1,5 BäderPrivate:r Gastgeber:inPrivate:r",
+   "total": 214,
+   "url": "https://www.airbnb.de/rooms/572358073344681939",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 71
+  },
+  {
+   "title": "Privatunterkunft in Lübben (Spreewald)",
+   "desc": "Modernes Waldhaus im Spreewald1 Schlafzimmer1 Schlafzimmer,  · 1 Bett1 Bett,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gast",
+   "total": 587,
+   "url": "https://www.airbnb.de/rooms/1193471589783438143",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 196
   }
  ],
  "scrape_info": {

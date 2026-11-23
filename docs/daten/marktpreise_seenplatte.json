@@ -1,6 +1,6 @@
 {
  "region": "seenplatte",
- "stand": "2026-11-22T20:02:35.928165+00:00",
+ "stand": "2026-11-23T14:05:28.369424+00:00",
  "benchmarks": {
   "portal_luxus_median": 372,
   "portal_luxus_spanne": [
@@ -26,10 +26,16 @@
    201
   ],
   "n_airbnb_tiny": 32,
+  "unterkunft_median": 120,
+  "unterkunft_spanne": [
+   31,
+   277
+  ],
+  "n_unterkuenfte": 75,
   "airbnb_hausboot_median": 191,
   "n_airbnb_boote": 4,
   "hinweis": "Booking + Airbnb im echten Browser gescrapt (Hauptsaison 2027-07-09, 3 Nächte, 2 Erw.). Preise sind Gesamtpreis/Nächte; Servicegebühren Airbnb inklusive, Booking zzgl. teils Endreinigung. Deep-Links je Platz in Excel für Detailprüfung.",
-  "tiny_vorschlag": 103,
+  "tiny_vorschlag": 120,
   "hausboot_vorschlag": 272
  },
  "portal_angebote": [
@@ -181,16 +187,12 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Sommersdorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "C25 Naturcampingplatz am Mössensee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=C25%20Naturcampingplatz%20am%20M%C3%B6ssensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Schwaan",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Schwaan&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
    "name": "Campingplatz am Garder See",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20am%20Garder%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "C25 Naturcampingplatz am Mössensee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=C25%20Naturcampingplatz%20am%20M%C3%B6ssensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Camping am Bauernhof",
@@ -201,100 +203,76 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Biber-Camp&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
+   "name": "Campingplatz Schwaan",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Schwaan&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
    "name": "Campingplätze am Grossen Zechliner See",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpl%C3%A4tze%20am%20Grossen%20Zechliner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz am Großen Pälitzsee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20am%20Gro%C3%9Fen%20P%C3%A4litzsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Am Gobenowsee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Am%20Gobenowsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Ahoi Camp Canow",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Ahoi%20Camp%20Canow&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Am Glambecksee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Am%20Glambecksee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingplatz Am Gobenowsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Am%20Gobenowsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "NaturCamping am Ellbogensee",
    "booking": "https://www.booking.com/searchresults.de.html?ss=NaturCamping%20am%20Ellbogensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Ferienidyll am Rätzsee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienidyll%20am%20R%C3%A4tzsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "SEEBOOTECH",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=SEEBOOTECH&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
    "name": "Campingpark Zuruf",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Zuruf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Heidepark Silz",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Heidepark%20Silz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Yachthafen Maribell",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Yachthafen%20Maribell&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Wohnmobilstellplatz Wesenberg",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Wesenberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Wurlseecamping Lychen",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Wurlseecamping%20Lychen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Wildwood Camping Uckermark",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Wildwood%20Camping%20Uckermark&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "VCP Bundeszeltplatz",
    "booking": "https://www.booking.com/searchresults.de.html?ss=VCP%20Bundeszeltplatz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Camp am Labussee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Camp%20am%20Labussee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Heidepark Silz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Heidepark%20Silz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Zeltplatz & Pfahlhauscamp Wesenberg",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Zeltplatz%20%26%20Pfahlhauscamp%20Wesenberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Wurlseecamping Lychen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wurlseecamping%20Lychen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplätze am Grossen Zechliner See",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpl%C3%A4tze%20am%20Grossen%20Zechliner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Ferienidyll am Rätzsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienidyll%20am%20R%C3%A4tzsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wohnmobilstellplatz Wesenberg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Wesenberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wildwood Camping Uckermark",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wildwood%20Camping%20Uckermark&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Natur und Strandcamping am Jabelschen See",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Natur%20und%20Strandcamping%20am%20Jabelschen%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Naturcamp e.V. Röddelin",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcamp%20e.V.%20R%C3%B6ddelin&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Naturcamping Bolter Kanal",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcamping%20Bolter%20Kanal&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Yachthafen Maribell",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Yachthafen%20Maribell&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Camping am Blanksee",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20am%20Blanksee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingoase Waldsee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingoase%20Waldsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingplatz Am Glambecksee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Am%20Glambecksee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "C42 Naturcampingplatz am Zotzensee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=C42%20Naturcampingplatz%20am%20Zotzensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Naturcamp e.V. Röddelin",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcamp%20e.V.%20R%C3%B6ddelin&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "SEEBOOTECH",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=SEEBOOTECH&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "FKK Campingplatz am Rätzsee",
@@ -305,6 +283,14 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Winkel%20Kleinzerlang&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
+   "name": "Campingplatz am Großen Pälitzsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20am%20Gro%C3%9Fen%20P%C3%A4litzsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "C42 Naturcampingplatz am Zotzensee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=C42%20Naturcampingplatz%20am%20Zotzensee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
    "name": "Feriencamp Rackwitz",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Feriencamp%20Rackwitz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
@@ -313,20 +299,40 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Schiefe%20Eiche&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Sonnen- und Naturfreunde e.V. Hügelland",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Sonnen-%20und%20Naturfreunde%20e.V.%20H%C3%BCgelland&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingplätze am Grossen Zechliner See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpl%C3%A4tze%20am%20Grossen%20Zechliner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Naturcamping Bolter Kanal",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcamping%20Bolter%20Kanal&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping Zethner See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Zethner%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Camping \"Am Kluger See\"'",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20%22Am%20Kluger%20See%22%27&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Naturcampingplatz am Dranser See",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Naturcampingplatz%20am%20Dranser%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingoase Waldsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingoase%20Waldsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Zeltplatz & Pfahlhauscamp Wesenberg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Zeltplatz%20%26%20Pfahlhauscamp%20Wesenberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wohnmobilstellplatz Dorfstraße Kleinzerlang",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Dorfstra%C3%9Fe%20Kleinzerlang&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Camping Am Goldberger See",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Am%20Goldberger%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wald- und Seeblick Camp",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wald-%20und%20Seeblick%20Camp&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Campingplatz Stendenitz",
@@ -937,6 +943,384 @@
    "rating": "4,95",
    "reviews": 43,
    "preis_nacht": 158
+  },
+  {
+   "title": "Blockhütte in Lansen",
+   "desc": "Kuscheliges Jägerstübli m. Kamin&Hot Tube optional2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:",
+   "total": 648,
+   "url": "https://www.airbnb.de/rooms/44848205",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 216
+  },
+  {
+   "title": "Gästehaus in Wittstock/Dosse",
+   "desc": "Natur entdecken – Komfort geniessen2 Schlafzimmer2 Schlafzimmer,  · 2 Queensize-Doppelbetten2 Queensize-Doppelbetten,  · 1 Badezimmer1 Badez",
+   "total": 299,
+   "url": "https://www.airbnb.de/rooms/19282167",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 100
+  },
+  {
+   "title": "Cottage in Rheinsberg",
+   "desc": "Natur, Seen, Sauna & Ruhe im brandenburg. Seenland3 Schlafzimmer3 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Ga",
+   "total": 529,
+   "url": "https://www.airbnb.de/rooms/26734794",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 176
+  },
+  {
+   "title": "Wohnung in Lelkendorf",
+   "desc": "Landhaus im Grünen App. Landliebe2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate",
+   "total": 557,
+   "url": "https://www.airbnb.de/rooms/45277880",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 186
+  },
+  {
+   "title": "Privatunterkunft in Fürstenberg/Havel",
+   "desc": "Auszeit zwischen Wald und See – Waldhäuschen2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgebe",
+   "total": 477,
+   "url": "https://www.airbnb.de/rooms/1703044608035413677",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 159
+  },
+  {
+   "title": "Bungalow in Krakow am See",
+   "desc": "Haus mit herrlichem Seeblick + Boot2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPriva",
+   "total": 494,
+   "url": "https://www.airbnb.de/rooms/17618089",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 165
+  },
+  {
+   "title": "Privatunterkunft in Göhren-Lebbin",
+   "desc": "Balance-Spot am Fleesensee2 Schlafzimmer2 Schlafzimmer,  · 2 Kingsize-Doppelbetten2 Kingsize-Doppelbetten,  · 1,5 Bäder1,5 BäderPrivate:r Ga",
+   "total": 695,
+   "url": "https://www.airbnb.de/rooms/1038345509335854528",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 232
+  },
+  {
+   "title": "Cottage in Rheinsberg",
+   "desc": "Ruhiges Naturhaus mit Sauna in Brand. Seenplatte1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gast",
+   "total": 472,
+   "url": "https://www.airbnb.de/rooms/1155677381675203785",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 157
+  },
+  {
+   "title": "Wohnung in Grabowhöfe",
+   "desc": "kleine FeWo mit Spielplatz, Sauna & Badeschiff1 Schlafzimmer1 Schlafzimmer,  · 1 Doppelbett1 Doppelbett,  · 1 Badezimmer1 BadezimmerPrivate:",
+   "total": 419,
+   "url": "https://www.airbnb.de/rooms/19254406",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 140
+  },
+  {
+   "title": "Wohnung in Göhren-Lebbin",
+   "desc": "Sweet Spot am Fleesensee2 Schlafzimmer2 Schlafzimmer,  · 2 Kingsize-Doppelbetten2 Kingsize-Doppelbetten,  · 1 Badezimmer1 BadezimmerPrivate:",
+   "total": 684,
+   "url": "https://www.airbnb.de/rooms/1038763667120092904",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 228
+  },
+  {
+   "title": "Wohnung in Malchow",
+   "desc": "Ruhige Ferienwohnung in Malchow1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r",
+   "total": 213,
+   "url": "https://www.airbnb.de/rooms/32705875",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 71
+  },
+  {
+   "title": "Gästehaus in Neuruppin",
+   "desc": "Ferienhaus Libelle am See1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastg",
+   "total": 269,
+   "url": "https://www.airbnb.de/rooms/1429553048883229043",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 90
+  },
+  {
+   "title": "Wohnung in Grabowhöfe",
+   "desc": "Ferienwohnung Hainbuchenhof3 Schlafzimmer3 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gas",
+   "total": 475,
+   "url": "https://www.airbnb.de/rooms/33685224",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 158
+  },
+  {
+   "title": "Privatunterkunft in Papenhagen",
+   "desc": "Hamburger Haus2 Schlafzimmer2 Schlafzimmer,  · 2 Kingsize-Doppelbetten2 Kingsize-Doppelbetten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgebe",
+   "total": 270,
+   "url": "https://www.airbnb.de/rooms/16633467",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 90
+  },
+  {
+   "title": "Privatunterkunft in Schwasdorf",
+   "desc": "Foto 1 von 6Privatunterkunft in SchwasdorfNeue UnterkunftNeuKaminzauber & Ziegenglück auf dem Land1 Schlafzimmer1 Schlafzimmer,  · 1 Queensi",
+   "total": 510,
+   "url": "https://www.airbnb.de/rooms/1821178226735361270",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 170
+  },
+  {
+   "title": "Gästehaus in Gielow",
+   "desc": "Rosenhaus (links) der Wasserburg Liepen2 Schlafzimmer2 Schlafzimmer,  · 5 Betten5 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber",
+   "total": 417,
+   "url": "https://www.airbnb.de/rooms/21678429",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 139
+  },
+  {
+   "title": "Privatunterkunft in Schwasdorf",
+   "desc": "Foto 1 von 6Privatunterkunft in SchwasdorfNeue UnterkunftNeuScandinavisches Holzhaus mit priv. Sauna & Kamin 3 Schlafzimmer3 Schlafzimmer,  ",
+   "total": 597,
+   "url": "https://www.airbnb.de/rooms/1784018929599770663",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 199
+  },
+  {
+   "title": "Wohnung in Südmüritz",
+   "desc": "Fewo Südmüritz Vipperow1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeb",
+   "total": 387,
+   "url": "https://www.airbnb.de/rooms/1635376332708656619",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 129
+  },
+  {
+   "title": "Gästehaus in Klein Vielen",
+   "desc": "Atelierhaus Alte Schule Liepen2 Schlafzimmer2 Schlafzimmer,  · 5 Betten5 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r ",
+   "total": 831,
+   "url": "https://www.airbnb.de/rooms/806379616461625494",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 277
+  },
+  {
+   "title": "Wohnung in Rheinsberg",
+   "desc": "Sunday Resort Marina 2-Zimmer-Apartment2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber",
+   "total": 443,
+   "url": "https://www.airbnb.de/rooms/1615075294743940270",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 148
+  },
+  {
+   "title": "Gästehaus in Bad Sülze",
+   "desc": "Ferienhaus nahe der Ostsee und der Halbinsel Darß1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gas",
+   "total": 267,
+   "url": "https://www.airbnb.de/rooms/54045646",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 89
+  },
+  {
+   "title": "Wohnung in Krakow am See",
+   "desc": "Ferienwohnung van de Bettkantee in Krakow am See1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gast",
+   "total": 339,
+   "url": "https://www.airbnb.de/rooms/33886455",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 113
+  },
+  {
+   "title": "Wohnung in Rechlin",
+   "desc": "Schöne Wohnung in Rechlin mit Sauna3 Schlafzimmer3 Schlafzimmer,  · 5 Betten5 Betten,  · 2 Badezimmer2 BadezimmerGewerbliche:r Gastgeber:inG",
+   "total": 699,
+   "url": "https://www.airbnb.de/rooms/35199399",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 233
+  },
+  {
+   "title": "Eigentumswohnung in Grabowhöfe",
+   "desc": "große FeWo mit Spielplatz, Sauna & Badeschiff2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeb",
+   "total": 499,
+   "url": "https://www.airbnb.de/rooms/24069799",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 166
+  },
+  {
+   "title": "Wohnung in Jabel",
+   "desc": "Schöne Fewo in der Morgensonne2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r ",
+   "total": 246,
+   "url": "https://www.airbnb.de/rooms/1094659425084743699",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 82
+  },
+  {
+   "title": "Wohnung in Neuruppin",
+   "desc": "Künstlerstudio mit Kinderzimmer1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r",
+   "total": 309,
+   "url": "https://www.airbnb.de/rooms/882327159137713025",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 103
+  },
+  {
+   "title": "Wohnung in Dargun",
+   "desc": "Foto 1 von 6Wohnung in DargunFeWo Wollin Mecklenburg Pool2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewer",
+   "total": 398,
+   "url": "https://www.airbnb.de/rooms/1197191271971905618",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 133
+  },
+  {
+   "title": "Wohnung in Rechlin",
+   "desc": "FeWo \"Ellerholz\" am Müritz Nationalpark2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inP",
+   "total": 623,
+   "url": "https://www.airbnb.de/rooms/1122155309637403620",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 208
+  },
+  {
+   "title": "Gästehaus in Neustrelitz",
+   "desc": "Gartenhaus 52 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:inGesamt",
+   "total": 476,
+   "url": "https://www.airbnb.de/rooms/1216431093364165139",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 159
+  },
+  {
+   "title": "Privatunterkunft in Schwarz",
+   "desc": "Dorfstraße 2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:inGesamtp",
+   "total": 380,
+   "url": "https://www.airbnb.de/rooms/1719076650553347579",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 127
+  },
+  {
+   "title": "Blockhütte in Hohen Pritz",
+   "desc": "süßes Blockhaus 3 direkt am See1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r",
+   "total": 484,
+   "url": "https://www.airbnb.de/rooms/864989480042169057",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 161
+  },
+  {
+   "title": "Privatunterkunft in Stechlin",
+   "desc": "Urlaub am Stechlinsee (Benny)2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbl",
+   "total": 477,
+   "url": "https://www.airbnb.de/rooms/25601591",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 159
+  },
+  {
+   "title": "Privatunterkunft in Carpin",
+   "desc": "Ferienwohnung mit Kachelofen - Goldenbaum 38a2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeb",
+   "total": 345,
+   "url": "https://www.airbnb.de/rooms/38602382",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 115
+  },
+  {
+   "title": "Übernachtungsmöglichkeit in Friedland",
+   "desc": "Gemütliches Schlaffass direkt am Mühlenteich1 Schlafzimmer1 Schlafzimmer,  · 1 Bett1 Bett,  · Kein BadezimmerKein BadezimmerGewerbliche:r Ga",
+   "total": 265,
+   "url": "https://www.airbnb.de/rooms/664891218056002800",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 88
+  },
+  {
+   "title": "Privatunterkunft in Zempow",
+   "desc": "Studio Zempow / ökologisches Holzhaus / Fotostudio3 Schlafzimmer3 Schlafzimmer,  · 5 Betten5 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:",
+   "total": 670,
+   "url": "https://www.airbnb.de/rooms/32655019",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 223
+  },
+  {
+   "title": "Scheune in Bugewitz",
+   "desc": "Familienwohnung 2 mit Kamin2 Schlafzimmer2 Schlafzimmer,  · 5 Betten5 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gas",
+   "total": 300,
+   "url": "https://www.airbnb.de/rooms/1261368716230566310",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 100
+  },
+  {
+   "title": "Bauernhof in Gumtow",
+   "desc": "Hof Rittersporn3 Schlafzimmer3 Schlafzimmer,  · 3 Kingsize-Doppelbetten3 Kingsize-Doppelbetten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gas",
+   "total": 791,
+   "url": "https://www.airbnb.de/rooms/51533169",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 264
+  },
+  {
+   "title": "Wohnung in Reimershagen",
+   "desc": "Ferienwohnung unterm Sternenhimmel2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivat",
+   "total": 408,
+   "url": "https://www.airbnb.de/rooms/698935622862028328",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 136
+  },
+  {
+   "title": "Wohnung in Lelkendorf",
+   "desc": "Ferienwohnung im Alten Speicher1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r",
+   "total": 296,
+   "url": "https://www.airbnb.de/rooms/1157322152227848268",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 99
+  },
+  {
+   "title": "Wohnung in Rheinsberg",
+   "desc": "Ferienwohnung im Denkmal restauriert direkt am See1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Ga",
+   "total": 609,
+   "url": "https://www.airbnb.de/rooms/1679151180511258795",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 203
+  },
+  {
+   "title": "Wohnung in Göhren-Lebbin",
+   "desc": "Familien-Urlaub | Großer Garten2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r",
+   "total": 288,
+   "url": "https://www.airbnb.de/rooms/1404459371309819014",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 96
+  },
+  {
+   "title": "Kuppelhaus in Templin",
+   "desc": "Lehmhaus massiv1 Schlafzimmer1 Schlafzimmer,  · 1 Bett1 Bett,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:inGesamtp",
+   "total": 329,
+   "url": "https://www.airbnb.de/rooms/790320903166450451",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 110
   }
  ],
  "scrape_info": {

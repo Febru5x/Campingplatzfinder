@@ -123,11 +123,20 @@ Brandenburg (gesamt), Sachsen (gesamt), Sachsen-Anhalt + Thüringen
    ThürKies/Erfurt am See ja = große Kiesseen).
 8c. **Lokale Preis-Benchmarks (s06)**: Portal-Angebote (7.) werden je Ort
    geokodiert (Photon/Komoot, Fallback Nominatim; Ort aus Airbnb-Titel
-   „Tiny House in X" bzw. Booking-Ortsfeld; Cache
-   `data/portal_geo_<region>.json`). Rechenbeispiel
-   je Platz: Median passender Angebote im Umkreis 25 km (mind. 2), minus
-   20 % Camping-Abschlag gegenüber Premium-Inseraten; sonst Regions-Median.
-   3 Einheiten × 140 Nächte (konservative Auslastungsannahme, ganzjährig).
+   „… in X" bzw. Booking-Ortsfeld; Cache `data/portal_geo_<region>.json`).
+   Vergleichsobjekt: **ganze kleine Unterkunft mit Küche für ~4 Personen**
+   (Ferienhaus/FeWo/Bungalow/Chalet/Blockhütte/Tiny House/Mobilheim/
+   Wohnung) – keine Zimmer in fremder Wohnung, keine Hotels/Pensionen,
+   keine Zelte/Schlaffässer/Jurten/Campingbusse (`classify_offer`).
+   Zusatz-Scrape 2026-11: Airbnb-Filter „ganze Unterkunft", 2 Erw.+2 Kinder,
+   3 Seiten je Region (+232 Angebote, `data/airbnb_units_scrape.json`).
+   Rechenbeispiel je Platz: Median passender Angebote im Umkreis 25 km
+   (mind. 2), minus 20 % Camping-Abschlag; sonst Regions-Median
+   (`unterkunft_median`, breiter Pool Airbnb+Booking).
+   **Einheitenzahl 1–5 flächenbasiert**: Reserve = Grundstück − genutzte
+   Fläche, ~250 m² je Einheit inkl. Abstand/Grün; nur eine Fläche bekannt
+   → 15 % davon konservativ frei; ohne Flächen Standard 3.
+   × 140 Nächte (konservative Auslastungsannahme, ganzjährig).
 8d. **Website-Modernität (s19)**: Heuristik 0–10 aus HTML-Merkmalen der
    Betreiber-Website (mobil-tauglich, HTTPS, Online-Buchung, aktuelles
    Jahr, Social Media, Framework; Abzüge für Uralt-Technik/Copyright).

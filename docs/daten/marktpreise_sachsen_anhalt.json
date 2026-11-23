@@ -1,6 +1,6 @@
 {
  "region": "sachsen_anhalt",
- "stand": "2026-11-22T22:30:31.683905+00:00",
+ "stand": "2026-11-23T14:07:06.605998+00:00",
  "benchmarks": {
   "portal_luxus_median": null,
   "portal_luxus_spanne": null,
@@ -17,16 +17,22 @@
    267
   ],
   "n_booking_boote": 6,
-  "airbnb_tiny_median": 138,
+  "airbnb_tiny_median": 149,
   "airbnb_tiny_spanne": [
    77,
-   152
+   170
   ],
-  "n_airbnb_tiny": 4,
-  "airbnb_hausboot_median": null,
-  "n_airbnb_boote": 0,
+  "n_airbnb_tiny": 6,
+  "unterkunft_median": 140,
+  "unterkunft_spanne": [
+   66,
+   273
+  ],
+  "n_unterkuenfte": 58,
+  "airbnb_hausboot_median": 167,
+  "n_airbnb_boote": 4,
   "hinweis": "Booking + Airbnb im echten Browser gescrapt (Hauptsaison 2027-07-09, 3 Nächte, 2 Erw.). Preise sind Gesamtpreis/Nächte; Servicegebühren Airbnb inklusive, Booking zzgl. teils Endreinigung. Deep-Links je Platz in Excel für Detailprüfung.",
-  "tiny_vorschlag": 138,
+  "tiny_vorschlag": 140,
   "hausboot_vorschlag": 242
  },
  "portal_angebote": [],
@@ -144,24 +150,24 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Touristenzentrum%20Zabakuck&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Boot und Campingcenter Aken",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Boot%20und%20Campingcenter%20Aken&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingplatz Prettin",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Prettin&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Campingplatz Steinhafen",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Steinhafen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
+   "name": "Boot und Campingcenter Aken",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Boot%20und%20Campingcenter%20Aken&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Marina-Camp Elbe",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Marina-Camp%20Elbe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
    "name": "Blütengrund",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Bl%C3%BCtengrund&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Prettin",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Prettin&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Camping Niegripper See",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Niegripper%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Family-Camp-Kellerwiehl",
@@ -176,36 +182,16 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Schifferklause&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Marina-Camp Elbe",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Marina-Camp%20Elbe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
    "name": "Aktivcamp & Tipidorf",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Aktivcamp%20%26%20Tipidorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Radfahrer-Zeltplatz",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Radfahrer-Zeltplatz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Camping-Oase Steinbruchsee Süplingen",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping-Oase%20Steinbruchsee%20S%C3%BCplingen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Junkers Paddelgemeinschaft",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Junkers%20Paddelgemeinschaft&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Stellplatz am Sportboothafen Calvörde",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20am%20Sportboothafen%20Calv%C3%B6rde&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Ferienpark Plötzky - Kleiner Waldsee",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienpark%20Pl%C3%B6tzky%20-%20Kleiner%20Waldsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
    "name": "Ferienpark Birnbaumteich",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienpark%20Birnbaumteich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Seesportverein Dessau e.V.",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Seesportverein%20Dessau%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Wassersportgemeinschaft Wittenberg 1962 e. V. (Campingmöglichkeit)",
@@ -216,52 +202,76 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Ruderclub%20Wittenberg%20%28Campinggelegenheit%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
+   "name": "Camping-Oase Steinbruchsee Süplingen",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping-Oase%20Steinbruchsee%20S%C3%BCplingen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ferienpark Plötzky - Kleiner Waldsee",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienpark%20Pl%C3%B6tzky%20-%20Kleiner%20Waldsee&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Camping Niegripper See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Niegripper%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Junkers Paddelgemeinschaft",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Junkers%20Paddelgemeinschaft&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Stellplatz am Sportboothafen Calvörde",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20am%20Sportboothafen%20Calv%C3%B6rde&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Radfahrer-Zeltplatz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Radfahrer-Zeltplatz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
    "name": "Am See",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Am%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Seesportverein Dessau e.V.",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Seesportverein%20Dessau%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Hasse Campingplatz",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Hasse%20Campingplatz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz „Prödler See“",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20%E2%80%9EPr%C3%B6dler%20See%E2%80%9C&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Seeburg",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Seeburg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz \"Kolumbussee\"",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20%22Kolumbussee%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Kanuverein \"Harmonie\" Elster/Elbe",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Kanuverein%20%22Harmonie%22%20Elster/Elbe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Petriförder",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Petrif%C3%B6rder&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "See Terrassen",
    "booking": "https://www.booking.com/searchresults.de.html?ss=See%20Terrassen&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
+   "name": "Bergwitzsee Resort",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Bergwitzsee%20Resort&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Petriförder",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Petrif%C3%B6rder&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Magdeburg Wohnmobilstellplatz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Magdeburg%20Wohnmobilstellplatz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
    "name": "Campingplatz Barleber See",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Barleber%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Feriendorf am Flämingbad",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Feriendorf%20am%20Fl%C3%A4mingbad&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingplatz „Prödler See“",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20%E2%80%9EPr%C3%B6dler%20See%E2%80%9C&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Zeltwiese Bootshaus Bad Dürrenberg",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Zeltwiese%20Bootshaus%20Bad%20D%C3%BCrrenberg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingresort Sandersdorf",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingresort%20Sandersdorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wassersportverein Buckau-Fermersleben Wohnmobilstellplätze",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wassersportverein%20Buckau-Fermersleben%20Wohnmobilstellpl%C3%A4tze&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Seeburg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Seeburg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Pappelgrund",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Pappelgrund&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Feriendorf am Flämingbad",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Feriendorf%20am%20Fl%C3%A4mingbad&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Reisemobilstellplatz \"Am Forellenteich\"",
@@ -272,16 +282,12 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Freizeit-%20und%20Tourismusverein%20Balgst%C3%A4dt&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Stellplatz am Drahtzug",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Stellplatz%20am%20Drahtzug&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Kanuverein \"Harmonie\" Elster/Elbe",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Kanuverein%20%22Harmonie%22%20Elster/Elbe&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Magdeburg Wohnmobilstellplatz",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Magdeburg%20Wohnmobilstellplatz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Strandbad 1",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Strandbad%201&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Yachtclub Dessau",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Yachtclub%20Dessau&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   }
  ],
  "booking_hausboote": [
@@ -405,6 +411,447 @@
    "total": 527,
    "url": "https://www.airbnb.de/rooms/940607196922732632",
    "preis_nacht": 176
+  },
+  {
+   "title": "Privatunterkunft in Ditfurt",
+   "desc": "Foto 1 von 6Beliebter Gäste-Favorit.Gäste-FavoritPrivatunterkunft in DitfurtDurchschnittliche Bewertung: 5,0 von 5, 45 Bewertungen5,0 (45)La",
+   "total": 450,
+   "url": "https://www.airbnb.de/rooms/1513420678881173946",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 150
+  },
+  {
+   "title": "Privatunterkunft in Bad Schmiedeberg",
+   "desc": "NatureDreams.1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:inGesam",
+   "total": 423,
+   "url": "https://www.airbnb.de/rooms/1618629041266754161",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 141
+  },
+  {
+   "title": "Bungalow in Kropstädt",
+   "desc": "Ferienhaus im Hohen Fläming Nähe Luth.Wittenberg1 Schlafzimmer1 Schlafzimmer,  · 4 Betten4 Betten,  · 2,5 Bäder2,5 BäderPrivate:r Gastgeber:",
+   "total": 276,
+   "url": "https://www.airbnb.de/rooms/805560061389234166",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 92
+  },
+  {
+   "title": "Wohnung in Gerbstedt",
+   "desc": "Urlaub auf dem Rittergut1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastge",
+   "total": 409,
+   "url": "https://www.airbnb.de/rooms/1424457725737602111",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 136
+  },
+  {
+   "title": "Cottage in Klitsche",
+   "desc": "Historisches Fachwerkhaus mit Pool & Sauna2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastge",
+   "total": 465,
+   "url": "https://www.airbnb.de/rooms/1587043005649211763",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 155
+  },
+  {
+   "title": "Privatunterkunft in Thale",
+   "desc": "Fuxbau – Design-Ferienhaus Harz mit Sauna & Kamin2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 2 Badezimmer2 BadezimmerPrivate:r Gas",
+   "total": 647,
+   "url": "https://www.airbnb.de/rooms/1642957764296002045",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 216
+  },
+  {
+   "title": "Wohnung in Braunlage",
+   "desc": "Modernes Apartment im Wald mit Pool und Sauna1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gas",
+   "total": 222,
+   "url": "https://www.airbnb.de/rooms/1455167726357945225",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 74
+  },
+  {
+   "title": "Chalet in Thale",
+   "desc": "Behagliches Chalet mit Kamin und Sauna2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:",
+   "total": 507,
+   "url": "https://www.airbnb.de/rooms/722439886947635072",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 169
+  },
+  {
+   "title": "Wohnung in Selke-Aue",
+   "desc": "Alte Post am historischen Pfarrhof1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivat",
+   "total": 378,
+   "url": "https://www.airbnb.de/rooms/1729198239418194736",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 126
+  },
+  {
+   "title": "Wohnung in Braunlage",
+   "desc": "Ferienwohnung Waldeslust Braunlage Harz1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inP",
+   "total": 312,
+   "url": "https://www.airbnb.de/rooms/1239028311372586604",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 104
+  },
+  {
+   "title": "Jurte (Rundzelt) in Herbsleben",
+   "desc": "Moderne Jurte Herbsleben „Im Schlossgarten“1 Schlafzimmer1 Schlafzimmer,  · 6 Einzelbetten6 Einzelbetten,  · 1 Badezimmer1 BadezimmerPrivate",
+   "total": 495,
+   "url": "https://www.airbnb.de/rooms/20844499",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 165
+  },
+  {
+   "title": "Eigentumswohnung in Thale",
+   "desc": "Ferienwohnung Sagenhaft2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeb",
+   "total": 300,
+   "url": "https://www.airbnb.de/rooms/17265729",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 100
+  },
+  {
+   "title": "Eigentumswohnung in Wiesenburg/Mark",
+   "desc": "Traumhafte Schlosswohnung2 Schlafzimmer2 Schlafzimmer,  · 2 Doppelbetten2 Doppelbetten,  · 2 Badezimmer2 BadezimmerGewerbliche:r Gastgeber:i",
+   "total": 378,
+   "url": "https://www.airbnb.de/rooms/3418724",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 126
+  },
+  {
+   "title": "Bauernhof in Milower Land",
+   "desc": "Landurlaub auf altem Hof  inklusive frischen Eiern2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:",
+   "total": 410,
+   "url": "https://www.airbnb.de/rooms/43653453",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 137
+  },
+  {
+   "title": "Ferienunterkunft in Wernigerode",
+   "desc": "FeWo Harzliebe am Fusse des Brockens mit Sauna2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastge",
+   "total": 502,
+   "url": "https://www.airbnb.de/rooms/1030240919233979865",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 167
+  },
+  {
+   "title": "Hausboot in Havelsee",
+   "desc": "Foto 1 von 6Hausboot in HavelseeHausboot Übernachtung mit Wasserblick 2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 Ba",
+   "total": 489,
+   "url": "https://www.airbnb.de/rooms/1721764883727603535",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 163
+  },
+  {
+   "title": "Blockhütte in Braunlage",
+   "desc": "Busches Butze Peak | Blockhaus, Kamin & Hund3 Schlafzimmer3 Schlafzimmer,  · 5 Betten5 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgebe",
+   "total": 710,
+   "url": "https://www.airbnb.de/rooms/1762902977733801865",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 237
+  },
+  {
+   "title": "Tiny House in Kloster Lehnin",
+   "desc": "Auszeit im Tiny House Hilde/ 2 Stand Up Paddeling2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r",
+   "total": 510,
+   "url": "https://www.airbnb.de/rooms/1389626470513143020",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 170
+  },
+  {
+   "title": "Wohnung in Langenstein",
+   "desc": "Gut Mahndorf2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 2,5 Bäder2,5 BäderPrivate:r Gastgeber:inPrivate:r Gastgeber:inGesamtpreis ",
+   "total": 347,
+   "url": "https://www.airbnb.de/rooms/42127984",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 116
+  },
+  {
+   "title": "Wohnung in Wernigerode",
+   "desc": "Wernigerode im Harz2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:i",
+   "total": 315,
+   "url": "https://www.airbnb.de/rooms/1108046442861641694",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 105
+  },
+  {
+   "title": "Gästehaus in Werder",
+   "desc": "Schwielowseer Fischerhaus2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1,5 Bäder1,5 BäderPrivate:r Gastgeber:inPrivate:r Gastgeber:i",
+   "total": 402,
+   "url": "https://www.airbnb.de/rooms/835544885453906009",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 134
+  },
+  {
+   "title": "Wohnung in Thale",
+   "desc": "Ferienwohnung Lauenburg1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeb",
+   "total": 290,
+   "url": "https://www.airbnb.de/rooms/962144619735207331",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 97
+  },
+  {
+   "title": "Tiny House in Arendsee (Altmark)",
+   "desc": "Gemütliches Tiny House am Arendsee Sauna&Terrasse2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gas",
+   "total": 447,
+   "url": "https://www.airbnb.de/rooms/1268709651156767795",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 149
+  },
+  {
+   "title": "Ferienunterkunft in Blankenburg (Harz)",
+   "desc": "Altstadtjuwel: schöne Unterkunft mit Loggia2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastg",
+   "total": 341,
+   "url": "https://www.airbnb.de/rooms/677994258558673377",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 114
+  },
+  {
+   "title": "Privatunterkunft in Walkenried",
+   "desc": "Ferienhaus im Harz 2c2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber",
+   "total": 668,
+   "url": "https://www.airbnb.de/rooms/902141865146091402",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 223
+  },
+  {
+   "title": "Wohnung in Cavertitz",
+   "desc": "Ferienwohnung bei Elke Zuhause2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerb",
+   "total": 225,
+   "url": "https://www.airbnb.de/rooms/1266450521807922156",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 75
+  },
+  {
+   "title": "Hausboot in Neuruppin",
+   "desc": "Floß - AHOI!1 Schlafzimmer1 Schlafzimmer,  · 4 Betten4 Betten,  · WC und WaschbeckenWC und WaschbeckenGewerbliche:r Gastgeber:inGewerbliche:",
+   "total": 502,
+   "url": "https://www.airbnb.de/rooms/10581490",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 167
+  },
+  {
+   "title": "Blockhütte in Walkenried",
+   "desc": "Ferienhaus im Harz 2b3 Schlafzimmer3 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber",
+   "total": 819,
+   "url": "https://www.airbnb.de/rooms/1749114005486154407",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 273
+  },
+  {
+   "title": "Hausboot in Havelsee",
+   "desc": "Foto 1 von 6Hausboot in HavelseeHausboot Übernachtung mit Wasserblick 2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 Ba",
+   "total": 489,
+   "url": "https://www.airbnb.de/rooms/1745018729172465174",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 163
+  },
+  {
+   "title": "Hausboot in Lindow (Mark)",
+   "desc": "leise los Hausboote: Die Lux1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbli",
+   "total": 932,
+   "url": "https://www.airbnb.de/rooms/1638234112521933740",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 311
+  },
+  {
+   "title": "Gästehaus in Wernigerode",
+   "desc": "Klein aber fein1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:inGes",
+   "total": 273,
+   "url": "https://www.airbnb.de/rooms/796179524124135850",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 91
+  },
+  {
+   "title": "Wohnung in Schönebeck",
+   "desc": "Morgensonne in Schönebeck1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastg",
+   "total": 199,
+   "url": "https://www.airbnb.de/rooms/1158775917006365189",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 66
+  },
+  {
+   "title": "Privatunterkunft in Blankenburg",
+   "desc": "Alte Remise Blankenburg1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeb",
+   "total": 468,
+   "url": "https://www.airbnb.de/rooms/1599850133829923721",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 156
+  },
+  {
+   "title": "Wohnung in Magdeburg",
+   "desc": "Komfort-Apartment | Grill Terrasse | Sky | Parken2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gas",
+   "total": 249,
+   "url": "https://www.airbnb.de/rooms/1130567190301456827",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 83
+  },
+  {
+   "title": "Wohnung in Halle (Saale)",
+   "desc": "Urlaub im Süden von Halle2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastg",
+   "total": 249,
+   "url": "https://www.airbnb.de/rooms/1195534579685479908",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 83
+  },
+  {
+   "title": "Blockhütte in Räbke",
+   "desc": "Klein Elmau - Das Waldidyll im Elm1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivat",
+   "total": 474,
+   "url": "https://www.airbnb.de/rooms/1011173315350847984",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 158
+  },
+  {
+   "title": "Wohnung in Leipzig",
+   "desc": "Grüne Oase in Stötteritz1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastge",
+   "total": 270,
+   "url": "https://www.airbnb.de/rooms/1042074710705888199",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 90
+  },
+  {
+   "title": "Wohnung in Tanne",
+   "desc": "Alpaka Haus Sanssouci Tanne Oberharz Balkonwohnung2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Ga",
+   "total": 419,
+   "url": "https://www.airbnb.de/rooms/48023556",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 140
+  },
+  {
+   "title": "Privatunterkunft in Nordhausen",
+   "desc": "Ferienhäuschen für eine Auszeit in Nordhausen/Harz2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Ga",
+   "total": 581,
+   "url": "https://www.airbnb.de/rooms/710668221801220766",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 194
+  },
+  {
+   "title": "Wohnung in Braunlage",
+   "desc": "Apartment Weitblick – Auszeit mit Harzpanorama2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastge",
+   "total": 320,
+   "url": "https://www.airbnb.de/rooms/1759564876628295481",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 107
+  },
+  {
+   "title": "Ferienunterkunft in Neukieritzsch",
+   "desc": "(H)Auszeit 37 / Privates Ferienhaus am See1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1,5 Bäder1,5 BäderPrivate:r Gastgeber:inPriv",
+   "total": 796,
+   "url": "https://www.airbnb.de/rooms/588985152671417377",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 265
+  },
+  {
+   "title": "Wohnung in Tanne",
+   "desc": "Alpaka Haus Sanssouci Tanne Oberharz  Kaminwohnung2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1,5 Bäder1,5 BäderPrivate:r Gastgebe",
+   "total": 479,
+   "url": "https://www.airbnb.de/rooms/39219958",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 160
+  },
+  {
+   "title": "Privatunterkunft in Rathenow",
+   "desc": "Naturhaus Havelland – Seeblick1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r ",
+   "total": 539,
+   "url": "https://www.airbnb.de/rooms/1651319211187469471",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 180
+  },
+  {
+   "title": "Gästehaus in Ilsenburg",
+   "desc": "HollandHaus — Ankommen und Wohlfühlen!3 Schlafzimmer3 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:",
+   "total": 478,
+   "url": "https://www.airbnb.de/rooms/33525090",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 159
+  },
+  {
+   "title": "Wohnung in Nessetal",
+   "desc": "Stilvolle Familien-Auszeit im Herzen Thüringens2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 2 Badezimmer2 BadezimmerPrivate:r Gastg",
+   "total": 524,
+   "url": "https://www.airbnb.de/rooms/1756727688099515795",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 175
+  },
+  {
+   "title": "Blockhütte in Sangerhausen",
+   "desc": "Chalet mit Gästehaus in der Natur + Fass-Sauna2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Ga",
+   "total": 694,
+   "url": "https://www.airbnb.de/rooms/655563047769604629",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 231
+  },
+  {
+   "title": "Bungalow in Thale",
+   "desc": "BodeBude Ferienhäuser1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbliche:r G",
+   "total": 288,
+   "url": "https://www.airbnb.de/rooms/1326056809605733332",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 96
+  },
+  {
+   "title": "Wohnung in Blankenburg",
+   "desc": "Schlossblick Blankenburg2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbliche:",
+   "total": 389,
+   "url": "https://www.airbnb.de/rooms/1464524686563745087",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 130
+  },
+  {
+   "title": "Wohnung in Wernigerode",
+   "desc": "zentrale Wohnung in Wernigerode2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r",
+   "total": 348,
+   "url": "https://www.airbnb.de/rooms/1242628561635408629",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 116
   }
  ],
  "scrape_info": {

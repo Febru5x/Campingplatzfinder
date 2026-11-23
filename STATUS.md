@@ -1,4 +1,43 @@
-# STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online + Nachschaerfung Runde 4)
+# STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online + Runde 5)
+
+## Nachschaerfung Runde 5 (2026-11-23, Vereine + Preis-Benchmark + Flaechen)
+- **Vereins-Logik (s17) verschaerft-praezisiert**: Verein MIT Vereinsheim
+  (ALKIS Wohn-/Wirtschafts-/oeffentliche Gebaeude) aber MIT Camping-
+  Struktur (Mietunterkuenfte/Zelte/Dauercamper) bleibt jetzt SICHTBAR
+  ('Einzelfall pruefen'); nur ohne Camping-Struktur hidden. Vereine ohne
+  erfasstes Heim bleiben sichtbar. s14 nimmt bei --top=N jetzt ALLE
+  Vereine mit (nicht nur Top-N nach Score) → Heim-Pruefung vollstaendig.
+  Vereins-ERFASSUNG kommt nur aus OSM camp_site/caravan_site (44 Vereine
+  gesamt) – Vereinsgelaende ohne Camping-Tag sind bewusst nicht drin.
+- **Preis-Benchmark auf ganze Unterkuenfte erweitert (s06/s13)**:
+  Vergleichsobjekt = eigenstaendige kleine Unterkunft MIT Kueche fuer
+  ~4 Personen (2 Erw.+2 Kinder): Ferienhaus/FeWo/Bungalow/Chalet/
+  Blockhuette/Tiny House/Mobilheim/Wohnung. RAUS: Zimmer in fremder
+  Wohnung, Hotels/Pensionen, Zelte/Schlaffaesser/Jurten, Campingbusse.
+  classify_offer() klassifiziert Titel+Typ; 'Privatunterkunft'/'Gaeste-
+  haus' sind bei Airbnb (Filter 'ganze Unterkunft') Kategorien, keine
+  Zimmer. Zusatz-Scrape 2026-11: Airbnb-Suche ganze Unterkunft,
+  4 Gaeste, 9.-12.7.2027, 3 Seiten je Region (+232 Angebote, Dedup per
+  Room-ID) → data/airbnb_units_scrape.json, gemergt in portalpreise_*_raw.
+  Regions-Median jetzt 'unterkunft_median' (breiter Pool, Airbnb+Booking).
+- **Einheitenzahl 1-5 flaechenbasiert (s06)**: Reserve = Grundstueck −
+  genutzte Flaeche (~250 m² je Einheit inkl. Abstand/Gruen); nur eine
+  Flaeche bekannt → 15 % davon konservativ frei; ohne Flaechen Standard 3.
+  Herleitung steht im Rechenbeispiel-Text.
+- **Flurstueck-Zuordnung repariert (s03 attribute_parcels)**: Punkt-
+  Plaetze (OSM-node) hatten ALLE BBOX-Flurstuecke gezaehlt (inkl. Riesen-
+  Seeflurstuecke, z.B. Surfclub Borna 1,9 km²!). Jetzt: Punkt im
+  Flurstueck ODER >25 % Ueberlappung mit 100-m-Umkreis; Polygon-Plaetze
+  >5 % wie bisher, aber buffer(0) gegen Topologiefehler (vorher stiller
+  Fallback auf ALLE). Keine verwertbare Zuordnung → parcel_area NULL
+  statt Summe. 434 Flaechen korrigiert, 161 auf NULL. s07 zeigt nur
+  noch zum_platz-Flurstuecke. 'leer geprueft' wird als '[]' markiert
+  (kein Endlos-Retry; CAMPING_REFRESH/CAMPING_RETRY_EMPTY holt zurueck).
+  MV/BB: 92 Plaetze liefern dauerhaft keine Flurstuecke (Kataster-
+  Abdeckung), SN: 60 nachgeholt.
+- **Popup kompakter (s07/s08)**: 'Vorhanden: Hausboot / Tinyhaus' in
+  EINER Zeile; Panel 540px/Popup 560px; Label 'Bebaubarkeit' ohne
+  '(Ampel)'; Info-Texte Flaeche/Rechenbeispiel aktualisiert.
 
 ## Nachschaerfung Runde 4 (2026-11-23, Scoring-Feinschliff + Rechenbeispiel)
 - **Score-Anzeige**: Komponenten als 'erreicht / erreichbar' (z.B. 8/15),

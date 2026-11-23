@@ -7,6 +7,7 @@ alle Flurstuecke, die ihn ueberdecken.
 Aufruf:  python -m pipeline.s03_grundstueck seenplatte
 """
 import json
+import os
 import re
 import sys
 import time
@@ -162,6 +163,50 @@ def parse_parcels(gml_text):
     return out
 
 
+def attribute_parcels(site, plist):
+    """Welche Flurstuecke gehoeren zum Platz? (Nachbar-/Seeflurstuecke raus.)
+    Polygon-Platz: >5 % Ueberlappung mit OSM-Umriss. Punkt-Platz: Punkt im
+    Flurstueck oder >25 % Ueberlappung mit 100-m-Umkreis. Beide Geometrien
+    buffer(0) gegen Topologiefehler. Ergebnis: (gesamtflaeche|None);
+    setzt p['zum_platz'] je Flurstueck."""
+    from shapely.geometry import Point as _Pt
+    g_site_ll = shape(json.loads(site["geometry"])) if site["geometry"] else None
+    if g_site_ll is not None and not g_site_ll.is_valid:
+        g_site_ll = g_site_ll.buffer(0)
+    pt = _Pt(site["lon"], site["lat"])
+    g_ref_ll = g_site_ll if g_site_ll is not None else pt.buffer(0.0009)  # ~100 m
+    overlap_area = 0.0
+    for p in plist:
+        p["zum_platz"] = False
+        f = p.get("flaeche_m2") or 0
+        if not p.get("geometry"):
+            # ohne Geometrie (MV-GFI): nur plausible Groessen zaehlen
+            if 0 < f <= 100000:
+                p["zum_platz"] = True
+                overlap_area += f
+            continue
+        try:
+            gp = shape(p["geometry"])
+            if not gp.is_valid:
+                gp = gp.buffer(0)
+            inter = gp.intersection(g_ref_ll)
+            share = inter.area / gp.area if gp.area else 0
+            if g_site_ll is not None:
+                belong = share > 0.05
+            else:
+                belong = gp.contains(pt) or share > 0.25
+            if belong:
+                p["zum_platz"] = True
+                overlap_area += f
+        except Exception:
+            if 0 < f <= 300000:
+                p["zum_platz"] = True
+                overlap_area += f
+    # ohne verwertbare Ueberlappung: keine Gesamtflaeche behaupten
+    # (Riesen-Seeflurstuecke sind kein Camping-Grundstueck)
+    return overlap_area if overlap_area > 0 else None
+
+
 def sample_points(g_site, spacing=70):
     """Rasterpunkte innerhalb des Platzes + Schwerpunkt."""
     minx, miny, maxx, maxy = g_site.bounds
@@ -185,6 +230,11 @@ def run(region_name, workers=1):
         "SELECT * FROM sites WHERE region=?", (region_name,)).fetchall()
     done = {r["site_id"] for r in conn.execute(
         "SELECT site_id FROM enrichment WHERE parcels IS NOT NULL")}
+    # bei Refresh/Retry: als leer markierte Plaetze erneut versuchen
+    # (Kataster-Abdeckung waechst; '[]' = leer geprueft, NULL = nie versucht)
+    if os.environ.get("CAMPING_REFRESH") or os.environ.get("CAMPING_RETRY_EMPTY"):
+        done -= {r["site_id"] for r in conn.execute(
+            "SELECT site_id FROM enrichment WHERE parcels='[]'")}
     sites = [s for s in sites if s["id"] not in done]
     conn.close()
     print("Plaetze ohne Flurstuecke:", len(sites), "(bereits erfasst:", len(done), ")")
@@ -278,39 +328,33 @@ def run(region_name, workers=1):
                         parcels[key] = p
         if parcels:
             plist = list(parcels.values())
-            # Gesamtflaeche nur der Flurstuecke, die den Platz wirklich ueberlappen
-            # (Nachbar-Grundstuecke aus der BBOX-Abfrage nicht mitzaehlen)
-            g_site_ll = shape(json.loads(site["geometry"])) if site["geometry"] else None
-            overlap_area = 0.0
-            for p in plist:
-                if g_site_ll is not None and p.get("geometry"):
-                    try:
-                        gp = shape(p["geometry"])
-                        inter = gp.intersection(g_site_ll)
-                        share = inter.area / gp.area if gp.area else 0
-                        if share > 0.05:  # >5% Ueberlappung -> gehoert zum Platz
-                            overlap_area += p.get("flaeche_m2") or 0
-                            p["zum_platz"] = True
-                        else:
-                            p["zum_platz"] = False
-                    except Exception:
-                        p["zum_platz"] = True
-                        overlap_area += p.get("flaeche_m2") or 0
-                else:
-                    p["zum_platz"] = True
-                    overlap_area += p.get("flaeche_m2") or 0
-            total_area = overlap_area if overlap_area > 0 else sum(
-                p.get("flaeche_m2") or 0 for p in plist)
+            total_area = attribute_parcels(site, plist)
             sid = site["id"]
             ts = datetime.now(timezone.utc).isoformat()
             pj = json.dumps(plist, ensure_ascii=False)
-            def _write(c, pj=pj, total_area=total_area, ts=ts, sid=sid):
-                c.execute("""UPDATE enrichment SET parcels=?, parcel_area_m2=?,
-                    updated=? WHERE site_id=?""", (pj, total_area, ts, sid))
-            C.db_write(_write)
-            with lock:
-                counters["ok"] += 1
+            if total_area is None:
+                # nichts Verwertbares -> Flurstuecke speichern, aber keine
+                # Gesamtflaeche behaupten (zaehlt als 'leer geprueft')
+                def _write_none(c, sid=sid, pj=pj):
+                    c.execute("""UPDATE enrichment SET parcels=?, parcel_area_m2=NULL
+                        WHERE site_id=?""", (pj, sid))
+                C.db_write(_write_none)
+                with lock:
+                    counters["empty"] += 1
+            else:
+                def _write(c, pj=pj, total_area=total_area, ts=ts, sid=sid):
+                    c.execute("""UPDATE enrichment SET parcels=?, parcel_area_m2=?,
+                        updated=? WHERE site_id=?""", (pj, total_area, ts, sid))
+                C.db_write(_write)
+                with lock:
+                    counters["ok"] += 1
         else:
+            # leer: als 'leer geprueft' markieren (kein Endlos-Retry bei
+            # jedem Lauf; --retry-leere / CAMPING_REFRESH holt sie zurueck)
+            sid = site["id"]
+            def _write_empty(c, sid=sid):
+                c.execute("UPDATE enrichment SET parcels='[]' WHERE site_id=?", (sid,))
+            C.db_write(_write_empty)
             with lock:
                 counters["empty"] += 1
         with lock:

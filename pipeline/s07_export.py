@@ -38,7 +38,7 @@ COLS = [
     ("parcel_area_m2", "Grundstücksfläche/Flurstücke (m²)"),
     ("parcel_count", "Flurstücke (#)"),
     ("flurstuecke", "Flurstück-Kennzeichen"),
-    ("build_flag", "Bebaubarkeit (Ampel)"),
+    ("build_flag", "Bebaubarkeit"),
     ("bplan_namen", "B-Pläne (amtlich)"),
     ("bplan_links", "B-Plan-PDFs"),
     ("rental_age_est", "Bestandsalter / Erneuerung"),
@@ -93,9 +93,11 @@ def load_df(region_name):
         d = dict(r)
         try:
             plist = json.loads(d.get("parcels") or "[]")
-            d["parcel_count"] = len(plist)
+            # nur Flurstuecke, die wirklich zum Platz gehoeren (s03-Attribution)
+            plist_own = [p for p in plist if p.get("zum_platz")] or plist
+            d["parcel_count"] = len(plist_own)
             d["flurstuecke"] = "; ".join(
-                p.get("kennzeichen", "?") for p in plist[:8])
+                p.get("kennzeichen", "?") for p in plist_own[:8])
         except Exception:
             d["parcel_count"] = 0
             d["flurstuecke"] = ""
@@ -251,7 +253,7 @@ MAP_TMPL = """<!DOCTYPE html>
 <script src="https://unpkg.com/esri-leaflet@3.0.12/dist/esri-leaflet.js"></script>
 <style>
  body{{margin:0;font-family:system-ui,sans-serif}} #map{{height:100vh}}
- .panel{{max-width:440px;font-size:13px;line-height:1.45}}
+ .panel{{max-width:540px;font-size:13px;line-height:1.45}}
  .leaflet-popup-content{{max-height:62vh;overflow-y:auto;overflow-x:hidden;margin:12px 14px}}
  .leaflet-popup-content-wrapper{{border-radius:8px}}
  .panel h3{{margin:0 0 6px}} .panel img{{width:100%;border-radius:6px;margin:6px 0}}
@@ -375,8 +377,8 @@ const INFO={{
  miet:'Aus der Betreiber-Website ausgelesene Mietunterkünfte. Kann Fehltreffer enthalten (z. B. Angebote des Betreibers an anderem Ort) – vor Kontakt prüfen.',
  score:'Zwei getrennte Bewertungen: Tiny-House-Score (Wasserlage nur kleiner Bonus, dafür Bebaubarkeit) und Hausboot-Score (Wasserlage, Gewässer-Eignung, Steg und Uferlänge dominant; ohne Hausboot-Gewässer max 40). Der Lead-Score kombiniert beides für die Rangliste. Je Zeile: erreichte / erreichbare Punkte. Heuristik zur Vorauswahl.',
  modern:'Wie modern und gepflegt ist die eigene Website (0–10)? Merkmale: mobil-tauglich, HTTPS, Online-Buchung, aktuelles Jahr, Social Media, modernes Framework; Abzug für Uralt-Technik oder veraltetes Copyright. Proxy für Investitionsbereitschaft: wer die Website pflegt, pflegt oft auch den Platz. Reine Erreichbarkeit gibt keine Punkte (ist bereits Filterkriterium).',
- flaeche:'Genutzte Platzfläche aus OpenStreetMap: die dort von Freiwilligen eingezeichnete Platzgrenze (Polygon), berechnet aus der Geometrie. Keine AI-Bilderkennung, kein amtlicher Plan – kann ungenau sein (±30 %). Die amtliche Eigentumsfläche steht darunter (Grundstück gesamt, aus dem Liegenschaftskataster).',
- rechen:'Modellrechnung, kein Businessplan: 3 Einheiten (konservativ) × Nachtpreis × 140 vermietbare Nächte/Jahr (Auslastungsannahme, ganzjährig). Nachtpreis bevorzugt aus echten Airbnb-/Booking-Angeboten im Umkreis 25 km (Median, minus 20 % Camping-Abschlag gegenüber Premium-Inseraten); sonst Regions-Median. Stellplatz-Vergleich: gleicher Flächenbedarf, eigener Website-Preis oder Regions-Median × 110 Nächte.',
+ flaeche:'Genutzte Platzfläche aus OpenStreetMap: die dort von Freiwilligen eingezeichnete Platzgrenze (Polygon), berechnet aus der Geometrie. Keine AI-Bilderkennung, kein amtlicher Plan – kann ungenau sein (±30 %). Die amtliche Eigentumsfläche steht, sofern erfasst, unter „Grundstück gesamt" (Liegenschaftskataster). Fehlt eine der beiden Zeilen: OSM hat den Platz nur als Punkt ohne Umriss (keine genutzte Fläche) bzw. das Kataster lieferte (noch) keine Flurstücke (keine Gesamtfläche).',
+ rechen:'Modellrechnung, kein Businessplan: 1–5 Tinyhäuser je Platz (grobe Schätzung aus der Flächenreserve: Grundstück − genutzte Fläche, ~250 m² je Einheit inkl. Abstand/Grün; ohne Flächenangaben Standard 3) × Nachtpreis × 140 vermietbare Nächte/Jahr (Auslastungsannahme, ganzjährig). Nachtpreis aus echten Airbnb-/Booking-Angeboten im Umkreis 25 km: ganze kleine Unterkünfte mit Küche für ~4 Personen (Ferienhaus, Bungalow, Chalet, Ferienwohnung …) – keine Zimmer in fremder Wohnung, keine Hotels, keine Zelte/Schlaffässer. Median minus 20 % Camping-Abschlag gegenüber Premium-Inseraten; zu wenige Angebote → Regions-Median. Stellplatz-Vergleich: eigener Website-Preis oder Regions-Median × 110 Nächte.',
  bau:'Unterteilung nach Bebaubarkeits-Ampel: 15/15 = B-Plan weist Ferienhaus-/Campinggebiet aus (grün); 12/15 = feste Unterkünfte vorhanden, Details prüfen (gelb-grün); 8/15 = unklar, Bauamt fragen (gelb); 0/15 = keine belastbare Basis.'
 }};
 function info(k){{return '<span class="info">i<span class="tip">'+INFO[k]+'</span></span>';}}
@@ -420,13 +422,12 @@ function popupHtml(p){{
    ['Gewässer-Typ'+info('wasser'),p.waterbody_class+(p.water_area_ha!=null?' ('+Number(p.water_area_ha).toLocaleString('de')+' ha)':''),'html'],
    ['↳ Quelle der Einstufung',p.water_class_src,null],
    ['Hausboot-Gewässer geeignet',p.houseboat_water==='ja'?'ja (See/Stausee ≥5 ha)':p.houseboat_water==='nein'?'nein (zu klein/Fluss/Teich)':'unklar – prüfen',null],
-   ['Hausboot vorhanden',jaNein(p.has_houseboat),null],
-   ['Tinyhaus vorhanden',jaNein(p.has_tinyhouse),null],
+   ['Vorhanden: Hausboot / Tinyhaus',jaNein(p.has_houseboat)+' / '+jaNein(p.has_tinyhouse),null],
    ['Abstand Wasser',p.water_distance_m!=null?p.water_distance_m+' m':null,null],
    ['Uferlänge',p.shoreline_m?p.shoreline_m+' m':null,null],['Steg',p.has_pier?'ja':null,null],
    ['Fläche genutzt'+info('flaeche'),p.area_m2?Math.round(p.area_m2).toLocaleString('de')+' m²':null,'html'],
    ['Grundstück gesamt'+info('flurst'),p.parcel_area_m2?Math.round(p.parcel_area_m2).toLocaleString('de')+' m²'+(p.parcel_count?' · '+p.parcel_count+' Flurstück'+(p.parcel_count>1?'e':''):''):null,'html'],
-   ['Bebaubarkeit (Ampel)'+info('ampel'),p.build_flag,'html'],
+   ['Bebaubarkeit'+info('ampel'),p.build_flag,'html'],
    ['Dauercamper',p.seasonal?'ja':null,null],
    ['Mietunterkünfte'+info('miet'),p.rentals,'html'],['Bestandsalter',p.rental_age_est,null],
    ['Gebäude (amtl. Kataster)'+info('alkis'),p.geb?p.geb.n+' Geb., '+p.geb.flaeche.toLocaleString('de')+' m² ('+p.geb.typen.map(t=>t[0]+'×'+t[1]).join(', ')+')':null,'html'],
@@ -480,10 +481,10 @@ const markers=[];
 for(const p of SITES){{
  const m=L.circleMarker([p.lat,p.lon],{{radius:p.lead_score>=70?9:7,
    color:'#333',weight:1,fillColor:color(p.lead_score),fillOpacity:.9}});
- m.bindPopup(()=>popupHtml(p),{{maxWidth:460}});
+ m.bindPopup(()=>popupHtml(p),{{maxWidth:560}});
  if(p.geom){{
   const poly=L.geoJSON(p.geom,{{style:{{color:color(p.lead_score),weight:2,fillOpacity:.08}}}});
-  poly.bindPopup(()=>popupHtml(p),{{maxWidth:460}});
+  poly.bindPopup(()=>popupHtml(p),{{maxWidth:560}});
   m._poly=poly;
  }}
  m._p=p; markers.push(m);

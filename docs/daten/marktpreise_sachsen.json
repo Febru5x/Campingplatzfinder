@@ -1,6 +1,6 @@
 {
  "region": "sachsen",
- "stand": "2026-11-22T20:50:32.221574+00:00",
+ "stand": "2026-11-23T14:06:27.718455+00:00",
  "benchmarks": {
   "portal_luxus_median": null,
   "portal_luxus_spanne": null,
@@ -17,16 +17,22 @@
    66
   ],
   "n_booking_boote": 1,
-  "airbnb_tiny_median": 113,
+  "airbnb_tiny_median": 105,
   "airbnb_tiny_spanne": [
-   84,
-   155
+   58,
+   207
   ],
-  "n_airbnb_tiny": 8,
+  "n_airbnb_tiny": 11,
+  "unterkunft_median": 127,
+  "unterkunft_spanne": [
+   43,
+   355
+  ],
+  "n_unterkuenfte": 72,
   "airbnb_hausboot_median": null,
   "n_airbnb_boote": 0,
   "hinweis": "Booking + Airbnb im echten Browser gescrapt (Hauptsaison 2027-07-09, 3 Nächte, 2 Erw.). Preise sind Gesamtpreis/Nächte; Servicegebühren Airbnb inklusive, Booking zzgl. teils Endreinigung. Deep-Links je Platz in Excel für Detailprüfung.",
-  "tiny_vorschlag": 113,
+  "tiny_vorschlag": 127,
   "hausboot_vorschlag": 217,
   "hausboot_hinweis": "Zu wenige Hausboot-Angebote in der Region (n=1); Fallback Brandenburg-Median. Hausboot-Markt hier kaum existent."
  },
@@ -179,52 +185,32 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Greifensteine&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Dammühlenteich",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Damm%C3%BChlenteich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Riesaer Wassersportverein",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Riesaer%20Wassersportverein&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
    "name": "Camping Pirna",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Pirna&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Zum Müncherteich",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Zum%20M%C3%BCncherteich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Ferienpark Bad Sonnenland",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienpark%20Bad%20Sonnenland&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Ostrauer Mühle",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Ostrauer%20M%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingplatz Dammühlenteich",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Damm%C3%BChlenteich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Dresdner Segelclub 1910 e.V.",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Dresdner%20Segelclub%201910%20e.V.&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Marinekameradschaft Riesa",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Marinekameradschaft%20Riesa&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Riesaer Wassersportverein",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Riesaer%20Wassersportverein&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Camping am Tonschacht",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20am%20Tonschacht&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Halbendorfer See",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Halbendorfer%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Zum Müncherteich",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Zum%20M%C3%BCncherteich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Campingpark Greifensteine",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingpark%20Greifensteine&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "BWT-Bierwiesenteich Pfaffroda I Camping-Freizeit-Gastro-Bowling",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=BWT-Bierwiesenteich%20Pfaffroda%20I%20Camping-Freizeit-Gastro-Bowling&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Sportgelände Ehrenfriedersdorfer Kanuverein am Greifenbachstauweiher e.V.",
@@ -235,48 +221,64 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20MC%20Ehrenfriedersdorf&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campinggelegenheit an der Ochelbaude",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campinggelegenheit%20an%20der%20Ochelbaude&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Barth-Mühle",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Barth-M%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campingplatz Halbendorfer See",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Halbendorfer%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Naturbad Niederwiesa",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Naturbad%20Niederwiesa&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
+   "name": "Camping am Tonschacht",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20am%20Tonschacht&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
    "name": "Camping Wostra",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Camping%20Wostra&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Rabenstein",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Rabenstein&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Campinggelegenheit an der Ochelbaude",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campinggelegenheit%20an%20der%20Ochelbaude&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Seebad Neumühle",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Seebad%20Neum%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Marinekameradschaft Riesa",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Marinekameradschaft%20Riesa&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Marina Camping Geierswalder See",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Marina%20Camping%20Geierswalder%20See&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
+   "name": "Barth-Mühle",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Barth-M%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "BWT-Bierwiesenteich Pfaffroda I Camping-Freizeit-Gastro-Bowling",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=BWT-Bierwiesenteich%20Pfaffroda%20I%20Camping-Freizeit-Gastro-Bowling&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Seebad Neumühle",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Seebad%20Neum%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ferienpark Thümmlitzsee (\"Thümmlitz Erholung\")",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienpark%20Th%C3%BCmmlitzsee%20%28%22Th%C3%BCmmlitz%20Erholung%22%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
    "name": "Campingplatz \"Kleiner Galgenteich\"",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20%22Kleiner%20Galgenteich%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Campingplatz Mittweidaer Aue",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Mittweidaer%20Aue&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "KNAUS Campingpark Leipzig",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=KNAUS%20Campingpark%20Leipzig&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Ostrauer Mühle",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ostrauer%20M%C3%BChle&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Club der Biehainer Sonnenfreunde",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Club%20der%20Biehainer%20Sonnenfreunde&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Mutzschen-Roda",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Mutzschen-Roda&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Campingplatz Gunzenberg",
@@ -287,44 +289,48 @@
    "booking": "https://www.booking.com/searchresults.de.html?ss=Am%20Badesee%20Coswig-K%C3%B6titz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "Erholungsgebiet Biehainer See'n (Camping Biehain)",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Erholungsgebiet%20Biehainer%20See%27n%20%28Camping%20Biehain%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Ferienhof Commerau",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienhof%20Commerau&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Wohnmobil- und Caravanstellplatz \"In der Sandgrube\"",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobil-%20und%20Caravanstellplatz%20%22In%20der%20Sandgrube%22&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Wohnmobilstellplatz Silberlandhalle - Annaberg-Buchholz",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilstellplatz%20Silberlandhalle%20-%20Annaberg-Buchholz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Ferdinands Homestay",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferdinands%20Homestay&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "KNAUS Campingpark Leipzig",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=KNAUS%20Campingpark%20Leipzig&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Campingplatz Mühlteich",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20M%C3%BChlteich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
-  },
-  {
-   "name": "Ferienpark Thümmlitzsee (\"Thümmlitz Erholung\")",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferienpark%20Th%C3%BCmmlitzsee%20%28%22Th%C3%BCmmlitz%20Erholung%22%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Naherholung Talsperre Pirk GmbH",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Naherholung%20Talsperre%20Pirk%20GmbH&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
    "name": "Caravan-Übernachtungsplatz Billy - Bad Gottleuba-Berggießhübel",
    "booking": "https://www.booking.com/searchresults.de.html?ss=Caravan-%C3%9Cbernachtungsplatz%20Billy%20-%20Bad%20Gottleuba-Berggie%C3%9Fh%C3%BCbel&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   },
   {
-   "name": "See-Camping Altenburg-Pahna",
-   "booking": "https://www.booking.com/searchresults.de.html?ss=See-Camping%20Altenburg-Pahna&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+   "name": "Ferdinands Homestay",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Ferdinands%20Homestay&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz am Treidlerweg",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20am%20Treidlerweg&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Mittweidaer Aue",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Mittweidaer%20Aue&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Mühlteich",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20M%C3%BChlteich&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wohnmobilhafen Lagovida",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilhafen%20Lagovida&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Campingplatz Mutzschen-Roda",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Campingplatz%20Mutzschen-Roda&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Wohnmobilhafen Chemnitz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Wohnmobilhafen%20Chemnitz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "\"Alte Mulde\" Löbnitz",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=%22Alte%20Mulde%22%20L%C3%B6bnitz&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
+  },
+  {
+   "name": "Erholungsgebiet Biehainer See'n (Camping Biehain)",
+   "booking": "https://www.booking.com/searchresults.de.html?ss=Erholungsgebiet%20Biehainer%20See%27n%20%28Camping%20Biehain%29&checkin=2026-07-10&checkout=2026-07-13&group_adults=2&no_rooms=1"
   }
  ],
  "booking_hausboote": [
@@ -591,6 +597,438 @@
    "total": null,
    "url": "https://www.airbnb.de/rooms/11265153",
    "rating": "4,82"
+  },
+  {
+   "title": "Privatunterkunft in Bad Schmiedeberg",
+   "desc": "NatureDreams.1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:inGesam",
+   "total": 423,
+   "url": "https://www.airbnb.de/rooms/1618629041266754161",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 141
+  },
+  {
+   "title": "Wohnung in Cavertitz",
+   "desc": "Ferienwohnung bei Elke Zuhause2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerb",
+   "total": 225,
+   "url": "https://www.airbnb.de/rooms/1266450521807922156",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 75
+  },
+  {
+   "title": "Blockhütte in Sayda/Dorfchemnitz",
+   "desc": "Ferienwohnung Erlebnisfarm John1 Schlafzimmer1 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r",
+   "total": 387,
+   "url": "https://www.airbnb.de/rooms/1205828967474764951",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 129
+  },
+  {
+   "title": "Blockhütte in Dorfchemnitz",
+   "desc": "Ferienwohnung \"Buntspecht\" in Blockhausen1 Schlafzimmer1 Schlafzimmer,  · 1 Kingsize-Doppelbett1 Kingsize-Doppelbett,  · 1 Badezimmer1 Badez",
+   "total": 487,
+   "url": "https://www.airbnb.de/rooms/1394218920372459971",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 162
+  },
+  {
+   "title": "Wohnung in Tharandt",
+   "desc": "Gemütliche Ferienwohnung am Rand von Dresden2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgebe",
+   "total": 241,
+   "url": "https://www.airbnb.de/rooms/32086847",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 80
+  },
+  {
+   "title": "Privatunterkunft in Dippoldiswalde",
+   "desc": "Ferienwohnung am Rennberg2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastg",
+   "total": 312,
+   "url": "https://www.airbnb.de/rooms/1020109711456297530",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 104
+  },
+  {
+   "title": "Zelt in Ostrau",
+   "desc": "Glamping im Hühnerhofidyll des alten Pfarrguts1 Schlafzimmer1 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastge",
+   "total": 280,
+   "url": "https://www.airbnb.de/rooms/890358984899689641",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 93
+  },
+  {
+   "title": "Cottage in Rechenberg-Bienenmühle",
+   "desc": "msp_clausnitz, Cottage am Bach mit einem Garten.2 Schlafzimmer2 Schlafzimmer,  · 5 Betten5 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gast",
+   "total": 342,
+   "url": "https://www.airbnb.de/rooms/1186303175550803371",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 114
+  },
+  {
+   "title": "Wohnung in Großthiemig",
+   "desc": "Ferienwohnung \"Heuboden\" im Igelnest Großthiemig2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gast",
+   "total": 535,
+   "url": "https://www.airbnb.de/rooms/637534279416610719",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 178
+  },
+  {
+   "title": "Wohnung in Netzschkau",
+   "desc": "stilvolle 3-Zi.-Whg. für einen Familienurlaub2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeb",
+   "total": 195,
+   "url": "https://www.airbnb.de/rooms/1800818209218459108",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 65
+  },
+  {
+   "title": "Bauernhof in Drebach",
+   "desc": "Ferienwohnung mit Balkon (Ferienhof Kürschner)3 Schlafzimmer3 Schlafzimmer,  · 6 Einzelbetten6 Einzelbetten,  · 1 Badezimmer1 BadezimmerGewe",
+   "total": 397,
+   "url": "https://www.airbnb.de/rooms/625050203498758141",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 132
+  },
+  {
+   "title": "Ferienunterkunft in Neukieritzsch",
+   "desc": "(H)Auszeit 37 / Privates Ferienhaus am See1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1,5 Bäder1,5 BäderPrivate:r Gastgeber:inPriv",
+   "total": 796,
+   "url": "https://www.airbnb.de/rooms/588985152671417377",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 265
+  },
+  {
+   "title": "Wohnung in Leipzig",
+   "desc": "Grüne Oase in Stötteritz1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastge",
+   "total": 270,
+   "url": "https://www.airbnb.de/rooms/1042074710705888199",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 90
+  },
+  {
+   "title": "Wohnung in Elsterberg",
+   "desc": "Ferienwohnung Vogtland - Kerstins Ferien-Nest-Plus2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Ga",
+   "total": 285,
+   "url": "https://www.airbnb.de/rooms/36763817",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 95
+  },
+  {
+   "title": "Wohnung in Königsfeld",
+   "desc": "Fewo Schwalbennest (Biohof Buschmühle)2 Schlafzimmer2 Schlafzimmer,  · 2 Doppelbetten2 Doppelbetten,  · 1 Badezimmer1 BadezimmerGewerbliche:",
+   "total": 320,
+   "url": "https://www.airbnb.de/rooms/601197558475419927",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 107
+  },
+  {
+   "title": "Privatunterkunft in Herrnhut",
+   "desc": "Gemütliches Ferienhaus \"Steinbruchhäusel\"1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:i",
+   "total": 476,
+   "url": "https://www.airbnb.de/rooms/50228001",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 159
+  },
+  {
+   "title": "Hütte in Neißeaue",
+   "desc": "Gemütliche Wagenunterkunft1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · WC und WaschbeckenWC und WaschbeckenPrivate:r Gastgeber:inPr",
+   "total": 260,
+   "url": "https://www.airbnb.de/rooms/20025841",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 87
+  },
+  {
+   "title": "Privatunterkunft in Gablenz",
+   "desc": "Foto 1 von 6Privatunterkunft in GablenzWaldhütte Kromlau, ruhig, modern, elegant2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Bade",
+   "total": 466,
+   "url": "https://www.airbnb.de/rooms/1642283668570511601",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 155
+  },
+  {
+   "title": "Wohnung in Dresden",
+   "desc": "Elbappartement Dresden1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbliche:r ",
+   "total": 266,
+   "url": "https://www.airbnb.de/rooms/1673194420193252055",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 89
+  },
+  {
+   "title": "Privatunterkunft in Mockrehna",
+   "desc": "Modern trifft rustikal: Ferienhaus mit großem Pool2 Schlafzimmer2 Schlafzimmer,  · 2 Doppelbetten2 Doppelbetten,  · 2 Badezimmer2 Badezimmer",
+   "total": 520,
+   "url": "https://www.airbnb.de/rooms/44056462",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 173
+  },
+  {
+   "title": "Tiny House in Schönfeld",
+   "desc": "Idyllisches Weideglück1 Schlafzimmer1 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgebe",
+   "total": 213,
+   "url": "https://www.airbnb.de/rooms/1434128776840831732",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 71
+  },
+  {
+   "title": "Wohnung in Olbernhau",
+   "desc": "Ferienwohnung Dina2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbliche:r Gast",
+   "total": 516,
+   "url": "https://www.airbnb.de/rooms/1198279718521657207",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 172
+  },
+  {
+   "title": "Hütte in Schöneck/Vogtland",
+   "desc": "Blickinsfreie - Cabin1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber",
+   "total": 407,
+   "url": "https://www.airbnb.de/rooms/37304967",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 136
+  },
+  {
+   "title": "Privatunterkunft in Seiffen/Erzgebirge",
+   "desc": "\"Hudelei\" im Herzen von Seiffen1 Schlafzimmer1 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r",
+   "total": 623,
+   "url": "https://www.airbnb.de/rooms/38443281",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 208
+  },
+  {
+   "title": "Blockhütte in Niederwiesa",
+   "desc": "Blockhaus \"Henry\"2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbliche:r Gastgeber:inGesamtpreis 368 €Preisaufs",
+   "total": 368,
+   "url": "https://www.airbnb.de/rooms/950612367914418535",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 123
+  },
+  {
+   "title": "Loft in Schöneck/Vogtland",
+   "desc": "Blickinsfreie - Loft2 Queensize-Doppelbetten2 Queensize-Doppelbetten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgeber:i",
+   "total": 447,
+   "url": "https://www.airbnb.de/rooms/21454792",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 149
+  },
+  {
+   "title": "Wohnung in Meißen",
+   "desc": "Foto 1 von 6Wohnung in MeißenNeue UnterkunftNeuPanorama-Lodge Lercha1 Schlafzimmer1 Schlafzimmer,  · 1 Queensize-Doppelbett1 Queensize-Doppe",
+   "total": 358,
+   "url": "https://www.airbnb.de/rooms/1785542717154282338",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 119
+  },
+  {
+   "title": "Zelt in Waldhufen",
+   "desc": "Kleine Freiheit 6- Waldlichtung1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewer",
+   "total": 356,
+   "url": "https://www.airbnb.de/rooms/1429753964381600129",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 119
+  },
+  {
+   "title": "Wohnung in Regis-Breitingen",
+   "desc": "\"Ferienwohnung am See\"2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gastgebe",
+   "total": 232,
+   "url": "https://www.airbnb.de/rooms/43759380",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 77
+  },
+  {
+   "title": "Wohnung in Görlitz",
+   "desc": "Schloss Deutsch Ossig Villa Ilex - Vollholzhaus m1 Schlafzimmer1 Schlafzimmer,  · 1 Doppelbett1 Doppelbett,  · 1 Badezimmer1 BadezimmerPriva",
+   "total": 546,
+   "url": "https://www.airbnb.de/rooms/628982007234145769",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 182
+  },
+  {
+   "title": "Privatunterkunft in Bad Elster",
+   "desc": "LaDolceVital im Tiroler-Holzhaus2 Schlafzimmer2 Schlafzimmer,  · 1 Queensize-Doppelbett1 Queensize-Doppelbett,  · 1,5 Bäder1,5 BäderPrivate:",
+   "total": 537,
+   "url": "https://www.airbnb.de/rooms/1398571987830151653",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 179
+  },
+  {
+   "title": "Wohnung in Meißen",
+   "desc": "Foto 1 von 6Beliebter Gäste-Favorit.Gäste-FavoritWohnung in MeißenDurchschnittliche Bewertung: 4,97 von 5, 29 Bewertungen4,97 (29)Die Dachte",
+   "total": 1066,
+   "url": "https://www.airbnb.de/rooms/1616519432775295587",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 355
+  },
+  {
+   "title": "Blockhütte in Dorfchemnitz",
+   "desc": "Ferienwohnung \"Eisvogel\" in Blockhausen1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber",
+   "total": 487,
+   "url": "https://www.airbnb.de/rooms/1394171712015943508",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 162
+  },
+  {
+   "title": "Wohnung in Königstein",
+   "desc": "\"Diebshöhle\" für deinen Wanderurlaub2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:in",
+   "total": 291,
+   "url": "https://www.airbnb.de/rooms/53320564",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 97
+  },
+  {
+   "title": "Wohnung in Grünhainichen",
+   "desc": "Ferienwohnung - Arzgebirg1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbliche",
+   "total": 530,
+   "url": "https://www.airbnb.de/rooms/1292849533035953818",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 177
+  },
+  {
+   "title": "Blockhütte in Niederwiesa",
+   "desc": "Haus \"LINA\"2 Schlafzimmer2 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbliche:r Gastgeber:i",
+   "total": 420,
+   "url": "https://www.airbnb.de/rooms/1686298742573791219",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 140
+  },
+  {
+   "title": "Privatunterkunft in Bad Elster",
+   "desc": "Ferienhaus am Wald mit Sauna, Doppelhaushälfte2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastge",
+   "total": 342,
+   "url": "https://www.airbnb.de/rooms/40072387",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 114
+  },
+  {
+   "title": "Wohnung in Lichterfeld-Schacksdorf",
+   "desc": "Ferienwohnung Haspel1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbliche:r Ga",
+   "total": 485,
+   "url": "https://www.airbnb.de/rooms/1444760427195396812",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 162
+  },
+  {
+   "title": "Tiny House in Hirschfeld",
+   "desc": "Foto 1 von 6SuperhostSuperhostTiny House in HirschfeldStall und Sterne - Großer Wagen1 Schlafzimmer1 Schlafzimmer,  · 2 Queensize-Doppelbett",
+   "total": 621,
+   "url": "https://www.airbnb.de/rooms/1372242823203258753",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 207
+  },
+  {
+   "title": "Eigentumswohnung in Schmölln-Putzkau",
+   "desc": "Lindenhof - mit Stil in der Natur1 Schlafzimmer1 Schlafzimmer,  · 4 Betten4 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate",
+   "total": 401,
+   "url": "https://www.airbnb.de/rooms/12961217",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 134
+  },
+  {
+   "title": "Wohnung in Hartmannsdorf-Reichenau",
+   "desc": "Ferienwohnung m. Almhütte im schönen Erzgebirge1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastg",
+   "total": 240,
+   "url": "https://www.airbnb.de/rooms/19417705",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 80
+  },
+  {
+   "title": "Privatunterkunft in Radeburg",
+   "desc": "Modernes Waldrefugium 1 Schlafzimmer1 Schlafzimmer,  · 1 Kingsize-Doppelbett1 Kingsize-Doppelbett,  · 1 Badezimmer1 BadezimmerPrivate:r Gast",
+   "total": 357,
+   "url": "https://www.airbnb.de/rooms/1718958425251822087",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 119
+  },
+  {
+   "title": "Eigentumswohnung in Dresden",
+   "desc": "Erholungsoase kleine Wolke1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastgeber:inPrivate:r Gast",
+   "total": 340,
+   "url": "https://www.airbnb.de/rooms/965547845976576949",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 113
+  },
+  {
+   "title": "Tiny House in Großharthau",
+   "desc": "Familienurlaub im Tiny House auf dem FamLa-Hof1 Schlafzimmer1 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Gastge",
+   "total": 175,
+   "url": "https://www.airbnb.de/rooms/1717979646466013458",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 58
+  },
+  {
+   "title": "Schloss in Teuchern",
+   "desc": "Romantische Ferienwohnung im Schloss mit pool (11)2 Schlafzimmer2 Schlafzimmer,  · 3 Betten3 Betten,  · 1 Badezimmer1 BadezimmerPrivate:r Ga",
+   "total": 471,
+   "url": "https://www.airbnb.de/rooms/933209583039558400",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 157
+  },
+  {
+   "title": "Wohnung in Leipzig",
+   "desc": "Modernes Wohlfühl-Apartment, Leipzig Szeneviertel2 Schlafzimmer2 Schlafzimmer,  · 2 Queensize-Doppelbetten2 Queensize-Doppelbetten,  · 1,5 B",
+   "total": 517,
+   "url": "https://www.airbnb.de/rooms/1565743045552331441",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 172
+  },
+  {
+   "title": "Gästehaus in Grimma",
+   "desc": "Ferienhaus-Sauna Pool Whirlpool2 Schlafzimmer2 Schlafzimmer,  · 4 Betten4 Betten,  · 2 Badezimmer2 BadezimmerGewerbliche:r Gastgeber:inGewer",
+   "total": 690,
+   "url": "https://www.airbnb.de/rooms/870881646798463705",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 230
+  },
+  {
+   "title": "Chalet in Braunsbedra",
+   "desc": "Chalet Josef1 Schlafzimmer1 Schlafzimmer,  · 2 Betten2 Betten,  · 1 Badezimmer1 BadezimmerGewerbliche:r Gastgeber:inGewerbliche:r Gastgeber:",
+   "total": 563,
+   "url": "https://www.airbnb.de/rooms/1496883125393864247",
+   "rating": null,
+   "quelle": "units-scrape-2026-11 (4 Pers., ganze Unterkunft)",
+   "preis_nacht": 188
   }
  ],
  "scrape_info": {

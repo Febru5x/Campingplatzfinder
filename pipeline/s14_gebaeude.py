@@ -126,7 +126,16 @@ def run(region_name, top=None):
         ORDER BY e.lead_score DESC NULLS LAST"""
     sites = conn.execute(q, (region_name,)).fetchall()
     if top:
-        sites = sites[:top]
+        # Vereine IMMER mitnehmen (Vereinsheim-Pruefung fuer s17),
+        # auch wenn sie nicht in den Top-N nach Score sind
+        import re as _re
+        verein_pat = _re.compile(r"verein|club|e\.?\s?v\.?\b", _re.I)
+        picked = list(sites[:top])
+        picked_ids = {s["id"] for s in picked}
+        for s in sites[top:]:
+            if s["name"] and verein_pat.search(s["name"]) and s["id"] not in picked_ids:
+                picked.append(s)
+        sites = picked
     print("Plaetze:", len(sites))
     conn.close()
     import threading
