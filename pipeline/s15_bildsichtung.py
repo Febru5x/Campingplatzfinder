@@ -14,7 +14,10 @@ Zweistufig (bewusst KEIN unbeaufsichtigtes ML-Modell):
      enrichment.rental_age_est-Ergaenzung bzw. eigenes Feld 'bildsichtung'
      und Excel/Dossiers zeigen sie.
 
-Aufruf: python -m pipeline.s15_bildsichtung brandenburg [--top=20]
+Aufruf: python -m pipeline.s15_bildsichtung brandenburg [--top=20|--alle]
+
+--alle: alle SICHTBAREN Plaetze (default_hidden=0) statt Top-N nach Score.
+Bestehende Sichtungen bleiben erhalten (JSON wird gemergt, nicht ersetzt).
 """
 import json
 import sys
@@ -25,10 +28,16 @@ from . import common as C
 
 def run(region_name, top=20):
     conn = C.init_db()
-    rows = conn.execute("""SELECT s.id, s.name, s.lat, s.lon, e.buildings,
-        e.lead_score FROM sites s JOIN enrichment e ON s.id=e.site_id
-        WHERE s.region=? ORDER BY e.lead_score DESC LIMIT ?""",
-        (region_name, top)).fetchall()
+    if top == "alle":
+        rows = conn.execute("""SELECT s.id, s.name, s.lat, s.lon, e.buildings,
+            e.lead_score FROM sites s JOIN enrichment e ON s.id=e.site_id
+            WHERE s.region=? AND e.default_hidden=0
+            ORDER BY e.lead_score DESC""", (region_name,)).fetchall()
+    else:
+        rows = conn.execute("""SELECT s.id, s.name, s.lat, s.lon, e.buildings,
+            e.lead_score FROM sites s JOIN enrichment e ON s.id=e.site_id
+            WHERE s.region=? ORDER BY e.lead_score DESC LIMIT ?""",
+            (region_name, top)).fetchall()
     hist = {}
     try:
         hist = {r["site_id"]: json.loads(r["info"]) for r in
@@ -83,4 +92,6 @@ if __name__ == "__main__":
     for a in sys.argv:
         if a.startswith("--top="):
             top = int(a.split("=")[1])
+        elif a == "--alle":
+            top = "alle"
     run(args[0] if args else "brandenburg", top)

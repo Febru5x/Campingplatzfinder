@@ -389,7 +389,7 @@ const INFO={{
  miet:'Aus der Betreiber-Website ausgelesene Mietunterkünfte. Kann Fehltreffer enthalten (z. B. Angebote des Betreibers an anderem Ort) – vor Kontakt prüfen.',
  score:'Zwei getrennte Bewertungen: Tiny-House-Score (Wasserlage nur kleiner Bonus, dafür Bebaubarkeit) und Hausboot-Score (Wasserlage, Gewässer-Eignung, Steg und Uferlänge dominant; ohne Hausboot-Gewässer max 40). Der Lead-Score kombiniert beides für die Rangliste. Je Zeile: erreichte / erreichbare Punkte. Heuristik zur Vorauswahl.',
  modern:'Wie modern und gepflegt ist die eigene Website (0–10)? Merkmale: mobil-tauglich, HTTPS, Online-Buchung, aktuelles Jahr, Social Media, modernes Framework; Abzug für Uralt-Technik oder veraltetes Copyright. Proxy für Investitionsbereitschaft: wer die Website pflegt, pflegt oft auch den Platz. Reine Erreichbarkeit gibt keine Punkte (ist bereits Filterkriterium).',
- flaeche:'Genutzte Platzfläche aus OpenStreetMap: die dort von Freiwilligen eingezeichnete Platzgrenze (Polygon), berechnet aus der Geometrie. Keine AI-Bilderkennung, kein amtlicher Plan – kann ungenau sein (±30 %). Die amtliche Eigentumsfläche steht, sofern erfasst, unter „Grundstück gesamt" (Liegenschaftskataster). Fehlt eine der beiden Zeilen: OSM hat den Platz nur als Punkt ohne Umriss (keine genutzte Fläche) bzw. das Kataster lieferte (noch) keine Flurstücke (keine Gesamtfläche).',
+ flaeche:'Genutzte Platzfläche aus OpenStreetMap: die dort von Freiwilligen eingezeichnete Platzgrenze (Polygon), berechnet aus der Geometrie. Keine AI-Bilderkennung, kein amtlicher Plan – kann ungenau sein (±30 %). Die amtliche Eigentumsfläche steht, sofern erfasst, unter „Grundstück gesamt" (Liegenschaftskataster). Fehlt der OSM-Umriss (Platz nur als Punkt erfasst), wird eine SCHÄTZUNG gezeigt (~, gestrichelte Linie auf der Karte): Umriss der zugeordneten Kataster-Flurstücke bzw. einer nahen OSM-Freizeitfläche – das ist die Grundstücks-/Umgebungsgrenze, nicht die exakt genutzte Campingfläche. Liefert auch das Kataster nichts, fehlt die Zeile.',
  rechen:'Modellrechnung, kein Businessplan: 1–5 Tinyhäuser je Platz (grobe Schätzung aus der Flächenreserve: Grundstück − genutzte Fläche, ~250 m² je Einheit inkl. Abstand/Grün; ohne Flächenangaben Standard 3) × Nachtpreis × 140 vermietbare Nächte/Jahr (Auslastungsannahme, ganzjährig). Nachtpreis aus echten Airbnb-/Booking-Angeboten im Umkreis 25 km: ganze kleine Unterkünfte mit Küche für ~4 Personen (Ferienhaus, Bungalow, Chalet, Ferienwohnung …) – keine Zimmer in fremder Wohnung, keine Hotels, keine Zelte/Schlaffässer. Median minus 20 % Camping-Abschlag gegenüber Premium-Inseraten; zu wenige Angebote → Regions-Median. Stellplatz-Vergleich: eigener Website-Preis oder Regions-Median × 110 Nächte.',
  bau:'Unterteilung nach Bebaubarkeits-Ampel: 15/15 = B-Plan weist Ferienhaus-/Campinggebiet aus (grün); 12/15 = feste Unterkünfte vorhanden, Details prüfen (gelb-grün); 8/15 = unklar, Bauamt fragen (gelb); 0/15 = keine belastbare Basis.'
 }};
@@ -437,7 +437,7 @@ function popupHtml(p){{
    ['Vorhanden: Hausboot / Tinyhaus',jaNein(p.has_houseboat)+' / '+jaNein(p.has_tinyhouse),null],
    ['Abstand Wasser',p.water_distance_m!=null?p.water_distance_m+' m':null,null],
    ['Uferlänge',p.shoreline_m?p.shoreline_m+' m':null,null],['Steg',p.has_pier?'ja':null,null],
-   ['Fläche genutzt'+info('flaeche'),p.area_m2?Math.round(p.area_m2).toLocaleString('de')+' m²':null,'html'],
+   ['Fläche genutzt'+info('flaeche'),p.area_m2?Math.round(p.area_m2).toLocaleString('de')+' m²':(p.ersatz_area_m2?'~'+Math.round(p.ersatz_area_m2).toLocaleString('de')+' m² (Schätzung'+(p.ersatz_src?', '+esc(p.ersatz_src):'')+')':null),'html'],
    ['Grundstück gesamt'+info('flurst'),p.parcel_area_m2?Math.round(p.parcel_area_m2).toLocaleString('de')+' m²'+(p.parcel_count?' · '+p.parcel_count+' Flurstück'+(p.parcel_count>1?'e':''):''):null,'html'],
    ['Bebaubarkeit'+info('ampel'),p.build_flag,'html'],
    ['Dauercamper',p.seasonal?'ja':null,null],
@@ -495,7 +495,7 @@ for(const p of SITES){{
    color:'#333',weight:1,fillColor:color(p.lead_score),fillOpacity:.9}});
  m.bindPopup(()=>popupHtml(p),{{maxWidth:560}});
  if(p.geom){{
-  const poly=L.geoJSON(p.geom,{{style:{{color:color(p.lead_score),weight:2,fillOpacity:.08}}}});
+  const poly=L.geoJSON(p.geom,{{style:p.geom_ersatz?{{color:color(p.lead_score),weight:2,fillOpacity:.05,dashArray:'6 4'}}:{{color:color(p.lead_score),weight:2,fillOpacity:.08}}}});
   poly.bindPopup(()=>popupHtml(p),{{maxWidth:560}});
   m._poly=poly;
  }}
@@ -615,7 +615,7 @@ def export_map(df, region_name):
               "waterbody_class", "houseboat_water", "default_hidden",
               "web_images", "marina_distance_m", "has_houseboat", "has_tinyhouse",
               "water_area_ha", "water_class_src", "web_modern", "web_modern_info",
-              "name_source"]
+              "name_source", "ersatz_area_m2", "ersatz_src"]
     # History-Infos (hist. Luftbilder) und B-Pläne laden
     hist = {}
     conn = C.db()
@@ -705,6 +705,16 @@ def export_map(df, region_name):
                 d["geom"] = json.loads(r["geometry"])
             except Exception:
                 pass
+        # Ersatz-Umriss (Kataster/OSM-Freizeitflaeche) fuer Punkt-Plaetze:
+        # gestrichelt anzeigen, kein OSM-Polygon vorhanden
+        # (ersatz_geom ist NICHT in fields -> direkt aus r lesen)
+        if not d.get("geom") and r.get("ersatz_geom") and not pd.isna(r["ersatz_geom"]):
+            try:
+                d["geom"] = json.loads(r["ersatz_geom"])
+                d["geom_ersatz"] = True
+            except Exception:
+                pass
+        d.pop("ersatz_geom", None)  # Geometrie steckt bereits in geom
         # Default-Ausblendung: nur echte Camping-Plaetze mit Online-Praesenz
         # sichtbar; Rest per Filter zuschaltbar. (SQLite liefert 0/1 als TEXT!)
         d["init_visible"] = str(d.get("default_hidden") or "0") != "1"

@@ -89,11 +89,26 @@ Brandenburg (gesamt), Sachsen (gesamt), Sachsen-Anhalt + Thüringen
    öffentlich in DE). ALKIS-Gebäudezählung = Umkreis/Polygon+Puffer,
    kann Nachbargebäude mit erfassen (bei Vereinsplätzen prüfen!).
    MV: keine Gebäude-Typen verfügbar.
-5. **KI-Bildsichtung (s15)**: Agent sichtet aktuelles DOP20 der Top-20
-   je Region und schätzt Bestand/Zustand/Erweiterungsflächen; Quercheck
-   mit ALKIS-Nutzungstypen. **Luftbildeindruck, keine Vor-Ort-Prüfung** –
-   Zustand/Anzahl sind Schätzungen. Ergebnisse: `data/bildsichtung_<region>.json`,
+5. **KI-Bildsichtung (s15)**: Agent sichtet aktuelles DOP20 **aller
+   sichtbaren Plätze** je Region (`--alle`, seit Runde 6; vorher Top-20)
+   und schätzt Bestand/Zustand/Erweiterungsflächen; Quercheck mit
+   ALKIS-Nutzungstypen. Workflow: Kontaktabzug-Blätter à 24 Plätze
+   (`sichtung_sheets.py`) + Manifest, Bewertung als JSON, Merge per
+   `sichtung_merge.py` (idempotent). **Luftbildeindruck, keine
+   Vor-Ort-Prüfung** – Zustand/Anzahl sind Schätzungen. Plätze ohne
+   verwertbares Luftbild bleiben offen (nicht geschätzt). Leere
+   weiße DOP-Kacheln (GeoBasis-Wasserzeichen) werden erkannt
+   (`data/dop_blank_list.json`) und durch neuestes nicht-leeres
+   Hist-Bild ersetzt. Ergebnisse: `data/bildsichtung_<region>.json`,
    Spalte „KI-Bildsichtung" in Excel + Box im Dossier.
+5b. **Ersatz-Umrisse (Runde 6)**: Punkt-Plätze (OSM-node) ohne eigene
+   OSM-Fläche bekommen einen **geschätzten Umriss** aus (1) OSM
+   `landuse=recreation_ground` im Umkreis 150 m oder (2) zugeordneten
+   Kataster-Flurstücken (≤25 ha, ohne Wasser/Wald-Nutzung). OSM wird
+   dabei NICHT verändert. In der Karte **gestrichelt** dargestellt,
+   im Popup als „~X m² (Schätzung, Quelle)" gekennzeichnet; fließt
+   konservativ in den Größen-Score (kein Reserve-Bonus, zählt nicht
+   als „genutzte Fläche"). 98/107 sichtbare Punkt-Plätze abgedeckt.
 6. **Bestandsalter**: Wayback-Mindestalter („seit 2007" = mind. 19 Jahre)
    + hist. Luftbilder zum visuellen Vergleich (Popup/Dossier).
 7. **Booking/Airbnb-Preise**: echter Browser (browse-Extension).

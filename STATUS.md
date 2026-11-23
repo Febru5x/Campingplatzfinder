@@ -1,4 +1,41 @@
-# STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online + Runde 5)
+# STATUS – Stand 2026-11-23 (ALLE 5 REGIONEN FERTIG + online + Runde 6)
+
+## Nachschaerfung Runde 6 (2026-11-23, KI-Sichtung ALLER + Ersatz-Umrisse)
+- **KI-Bildsichtung auf ALLE sichtbaren Plaetze erweitert** (s15 --alle,
+  default_hidden=0). Workflow: `sichtung_sheets.py <region> --start=N
+  --count=24` baut 4x6-Kontaktabzug (380px-Tiles) + Manifest-JSON in
+  %TEMP%\opencode\sichtung\; Agent liest Blatt + Manifest, schreibt
+  results_<region>_<NNN>.json; `sichtung_merge.py <results.json>`
+  schreibt in bildsichtung_<region>.json + enrichment.bildsichtung
+  (idempotent, methode='KI-Sichtung DOP (Kontaktabzug)').
+  **Stand: BB 174/174, ST 106/106, TH 77/77, SN 90/108, MV 86/109.**
+  Offen bleiben NUR Plaetze ohne verwertbares Luftbild (SN 18, MV 23):
+  nicht geschaetzt, sondern ehrlich offen gelassen. SN-Datenfehler:
+  viele bilder.aktuell='luftbilder/' (Verzeichnis statt Datei).
+- **Leere DOPs erkannt**: 58 aktuelle MV-DOPs + 10 hist sind weisse
+  Kacheln (GeoBasis-Wasserzeichen, data/dop_blank_list.json); alle 58
+  aktuellen betreffen nur hidden Plaetze. Sheet-Builder erkennt Blanks
+  (mean>246/std<10) → Fallback auf neuestes nicht-leeres Hist-Bild.
+- **Ersatz-Umrisse fuer Punkt-Plaetze ohne OSM-Flaeche** (OSM wird NICHT
+  veraendert!): `ersatz_umrisse.py` (Temp) → enrichment.ersatz_geom/
+  ersatz_area_m2/ersatz_src. Prioritaet: OSM landuse=recreation_ground
+  ≤150 m (Overpass) → Kataster zum_platz-Flurstuecke (≤25 ha, ohne
+  Wasser/Wald-Nutzung). Offline-Lauf: **98/107 sichtbare Punkt-Plaetze
+  mit Kataster-Umriss** (BB 29/34, SN 21/22, ST 25/25, TH 12/12,
+  MV 11/14); 9 ohne (keine zuordenbaren Flurstuecke).
+- **s06**: area=ersatz wenn OSM fehlt (Groessen-Score); KEIN v_reserve-
+  Bonus bei Ersatz; Kataster-Ersatz zaehlt nicht als 'genutzte Flaeche'
+  (15%-Regel aufs Grundstueck); Rechenbeispiel-Hinweis 'Schaetzung'.
+- **s07**: Popup 'Flaeche genutzt' = '~X m² (Schaetzung, Quelle)';
+  Ersatz-Umriss GESTRICHELT (dashArray '6 4'); Tooltip erklaert
+  Schaetzung; Felder ersatz_area_m2/ersatz_src im Map-JSON.
+- Neue Einzelfaelle/Duplikate aus Rundensichtung in notiz-Feldern
+  dokumentiert (u.a. Vereinsheime → raus: ESV Lok Raw Cottbus, Berliner
+  Baer, Ruderverein Muehlberg, EDEN, WSV Wittenberge, Seesportverein
+  Dessau, Ruderclub Wittenberg, MBC Elbe Dessau, Kanuverein Coswig
+  (2 OSM-Flaechen!), Kanu-Club Soemmerda; Nicht-Camping-Betriebe:
+  Caravan Meinert, Kuehlhaus Goerlitz, Friederiken Therme, Duesterngraben,
+  Hotel auf der Hohe, Hist. Altstadt Wernigerode, Camping im Garten).
 
 ## Nachschaerfung Runde 5 (2026-11-23, Vereine + Preis-Benchmark + Flaechen)
 - **Vereins-Logik (s17, Nutzer-Entscheidung Runde 5b)**: Verein MIT

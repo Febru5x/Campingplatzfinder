@@ -3,7 +3,7 @@
   "name": "Havelberge",
   "lat": 53.30658298134931,
   "lon": 13.000123452904587,
-  "score": 93.0,
+  "score": 91.0,
   "bilder": {
    "aktuell": "luftbilder/way_555963876.jpg",
    "1953": "luftbilder_hist/way_555963876_1953.jpg",
@@ -30,7 +30,7 @@
   "name": "Campingpark Sommersdorf",
   "lat": 53.799470713458575,
   "lon": 12.876706088162566,
-  "score": 87.5,
+  "score": 86.5,
   "bilder": {
    "aktuell": "luftbilder/way_60319633.jpg",
    "1953": "luftbilder_hist/way_60319633_1953.jpg",
@@ -49,60 +49,6 @@
    "anzahl_geschaetzt": "90-110 Caravans (ueberwiegend Dauerstandplaetze)",
    "zustand": "mittel",
    "notiz": "KEINE festen Mietunterkuenfte erkennbar (bestaetigt Website-Befund: Top-Lage ohne Mietangebot = Luecke!). Caravan-Bestand heterogen, teils aeltere Modelle mit Vorzelten. Nordoestlich angrenzendes Ackerland = Erweiterungsflaeche. Idealer Kandidat fuer 5-10 Tinyhaeuser am Westrand mit Seeblick.",
-   "datum": "2026-11-22",
-   "methode": "KI-Sichtung DOP20"
-  }
- },
- "way/35981763": {
-  "name": "C25 Naturcampingplatz am Mössensee",
-  "lat": 53.22347527521075,
-  "lon": 12.836194812738036,
-  "score": 85.5,
-  "bilder": {
-   "aktuell": "luftbilder/way_35981763.jpg",
-   "1953": "luftbilder_hist/way_35981763_1953.jpg",
-   "1991": "luftbilder_hist/way_35981763_1991.jpg",
-   "2014": "luftbilder_hist/way_35981763_esri2014.jpg",
-   "2016": "luftbilder_hist/way_35981763_esri2016.jpg",
-   "2018": "luftbilder_hist/way_35981763_esri2018.jpg",
-   "2020": "luftbilder_hist/way_35981763_esri2020.jpg",
-   "2022": "luftbilder_hist/way_35981763_esri2022.jpg",
-   "2024": "luftbilder_hist/way_35981763_esri2024.jpg"
-  },
-  "alkis_gebaeude": null,
-  "status": "gesichtet",
-  "sichtung": {
-   "bestand": "Naturcamping im Kiefernwald am Moessensee: verstreute Zelt-/ Caravan-Plaetze unter Baeumen, kleine Huette/Servicegebaeude am Zugang, ca. 8-12 feste leichte Bauten (Huetten/Fass-Camping?) in der Lichtung Mitte, 2-3 kleine Stege, offene Wiesenflaeche im Sueden (Zeltwiese)",
-   "anzahl_geschaetzt": "40-60 Stellplaetze + ~10 feste Einheiten",
-   "zustand": "gepflegt (naturbelassen)",
-   "notiz": "Bewusst naturnah, wenig Infrastruktur. Viel ungenutzte Waldflaeche nordoestlich. Huetten-Generation wirkt einfach/aelter. Tinyhaeuser im Wald (auf Stelzen/Punktfundamenten) wuerden zum Natur-Konzept passen; B-Plan-Pruefung noetig (kein Plan im Portal).",
-   "datum": "2026-11-22",
-   "methode": "KI-Sichtung DOP20"
-  }
- },
- "way/110589039": {
-  "name": "Campingplatz Schwaan",
-  "lat": 53.921373984228154,
-  "lon": 12.106841792809158,
-  "score": 85.0,
-  "bilder": {
-   "aktuell": "luftbilder/way_110589039.jpg",
-   "1953": "luftbilder_hist/way_110589039_1953.jpg",
-   "1991": "luftbilder_hist/way_110589039_1991.jpg",
-   "2014": "luftbilder_hist/way_110589039_esri2014.jpg",
-   "2016": "luftbilder_hist/way_110589039_esri2016.jpg",
-   "2018": "luftbilder_hist/way_110589039_esri2018.jpg",
-   "2020": "luftbilder_hist/way_110589039_esri2020.jpg",
-   "2022": "luftbilder_hist/way_110589039_esri2022.jpg",
-   "2024": "luftbilder_hist/way_110589039_esri2024.jpg"
-  },
-  "alkis_gebaeude": null,
-  "status": "gesichtet",
-  "sichtung": {
-   "bestand": "Schlauchfoermiger Platz entlang Kanal/Seeufer: dichte Dauercaravan-Reihen im Norden und Sueden, im Mittelteil Baumcamping mit vereinzelten festen Einheiten (Bungalows/Mobilheile laut Website), mehrere Servicegebaeude, Bootshaus/Steg am Suedende",
-   "anzahl_geschaetzt": "80-120 Einheiten, davon ~15-25 feste",
-   "zustand": "mittel bis erneuerungsbeduerftig (aeltere Caravan-Generation)",
-   "notiz": "Website-Archiv: Mobilheime/Ferienwohnungen schon 2007 (>=19 Jahre). Nordoestlich Dorf mit Wohnbebauung direkt angrenzend = B-Plan-Wahrscheinlichkeit hoch. Sehr schmale Wasserfront, dicht besetzt - Austausch alter Mobilheime gegen moderne Tinyhaeuser/Mini-Hausboote am Steg sinnvoll.",
    "datum": "2026-11-22",
    "methode": "KI-Sichtung DOP20"
   }
@@ -134,11 +80,38 @@
    "methode": "KI-Sichtung DOP20"
   }
  },
+ "way/35981763": {
+  "name": "C25 Naturcampingplatz am Mössensee",
+  "lat": 53.22347527521075,
+  "lon": 12.836194812738036,
+  "score": 82.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_35981763.jpg",
+   "1953": "luftbilder_hist/way_35981763_1953.jpg",
+   "1991": "luftbilder_hist/way_35981763_1991.jpg",
+   "2014": "luftbilder_hist/way_35981763_esri2014.jpg",
+   "2016": "luftbilder_hist/way_35981763_esri2016.jpg",
+   "2018": "luftbilder_hist/way_35981763_esri2018.jpg",
+   "2020": "luftbilder_hist/way_35981763_esri2020.jpg",
+   "2022": "luftbilder_hist/way_35981763_esri2022.jpg",
+   "2024": "luftbilder_hist/way_35981763_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Naturcamping im Kiefernwald am Moessensee: verstreute Zelt-/ Caravan-Plaetze unter Baeumen, kleine Huette/Servicegebaeude am Zugang, ca. 8-12 feste leichte Bauten (Huetten/Fass-Camping?) in der Lichtung Mitte, 2-3 kleine Stege, offene Wiesenflaeche im Sueden (Zeltwiese)",
+   "anzahl_geschaetzt": "40-60 Stellplaetze + ~10 feste Einheiten",
+   "zustand": "gepflegt (naturbelassen)",
+   "notiz": "Bewusst naturnah, wenig Infrastruktur. Viel ungenutzte Waldflaeche nordoestlich. Huetten-Generation wirkt einfach/aelter. Tinyhaeuser im Wald (auf Stelzen/Punktfundamenten) wuerden zum Natur-Konzept passen; B-Plan-Pruefung noetig (kein Plan im Portal).",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ },
  "way/288238408": {
   "name": "Camping am Bauernhof",
   "lat": 53.34598676540346,
   "lon": 13.457383938374551,
-  "score": 81.8,
+  "score": 81.7,
   "bilder": {
    "aktuell": "luftbilder/way_288238408.jpg",
    "1953": "luftbilder_hist/way_288238408_1953.jpg",
@@ -160,5 +133,1965 @@
    "datum": "2026-11-22",
    "methode": "KI-Sichtung DOP20"
   }
+ },
+ "way/352794649": {
+  "name": "Biber-Camp",
+  "lat": 53.20727790078013,
+  "lon": 12.867640896520776,
+  "score": 77.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_352794649.jpg",
+   "1953": "luftbilder_hist/way_352794649_1953.jpg",
+   "1991": "luftbilder_hist/way_352794649_1991.jpg",
+   "2014": "luftbilder_hist/way_352794649_esri2014.jpg",
+   "2016": "luftbilder_hist/way_352794649_esri2016.jpg",
+   "2018": "luftbilder_hist/way_352794649_esri2018.jpg",
+   "2020": "luftbilder_hist/way_352794649_esri2020.jpg",
+   "2022": "luftbilder_hist/way_352794649_esri2022.jpg",
+   "2024": "luftbilder_hist/way_352794649_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Waldplatz am See: lockere Lichtungen mit Zelten/Caravans, Gebaeudereihe (Rezeption/Unterkuenfte) im NO an der Zufahrt, kleiner Steg am Ostufer",
+   "zustand": "gepflegt",
+   "notiz": "Grosse freie Wiesenflaechen zwischen Waldbestand – gut geeignet fuer ergaenzende Tinyhaeuser; laut Website bereits Tinyhaus/Ferienhaus vorhanden.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "20-40 Einheiten, wenige feste Gebaeude"
+  }
+ },
+ "way/110589039": {
+  "name": "Campingplatz Schwaan",
+  "lat": 53.921373984228154,
+  "lon": 12.106841792809158,
+  "score": 75.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_110589039.jpg",
+   "1953": "luftbilder_hist/way_110589039_1953.jpg",
+   "1991": "luftbilder_hist/way_110589039_1991.jpg",
+   "2014": "luftbilder_hist/way_110589039_esri2014.jpg",
+   "2016": "luftbilder_hist/way_110589039_esri2016.jpg",
+   "2018": "luftbilder_hist/way_110589039_esri2018.jpg",
+   "2020": "luftbilder_hist/way_110589039_esri2020.jpg",
+   "2022": "luftbilder_hist/way_110589039_esri2022.jpg",
+   "2024": "luftbilder_hist/way_110589039_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Schlauchfoermiger Platz entlang Kanal/Seeufer: dichte Dauercaravan-Reihen im Norden und Sueden, im Mittelteil Baumcamping mit vereinzelten festen Einheiten (Bungalows/Mobilheile laut Website), mehrere Servicegebaeude, Bootshaus/Steg am Suedende",
+   "anzahl_geschaetzt": "80-120 Einheiten, davon ~15-25 feste",
+   "zustand": "mittel bis erneuerungsbeduerftig (aeltere Caravan-Generation)",
+   "notiz": "Website-Archiv: Mobilheime/Ferienwohnungen schon 2007 (>=19 Jahre). Nordoestlich Dorf mit Wohnbebauung direkt angrenzend = B-Plan-Wahrscheinlichkeit hoch. Sehr schmale Wasserfront, dicht besetzt - Austausch alter Mobilheime gegen moderne Tinyhaeuser/Mini-Hausboote am Steg sinnvoll.",
+   "datum": "2026-11-22",
+   "methode": "KI-Sichtung DOP20"
+  }
+ },
+ "way/96095547": {
+  "name": "Campingplätze am Grossen Zechliner See",
+  "lat": 53.16128835010276,
+  "lon": 12.794216149459093,
+  "score": 74.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_96095547.jpg",
+   "1953": "luftbilder_hist/way_96095547_1953.jpg",
+   "1991": "luftbilder_hist/way_96095547_1991.jpg",
+   "2014": "luftbilder_hist/way_96095547_esri2014.jpg",
+   "2016": "luftbilder_hist/way_96095547_esri2016.jpg",
+   "2018": "luftbilder_hist/way_96095547_esri2018.jpg",
+   "2020": "luftbilder_hist/way_96095547_esri2020.jpg",
+   "2022": "luftbilder_hist/way_96095547_esri2022.jpg",
+   "2024": "luftbilder_hist/way_96095547_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Dichte Caravan-/Mobilheim-Reihen auf Halbinsel am Grossen Zechliner See, Marina mit Booten an der Suedspitze (Bild 2024, aktuelles DOP leer)",
+   "zustand": "mittel",
+   "notiz": "Sehr dichte Dauercamper-Struktur, aeltere Caravan-Generation; wenig freie Reserve. Austausch/Modernisierung einzelner Stellplaetze denkbar, Marina fuer Hausboote vorhanden.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "80-120 Stellplaetze, ueberwiegend Dauercamping"
+  }
+ },
+ "way/387544251": {
+  "name": "Ahoi Camp Canow",
+  "lat": 53.197907302734514,
+  "lon": 12.933405958917215,
+  "score": 73.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_387544251.jpg",
+   "1953": "luftbilder_hist/way_387544251_1953.jpg",
+   "1991": "luftbilder_hist/way_387544251_1991.jpg",
+   "2014": "luftbilder_hist/way_387544251_esri2014.jpg",
+   "2016": "luftbilder_hist/way_387544251_esri2016.jpg",
+   "2018": "luftbilder_hist/way_387544251_esri2018.jpg",
+   "2020": "luftbilder_hist/way_387544251_esri2020.jpg",
+   "2022": "luftbilder_hist/way_387544251_esri2022.jpg",
+   "2024": "luftbilder_hist/way_387544251_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Grosser offener Platz: Caravan-Reihen entlang der Raender, zentrale Rasenflaeche, Servicegebaeude, Bootsanleger am Suedufer",
+   "zustand": "gepflegt",
+   "notiz": "Viel freie Wiese in der Platzmitte – gute Reserve fuer Tinyhaeuser; Uferlage mit Anleger.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "60-100 Stellplaetze"
+  }
+ },
+ "way/45860930": {
+  "name": "Campingplatz Am Gobenowsee",
+  "lat": 53.227439673227764,
+  "lon": 12.92033673353876,
+  "score": 72.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_45860930.jpg",
+   "1953": "luftbilder_hist/way_45860930_1953.jpg",
+   "1991": "luftbilder_hist/way_45860930_1991.jpg",
+   "2014": "luftbilder_hist/way_45860930_esri2014.jpg",
+   "2016": "luftbilder_hist/way_45860930_esri2016.jpg",
+   "2018": "luftbilder_hist/way_45860930_esri2018.jpg",
+   "2020": "luftbilder_hist/way_45860930_esri2020.jpg",
+   "2022": "luftbilder_hist/way_45860930_esri2022.jpg",
+   "2024": "luftbilder_hist/way_45860930_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Langer schmaler Uferstreifen am Gobenowsee: dichte kleine Einheiten (Caravans/Huetten) zwischen Baeumen, wenige groessere Gebaeude",
+   "zustand": "mittel bis gepflegt",
+   "notiz": "Schmaler Streifen, kaum zusammenhaengende Reserve; Bestand wirkt gewachsen/gemischt.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "50-80 Einheiten"
+  }
+ },
+ "way/294743443": {
+  "name": "NaturCamping am Ellbogensee",
+  "lat": 53.19299353009393,
+  "lon": 13.034779975229577,
+  "score": 71.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_294743443.jpg",
+   "1953": "luftbilder_hist/way_294743443_1953.jpg",
+   "1991": "luftbilder_hist/way_294743443_1991.jpg",
+   "2014": "luftbilder_hist/way_294743443_esri2014.jpg",
+   "2016": "luftbilder_hist/way_294743443_esri2016.jpg",
+   "2018": "luftbilder_hist/way_294743443_esri2018.jpg",
+   "2020": "luftbilder_hist/way_294743443_esri2020.jpg",
+   "2022": "luftbilder_hist/way_294743443_esri2022.jpg",
+   "2024": "luftbilder_hist/way_294743443_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Naturplatz im Wald: kleine Lichtung mit wenigen Strukturen am Ostufer, kleiner Steg, sonst geschlossener Wald",
+   "zustand": "gepflegt (naturnah)",
+   "notiz": "Sehr kleiner Bestand, grosse Waldflaeche – Naturcamping-Konzept; Tinyhaeuser nur dezent integrierbar.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "10-25 Einheiten"
+  }
+ },
+ "way/106702672": {
+  "name": "Campingpark Zuruf",
+  "lat": 53.43652512852108,
+  "lon": 12.287984039463364,
+  "score": 71.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_106702672.jpg",
+   "1953": "luftbilder_hist/way_106702672_1953.jpg",
+   "1991": "luftbilder_hist/way_106702672_1991.jpg",
+   "2014": "luftbilder_hist/way_106702672_esri2014.jpg",
+   "2016": "luftbilder_hist/way_106702672_esri2016.jpg",
+   "2018": "luftbilder_hist/way_106702672_esri2018.jpg",
+   "2020": "luftbilder_hist/way_106702672_esri2020.jpg",
+   "2022": "luftbilder_hist/way_106702672_esri2022.jpg",
+   "2024": "luftbilder_hist/way_106702672_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Waldplatz mit dichten Caravan-/Mobilheim-Clustern, zentrales Gebaeude mit rotem Dach (Rezeption/Sanitaer), Uferweg am See",
+   "zustand": "mittel bis gepflegt",
+   "notiz": "Gewachsene Dauercamper-Struktur in Waldlichtungen; Reserve eher in einzelnen Lichtungen.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "80-120 Einheiten"
+  }
+ },
+ "way/114707946": {
+  "name": "Heidepark Silz",
+  "lat": 53.5083648292692,
+  "lon": 12.449504881678687,
+  "score": 69.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_114707946.jpg",
+   "1953": "luftbilder_hist/way_114707946_1953.jpg",
+   "1991": "luftbilder_hist/way_114707946_1991.jpg",
+   "2014": "luftbilder_hist/way_114707946_esri2014.jpg",
+   "2016": "luftbilder_hist/way_114707946_esri2016.jpg",
+   "2018": "luftbilder_hist/way_114707946_esri2018.jpg",
+   "2020": "luftbilder_hist/way_114707946_esri2020.jpg",
+   "2022": "luftbilder_hist/way_114707946_esri2022.jpg",
+   "2024": "luftbilder_hist/way_114707946_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Sehr dichte, grossflaechige Caravan-/Mobilheim-Reihen (Dauercamping) direkt am Fleesensee, mehrere Stege",
+   "zustand": "mittel",
+   "notiz": "Extrem dicht bestanden – kaum freie Reserve; Modernisierungs-/Austauschpotenzial bei alten Mobilheimen, Top-Uferlage.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "150-250 Stellplaetze"
+  }
+ },
+ "way/212477823": {
+  "name": "Wurlseecamping Lychen",
+  "lat": 53.221545008874656,
+  "lon": 13.301782203021515,
+  "score": 68.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_212477823.jpg",
+   "1953": "luftbilder_hist/way_212477823_1953.jpg",
+   "1991": "luftbilder_hist/way_212477823_1991.jpg",
+   "2014": "luftbilder_hist/way_212477823_esri2014.jpg",
+   "2016": "luftbilder_hist/way_212477823_esri2016.jpg",
+   "2018": "luftbilder_hist/way_212477823_esri2018.jpg",
+   "2020": "luftbilder_hist/way_212477823_esri2020.jpg",
+   "2022": "luftbilder_hist/way_212477823_esri2022.jpg",
+   "2024": "luftbilder_hist/way_212477823_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Bild 2024 (aktuelles DOP leer): Platz am Ostrand nur teilweise im Bildausschnitt, kleine Strukturen an der Strasse, viel Wald/Ufer",
+   "zustand": "gepflegt",
+   "notiz": "Bildzentrum liegt neben dem eigentlichen Platz – Bestand nur grob abschaetzbar; Website nennt Bungalows/Huetten.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "20-40 Einheiten (unsicher, Ausschnitt)"
+  }
+ },
+ "way/828560239": {
+  "name": "Ferienidyll am Rätzsee",
+  "lat": 53.22130828274522,
+  "lon": 12.864355360653043,
+  "score": 68.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_828560239.jpg",
+   "1953": "luftbilder_hist/way_828560239_1953.jpg",
+   "1991": "luftbilder_hist/way_828560239_1991.jpg",
+   "2014": "luftbilder_hist/way_828560239_esri2014.jpg",
+   "2016": "luftbilder_hist/way_828560239_esri2016.jpg",
+   "2018": "luftbilder_hist/way_828560239_esri2018.jpg",
+   "2020": "luftbilder_hist/way_828560239_esri2020.jpg",
+   "2022": "luftbilder_hist/way_828560239_esri2022.jpg",
+   "2024": "luftbilder_hist/way_828560239_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Langgestreckter Waldplatz: dichte Caravan-/Mobilheim-Reihen, Servicegebaeude am Suedende, direkter Seezugang",
+   "zustand": "mittel",
+   "notiz": "Dichte gewachsene Struktur; aeltere Einheiten erkennbar – Austauschpotenzial.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "80-120 Einheiten, viel Dauercamping"
+  }
+ },
+ "way/91685037": {
+  "name": "Wildwood Camping Uckermark",
+  "lat": 53.22456737179339,
+  "lon": 13.281347601155275,
+  "score": 67.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_91685037.jpg",
+   "1953": "luftbilder_hist/way_91685037_1953.jpg",
+   "1991": "luftbilder_hist/way_91685037_1991.jpg",
+   "2014": "luftbilder_hist/way_91685037_esri2014.jpg",
+   "2016": "luftbilder_hist/way_91685037_esri2016.jpg",
+   "2018": "luftbilder_hist/way_91685037_esri2018.jpg",
+   "2020": "luftbilder_hist/way_91685037_esri2020.jpg",
+   "2022": "luftbilder_hist/way_91685037_esri2022.jpg",
+   "2024": "luftbilder_hist/way_91685037_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Bild 2024 (aktuelles DOP leer): Waldhalbinsel mit verstreuten kleinen Lichtungen/Strukturen, naturnaher Zeltplatz-Charakter",
+   "zustand": "gepflegt (naturnah)",
+   "notiz": "Wildniscamping-Konzept, wenig Infrastruktur sichtbar; Tinyhaeuser nur als dezente Ergaenzung passend.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "15-30 Einheiten, kaum feste Gebaeude"
+  }
+ },
+ "way/112051037": {
+  "name": "Natur und Strandcamping am Jabelschen See",
+  "lat": 53.519528986459804,
+  "lon": 12.517065375346318,
+  "score": 66.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_112051037.jpg",
+   "1953": "luftbilder_hist/way_112051037_1953.jpg",
+   "1991": "luftbilder_hist/way_112051037_1991.jpg",
+   "2014": "luftbilder_hist/way_112051037_esri2014.jpg",
+   "2016": "luftbilder_hist/way_112051037_esri2016.jpg",
+   "2018": "luftbilder_hist/way_112051037_esri2018.jpg",
+   "2020": "luftbilder_hist/way_112051037_esri2020.jpg",
+   "2022": "luftbilder_hist/way_112051037_esri2022.jpg",
+   "2024": "luftbilder_hist/way_112051037_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Schmaler Uferstreifen: Caravan-Reihen und kleine Gebaeude entlang des Jabelschen Sees, grosse Marina mit vielen Booten oestlich",
+   "zustand": "gepflegt",
+   "notiz": "Marina direkt angrenzend – interessanter Hausboot-Standort; Campingbestand mittelgross.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "50-80 Einheiten"
+  }
+ },
+ "way/749816018": {
+  "name": "VCP Bundeszeltplatz",
+  "lat": 53.19734754094583,
+  "lon": 12.948097095637095,
+  "score": 66.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_749816018.jpg",
+   "1953": "luftbilder_hist/way_749816018_1953.jpg",
+   "1991": "luftbilder_hist/way_749816018_1991.jpg",
+   "2014": "luftbilder_hist/way_749816018_esri2014.jpg",
+   "2016": "luftbilder_hist/way_749816018_esri2016.jpg",
+   "2018": "luftbilder_hist/way_749816018_esri2018.jpg",
+   "2020": "luftbilder_hist/way_749816018_esri2020.jpg",
+   "2022": "luftbilder_hist/way_749816018_esri2022.jpg",
+   "2024": "luftbilder_hist/way_749816018_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Pfadfinder-Bundeszeltplatz: grosse freie Rasenflaechen auf Halbinsel, 2-3 lange Gebaeude (rote Daecher), keine Caravan-Reihen",
+   "zustand": "gepflegt",
+   "notiz": "Sehr viel freie Wiese – flaechig grosses Potenzial; aber Verein/Traeger-Struktur (VCP), Einzelfall pruefen.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "2-4 feste Gebaeude, Zeltbetrieb"
+  }
+ },
+ "way/112003771": {
+  "name": "Yachthafen Maribell",
+  "lat": 53.53060112971752,
+  "lon": 12.539144263755146,
+  "score": 66.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_112003771.jpg",
+   "1953": "luftbilder_hist/way_112003771_1953.jpg",
+   "1991": "luftbilder_hist/way_112003771_1991.jpg",
+   "2014": "luftbilder_hist/way_112003771_esri2014.jpg",
+   "2016": "luftbilder_hist/way_112003771_esri2016.jpg",
+   "2018": "luftbilder_hist/way_112003771_esri2018.jpg",
+   "2020": "luftbilder_hist/way_112003771_esri2020.jpg",
+   "2022": "luftbilder_hist/way_112003771_esri2022.jpg",
+   "2024": "luftbilder_hist/way_112003771_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Yachthafen mit mehreren vollen Stegen, Caravan-/Mobilheim-Flaeche westlich, Ferienhaus-Siedlung noerdlich angrenzend",
+   "zustand": "gepflegt",
+   "notiz": "Marina + Ferienhaus-Umfeld: primaer Hausboot-/Wasser-Standort; Campingflaeche kompakt.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "40-70 Camping-Einheiten + Marina"
+  }
+ },
+ "way/174356523": {
+  "name": "Camping am Blanksee",
+  "lat": 53.38776265544244,
+  "lon": 12.018332087047456,
+  "score": 66.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_174356523.jpg",
+   "1953": "luftbilder_hist/way_174356523_1953.jpg",
+   "1991": "luftbilder_hist/way_174356523_1991.jpg",
+   "2014": "luftbilder_hist/way_174356523_esri2014.jpg",
+   "2016": "luftbilder_hist/way_174356523_esri2016.jpg",
+   "2018": "luftbilder_hist/way_174356523_esri2018.jpg",
+   "2020": "luftbilder_hist/way_174356523_esri2020.jpg",
+   "2022": "luftbilder_hist/way_174356523_esri2022.jpg",
+   "2024": "luftbilder_hist/way_174356523_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kleiner Platz am Waldufer des Blanksees: wenige Gebaeude, verstreute Einheiten auf Wiese, kleiner Steg",
+   "zustand": "mittel (einfach)",
+   "notiz": "Kleiner, einfacher Bestand mit freier Wiese – gute Chance fuer 2-4 Tinyhaeuser als Aufwertung.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "10-25 Einheiten"
+  }
+ },
+ "way/169317537": {
+  "name": "Naturcamp e.V. Röddelin",
+  "lat": 53.09622161208647,
+  "lon": 13.43395798614862,
+  "score": 65.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_169317537.jpg",
+   "1953": "luftbilder_hist/way_169317537_1953.jpg",
+   "1991": "luftbilder_hist/way_169317537_1991.jpg",
+   "2014": "luftbilder_hist/way_169317537_esri2014.jpg",
+   "2016": "luftbilder_hist/way_169317537_esri2016.jpg",
+   "2018": "luftbilder_hist/way_169317537_esri2018.jpg",
+   "2020": "luftbilder_hist/way_169317537_esri2020.jpg",
+   "2022": "luftbilder_hist/way_169317537_esri2022.jpg",
+   "2024": "luftbilder_hist/way_169317537_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Bild 2024 (aktuelles DOP leer): ueberwiegend Wiesen/See, kleiner Struktur-Cluster am Ortsrand oben rechts; Verein-Naturcamp kaum sichtbar",
+   "zustand": "gepflegt (naturnah)",
+   "notiz": "Sehr kleiner Verein-Platz, Bildausschnitt unguenstig; Einzelfall pruefen.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "5-15 Einheiten (unsicher)"
+  }
+ },
+ "way/394199531": {
+  "name": "FKK Campingplatz am Rätzsee",
+  "lat": 53.25280183921157,
+  "lon": 12.90895606231672,
+  "score": 64.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_394199531.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Langer dichter Caravan-Streifen am Raetzsee zwischen Baeumen (FKK), wenige groessere Gebaeude",
+   "zustand": "mittel",
+   "notiz": "Dichte Dauercamper-Reihen, schmale Reserve; FKK-Konzept als Zielgruppen-Besonderheit.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "60-100 Stellplaetze, Dauercamping"
+  }
+ },
+ "way/44660316": {
+  "name": "C42 Naturcampingplatz am Zotzensee",
+  "lat": 53.237167821500115,
+  "lon": 12.827582278704734,
+  "score": 63.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_44660316.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Naturcamping im Wald am Zotzensee: verstreute kleine Einheiten in Lichtungen, Stege im Westen, grosse Ackerflaeche oestlich (nicht Platz)",
+   "zustand": "gepflegt (naturnah)",
+   "notiz": "Lockerer Naturbestand mit Lichtungs-Reserve; gute Passung fuer dezente Tinyhaeuser.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "20-40 Einheiten"
+  }
+ },
+ "way/96095556": {
+  "name": "Campingplätze am Grossen Zechliner See",
+  "lat": 53.16140423116846,
+  "lon": 12.803612650606878,
+  "score": 62.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_96095556.jpg",
+   "1953": "luftbilder_hist/way_96095556_1953.jpg",
+   "1991": "luftbilder_hist/way_96095556_1991.jpg",
+   "2014": "luftbilder_hist/way_96095556_esri2014.jpg",
+   "2016": "luftbilder_hist/way_96095556_esri2016.jpg",
+   "2018": "luftbilder_hist/way_96095556_esri2018.jpg",
+   "2020": "luftbilder_hist/way_96095556_esri2020.jpg",
+   "2022": "luftbilder_hist/way_96095556_esri2022.jpg",
+   "2024": "luftbilder_hist/way_96095556_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Bild 2024 (aktuelles DOP leer): zweiter Zechliner Platz, Caravan-Cluster an Waldspitze am See, sonst geschlossener Wald",
+   "zustand": "mittel",
+   "notiz": "Schwesterplatz von #1 (Duplikat-Hinweis beachten); kompakter Dauercamper-Bestand.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "30-60 Einheiten"
+  }
+ },
+ "way/162178832": {
+  "name": "Camping Zethner See",
+  "lat": 53.20503435069237,
+  "lon": 12.793074904652572,
+  "score": 62.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_162178832.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Zwei Caravan-/Mobilheim-Cluster auf Waldhalbinsel am Zethner See, Steganlage dazwischen",
+   "zustand": "mittel",
+   "notiz": "Gewachsene Struktur in zwei Lichtungen; Steg vorhanden – auch Hausboot-Option pruefenswert.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "50-80 Einheiten"
+  }
+ },
+ "way/1087291196": {
+  "name": "Camping \"Am Kluger See\"'",
+  "lat": 53.2946161812043,
+  "lon": 13.081638821122414,
+  "score": 62.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_1087291196.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Grosser offener Rasenplatz mit Ringweg, Caravan-Reihe am Ostrand, ein Servicegebaeude, Steg am Westufer",
+   "zustand": "gepflegt",
+   "notiz": "Sehr viel freie Wiese – top Reserve fuer Tinyhaeuser; junger, aufgeraeumter Eindruck.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "40-70 Stellplaetze"
+  }
+ },
+ "way/1313042352": {
+  "name": "Campingoase Waldsee",
+  "lat": 53.59033704293642,
+  "lon": 12.213073821728395,
+  "score": 62.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_1313042352.jpg",
+   "1953": "luftbilder_hist/way_1313042352_1953.jpg",
+   "1991": "luftbilder_hist/way_1313042352_1991.jpg",
+   "2014": "luftbilder_hist/way_1313042352_esri2014.jpg",
+   "2016": "luftbilder_hist/way_1313042352_esri2016.jpg",
+   "2018": "luftbilder_hist/way_1313042352_esri2018.jpg",
+   "2020": "luftbilder_hist/way_1313042352_esri2020.jpg",
+   "2022": "luftbilder_hist/way_1313042352_esri2022.jpg",
+   "2024": "luftbilder_hist/way_1313042352_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Schmaler Streifen zwischen See und Strasse/Wald: gemischte kleine Strukturen, lockerer Bestand",
+   "zustand": "mittel",
+   "notiz": "Begrenzte Flaechenreserve durch Strassenlage; Bestand wirkt gemischt/einfach.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "20-40 Einheiten"
+  }
+ },
+ "way/419693836": {
+  "name": "Camping Am Goldberger See",
+  "lat": 53.60526728419789,
+  "lon": 12.104919394190631,
+  "score": 59.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_419693836.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Einzelne lange Gebaeude (Scheunen-/Hallentyp) und verstreute kleine Einheiten auf Uferwiese am Goldberger See",
+   "zustand": "mittel (einfach)",
+   "notiz": "Kleiner einfacher Platz, viel offene Wiese – Aufwertungspotenzial durch Tinyhaeuser.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "10-25 Einheiten"
+  }
+ },
+ "way/315939846": {
+  "name": "Wald- und Seeblick Camp",
+  "lat": 53.4428037403718,
+  "lon": 12.311788400037324,
+  "score": 59.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_315939846.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Dichte Caravan-Reihen in Waldlichtungen entlang des Sees, verzweigte Platzwege",
+   "zustand": "mittel",
+   "notiz": "Gewachsene dichte Struktur; Reserve nur in Randlichtungen.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "60-100 Einheiten, viel Dauercamping"
+  }
+ },
+ "way/169307517": {
+  "name": "Campingplatz Stendenitz",
+  "lat": 53.00752069518523,
+  "lon": 12.819689921562205,
+  "score": 58.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_169307517.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/174915935": {
+  "name": "Naturcampingplatz am Dranser See",
+  "lat": 53.1851352388644,
+  "lon": 12.621992708002264,
+  "score": 58.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_174915935.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/30529194": {
+  "name": "Familienpark Am Kleinen Labussee",
+  "lat": 53.29137709664334,
+  "lon": 12.948202974815658,
+  "score": 58.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_30529194.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Waldplatz am Kleinen Labussee: zentrale Lichtung mit Rezeption/Sanitaer und bunten kleinen Huetten/Cottages im Wald ringsum",
+   "zustand": "gepflegt",
+   "notiz": "Familienpark-Konzept mit vielen kleinen Bestands-Huetten – Austausch-/Ergaenzungspotenzial durch moderne Tinyhaeuser.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "30-60 Einheiten (viele kleine Huetten)"
+  }
+ },
+ "way/119943694": {
+  "name": "Camp am Labussee",
+  "lat": 53.20019290665183,
+  "lon": 12.893403213554649,
+  "score": 57.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_119943694.jpg",
+   "1953": "luftbilder_hist/way_119943694_1953.jpg",
+   "1991": "luftbilder_hist/way_119943694_1991.jpg",
+   "2014": "luftbilder_hist/way_119943694_esri2014.jpg",
+   "2016": "luftbilder_hist/way_119943694_esri2016.jpg",
+   "2018": "luftbilder_hist/way_119943694_esri2018.jpg",
+   "2020": "luftbilder_hist/way_119943694_esri2020.jpg",
+   "2022": "luftbilder_hist/way_119943694_esri2022.jpg",
+   "2024": "luftbilder_hist/way_119943694_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Langer Uferstreifen am Labussee: gemischte Reihen aus Caravans und kleinen Huetten zwischen Baeumen",
+   "zustand": "mittel",
+   "notiz": "Gewachsene Uferbebauung, aelterer gemischter Bestand; Modernisierungspotenzial.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "40-70 Einheiten"
+  }
+ },
+ "way/599950961": {
+  "name": "Naturcamping Zwei Seen",
+  "lat": 53.44734884788391,
+  "lon": 12.310743257041855,
+  "score": 57.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_599950961.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Grosser Ferienpark-Typ: dichte Reihen fester Bungalows/Haeuschen (rote Daecher) plus Caravan-Flaechen, interne Wege, Marina am NW-Ufer",
+   "zustand": "gepflegt bis mittel",
+   "notiz": "Bereits starkes Festunterkunft-Angebot (Wettbewerb), aeltere Bungalow-Generation – Austauschgeschaeft denkbar.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "100-150 Einheiten (viele feste Bungalows)"
+  }
+ },
+ "way/60969786": {
+  "name": "BiberTours Natur-Campingplatz C24",
+  "lat": 53.21266051811313,
+  "lon": 12.8815138829198,
+  "score": 55.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_60969786.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Natur-Camping im Wald: verstreute kleine Strukturen in Lichtungen, Stege/Boote am Seeufer",
+   "zustand": "gepflegt (naturnah)",
+   "notiz": "Kanu-/Naturkonzept (BiberTours), wenig feste Gebaeude; dezente Tinyhaus-Ergaenzung passend.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "15-30 Einheiten"
+  }
+ },
+ "way/96358603": {
+  "name": "D 108 Schlabornhalbinsel",
+  "lat": 53.14963296958578,
+  "lon": 12.872601733846555,
+  "score": 55.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_96358603.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/457726247": {
+  "name": "Campingplatz am Röblinsee",
+  "lat": 53.18688998977451,
+  "lon": 13.129969140650443,
+  "score": 55.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_457726247.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/431960691": {
+  "name": "Campingparadies Dahmen",
+  "lat": 53.66185078189343,
+  "lon": 12.585547153306786,
+  "score": 55.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_431960691.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Ortsnaher Platz: geordnete Reihen fester kleiner Haeuschen/Mobilheime, Strassenraster, gruen eingeschnitten",
+   "zustand": "gepflegt",
+   "notiz": "Wirkt wie gewachsene Wochenendhaus-/Mobilheim-Siedlung (Dauerbestand); wenig klassische Camping-Reserve.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "60-100 Einheiten, ueberwiegend fest"
+  }
+ },
+ "way/120362552": {
+  "name": "Camping Seilershof",
+  "lat": 53.07448848484949,
+  "lon": 13.175369914213702,
+  "score": 55.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_120362552.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/159324914": {
+  "name": "Sonnen- und Naturfreunde e.V. Hügelland",
+  "lat": 53.21996877897487,
+  "lon": 12.838494061695178,
+  "score": 55.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_159324914.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Verein-Platz (FKK): ringfoermige Caravan-/Zeltreihen um zentrale Waldflaeche, direkt am See",
+   "zustand": "mittel",
+   "notiz": "Verein Sonnen-/Naturfreunde: Einzelfall pruefen; kompakter Dauerbestand ohne grosse Reserve.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "40-70 Stellplaetze, Dauercamping"
+  }
+ },
+ "way/292299712": {
+  "name": "Naturcamp Bikowsee",
+  "lat": 53.145839496292616,
+  "lon": 12.887775542488148,
+  "score": 55.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_292299712.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/300971916": {
+  "name": "Star Camp Cosa",
+  "lat": 53.60867014996352,
+  "lon": 13.601744917802906,
+  "score": 55.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_300971916.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kleiner Platz an Teich/Strasse: 4-6 groessere Gebaeude (Scheunen/Hallen-Typ), offene Wiesen, verstreute Einheiten",
+   "zustand": "mittel (einfach)",
+   "notiz": "Einfacher Bestand mit viel freier Wiese – Aufwertungspotenzial; Hallen ggf. landwirtschaftliche Nutzung.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "10-25 Einheiten"
+  }
+ },
+ "way/1346456590": {
+  "name": "Campingpark Sommersdorf Hafen vor der Schranke",
+  "lat": 53.798177009203954,
+  "lon": 12.876437953282068,
+  "score": 55.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_1346456590.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Hafen-Vorfeld Sommersdorf: grosse Rasenflaechen mit Baumreihen, Parkplatz/Slipstelle, kaum Camping-Einheiten im Bild",
+   "zustand": "gepflegt",
+   "notiz": "Ergaenzungsflaeche zum Campingpark Sommersdorf (separater Eintrag) – freie Wiese direkt am Wasser, interessantes Erweiterungsgrundstueck.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "0-10 Einheiten (Vorfeld)"
+  }
+ },
+ "way/437150436": {
+  "name": "Naturcamp Canow",
+  "lat": 53.20130311201777,
+  "lon": 12.897745502642254,
+  "score": 53.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_437150436.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kleines Naturcamp auf Waldspitze am Wasser: wenige verstreute Strukturen/Zeltflaechen",
+   "zustand": "gepflegt (naturnah)",
+   "notiz": "Sehr kleiner Naturbestand; begrenzte, aber freie Uferflaeche fuer 1-3 Tinyhaeuser.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "10-20 Einheiten"
+  }
+ },
+ "way/235466555": {
+  "name": "Campingpark Himmelpfort",
+  "lat": 53.16667519961616,
+  "lon": 13.23341688532242,
+  "score": 52.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_235466555.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/89291936": {
+  "name": "Campingplatz Altglobsow",
+  "lat": 53.13242868513355,
+  "lon": 13.116321863540024,
+  "score": 52.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_89291936.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "node/11938422198": {
+  "name": "Biber Ferienhof",
+  "lat": 53.2071995,
+  "lon": 12.8599942,
+  "score": 52.0,
+  "bilder": {
+   "aktuell": "luftbilder/node_11938422198.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Ferienhof an der Havel: Hofgebaeude mit roten Daechern, grosse Wiesen, neuer Erschliessungsbereich mit geschotterten Flaechen im Sueden",
+   "zustand": "gepflegt, im Ausbau",
+   "notiz": "Frische Erschliessung/Wegebauten sichtbar – aktiver Ausbau, investitionsfreudig; gute Partner-Option.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "10-25 Einheiten + Hofgebaeude"
+  }
+ },
+ "way/37051411": {
+  "name": "Camping Am Dobbertiner See",
+  "lat": 53.617679512543205,
+  "lon": 12.064109433612606,
+  "score": 52.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_37051411.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Dichte Reihen kleiner bunter Haeuschen (Wochenendhaus-Typ) westlich, Zelten/Caravans am Seeufer, Steg",
+   "zustand": "mittel",
+   "notiz": "Grosser aelterer Huettenbestand direkt am Dobbertiner See – hohes Austausch-/Modernisierungspotenzial.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "80-120 Einheiten"
+  }
+ },
+ "way/175453502": {
+  "name": "Campingplatz Am Glambecksee",
+  "lat": 53.25135877314963,
+  "lon": 12.624310807344573,
+  "score": 52.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_175453502.jpg",
+   "1953": "luftbilder_hist/way_175453502_1953.jpg",
+   "1991": "luftbilder_hist/way_175453502_1991.jpg",
+   "2014": "luftbilder_hist/way_175453502_esri2014.jpg",
+   "2016": "luftbilder_hist/way_175453502_esri2016.jpg",
+   "2018": "luftbilder_hist/way_175453502_esri2018.jpg",
+   "2020": "luftbilder_hist/way_175453502_esri2020.jpg",
+   "2022": "luftbilder_hist/way_175453502_esri2022.jpg",
+   "2024": "luftbilder_hist/way_175453502_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Uferplatz am Glambecksee: Caravan-Reihen und kleine Gebaeude auf Waldwiese, Acker oestlich angrenzend",
+   "zustand": "mittel",
+   "notiz": "Solider mittlerer Bestand; freie Wiesenraender als Reserve.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "40-70 Einheiten"
+  }
+ },
+ "way/1079890464": {
+  "name": "Campingplatz Peene Marina",
+  "lat": 53.91092137216229,
+  "lon": 13.024077247239342,
+  "score": 51.7,
+  "bilder": {
+   "aktuell": "luftbilder/way_1079890464.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Marina-Komplex an der Peene: Bootshafen mit Stegen, grosse Hallen/Lagergebaeude, befestigte Flaechen, wenige Camping-Einheiten",
+   "zustand": "gepflegt (gewerblich)",
+   "notiz": "Primaer Boots-Marina/Servicebetrieb – eher Hausboot-Standort als Tinyhaus-Partner.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "5-15 Camping-Einheiten, Fokus Marina"
+  }
+ },
+ "way/35273835": {
+  "name": "Campingplatz Havelblick",
+  "lat": 53.15722373672407,
+  "lon": 13.21947338295958,
+  "score": 50.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_35273835.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/117555586": {
+  "name": "N37 Berner Land",
+  "lat": 53.145624743832094,
+  "lon": 12.890597940779157,
+  "score": 50.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_117555586.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/73423124": {
+  "name": "Campingplatz Ecktannen",
+  "lat": 53.496027424232665,
+  "lon": 12.661892960619015,
+  "score": 49.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_73423124.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Schmaler dichter Waldstreifen am Seeufer mit Caravan-/Huettenreihen (Ecktannen)",
+   "zustand": "mittel",
+   "notiz": "Dichter gewachsener Uferbestand; schmale Reserve, Austauschpotenzial alter Einheiten.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "50-90 Einheiten"
+  }
+ },
+ "node/13920176600": {
+  "name": "Naturcampingplatz am Röddelinsee",
+  "lat": 53.0965082,
+  "lon": 13.4348152,
+  "score": 48.8,
+  "bilder": {
+   "aktuell": "luftbilder/node_13920176600.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/973206726": {
+  "name": "Camping Havelperle",
+  "lat": 53.21531979003603,
+  "lon": 13.034177710980877,
+  "score": 48.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_973206726.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Ortsnaher Uferplatz (Havel): gemischte kleine Gebaeude/Huetten und Caravans zwischen Baeumen, Bootshaeuser am Wasser",
+   "zustand": "mittel",
+   "notiz": "Gewachsener gemischter Bestand in Ortslage; begrenzte Reserve, Modernisierungspotenzial.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "30-60 Einheiten"
+  }
+ },
+ "node/2044643745": {
+  "name": "Zeltplatz & Pfahlhauscamp Wesenberg",
+  "lat": 53.2760438,
+  "lon": 12.9868974,
+  "score": 47.8,
+  "bilder": {
+   "aktuell": "luftbilder/node_2044643745.jpg",
+   "1953": "luftbilder_hist/node_2044643745_1953.jpg",
+   "1991": "luftbilder_hist/node_2044643745_1991.jpg",
+   "2014": "luftbilder_hist/node_2044643745_esri2014.jpg",
+   "2016": "luftbilder_hist/node_2044643745_esri2016.jpg",
+   "2018": "luftbilder_hist/node_2044643745_esri2018.jpg",
+   "2020": "luftbilder_hist/node_2044643745_esri2020.jpg",
+   "2022": "luftbilder_hist/node_2044643745_esri2022.jpg",
+   "2024": "luftbilder_hist/node_2044643745_esri2024.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kanu-/Wasserwander-Stuetzpunkt: grosse Hallen (blau), befestigte Lagerflaechen, Zeltwiese, Bootsanleger am Kanal",
+   "zustand": "gepflegt (funktional)",
+   "notiz": "Pfahlhauscamp Wesenberg: funktionale Wasserwander-Infrastruktur; Zeltwiesen-Reserve fuer Tinyhaeuser vorhanden.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "5-15 feste Gebaeude + Zeltwiese"
+  }
+ },
+ "way/221197695": {
+  "name": "Campingplatz am Krakower See",
+  "lat": 53.66979785443272,
+  "lon": 12.277397838313492,
+  "score": 47.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_221197695.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Dichte Caravan-/Mobilheim-Reihen auf Halbinsel am Krakower See, mehrere Stege am Suedufer",
+   "zustand": "mittel",
+   "notiz": "Zweiter Krakower Eintrag (siehe Top-Lead Campingplatz am Krakower See) – dichter Dauerbestand.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "80-120 Stellplaetze, viel Dauercamping"
+  }
+ },
+ "way/38196646": {
+  "name": "C35 Naturcamping Drewensee",
+  "lat": 53.26274096474003,
+  "lon": 13.089504162689435,
+  "score": 45.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_38196646.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Schmaler Naturcamp-Streifen am Drewensee: kleine Einheiten zwischen Baeumen direkt am Ufer",
+   "zustand": "gepflegt (naturnah)",
+   "notiz": "C35-Naturcamping-Kette, naturnaher kleiner Bestand; dezente Ergaenzung moeglich.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "20-40 Einheiten"
+  }
+ },
+ "way/467135655": {
+  "name": "Campingpark Seedorf",
+  "lat": 53.680855556794555,
+  "lon": 12.631586740485881,
+  "score": 44.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_467135655.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Waldwiesen-Platz: Caravan-Reihen und wenige Gebaeude auf Lichtungen, Teich im Sueden",
+   "zustand": "mittel bis gepflegt",
+   "notiz": "Solider mittlerer Bestand mit Wiesenreserve am Rand.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "30-60 Einheiten"
+  }
+ },
+ "way/208190533": {
+  "name": "Camping am Dreetzsee",
+  "lat": 53.2835103253706,
+  "lon": 13.433785938052162,
+  "score": 44.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_208190533.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Naturplatz auf Landspitze am Dreetzsee: lockerer kleiner Bestand in Waldlichtungen",
+   "zustand": "gepflegt (naturnah)",
+   "notiz": "Kleiner Naturbestand, viel ungenutzte Waldspitze – zurueckhaltende Tinyhaus-Option.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "15-30 Einheiten"
+  }
+ },
+ "way/514034619": {
+  "name": "Pack & Paddel",
+  "lat": 53.220943485050796,
+  "lon": 12.862121262224987,
+  "score": 44.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_514034619.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kanu-Station mit langen Hallen/Schuppen, befestigten Flaechen und wenigen Gebaeuden am Waldrand",
+   "zustand": "mittel (funktional)",
+   "notiz": "Pack & Paddel: primaer Kanuverleih-Station, kein klassischer Campingplatz; Einzelfall.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "5-10 Gebaeude, kaum Camping"
+  }
+ },
+ "way/315477990": {
+  "name": "Campingplatz Bad Stuer",
+  "lat": 53.3888353389927,
+  "lon": 12.309852939810462,
+  "score": 43.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_315477990.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Waldplatz mit Reihen kleiner Huetten/Caravans, zentraler Gebaeudekomplex (rot), Lichtungen",
+   "zustand": "mittel",
+   "notiz": "Gemischter aelterer Bestand; Austauschpotenzial bei Huetten/Mobilheimen.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "50-80 Einheiten"
+  }
+ },
+ "way/248659755": {
+  "name": "Naturcamp am Gleuensee",
+  "lat": 53.15531967156288,
+  "lon": 13.547028018922205,
+  "score": 43.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_248659755.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "node/3561627639": {
+  "name": "Gästehaus Ahlimbsmühle",
+  "lat": 53.0737834,
+  "lon": 13.6211978,
+  "score": 42.2,
+  "bilder": {
+   "aktuell": "luftbilder/node_3561627639.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/841130360": {
+  "name": "Wilde Heimat",
+  "lat": 53.1797401857434,
+  "lon": 13.165211927409906,
+  "score": 42.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_841130360.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/121266349": {
+  "name": "Waldcamping Zethner See",
+  "lat": 53.207902324606,
+  "lon": 12.787524615786275,
+  "score": 41.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_121266349.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Waldcamping am Zethner See: verstreute Einheiten im Waldstreifen zwischen Acker und See, Steg am Ostufer",
+   "zustand": "gepflegt (naturnah)",
+   "notiz": "Lockerer Bestand mit Lichtungsreserve; ruhige Uferlage.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "20-40 Einheiten"
+  }
+ },
+ "way/724615543": {
+  "name": "Gatsch Eck",
+  "lat": 53.51497126370287,
+  "lon": 13.205350476057943,
+  "score": 41.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_724615543.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Uferplatz mit Caravan-Reihen auf Waldspitze, kleine Gebaeude, direkter Seezugang",
+   "zustand": "mittel",
+   "notiz": "Gewachsener Bestand auf schmaler Spitze; begrenzte Reserve.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "40-70 Einheiten"
+  }
+ },
+ "way/1022914893": {
+  "name": "Caravan Resort Gützkow",
+  "lat": 53.9323987504599,
+  "lon": 13.425414189681323,
+  "score": 40.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_1022914893.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Grosses Hallengebaeude (rotes Dach), weitlaeufige befestigte Reihen-Stellflaechen (grau), Sportplatz westlich",
+   "zustand": "gepflegt (zweckmaessig)",
+   "notiz": "Caravan Resort Gützkow: eher Handels-/Abstellbetrieb mit Stellflaechen – kein klassischer Ferien-Campingplatz, Einzelfall pruefen.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "10-20 Einheiten, Fokus Stellplatz/Resort"
+  }
+ },
+ "way/1180350427": {
+  "name": "Camping am See Alt Schwerin",
+  "lat": 53.52158841764568,
+  "lon": 12.320189322195183,
+  "score": 40.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_1180350427.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Schmaler Uferstreifen am Schweriner See: Zelt-/Caravanreihe direkt am Wasser, Acker dahinter",
+   "zustand": "mittel (einfach)",
+   "notiz": "Einfacher Uferstreifen; freie Acker-/Wiesenflaechen dahinter als Reserve pruefenswert.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "20-40 Einheiten"
+  }
+ },
+ "node/897977355": {
+  "name": "Am Rottstielfließ",
+  "lat": 53.0184492,
+  "lon": 12.8131045,
+  "score": 38.2,
+  "bilder": {
+   "aktuell": "luftbilder/node_897977355.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/1082104198": {
+  "name": "Marina Alter Hafen",
+  "lat": 53.03160630368536,
+  "lon": 13.311203305112928,
+  "score": 38.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_1082104198.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "node/455230060": {
+  "name": "Kanumühle Wesenberg",
+  "lat": 53.2797442,
+  "lon": 12.9844894,
+  "score": 37.0,
+  "bilder": {
+   "aktuell": "luftbilder/node_455230060.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kanu-Unterkunft an der Havel: mehrere kleine Haeuschen/Huetten am Ufer unter Baeumen, Bootssteg",
+   "zustand": "mittel bis gepflegt",
+   "notiz": "Kanu-Station mit kleinem Huettenbestand – Ergaenzung durch 1-3 Tinyhaeuser denkbar.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "5-15 kleine Einheiten"
+  }
+ },
+ "way/1309526271": {
+  "name": "Malchiner Kanu-Club",
+  "lat": 53.74399626319763,
+  "lon": 12.766467582019507,
+  "score": 36.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_1309526271.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Verein-Anlage am Kanal: Sportplatz (gruen), Vereinsgebaeude, Bootshaus, gepflasterte Flaechen",
+   "zustand": "gepflegt",
+   "notiz": "Malchiner Kanu-Club: Vereinsheim vorhanden → kein Vermietungs-Lead (default raus per Filter).",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "3-6 Gebaeude"
+  }
+ },
+ "way/221873348": {
+  "name": "Ecktannen",
+  "lat": 53.49921990392437,
+  "lon": 12.664288410247066,
+  "score": 36.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_221873348.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Gebaeudekomplex mit rotem Dach (Pension/Restaurant-Typ), Parkplatz mit Caravans, umschliessender Wald",
+   "zustand": "gepflegt",
+   "notiz": "Kleiner gastro-gepraegter Betrieb mit wenigen Stellplaetzen; Einzelfall.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "5-15 Einheiten"
+  }
+ },
+ "way/605328595": {
+  "name": "Seeweide Naturcampingplatz Penzlin",
+  "lat": 53.487259482591696,
+  "lon": 13.095512594240518,
+  "score": 35.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_605328595.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Moderner Naturcampingplatz: geschwungene Wege, junge Baumpflanzungen, kleine neue Gebaeude, Teich, Dorf angrenzend",
+   "zustand": "gepflegt (neu angelegt)",
+   "notiz": "Junge, qualitaetsvolle Anlage (Penzlin) – aktive Entwicklung, gute Passung fuer hochwertige Tinyhaeuser.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "20-40 Stellplaetze + wenige feste Einheiten"
+  }
+ },
+ "node/13911652775": {
+  "name": "Wassersportverein Einheit Neustrelitz e.V.",
+  "lat": 53.3673865,
+  "lon": 13.0520458,
+  "score": 34.8,
+  "bilder": {
+   "aktuell": "luftbilder/node_13911652775.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Wassersportverein: grosse Bootshallen (rote Daecher), Marina mit vielen Booten, befestigte Flaechen",
+   "zustand": "gepflegt (funktional)",
+   "notiz": "WSV Einheit Neustrelitz: Vereins-Infrastruktur, kein Camping-Betrieb sichtbar; Einzelfall/Marina-Option.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "3-5 Hallen/Gebaeude + Marina"
+  }
+ },
+ "way/112879755": {
+  "name": "C15 Bolter Ufer",
+  "lat": 53.37654150978137,
+  "lon": 12.770226567035161,
+  "score": 34.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_112879755.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Dichter kleiner Bestand (Huetten/Caravans) im Waldstreifen am Seeufer, Acker angrenzend",
+   "zustand": "mittel",
+   "notiz": "C15 Bolter Ufer: gewachsener Uferbestand, schmale Reserve.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "30-60 Einheiten"
+  }
+ },
+ "way/27671891": {
+  "name": "Strandhotel & Restaurant Mirow",
+  "lat": 53.28235376821435,
+  "lon": 12.81045169337395,
+  "score": 33.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_27671891.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Strandhotel-Komplex in Mirow: grosse Gebaeude, Bootsverleih-Steg, angrenzende Haueserzeile",
+   "zustand": "gepflegt",
+   "notiz": "Hotel-/Strandbetrieb, kein Campingplatz – als Tinyhaus-Partner eher unpassend, Einzelfall.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "Hotel + 5-10 Bootshuetten"
+  }
+ },
+ "way/34068769": {
+  "name": "Eckernkoppel am Tietzowsee",
+  "lat": 53.16536923464985,
+  "lon": 12.874161382376297,
+  "score": 33.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_34068769.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/242185141": {
+  "name": "Campingplatz am Großen Wentowsee",
+  "lat": 53.06078359984002,
+  "lon": 13.271147071503107,
+  "score": 33.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_242185141.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/265591032": {
+  "name": "Inselcamping Werder",
+  "lat": 53.48222320643552,
+  "lon": 12.3247586664023,
+  "score": 32.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_265591032.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Sehr lange, dichte Caravan-Reihe entlang des Waldufers auf der Insel Werder",
+   "zustand": "mittel",
+   "notiz": "Schmaler Uferstreifen, kaum Reserve; Insel-Biwak/Camping-Charakter.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "60-100 Stellplaetze, Dauercamping"
+  }
+ },
+ "way/217320032": {
+  "name": "Campingplatz \"Pappelbucht\"",
+  "lat": 53.39377055294063,
+  "lon": 12.62477669662062,
+  "score": 31.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_217320032.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Uferplatz mit Caravan-Reihen und kleiner Marina (viele Boote), Parkplatz, Badestelle",
+   "zustand": "mittel bis gepflegt",
+   "notiz": "Pappelbucht: Marina direkt am Platz – auch Hausboot-Option pruefen; Campingbestand mittelgross.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "40-70 Einheiten + Marina"
+  }
+ },
+ "way/77815994": {
+  "name": "Kanuhof Wustrow",
+  "lat": 53.22240062429395,
+  "lon": 12.968155578315853,
+  "score": 31.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_77815994.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kanu-Hof: mehrere Hallen/Schuppen, Wohn-/Servicegebaeude, Zeltwiese, Strassenlage",
+   "zustand": "mittel (funktional)",
+   "notiz": "Kanu-Betrieb mit Uebernachtung, kein klassischer Campingplatz; Einzelfall.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "5-10 Gebaeude + Zeltwiese"
+  }
+ },
+ "node/3659498484": {
+  "name": "Naturcampingplatz & Hafen Bermudadreieck",
+  "lat": 53.4908175,
+  "lon": 12.1383428,
+  "score": 30.8,
+  "bilder": {
+   "aktuell": "luftbilder/node_3659498484.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kleiner Naturplatz mit Hafen: wenige Gebaeude, offene Flaechen am Wasser, Wald/Wiesen-Mosaik",
+   "zustand": "mittel (einfach)",
+   "notiz": "Bermudadreieck: Naturcamping + Hafen – Hausboot-Anleger vorhanden, kleiner Betrieb.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "5-15 Einheiten + kleiner Hafen"
+  }
+ },
+ "way/38881285": {
+  "name": "Müritzpark Ludorf",
+  "lat": 53.380921739342526,
+  "lon": 12.687029484993662,
+  "score": 30.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_38881285.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Dichter Caravan-/Zeltplatz auf Uferspitze mit langer Mole/Steg, Sandstrand",
+   "zustand": "mittel",
+   "notiz": "Müritzpark Ludorf: kompakter Uferbestand mit Steg; Reserve begrenzt.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "50-80 Einheiten"
+  }
+ },
+ "way/732889269": {
+  "name": "Campingplatz \"Sietower Bucht\"",
+  "lat": 53.43195492506099,
+  "lon": 12.581321203524682,
+  "score": 30.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_732889269.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Ortsnaher Platz: Caravan-Reihen zwischen Wohnhaeusern, grosse Rasenflaechen, Sportplatz",
+   "zustand": "mittel bis gepflegt",
+   "notiz": "Sietower Bucht: gemischte Ortsrand-Lage mit freier Wiese als Reserve.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "40-70 Einheiten"
+  }
+ },
+ "node/4761640793": {
+  "name": "SP Sabines Bio-Bauernhof",
+  "lat": 53.5511906,
+  "lon": 12.8208262,
+  "score": 29.0,
+  "bilder": {
+   "aktuell": "luftbilder/node_4761640793.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Bio-Bauernhof mit Camping: Hofgebaeude (blaues Dach), verstreute Caravans/Zelte auf Wiesen, Teich",
+   "zustand": "gepflegt (laendlich)",
+   "notiz": "Sabines Bio-Bauernhof: viel freie Wiese, familienfreundliches Konzept – gute Tinyhaus-Ergaenzung.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "15-30 Einheiten"
+  }
+ },
+ "way/39370910": {
+  "name": "Am Carwitzer See",
+  "lat": 53.30023194885369,
+  "lon": 13.440973651788696,
+  "score": 27.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_39370910.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kleiner Uferplatz am Canwitzer See: lockere Caravans/Huetten zwischen Baeumen und Wiesen",
+   "zustand": "mittel",
+   "notiz": "Kleiner gemischter Bestand mit Wiesenreserve.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "20-40 Einheiten"
+  }
+ },
+ "way/984061711": {
+  "name": "Nitschow",
+  "lat": 53.423317006777,
+  "lon": 12.624472240335528,
+  "score": 27.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_984061711.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Sehr schmaler Uferstreifen mit kleiner Caravan-Reihe, Acker/Wiese dahinter",
+   "zustand": "mittel (einfach)",
+   "notiz": "Nitschow: einfacher Streifen-Platz; angrenzende Wiesen als Reserve pruefen.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "15-30 Einheiten"
+  }
+ },
+ "way/373703566": {
+  "name": "Peenecamp Neukalen",
+  "lat": 53.823636472169355,
+  "lon": 12.785859833507411,
+  "score": 26.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_373703566.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Ortsrand-Platz mit Caravan-Reihen, Sportplatz, groessere Gebaeude, Hallen am Rand",
+   "zustand": "mittel",
+   "notiz": "Peenecamp Neukalen: solider mittlerer Bestand in Ortslage.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "40-70 Einheiten"
+  }
+ },
+ "node/5419817134": {
+  "name": "Caravan und Wohnmobilplatz am Useriner See",
+  "lat": 53.3224255,
+  "lon": 12.9680096,
+  "score": 26.0,
+  "bilder": {
+   "aktuell": "luftbilder/node_5419817134.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Uferplatz mit Zelten/Caravans auf Wiese, kleines Servicegebaeude, Badestelle, Strassenkreuzung",
+   "zustand": "mittel (einfach)",
+   "notiz": "Useriner See: einfacher Platz mit freier Uferwiese – Aufwertungspotenzial.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "20-40 Einheiten"
+  }
+ },
+ "node/3704679018": {
+  "name": "Kanufarm Am Heegesee",
+  "lat": 53.2423378,
+  "lon": 12.9511889,
+  "score": 24.2,
+  "bilder": {
+   "aktuell": "luftbilder/node_3704679018.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kanu-Farm: grosse Halle, Wohngebaeude, verstreute Zelt-/Caravanflaechen auf Wiesen am Wald",
+   "zustand": "mittel",
+   "notiz": "Kanufarm Heegesee: Betriebs-/Zeltmischung mit viel Wiesenreserve.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "10-25 Einheiten + Hallen"
+  }
+ },
+ "node/9952129414": {
+  "name": "Kanu-Hecht",
+  "lat": 53.4268802,
+  "lon": 12.9320068,
+  "score": 24.0,
+  "bilder": {
+   "aktuell": "luftbilder/node_9952129414.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Kleiner Kanu-Stuetzpunkt am Fluss: wenige Gebaeude/Huetten, Bootsanleger, Wiesen",
+   "zustand": "mittel (einfach)",
+   "notiz": "Kanu-Hecht: Wasserwander-Station, kleiner Bestand; Einzelfall.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "5-15 Einheiten"
+  }
+ },
+ "way/421819891": {
+  "name": "Dargun Klostersee",
+  "lat": 53.8925241975357,
+  "lon": 12.851311839091945,
+  "score": 24.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_421819891.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Klostersee-Ufer: formale Hecken-/Gartenanlage (Labyrinth), Wege, kaum Camping-Einheiten im Bild",
+   "zustand": "gepflegt (Park)",
+   "notiz": "Dargun Klostersee: Bild zeigt Parkanlage, Camping-Struktur nicht erkennbar – Pruefung vor Ort noetig.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "0-10 Einheiten (unsicher)"
+  }
+ },
+ "way/387651723": {
+  "name": "Camping am Müritzarm",
+  "lat": 53.31926856943276,
+  "lon": 12.69838986196108,
+  "score": 23.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_387651723.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Platz am Müritzarm: Caravan-Reihen, Servicegebaeude, befestigte Wege, Wald angrenzend",
+   "zustand": "mittel",
+   "notiz": "Solider mittlerer Bestand, kompakte Anlage.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "40-70 Einheiten"
+  }
+ },
+ "way/361801953": {
+  "name": "Seglerverein",
+  "lat": 53.387944699503386,
+  "lon": 12.617686585348428,
+  "score": 22.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_361801953.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Seglerverein: Vereinsgebaeude (rot), grosse Marina mit Segelbooten, wenige Zeltflaechen",
+   "zustand": "gepflegt",
+   "notiz": "Seglerverein mit Heim → kein Vermietungs-Lead (default raus); Marina fuer Hausboot-Option interessant.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "2-4 Gebaeude + Marina"
+  }
+ },
+ "way/1090262367": {
+  "name": "ZielowCamp",
+  "lat": 53.35491810767523,
+  "lon": 12.68824702777182,
+  "score": 22.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_1090262367.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Hof-/Hallengebaeude (lange Daecher) mit Zeltwiese, Acker angrenzend",
+   "zustand": "mittel",
+   "notiz": "ZielowCamp: landwirtschaftlich gepraegter Zeltplatz; Einzelfall.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "5-15 Einheiten + Hofgebaeude"
+  }
+ },
+ "way/1230468572": {
+  "name": "Kanufarm Am Heegesee",
+  "lat": 53.24201853241325,
+  "lon": 12.952615766075258,
+  "score": 21.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_1230468572.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Zweiter Eintrag Kanufarm Heegesee: Halle, Wohngebaeude, Zeltflaechen am Waldrand",
+   "zustand": "mittel",
+   "notiz": "Duplikat zu node/3704679018 (Kanufarm Am Heegesee) – gleicher Betrieb, nicht doppelt anschreiben.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "10-25 Einheiten"
+  }
+ },
+ "node/9780977151": {
+  "name": "Campinghof am Grünen Baum",
+  "lat": 53.3326111,
+  "lon": 13.1193651,
+  "score": 20.5,
+  "bilder": {
+   "aktuell": "luftbilder/node_9780977151.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Campinghof: grosse Halle (rotes Dach), Caravans/Zelte auf Wiese, Wald angrenzend",
+   "zustand": "mittel",
+   "notiz": "Campinghof am Grünen Baum: Hof-Konzept mit freier Wiese – Tinyhaus-Ergaenzung denkbar.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "15-30 Einheiten + Halle"
+  }
+ },
+ "way/225263570": {
+  "name": "Hirschberg",
+  "lat": 53.42808041046521,
+  "lon": 12.614374727572029,
+  "score": 20.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_225263570.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Uferplatz mit dichter Caravan-Reihe entlang des Waldufers, Acker dahinter",
+   "zustand": "mittel",
+   "notiz": "Hirschberg: kompakter Uferstreifen-Bestand, schmale Reserve.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "40-70 Einheiten"
+  }
+ },
+ "way/418263709": {
+  "name": "Campingplatz Warenthin",
+  "lat": 53.114115136515466,
+  "lon": 12.864395290718168,
+  "score": 19.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_418263709.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/986035549": {
+  "name": "Ferienland Salem",
+  "lat": 53.79618743585477,
+  "lon": 12.813790668103401,
+  "score": 19.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_986035549.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Ferienland Salem: grosses Hofgebaeude (rot), Zelt-/Caravanwiese, Wald angrenzend",
+   "zustand": "mittel bis gepflegt",
+   "notiz": "Hof-/Ferienkonzept mit Wiesenreserve; Einzelfall.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "15-30 Einheiten + Hof"
+  }
+ },
+ "way/105229735": {
+  "name": "Campingplatz Leisten",
+  "lat": 53.49802961128955,
+  "lon": 12.297502197532545,
+  "score": 19.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_105229735.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Uferplatz mit Caravan-Reihen auf Waldwiese am See, kleiner Steg",
+   "zustand": "mittel",
+   "notiz": "Leisten: gewachsener Uferbestand, schmale Reserve.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "30-60 Einheiten"
+  }
+ },
+ "way/169317536": {
+  "name": "Camping am Fährsee - Templin",
+  "lat": 53.127479859502046,
+  "lon": 13.550040050814756,
+  "score": 18.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_169317536.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/37662520": {
+  "name": "Campingplatz „Boek“ C 16",
+  "lat": 53.395991409351986,
+  "lon": 12.785211642458275,
+  "score": 17.0,
+  "bilder": {
+   "aktuell": "luftbilder/way_37662520.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Waldplatz mit dichten Caravan-/Zeltreihen auf Lichtung, kleines Servicegebaeude, Teich/Wiese angrenzend",
+   "zustand": "mittel",
+   "notiz": "C16 Boek: kompakter Lichtungs-Bestand, aeltere Einheiten; Austauschpotenzial.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "50-80 Einheiten"
+  }
+ },
+ "node/8907782609": {
+  "name": "Altes Verwalterhaus",
+  "lat": 53.5916051,
+  "lon": 13.0458515,
+  "score": 15.5,
+  "bilder": {
+   "aktuell": "luftbilder/node_8907782609.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "gesichtet",
+  "sichtung": {
+   "bestand": "Ehemaliges Verwalterhaus/Gutshof: grosse Hallen, mehrere Wohn-/Wirtschaftsgebaeude, Pool, Caravans auf befestigter Flaeche",
+   "zustand": "mittel bis gepflegt",
+   "notiz": "Altes Verwalterhaus: Hof-/Gutskomplex mit Camping-Nutzung, Pool vorhanden – interessante Einzelfall-Option.",
+   "datum": "2026-11-23",
+   "methode": "KI-Sichtung DOP (Kontaktabzug)",
+   "anzahl_geschaetzt": "10-20 Einheiten + Hofgebaeude"
+  }
+ },
+ "way/295882834": {
+  "name": "D100 - Steinablage",
+  "lat": 53.123953612416194,
+  "lon": 12.856501663412953,
+  "score": 14.5,
+  "bilder": {
+   "aktuell": "luftbilder/way_295882834.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/190668614": {
+  "name": "Schorfheide Camp",
+  "lat": 53.04923985402524,
+  "lon": 13.533029134947087,
+  "score": 14.2,
+  "bilder": {
+   "aktuell": "luftbilder/way_190668614.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
+ },
+ "way/689886009": {
+  "name": "Fallschirmsportgemeinschaft Berlin/Gransee e.V.",
+  "lat": 53.00411069633198,
+  "lon": 13.204566193217309,
+  "score": 8.8,
+  "bilder": {
+   "aktuell": "luftbilder/way_689886009.jpg"
+  },
+  "alkis_gebaeude": null,
+  "status": "offen"
  }
 }

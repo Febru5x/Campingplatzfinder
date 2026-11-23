@@ -283,11 +283,27 @@ def run(region_name):
 
         # gemeinsame Basis-Komponenten (fuer beide Scores)
         area = site["area_m2"] or 0
+        ersatz = False
+        if not area:
+            # Punkt-Platz ohne OSM-Umriss: Ersatz-Umriss aus Kataster/OSM-
+            # Freizeitflaeche (nur Schätzung, klar gekennzeichnet)
+            try:
+                ea = float(site["ersatz_area_m2"] or 0)
+            except (TypeError, ValueError):
+                ea = 0
+            if ea:
+                area, ersatz = ea, True
         parcel_area = site["parcel_area_m2"] or 0
+        # Kataster-Ersatzumriss = GESAMTES Grundstueck, nicht genutzte Flaeche
+        # -> darf nicht als 'genutzt' in die Reserve-Rechnung eingehen.
+        area_units = area
+        if ersatz and (site["ersatz_src"] or "").startswith("Kataster"):
+            area_units = 0
         eff_area = max(area, parcel_area)
         v_area = 15 if eff_area >= 100000 else 11 if eff_area >= 50000 \
             else 7 if eff_area >= 20000 else 3 if eff_area > 0 else 0
-        v_reserve = 4 if (parcel_area and area and parcel_area > area * 1.5) else 0
+        v_reserve = 4 if (parcel_area and area and not ersatz
+                          and parcel_area > area * 1.5) else 0
         if v_reserve:
             args.append("Grundstück deutlich größer als genutzte Fläche")
         rentals = site["rentals"] or ""
@@ -446,7 +462,7 @@ def run(region_name):
         # 25 km: ganze kleine Unterkuenfte mit Kueche (~4 Personen),
         # keine Zimmer/Hotels/Zelte/Faesser. Sonst Regions-Median.
         # Portal-Preise sind Premium-Inserate -> 20 % Camping-Abschlag.
-        n, n_basis = units_from_area(area, parcel_area)
+        n, n_basis = units_from_area(area_units, parcel_area)
         if n is None:
             n, n_basis = bench["n_units"], None
         lp, l_n = local_price(offers, site, "unit")
@@ -476,6 +492,8 @@ def run(region_name):
                rev_tiny - rev_pitch, p_src))
         if n_basis:
             example += " Anzahl (%d, grobe Schätzung 1–5): %s." % (n, n_basis)
+            if ersatz:
+                example += " Genutzte Fläche = Schätzung (%s)." % (site["ersatz_src"] or "Ersatz-Umriss")
         else:
             example += " Anzahl: Standardannahme 3 (keine Flächenangaben)."
         # Hausboot-Rechenbeispiel, wenn Steg/Marina am Platz
